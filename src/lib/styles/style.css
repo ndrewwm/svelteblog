@@ -1,0 +1,81 @@
+/* :root {
+  --main-bg-color: #E8AC41;
+  --main-txt-color: #1F1F1F;
+  --main-pre-bg-color: #f5f4ef;
+  --main-pre-txt-color: #A2967F;
+} */
+
+:root {
+  --main-bg-color: #000411;
+  --main-txt-color: #E1EFE6;
+  --main-heading-color: #EFCB68;
+  --main-pre-bg-color: #160C28;
+  --main-pre-txt-color: #EFCB68;
+  --main-code-txt-color: #EFCB68;
+}
+
+header, footer, body {
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+  width: 80%;
+  height: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+code {
+  background-color: var(--main-pre-bg-color);
+  font-family: "Roboto Mono", monospace;
+  border-radius: 15px;
+}
+
+pre {
+  width: 100%;
+  color: var(--main-txt-color);
+  background-color: var(--main-pre-bg-color);
+  padding: 2%;
+  border-radius: 15px;
+  font-family: "Roboto Mono", monospace;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--main-heading-color);
+}
+
+a {
+  color: var(--main-txt-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+blockquote {
+  border-left: solid var(--main-txt-color) 4px;
+  padding-left: 1%;
+}
+
+/* Testing, testing... seems to work! */
+.language-qmdresults {
+  color: var(--main-pre-txt-color);
+}
+
+.language-qmdmessage {
+  color: var(--main-pre-txt-color);
+}
+
+.language-r {
+  color: var(--main-txt-color);
+}
+
+.token.punctuation {
+  color: var(--main-code-txt-color);
+}
+
+.token.operator {
+  color: #C8D3CD;
+}

@@ -1,12 +1,16 @@
-This is my title.
+This is where the title would go, if that’s important.
 ================
+Andrew
+7/3/23
 
-Hello. What have I figured out about using Quarto/Mdsvex?:
+Hello.
+
+What have I figured out about using Quarto/Mdsvex?:
 
 1.  `fig.path` needs to be set to \`“./+page_files/”
 
-- you can then use the relativeImages npm package to properly link to
-  output files
+    - you can then use the relativeImages npm package to properly link
+      to output files
 
 2.  If you add **both** `fig.cap` and `fig.alt`, plot outputs will be
     wrapped with a `<figure>` tag. This could be helpful? Maybe the
@@ -26,19 +30,28 @@ Hello. What have I figured out about using Quarto/Mdsvex?:
 
 Can we add styles?
 
-<style>
-  h2 {
-    color: orange;
-  }
-
-  .language-qmdresults {
-    color: blue;
-  }
-</style>
-
 Hell yes we can.
 
 ## Testing output/rendering
+
+Here is a quote:
+
+> The asphault city is my home. Furnished
+>
+> From the outset with every sacramental prerequisite:
+>
+> With newspapers. And tobacco. And brandy.
+>
+> Distrustful and idle and contented to the end.
+
+Here is some math.
+
+$$
+\int_0^1 x^3 + \theta x^2 dx
+$$
+
+Math can also be inline, like this:
+$y = \beta_0 + \beta_1 x_1 + \epsilon$.
 
 ``` r
 library(tidyverse)
@@ -55,6 +68,16 @@ library(tidyverse)
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+```
+
+``` r
+theme_set(
+  theme_minimal(base_size = 15) +
+    theme(
+      panel.background = element_rect(fill = "transparent"),
+      plot.background = element_rect(fill = "transparent")
+    )
+)
 ```
 
 ``` r
