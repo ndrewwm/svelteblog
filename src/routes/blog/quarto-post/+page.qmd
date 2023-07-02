@@ -1,0 +1,73 @@
+---
+title: This is my title.
+knitr:
+  opts_knit: 
+    base.url: "/"
+  opts_chunk:
+    fig.path: "./+page_files/"
+    class-output: qmdresults
+    class-message: qmdmessage
+format: gfm
+---
+
+Hello. What have I figured out about using Quarto/Mdsvex?:
+
+1. `fig.path` needs to be set to `"./+page_files/"
+  - you can then use the relativeImages npm package to properly link to output files
+
+2. If you add **both** `fig.cap` and `fig.alt`, plot outputs will be wrapped with a `<figure>` tag. This could be helpful? Maybe the stuff can be styled now...
+
+3. Adding `class-output` and `class-message` to `opts_chunk` wraps R code chunk output/messages with "``` qmdoutput". Not sure how this is then parsed by Mdsvex, but it's something?
+
+## Todo
+
+- [x] plot output (relative image paths)
+- [ ] how to do math
+- [ ] code highlighting
+
+## Styles?
+
+Can we add styles?
+
+<style>
+  h2 {
+    color: orange;
+  }
+</style>
+
+Hell yes we can.
+
+## Testing output/rendering
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+summary(airquality)
+```
+
+Some more output.
+
+```{r}
+lm(mpg ~ wt + cyl, data = mtcars) |> summary()
+```
+
+```{r}
+mtcars |>
+  group_by(vs) |>
+  summarize(m = mean(mpg), s = sd(mpg)) |>
+  knitr::kable(digits = 2)
+```
+
+Plots are messy though.
+
+```{r}
+#| fig-align: center
+#| fig-cap: "This is the caption."
+#| fig-alt: "Maybe some alt-text?"
+ 
+ggplot(mtcars, aes(x = factor(cyl), y = mpg)) + geom_boxplot()
+```
+
+Sick, this is working now.
