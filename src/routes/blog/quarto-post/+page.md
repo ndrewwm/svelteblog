@@ -30,6 +30,10 @@ Can we add styles?
   h2 {
     color: orange;
   }
+
+  .language-qmdresults {
+    color: blue;
+  }
 </style>
 
 Hell yes we can.

@@ -33,6 +33,11 @@ Can we add styles?
   h2 {
     color: orange;
   }
+
+  /* Hey, we have a class to grab onto! */
+  .language-qmdresults {
+    color: blue;
+  }
 </style>
 
 Hell yes we can.
