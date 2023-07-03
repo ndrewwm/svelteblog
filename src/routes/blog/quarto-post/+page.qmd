@@ -25,11 +25,16 @@ What have I figured out about using Quarto/Mdsvex?:
 
 3. Adding `class-output` and `class-message` to `opts_chunk` wraps R code chunk output/messages with "``` qmdoutput". Not sure how this is then parsed by Mdsvex, but it's something?
 
+4. Layouts ensure you only have to load CSS once?
+
 ## Todo
 
 - [x] plot output (relative image paths)
 - [ ] how to do math
-- [ ] code highlighting
+- [x] code highlighting
+    - gonna say this is done, 90% of what I've been looking for
+- [ ] footnotes?
+- [ ] citations?
 
 ## Styles?
 
@@ -49,13 +54,13 @@ Here is a quote:
 > 
 > Distrustful and idle and contented to the end.
 
-Here is some math.
+Here is some math.[^1]
 
 $$
 \int_0^1 x^3 + \theta x^2 dx
 $$
 
-Math can also be inline, like this: $y = \beta_0 + \beta_1 x_1 + \epsilon$.
+Note that Math can also be inline, like this: $y = \beta_0 + \beta_1 x_1 + \epsilon$.
 
 ```{r}
 library(tidyverse)
@@ -73,7 +78,7 @@ theme_set(
 summary(airquality)
 ```
 
-Some more output.
+Some more output.^[Pay this no mind.]
 
 ```{r}
 lm(mpg ~ wt + cyl, data = mtcars) |> summary()
@@ -86,7 +91,7 @@ mtcars |>
   knitr::kable(digits = 2)
 ```
 
-Plots are messy though.
+Plots are messy though.^[Hey, you can also create in-line footnotes. They seem super convenient.]
 
 ```{r}
 #| fig-align: center
@@ -96,4 +101,10 @@ Plots are messy though.
 ggplot(mtcars, aes(x = factor(cyl), y = mpg)) + geom_boxplot()
 ```
 
-Sick, this is working now.
+Sick, this is working now.[^2]
+
+[^1]: There might be footnotes.
+
+[^2]: You could consider writing something that's incredibly long as a footnote.
+
+    These long footnotes could even span multiple paragraphs. However, note that new paragraphs need to be indented.

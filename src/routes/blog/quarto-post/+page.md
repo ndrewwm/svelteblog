@@ -20,11 +20,16 @@ What have I figured out about using Quarto/Mdsvex?:
     code chunk output/messages with “\`\`\` qmdoutput”. Not sure how
     this is then parsed by Mdsvex, but it’s something?
 
+4.  Layouts ensure you only have to load CSS once?
+
 ## Todo
 
 - [x] plot output (relative image paths)
 - [ ] how to do math
-- [ ] code highlighting
+- [x] code highlighting
+  - gonna say this is done, 90% of what I’ve been looking for
+- [ ] footnotes?
+- [ ] citations?
 
 ## Styles?
 
@@ -44,7 +49,7 @@ Here is a quote:
 >
 > Distrustful and idle and contented to the end.
 
-Here is some math.
+Here is some math.[^1]
 
 $$
 \int_0^1 x^3 + \theta x^2 dx
@@ -103,7 +108,7 @@ summary(airquality)
                                
 ```
 
-Some more output.
+Some more output.[^2]
 
 ``` r
 lm(mpg ~ wt + cyl, data = mtcars) |> summary()
@@ -143,7 +148,7 @@ mtcars |>
 |   0 | 16.62 | 3.86 |
 |   1 | 24.56 | 5.38 |
 
-Plots are messy though.
+Plots are messy though.[^3]
 
 ``` r
 ggplot(mtcars, aes(x = factor(cyl), y = mpg)) + geom_boxplot()
@@ -155,4 +160,17 @@ data-fig-alt="Maybe some alt-text?" alt="This is the caption." />
 <figcaption aria-hidden="true">This is the caption.</figcaption>
 </figure>
 
-Sick, this is working now.
+Sick, this is working now.[^4]
+
+[^1]: There might be footnotes.
+
+[^2]: Pay this no mind.
+
+[^3]: Hey, you can also create in-line footnotes. They seem super
+    convenient.
+
+[^4]: You could consider writing something that’s incredibly long as a
+    footnote.
+
+    These long footnotes could even span multiple paragraphs. However,
+    note that new paragraphs need to be indented.
