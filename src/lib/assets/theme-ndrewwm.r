@@ -12,6 +12,12 @@ theme_ndrewwm <- function() {
   bg_panel <- "#160C28"
   txt_main <- "#E1EFE6"
 
+  update_geom_defaults("point", aes(color = txt_main))
+  update_geom_defaults("boxplot", aes(fill = txt_main, color = txt_main, alpha = 0.2))
+  update_geom_defaults("density", aes(color = txt_main, fill = txt_main, alpha = 0.1))
+  update_geom_defaults("bar", aes(color = bg_main, fill = txt_main, alpha = 0.9))
+  update_geom_defaults("smooth", aes(color = "#EFCB68"))
+
   theme_minimal(base_size = 18) +
     theme(
       plot.background = element_rect(fill = "transparent"),
@@ -27,23 +33,3 @@ theme_ndrewwm <- function() {
       legend.text = element_text(color = txt_main)
     )
 }
-
-scale_color_ndrewwm_discrete <- function() {
-
-}
-
-p0 <- penguins |>
-  filter(species != "Gentoo") |>
-  ggplot(aes(x = flipper_length_mm, y = bill_length_mm, color = species)) +
-  geom_point() +
-  scale_color_manual(
-    values = c("#E1EFE6", "#EFCB68", "#575E62")
-  ) +
-  theme_ndrewwm() +
-  # theme(panel.grid.minor = element_blank()) +
-  labs(
-    title = "Here's a plot",
-    subtitle = "It's pretty neat"
-  )
-
-p0

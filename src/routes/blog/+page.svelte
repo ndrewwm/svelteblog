@@ -6,12 +6,7 @@
   <title>blog | ndrewwm</title>
 </head>
 
-<h1>Hi! This is the blog.</h1>
-
-<p>
-  It might contain links to other posts.
-  <a href="/blog/post/quarto-post">Like this one.</a>
-</p>
+<h1>blog</h1>
 
 <ul>
   {#each data.posts as post}
@@ -25,5 +20,11 @@
 <style>
   .postdt {
     font-family: monospace;
+    font-size: larger;
+  }
+
+  li {
+    margin-bottom: 10px;
+    list-style-type: none;
   }
 </style>

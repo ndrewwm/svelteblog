@@ -28,6 +28,11 @@ header, footer, body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+p {
+  line-height: 1.4em;
+  padding-right: 15%;
+}
+
 h1, h2, h3, h4, h5 {
   color: var(--main-heading-color);
 }
@@ -43,8 +48,13 @@ a:hover {
 }
 
 blockquote {
-  border-left: solid var(--main-txt-color) 4px;
+  padding: 1px;
+  border-left: 4px solid var(--main-txt-color);
   padding-left: 1%;
+}
+
+blockquote > p {
+  line-height: 0.4em;
 }
 
 /* .column-margin {

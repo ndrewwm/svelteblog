@@ -1,8 +1,8 @@
 ---
-title: This is where the title would go, if that's important.
+title: This is a sample .qmd post
 author: Andrew
-date: "2023-07-26"
-slug: quarto-post
+date: "2023-07-01"
+slug: sample-post
 summary: |
   Working on understanding how to mingle content from Quarto into sveltekit.
 knitr:
@@ -45,7 +45,7 @@ What have I figured out about using Quarto/Mdsvex?:
 ## Todo
 
 - [x] plot output (relative image paths)
-- [ ] how to do math
+- [x] how to do math
 - [x] code highlighting
     - gonna say this is done, 90% of what I've been looking for
 - [ ] asides?
@@ -55,7 +55,7 @@ What have I figured out about using Quarto/Mdsvex?:
 - [x] table styling
     - think I'm happy with this for now, will probably need tuning
     - using `format = "html"` seems to be really useful for `knitr` tables
-- [ ] ggplot theme
+- [x] ggplot theme
     - where to store? `assets/`?
 
 ## Styles?
@@ -139,8 +139,10 @@ Plots are messy though.^[Hey, you can also create in-line footnotes. They seem s
 #| fig-align: center
 #| fig-cap: "This is the caption."
 #| fig-alt: "Maybe some alt-text?"
+
+theme_set(theme_ndrewwm())
  
-ggplot(mtcars, aes(x = factor(cyl), y = mpg)) + geom_boxplot() + theme_ndrewwm()
+ggplot(mtcars, aes(x = factor(cyl), y = mpg)) + geom_boxplot()
 ```
 
 Here's another plot.
@@ -149,8 +151,17 @@ Here's another plot.
 library(palmerpenguins)
 
 ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
-  geom_point(color = "#E1EFE6") +
-  theme_ndrewwm()
+  geom_point()
+
+ggplot(penguins, aes(x = flipper_length_mm)) +
+  geom_density()
+
+ggplot(penguins, aes(x = flipper_length_mm)) +
+  geom_histogram()
+
+ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
+  geom_point() +
+  geom_smooth(method = "lm")
 ```
 
 Sick, this is working now.[^2]

@@ -1,8 +1,8 @@
 ---
-title: This is where the title would go, if that's important.
+title: This is a sample .qmd post
 author: Andrew
-date: "2023-07-26"
-slug: quarto-post
+date: "2023-07-01"
+slug: sample-post
 summary: |
   Working on understanding how to mingle content from Quarto into sveltekit.
 knitr:
@@ -50,7 +50,7 @@ What have I figured out about using Quarto/Mdsvex?:
 ## Todo
 
 - [x] plot output (relative image paths)
-- [ ] how to do math
+- [x] how to do math
 - [x] code highlighting
   - gonna say this is done, 90% of what I’ve been looking for
 - [ ] asides?
@@ -61,7 +61,7 @@ What have I figured out about using Quarto/Mdsvex?:
 - [x] table styling
   - think I’m happy with this for now, will probably need tuning
   - using `format = "html"` seems to be really useful for `knitr` tables
-- [ ] ggplot theme
+- [x] ggplot theme
   - where to store? `assets/`?
 
 ## Styles?
@@ -93,7 +93,7 @@ $$
 We know from *the first fundamental theorem of calculus* that for $x$ in
 $[a, b]$:
 
-$\frac{d}{dx}\left( \int_{a}^{x} f(u)\ du\right)=f(x)$
+$\frac{d}{dx}\left( \int_{a}^{x} f(u)\ du\right)=f(x)$.
 
 </div>
 
@@ -270,7 +270,9 @@ fit |> broom::glance() |> knitr::kable(digits = 2)
 Plots are messy though.[^3]
 
 ``` r
-ggplot(mtcars, aes(x = factor(cyl), y = mpg)) + geom_boxplot() + theme_ndrewwm()
+theme_set(theme_ndrewwm())
+ 
+ggplot(mtcars, aes(x = factor(cyl), y = mpg)) + geom_boxplot()
 ```
 
 <figure>
@@ -285,13 +287,49 @@ Here’s another plot.
 library(palmerpenguins)
 
 ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
-  geom_point(color = "#E1EFE6") +
-  theme_ndrewwm()
+  geom_point()
 ```
 
     Warning: Removed 2 rows containing missing values (`geom_point()`).
 
 ![](./+page_files/unnamed-chunk-7-1.png)
+
+``` r
+ggplot(penguins, aes(x = flipper_length_mm)) +
+  geom_density()
+```
+
+    Warning: Removed 2 rows containing non-finite values (`stat_density()`).
+
+![](./+page_files/unnamed-chunk-7-2.png)
+
+``` r
+ggplot(penguins, aes(x = flipper_length_mm)) +
+  geom_histogram()
+```
+
+``` qmdmessage
+`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+```
+
+    Warning: Removed 2 rows containing non-finite values (`stat_bin()`).
+
+![](./+page_files/unnamed-chunk-7-3.png)
+
+``` r
+ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+``` qmdmessage
+`geom_smooth()` using formula = 'y ~ x'
+```
+
+    Warning: Removed 2 rows containing non-finite values (`stat_smooth()`).
+    Removed 2 rows containing missing values (`geom_point()`).
+
+![](./+page_files/unnamed-chunk-7-4.png)
 
 Sick, this is working now.[^4]
 
