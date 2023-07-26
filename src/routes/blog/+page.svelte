@@ -2,6 +2,10 @@
   export let data;
 </script>
 
+<head>
+  <title>blog | ndrewwm</title>
+</head>
+
 <h1>Hi! This is the blog.</h1>
 
 <p>

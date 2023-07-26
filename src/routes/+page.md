@@ -2,6 +2,10 @@
 title: home
 ---
 
+<head>
+  <title>home | ndrewwm</title>
+</head>
+
 # andrew w. moore
 
 [Here's a link to the page that you're working on.](/blog/post/quarto-post) It might be useful.
