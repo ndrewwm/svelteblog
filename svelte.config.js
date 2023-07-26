@@ -1,6 +1,9 @@
 import { mdsvex } from "mdsvex";
 import adapter from "@sveltejs/adapter-auto";
 import relativeImages from "mdsvex-relative-images";
+import remarkFootnotes from "remark-footnotes";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex-svelte";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -16,7 +19,8 @@ const config = {
   preprocess: [
     mdsvex({
       extensions: [".md", ".svx"],
-      remarkPlugins: [relativeImages],
+      remarkPlugins: [relativeImages, [remarkFootnotes, {inlineNotes: true}], remarkMath],
+      rehypePlugins: [rehypeKatex],
     })
   ],
 };
