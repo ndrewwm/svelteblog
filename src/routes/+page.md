@@ -4,7 +4,7 @@ title: home
 
 # andrew w. moore
 
-[Here's a link to the page that you're working on.](/blog/quarto-post) It might be useful.
+[Here's a link to the page that you're working on.](/blog/post/quarto-post) It might be useful.
 
 <!-- TODO: add a transition here that highlights the first sentence from L -> R. -->
 Hi there, I'm Andrew. I'm a data practitioner, with expertise in data engineering, statistical analysis, and data visualization. I currently work within the Data Services unit at CU-Boulder.

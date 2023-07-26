@@ -1,7 +1,8 @@
 ---
 title: This is where the title would go, if that's important.
 author: Andrew
-date: 7-3-2023
+date: "2023-07-26"
+slug: quarto-post
 summary: |
   Working on understanding how to mingle content from Quarto into sveltekit.
 knitr:
@@ -11,10 +12,24 @@ knitr:
     fig.path: "./+page_files/"
     class-output: qmdresults
     class-message: qmdmessage
-format: gfm
+format:
+  gfm:
+    variant: +yaml_metadata_block
 ---
 
-Hello.
+<script>
+  import Summary from "./metadata_getter.svelte";
+  import Head from "$lib/components/Head.svelte";
+</script>
+
+<Head {title} />
+
+# {title}
+
+Hello. Today's date is {date}.
+
+<!-- This is just an example of how you can easily bring in components! -->
+<Summary summary="{summary}" />
 
 What have I figured out about using Quarto/Mdsvex?:
 
@@ -33,8 +48,15 @@ What have I figured out about using Quarto/Mdsvex?:
 - [ ] how to do math
 - [x] code highlighting
     - gonna say this is done, 90% of what I've been looking for
-- [ ] footnotes?
+- [ ] asides?
+- [x] footnotes?
+    - had to run `npm add --save-dev remark-footnotes@2.0` in order for this to work
 - [ ] citations?
+- [x] table styling
+    - think I'm happy with this for now, will probably need tuning
+    - using `format = "html"` seems to be really useful for `knitr` tables
+- [ ] ggplot theme
+    - where to store? `assets/`?
 
 ## Styles?
 
@@ -57,21 +79,21 @@ Here is a quote:
 Here is some math.[^1]
 
 $$
-\int_0^1 x^3 + \theta x^2 dx
+\int_0^1 x^3 + \theta x^2\ dx
 $$
+
+::: {.column-margin}
+We know from *the first fundamental theorem of calculus* that for $x$ in $[a, b]$:
+
+$\frac{d}{dx}\left( \int_{a}^{x} f(u)\ du\right)=f(x)$.
+:::
 
 Note that Math can also be inline, like this: $y = \beta_0 + \beta_1 x_1 + \epsilon$.
 
 ```{r}
 library(tidyverse)
 
-theme_set(
-  theme_minimal(base_size = 15) +
-    theme(
-      panel.background = element_rect(fill = "transparent"),
-      plot.background = element_rect(fill = "transparent")
-    )
-)
+source("../../../../lib/assets/theme-ndrewwm.R")
 ```
 
 ```{r}
@@ -84,6 +106,8 @@ Some more output.^[Pay this no mind.]
 lm(mpg ~ wt + cyl, data = mtcars) |> summary()
 ```
 
+Here's a simple table.
+
 ```{r}
 mtcars |>
   group_by(vs) |>
@@ -91,14 +115,42 @@ mtcars |>
   knitr::kable(digits = 2)
 ```
 
-Plots are messy though.^[Hey, you can also create in-line footnotes. They seem super convenient.]
+Here are a few that are larger.
 
 ```{r}
+library(palmerpenguins)
+
+fit <- lm(flipper_length_mm ~ bill_length_mm + body_mass_g + sex + species, data = penguins)
+
+fit |>
+  broom::tidy() |>
+  knitr::kable(
+    digits = 2,
+    caption = "These are regression coefficients, and associated standard errors.",
+    format = "html"
+  )
+
+fit |> broom::glance() |> knitr::kable(digits = 2)
+```
+
+Plots are messy though.^[Hey, you can also create in-line footnotes. They seem super convenient.]
+
+```{r, dev = "png", dev.args=list(bg="transparent")}
 #| fig-align: center
 #| fig-cap: "This is the caption."
 #| fig-alt: "Maybe some alt-text?"
  
-ggplot(mtcars, aes(x = factor(cyl), y = mpg)) + geom_boxplot()
+ggplot(mtcars, aes(x = factor(cyl), y = mpg)) + geom_boxplot() + theme_ndrewwm()
+```
+
+Here's another plot.
+
+```{r, dev = "png", dev.args=list(bg="transparent")}
+library(palmerpenguins)
+
+ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
+  geom_point(color = "#E1EFE6") +
+  theme_ndrewwm()
 ```
 
 Sick, this is working now.[^2]
