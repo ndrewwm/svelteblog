@@ -16,6 +16,11 @@
   --console-font-family: "Roboto Mono";
 }
 
+::selection {
+  color: var(--main-bg-color);
+  background-color: var(--main-heading-color);
+}
+
 header, footer, body {
   background-color: var(--main-bg-color);
   color: var(--main-txt-color);
