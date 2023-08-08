@@ -1,5 +1,5 @@
 <footer>
-  <p>Built in Boise, using <a href="https://svelte.dev">svelte/sveltekit</a>. <a href="/credits">Credits</a></p>
+  <p>Built in Boise, using <a href="https://svelte.dev">svelte/sveltekit</a>. <a href="/credits">Credits.</a></p>
 </footer>
 
 <style>
