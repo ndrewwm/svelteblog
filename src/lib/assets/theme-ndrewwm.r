@@ -20,10 +20,11 @@ theme_ndrewwm <- function() {
 
   theme_minimal(base_size = 18) +
     theme(
-      plot.background = element_rect(fill = "transparent"),
+      plot.background = element_rect(fill = bg_main),
       panel.border = element_blank(),
       panel.background = element_rect(fill = bg_panel, color = NA),
       panel.grid = element_line(color = bg_main),
+      strip.text = element_text(color = txt_main),
       axis.text = element_text(color = txt_main),
       axis.title = element_text(color = txt_main),
       plot.title = element_text(color = txt_main, face = "bold"),
