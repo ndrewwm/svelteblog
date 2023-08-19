@@ -25,6 +25,8 @@ format:
 
 # {title}
 
+**{date}**
+
 Hello. Today’s date is {date}.
 
 <!-- This is just an example of how you can easily bring in components! -->
@@ -82,6 +84,8 @@ Here is a quote:
 >
 > Distrustful and idle and contented to the end.
 
+### Math
+
 Here is some math.[^1]
 
 $$
@@ -99,6 +103,8 @@ $\frac{d}{dx}\left( \int_{a}^{x} f(u)\ du\right)=f(x)$.
 
 Note that Math can also be inline, like this:
 $y = \beta_0 + \beta_1 x_1 + \epsilon$.
+
+### Code output
 
 ``` r
 library(tidyverse)
@@ -171,6 +177,8 @@ Residual standard error: 2.568 on 29 degrees of freedom
 Multiple R-squared:  0.8302,    Adjusted R-squared:  0.8185 
 F-statistic: 70.91 on 2 and 29 DF,  p-value: 6.809e-12
 ```
+
+### Tables
 
 Here’s a simple table.
 
@@ -267,6 +275,8 @@ fit |> broom::glance() |> knitr::kable(digits = 2)
 |----------:|--------------:|------:|----------:|--------:|----:|---------:|--------:|--------:|---------:|------------:|-----:|
 |      0.86 |          0.86 |  5.27 |    404.67 |       0 |   5 | -1022.79 | 2059.58 | 2086.24 |  9073.78 |         327 |  333 |
 
+### Plots
+
 Plots are messy though.[^3]
 
 ``` r
@@ -330,6 +340,20 @@ ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
     Removed 2 rows containing missing values (`geom_point()`).
 
 ![](./+page_files/unnamed-chunk-7-4.png)
+
+``` r
+ggplot(penguins, aes(x = flipper_length_mm)) +
+  geom_histogram() +
+  facet_wrap(~island)
+```
+
+``` qmdmessage
+`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+```
+
+    Warning: Removed 2 rows containing non-finite values (`stat_bin()`).
+
+![](./+page_files/unnamed-chunk-7-5.png)
 
 Sick, this is working now.[^4]
 
