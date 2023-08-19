@@ -1,0 +1,27 @@
+---
+title: A title.
+description: |
+  A description.
+author: Andrew Moore
+date: ""
+image: preview.png
+categories: []
+knitr:
+  opts_knit: 
+    base.url: "/"
+  opts_chunk:
+    fig.path: "./+page_files/"
+    class-output: qmdresults
+    class-message: qmdmessage
+format:
+  gfm:
+    variant: +yaml_metadata_block
+---
+
+<script>
+  import BlogHead from "$lib/components/BlogHead.svelte";
+</script>
+
+<BlogHead title={title} date={date} />
+
+
