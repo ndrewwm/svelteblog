@@ -11,6 +11,7 @@
     <div class="right">
       <a href="/now", class="menu">now</a>
       <a href="/blog" class="menu">blog</a>
+      <a href="/contact" class="menu">contact</a>
       <a href="/projects" class="menu">projects</a>
       <a href="https://linkedin.com/in/ndrewwm/">
         <img src={liIcon} alt="LinkedIn Logo" height="24" width="24">
@@ -31,7 +32,7 @@
     display: flex;
     justify-content: space-between;
     top: 0;
-    padding-top: 1vh;
+    padding-top: 3vh;
     padding-bottom: 1vh;
   }
 
@@ -42,7 +43,7 @@
 
   .right {
     margin-right: 0;
-    padding-right: 3vw;
+    padding-right: 7vw;
   }
 
   .home {
