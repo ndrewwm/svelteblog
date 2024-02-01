@@ -8,10 +8,11 @@
   }
 
   footer {
+    width: 50vw;
     float: left;
     display: flex;
     font-size: smaller;
     color: rgb(162, 152, 152);
-    padding-left: 0%;
+    padding-left: 15vw;
   }
 </style>
