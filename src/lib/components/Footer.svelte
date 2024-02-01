@@ -13,6 +13,6 @@
     display: flex;
     font-size: smaller;
     color: rgb(162, 152, 152);
-    padding-left: 15vw;
+    padding-left: 10vw;
   }
 </style>

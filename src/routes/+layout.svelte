@@ -7,20 +7,27 @@
 <!-- pre/code font -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono">
 
-<body>  
-  <Header />
-
-  <main><slot /></main>
-  
+<body>
+  <div class="header">
+    <Header />
+  </div>
+  <main>
+    <slot />
+  </main>
   <Footer />
 </body>
   
 <style>
   body {
-    width: 80vw;
+    width: 100vw;
   }
   main {
-    padding-left: 15vw;
-    min-height: 88vh;
+    width: 80vw;
+    padding-left: 10vw;
+    min-height: 82vh;
+  }
+  .header {
+    margin-top: 0;
+    padding-bottom: 8vh;
   }
 </style>
