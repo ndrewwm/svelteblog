@@ -81,7 +81,9 @@ separation_plot <- function(pred, actual, show_legend = FALSE, predline = TRUE, 
 #| label: model-1
 #| preview: true
 #| fig-height: 1.5
-#| fig-width: 10
+#| fig-width: 8
+#| fig-cap: " "
+#| fig-alt: "A separation plot for the basic logistic regression model, inmetro ~ percollege."
 
 library(tidyverse)
 library(scico)
@@ -100,7 +102,9 @@ A good model should be able to separate events from non-events, which should tra
 ```{r}
 #| label: model-2
 #| fig-height: 1.5
-#| fig-width: 10
+#| fig-width: 8
+#| fig-cap: "why"
+#| fig-alt: "An improved separation plot from the prior figure. More of the events (inmetro = 1) are clustered to the right-hand side."
 
 fit2 <- glm(
   inmetro ~ percblack + percwhite + percollege + percpovertyknown + percbelowpoverty + percprof,
@@ -127,6 +131,8 @@ In the case of a perfect model, the marker should be exactly at the left-most ed
 #| label: perfect
 #| fig-height: 1.5
 #| fig-width: 10
+#| fig-cap: " "
+#| fig-alt: "A perfectly separated separation plot. All the events are divided on each side of the plot."
 
 # build a model that perfectly predicts each case
 fit3 <- glm(inmetro ~ category, data = midwest, family = binomial)

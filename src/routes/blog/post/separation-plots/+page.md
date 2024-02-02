@@ -56,7 +56,8 @@ midwest$f1 <- predict(fit1, midwest, type = "response")
 separation_plot(pred = midwest$f1, actual = midwest$inmetro)
 ```
 
-![](./+page_files/model-1-1.png)
+<img src="./+page_files/model-1-1.png"
+data-fig-alt="A separation plot for the basic logistic regression model, inmetro ~ percollege." />
 
 Using the `midwest` dataset from ***ggplot2***, we’ve built an
 underspecified model that’s meant to predict whether each county (from 5
@@ -85,7 +86,12 @@ midwest$f2 <- predict(fit2, midwest, type = "response")
 separation_plot(midwest$f2, midwest$inmetro)
 ```
 
-![](./+page_files/model-2-1.png)
+<figure>
+<img src="./+page_files/model-2-1.png"
+data-fig-alt="An improved separation plot from the prior figure. More of the events (inmetro = 1) are clustered to the right-hand side."
+alt="why" />
+<figcaption aria-hidden="true">why</figcaption>
+</figure>
 
 In comparison with the first plot, you can see that the non-events on
 the left are still being broken up occasionally, but these patches are
@@ -115,7 +121,8 @@ midwest$f3 <- predict(fit3, midwest, type = "response")
 separation_plot(midwest$f3, midwest$inmetro)
 ```
 
-![](./+page_files/perfect-1.png)
+<img src="./+page_files/perfect-1.png"
+data-fig-alt="A perfectly separated separation plot. All the events are divided on each side of the plot." />
 
 One of the things that feels appealing about this plotting approach is
 that you can see all the data that’s being modeled. Similar to residual
