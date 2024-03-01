@@ -18,9 +18,6 @@
 </body>
   
 <style>
-  body {
-    width: 100vw;
-  }
   main {
     width: 80vw;
     padding-left: 10vw;
