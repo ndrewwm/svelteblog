@@ -25,3 +25,6 @@ format:
 <BlogHead title={title} date={date} />
 
 
+```{r}
+source("../../../../lib/assets/theme-ndrewwm.R")
+```
