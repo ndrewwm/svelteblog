@@ -53,30 +53,34 @@ highest rate of success. This is also the most common choice by far
 
 | \# Lands     |         Losses |           Wins |
 |:-------------|---------------:|---------------:|
-| 16 (or less) |  6,415 (43.1%) |  8,453 (56.9%) |
-| 17           | 41,710 (41.7%) | 58,204 (58.3%) |
-| 18           |  4,993 (42.3%) |  6,802 (57.7%) |
-| Overall      | 53,118 (42.0%) | 73,459 (58.0%) |
+| 16 (or less) |  6,485 (42.6%) |  8,752 (57.4%) |
+| 17           | 41,708 (41.8%) | 58,057 (58.2%) |
+| 18           |  4,909 (42.6%) |  6,625 (57.4%) |
+| Overall      | 53,102 (42.0%) | 73,434 (58.0%) |
 
 Breaking apart the decks by colorpair, we see some hints that green
 decks might benefit from running 18. (Note, I’m excluding monocolor and
 3+ color decks, but I’m not breaking out splashes.) Interestingly, it
-looks like only WB and UB are the only pairs benefit from running 16
-lands. I’ve heard anecdotes that UB is best played as a tempo deck
-(rather than a slow, controlling deck), and this seems to line up with
-what’s visible in the plot.
+looks like only WB benefits from running 16 lands. Every red deck in the
+format gives up a lot of consistency (if not raw win %) for cutting
+lands.
 
 ![](./+page_files/unnamed-chunk-4-1.png)
 
-It also feels notable that WR doesn’t seem to improve (on average) by
-cutting lands. Given its popularity, I haven’t been able to draft this
+It seems particularly notable that WR doesn’t seem to improve (on
+average) by cutting lands. You might expect that it could afford to do
+so, given its access to the best 1-drops in the format, such as *Novice
+Inspector*. However, *Novice Inspector* itself is instructive, given
+that the benefit it grants you for casting it requires additional mana
+to leverage. Given its popularity, I haven’t been able to draft this
 deck frequently, but this result makes sense to me. In modern limited
 formats, it’s difficult to overstate the importance of impacting the
 board early. However, not playing a land on turn 3 appears to be
 particularly punishing in MKM due to the *disguise* mechanic. Even in
 aggressive decks (like WR), you have to keep pace with your opponent
-along the mana curve. There simply aren’t enough cards that cost 2 mana
-or less to form enough of a core for one’s deck.
+along the mana curve. In terms of what’s realistic for a given draft,
+there simply aren’t enough cards that cost 2 mana or less to form enough
+of a core for one’s deck.
 
 In any case, the decision to run different land counts is complex, but
 running 17 appears to be about as solid of a default as one can rely on.
