@@ -27,4 +27,5 @@ format:
 
 ```{r}
 source("../../../../lib/assets/theme-ndrewwm.R")
+theme_set(theme_ndrewwm())
 ```

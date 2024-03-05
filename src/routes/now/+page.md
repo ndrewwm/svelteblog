@@ -6,7 +6,7 @@
 
 # what I'm doing now
 
-(This is a [now page](https://nownownow.com/about), in case you haven't seen one before.)
+(This is a [now page](https://nownownow.com/about), if you haven't seen one before.)
 
 <br>
 <span style="font-size: smaller">Last updated,</span> <span>1/31/2024:</span>
@@ -20,8 +20,6 @@
 - I'm working on this website, and continuing to peck away at the development of *Riddles & Wyverns*
 
 - I'm trying to balance language learning in German and Japanese
-
-- I'm reading [*Song of Achilles*]() for my work's quarterly book club
 
 - I'm trying to get as many ski-days in as possible (10, thus far)
 

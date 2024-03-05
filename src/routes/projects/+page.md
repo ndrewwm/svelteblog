@@ -4,7 +4,7 @@ title: projects
 
 # projects
 
-Idle hands, etc:
+Here are some things I'm working on in my spare time:
 
 - I'm writing a browser-based clone of "Quiz & Dragons" called *Riddles & Wyverns*
 
@@ -12,5 +12,7 @@ Idle hands, etc:
 
 - I post stuff occasionally on [my blog](/blog)
 
-- I'm maintaining a dashboard of demographic figures about my home state
+- My contributions to [#TidyTuesday]() visualizations
+
+<!-- - I'm maintaining a dashboard of demographic figures about my [home state](/projects/idaho) -->
 

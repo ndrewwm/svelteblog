@@ -2,15 +2,20 @@
 title: home
 ---
 
-<head>
-  <title>home | ndrewwm</title>
-</head>
+<script>
+  import Head from "$lib/components/Head.svelte";
+</script>
 
-[Here's a link to the page that you're working on.](/blog/post/quarto-post) It might be useful.
+<Head title="home" />
 
-<!-- TODO: add a transition here that highlights the first sentence from L -> R. -->
-Hi there, I'm Andrew. I'm a data practitioner, with expertise in data engineering, statistical analysis, and data visualization. I currently work within the Data Services unit at CU-Boulder.
+# Hello!
 
-I'm passionate about social science and statistics, as well as their intersection. My academic background is in Psychology, but I am close to completing a second degree in applied mathematics. In line with these interests, my toolkit includes the R language, Python, SQL, Observable Plot, git/github, and many other technologies. I'm constantly working on learning new things; currently my interest is building my front-end skills in JS, using technologies such as `svelte` (with which this site was built).
+Welcome to my personal website. I'm a data engineer and data visualization specialist working from Boise, ID.
 
-You can reach me on LinkedIn and GitHub.
+Currently I work within the Office of Information Technology at CU Boulder, within the office's data services team. I've previously worked at Boise State University, and the University of Michigan in several different developer, analyst, and research associate roles.
+
+I have a degree in psychology from [the College of Idaho](collegeofidaho.edu), and am currently working on a second degree in Applied Mathematics from Boise State University. I'm interested in the intersection between social science and statistics, with topics such as survey research, public health, and data visualization being key areas of expertise.
+
+- More information on my background can be found in my [resume.](/resume)
+- I occasionally post on various topics, often data analysis and data visualization, on [my blog.](/blog)
+- You can also check out some [projects](/projects) that I've developed as part of my portfolio.
