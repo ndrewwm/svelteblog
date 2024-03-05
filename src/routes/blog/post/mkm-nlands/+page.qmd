@@ -117,7 +117,7 @@ lands |>
   kable(col.names = c("# Lands", "Losses", "Wins"), align = "lrr")
 ```
 
-Breaking apart the decks by colorpair, we see some hints that green decks might benefit from running 18. (Note, I'm excluding monocolor and 3+ color decks, but I'm not breaking out splashes.) Interestingly, it looks like only WB benefits from running 16 lands. Every red deck in the format gives up a lot of consistency (if not raw win %) for cutting lands.
+Breaking apart the decks by colorpair, we see some hints that green decks might benefit from running 18. (Note, I'm excluding monocolor and 3+ color decks, but I'm not breaking out splashes.) Interestingly, it looks like only WB benefits from running 16 lands. Every red deck in the format is giving up a lot of consistency for playing fewer lands.
 
 ```{r}
 lands |>
@@ -145,6 +145,6 @@ lands |>
   )
 ```
 
-It seems particularly notable that WR doesn't seem to improve (on average) by cutting lands. You might expect that it could afford to do so, given its access to the best 1-drops in the format, such as *Novice Inspector*. However, *Novice Inspector* itself is instructive, given that the benefit it grants you for casting it requires additional mana to leverage. Given its popularity, I haven't been able to draft this deck frequently, but this result makes sense to me. In modern limited formats, it's difficult to overstate the importance of impacting the board early. However, not playing a land on turn 3 appears to be particularly punishing in MKM due to the *disguise* mechanic. Even in aggressive decks (like WR), you have to keep pace with your opponent along the mana curve. In terms of what's realistic for a given draft, there simply aren't enough cards that cost 2 mana or less to form enough of a core for one's deck.
+It seems notable that WR doesn't seem to improve (on average) by cutting lands. You might expect that it could afford to do so, given its access to the best 1-drops in the format, such as *Novice Inspector*. However, even a closer look at *Novice Inspector* suggests why this isn't the case. The benefit this card grants you for casting it (a clue token) requires additional mana to leverage. Given the deck's popularity, I haven't been able to draft it frequently, but the result we're seeing for WR makes sense. In modern limited formats, it's difficult to overstate the importance of impacting the board early. However, not playing a land on turn 3 appears to be particularly punishing in MKM due to the *disguise* mechanic. Even in aggressive decks, you have to keep pace with your opponent along the mana curve. In terms of what's realistic for a given draft, there simply aren't enough cards that cost 2 mana or less to form enough of a core for one's deck.
 
-In any case, the decision to run different land counts is complex, but running 17 appears to be about as solid of a default as one can rely on. It seems that green decks with 18 lands might be outperforming other builds in their colors, but you'll need some good intuition on whether your pool leans more towards the deck's theoretical ceiling to justify cutting an additional spell.
+For MKM, the choice of how many lands to play is complex, but running 17 remains a solid default. It seems that green decks with 18 lands might outperform other builds in their colors, but you'll need some good intuition on whether your pool leans more towards the deck's theoretical ceiling to justify cutting an additional spell.
