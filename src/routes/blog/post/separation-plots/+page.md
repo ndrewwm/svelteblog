@@ -25,6 +25,13 @@ format:
   import BlogHead from "$lib/components/BlogHead.svelte";
 </script>
 
+<style>
+  img {
+    object-fit: scale-down;
+    max-width: 100%;
+  }
+</style>
+
 <BlogHead title={title} date={date} />
 
 Ever since I first started learning about regression analysis, I found

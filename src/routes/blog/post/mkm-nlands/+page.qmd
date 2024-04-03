@@ -26,6 +26,13 @@ format:
   import BlogHead from "$lib/components/BlogHead.svelte";
 </script>
 
+<style>
+  img {
+    object-fit: scale-down;
+    max-width: 100%;
+  }
+</style>
+
 <BlogHead title={title} date={date} />
 
 I'm playing in the MKM Arena Open tomorrow; the day 2 event is best-of-three (Bo3) draft. A classic question for a given limited format in Magic is how many lands a player should be running in their list. This isn't a simple question to answer, and depends on the kind of deck that's been drafted. However, I wanted to see if there were any patterns that have emerged over the lifetime of the set since it was released last month.

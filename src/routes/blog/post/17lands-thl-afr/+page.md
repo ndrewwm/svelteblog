@@ -25,6 +25,13 @@ format:
   import BlogHead from "$lib/components/BlogHead.svelte";
 </script>
 
+<style>
+  img {
+    object-fit: scale-down;
+    max-width: 100%;
+  }
+</style>
+
 <BlogHead title={title} date={date} />
 
 While I don’t think I’ve previously posted about it here, I’ve been a

@@ -11,6 +11,7 @@
   <div class="header">
     <Header />
   </div>
+  <br>
   <main>
     <slot />
   </main>

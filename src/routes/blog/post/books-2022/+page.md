@@ -36,6 +36,8 @@ This was given to me as a Christmas gift. I remember finding out the author (Whe
 
 ### *Dune Messiah*, Frank Herbert
 
+I read *Dune* for the first time in 2021.
+
 ### *Children of Dune*, Frank Herbert
 
 ### *The Korean War: A History*, Bruce Cummings

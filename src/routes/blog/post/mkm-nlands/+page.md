@@ -26,6 +26,13 @@ format:
   import BlogHead from "$lib/components/BlogHead.svelte";
 </script>
 
+<style>
+  img {
+    object-fit: scale-down;
+    max-width: 100%;
+  }
+</style>
+
 <BlogHead title={title} date={date} />
 
 I’m playing in the MKM Arena Open tomorrow; the day 2 event is
