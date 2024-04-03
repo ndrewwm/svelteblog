@@ -5,6 +5,7 @@ date: "2023-07-01"
 slug: sample-post
 summary: |
   Working on understanding how to mingle content from Quarto into sveltekit.
+draft: true
 knitr:
   opts_knit: 
     base.url: "/"
@@ -302,7 +303,11 @@ ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
 
     Warning: Removed 2 rows containing missing values (`geom_point()`).
 
-![](./+page_files/unnamed-chunk-7-1.png)
+<figure>
+<img src="./+page_files/unnamed-chunk-7-1.png"
+data-fig-alt="Maybe some alt-text?" alt="This is the caption." />
+<figcaption aria-hidden="true">This is the caption.</figcaption>
+</figure>
 
 ``` r
 ggplot(penguins, aes(x = flipper_length_mm)) +
@@ -311,7 +316,11 @@ ggplot(penguins, aes(x = flipper_length_mm)) +
 
     Warning: Removed 2 rows containing non-finite values (`stat_density()`).
 
-![](./+page_files/unnamed-chunk-7-2.png)
+<figure>
+<img src="./+page_files/unnamed-chunk-7-2.png"
+data-fig-alt="Maybe some alt-text?" alt="This is the caption." />
+<figcaption aria-hidden="true">This is the caption.</figcaption>
+</figure>
 
 ``` r
 ggplot(penguins, aes(x = flipper_length_mm)) +
@@ -324,7 +333,11 @@ ggplot(penguins, aes(x = flipper_length_mm)) +
 
     Warning: Removed 2 rows containing non-finite values (`stat_bin()`).
 
-![](./+page_files/unnamed-chunk-7-3.png)
+<figure>
+<img src="./+page_files/unnamed-chunk-7-3.png"
+data-fig-alt="Maybe some alt-text?" alt="This is the caption." />
+<figcaption aria-hidden="true">This is the caption.</figcaption>
+</figure>
 
 ``` r
 ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
@@ -339,7 +352,11 @@ ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
     Warning: Removed 2 rows containing non-finite values (`stat_smooth()`).
     Removed 2 rows containing missing values (`geom_point()`).
 
-![](./+page_files/unnamed-chunk-7-4.png)
+<figure>
+<img src="./+page_files/unnamed-chunk-7-4.png"
+data-fig-alt="Maybe some alt-text?" alt="This is the caption." />
+<figcaption aria-hidden="true">This is the caption.</figcaption>
+</figure>
 
 ``` r
 ggplot(penguins, aes(x = flipper_length_mm)) +
@@ -353,7 +370,11 @@ ggplot(penguins, aes(x = flipper_length_mm)) +
 
     Warning: Removed 2 rows containing non-finite values (`stat_bin()`).
 
-![](./+page_files/unnamed-chunk-7-5.png)
+<figure>
+<img src="./+page_files/unnamed-chunk-7-5.png"
+data-fig-alt="Maybe some alt-text?" alt="This is the caption." />
+<figcaption aria-hidden="true">This is the caption.</figcaption>
+</figure>
 
 Sick, this is working now.[^4]
 

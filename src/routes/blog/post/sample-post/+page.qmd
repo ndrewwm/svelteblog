@@ -5,6 +5,7 @@ date: "2023-07-01"
 slug: sample-post
 summary: |
   Working on understanding how to mingle content from Quarto into sveltekit.
+draft: true
 knitr:
   opts_knit: 
     base.url: "/"
@@ -157,6 +158,9 @@ ggplot(mtcars, aes(x = factor(cyl), y = mpg)) + geom_boxplot()
 Here's another plot.
 
 ```{r, dev = "png", dev.args=list(bg="transparent")}
+#| fig-cap: "This is the caption."
+#| fig-alt: "Maybe some alt-text?"
+
 library(palmerpenguins)
 
 ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
