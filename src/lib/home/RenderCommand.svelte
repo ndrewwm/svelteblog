@@ -1,0 +1,107 @@
+<script lang="ts">
+  import About from "./About.svelte";
+  import Blog from "./Blog.svelte";
+  import Consulting from "./Consulting.svelte";
+  import Contact from "./Contact.svelte";
+  import Cv from "./Cv.svelte";
+  import Now from "./Now.svelte";
+  import Website from "./Website.svelte";
+
+  let availableCommands = [
+    "now",
+    "about",
+    "blog",
+    "contact",
+    "cv",
+    "website",
+    "consulting",
+    "projects",
+    "all",
+    "help",
+    "clear",
+    // "goto",
+  ];
+
+  export let terminalPrompt: string;
+  export let command: string;
+</script>
+
+<div class="terminal-command-record">
+  <span class="prompt">{terminalPrompt}</span>
+  <span>{command}</span>
+</div>
+
+<div class="terminal-command-output">
+  <br />
+  {#if !availableCommands.includes(command)}
+    <div style="color: red;">command not found: <strong>{command}</strong></div>
+    <div>Type 'help' to view a list of available commands.</div>
+  {/if}
+
+  {#if command === "help"}
+    <span class="command-list">
+      {#each availableCommands as command}
+        {#if ["help", "all", "clear"].includes(command)}
+          <div style="font-weight: bolder;">{command}</div>
+        {:else}
+          <div>{command}</div>
+        {/if}
+      {/each}
+    </span>
+  {/if}
+
+  {#if command === "now"}
+    <Now />
+  {/if}
+
+  {#if command === "about"}
+    <About />
+  {/if}
+
+  {#if command === "blog"}
+    <Blog />
+  {/if}
+
+  {#if command === "contact"}
+    <Contact />
+  {/if}
+
+  {#if command === "consulting"}
+    <Consulting />
+  {/if}
+
+  {#if command === "cv"}
+    <Cv />
+  {/if}
+
+  {#if command === "website"}
+    <Website />
+  {/if}
+
+  {#if command === "all"}
+    <About section={true} />
+    <Now section={true} />
+    <Blog section={true} />
+    <Contact section={true} />
+    <!-- <Consulting /> -->
+    <Website section={true} />
+  {/if}
+
+  <br />
+</div>
+
+<style>
+  .terminal-command-output {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .command-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .command-list > div {
+    margin-right: 10px;
+  }
+</style>
