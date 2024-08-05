@@ -8,6 +8,5 @@
 <style>
   body {
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 5vw;
   }
 </style>

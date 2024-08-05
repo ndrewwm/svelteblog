@@ -10,6 +10,5 @@
   main {
     padding-left: 20px;
     padding-right: 60px;
-    max-width: 80%;
   }
 </style>

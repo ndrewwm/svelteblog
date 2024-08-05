@@ -9,6 +9,9 @@
   let terminalInputPrompt: HTMLInputElement;
 
   function enterCommand() {
+    // A bit more friendly to clear out the whitespace
+    terminalCommand = terminalCommand.trim();
+
     if (terminalCommand === "") {
       return;
     }
@@ -33,7 +36,7 @@
     <p>Type 'help' to view a list of available commands.</p>
   </div>
 
-  <div class="terminal-history" style="overflow-y: scroll;">
+  <div class="terminal-history">
     {#key terminalHistory}
       {#each terminalHistory as command}
         <RenderCommand {terminalPrompt} {command} />
@@ -51,6 +54,7 @@
         spellcheck="false"
         autocomplete="off"
         autocapitalize="off"
+        autofocus
       />
       <input type="submit" hidden />
     </form>
@@ -69,7 +73,7 @@
     font-family: inherit;
     font-size: inherit;
     font-weight: bolder;
-    width: 90%;
+    /* width: 90%; */
     caret-color: #EFCB68;
     caret-shape: block;
   }
