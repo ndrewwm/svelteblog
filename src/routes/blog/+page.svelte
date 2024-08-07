@@ -6,7 +6,7 @@
   <title>blog | ndrewwm</title>
 </head>
 
-<h1>blog</h1>
+<h1><a href="/">andrew w. moore</a> | blog</h1>
 
 <ul>
   {#each data.posts as post}

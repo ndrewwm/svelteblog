@@ -4,6 +4,6 @@
 </script>
 
 <div>
-  <Banner />
-  <Cv section={true} />
+  <Banner sub={"cv"} link={"/cv"} />
+  <Cv />
 </div>
