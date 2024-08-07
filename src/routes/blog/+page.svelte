@@ -20,6 +20,10 @@
 </ul>
 
 <style>
+  li {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
   .postdt {
     font-family: monospace;
     font-weight: bolder;

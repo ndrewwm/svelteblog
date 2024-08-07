@@ -1,0 +1,185 @@
+---
+title: This is a sample .qmd post
+author: Andrew
+date: "2023-07-01"
+slug: sample-post
+summary: |
+  Working on understanding how to mingle content from Quarto into sveltekit.
+draft: true
+knitr:
+  opts_knit: 
+    base.url: "/"
+  opts_chunk:
+    fig.path: "./+page_files/"
+    class-output: qmdresults
+    class-message: qmdmessage
+format:
+  gfm:
+    variant: +yaml_metadata_block
+---
+
+<script>
+  import Summary from "./metadata_getter.svelte";
+  import Head from "$lib/components/Head.svelte";
+</script>
+
+Hello. Today's date is {date}.
+
+<!-- This is just an example of how you can easily bring in components! -->
+<Summary summary="{summary}" />
+
+What have I figured out about using Quarto/Mdsvex?:
+
+1. `fig.path` needs to be set to `"./+page_files/"
+    - you can then use the relativeImages npm package to properly link to output files
+
+2. If you add **both** `fig.cap` and `fig.alt`, plot outputs will be wrapped with a `<figure>` tag. This could be helpful? Maybe the stuff can be styled now...
+
+3. Adding `class-output` and `class-message` to `opts_chunk` wraps R code chunk output/messages with "``` qmdoutput". Not sure how this is then parsed by Mdsvex, but it's something?
+
+4. Layouts ensure you only have to load CSS once?
+
+## Todo
+
+- [x] plot output (relative image paths)
+- [x] how to do math
+- [x] code highlighting
+    - gonna say this is done, 90% of what I've been looking for
+- [ ] asides?
+- [x] footnotes?
+    - had to run `npm add --save-dev remark-footnotes@2.0` in order for this to work
+- [ ] citations?
+- [x] table styling
+    - think I'm happy with this for now, will probably need tuning
+    - using `format = "html"` seems to be really useful for `knitr` tables
+- [x] ggplot theme
+    - where to store? `assets/`?
+
+## Styles?
+
+Can we add styles?
+
+Hell yes we can.
+
+## Testing output/rendering
+
+Here is a quote:
+
+> The asphault city is my home. Furnished
+> 
+> From the outset with every sacramental prerequisite:
+> 
+> With newspapers. And tobacco. And brandy.
+> 
+> Distrustful and idle and contented to the end.
+
+### Math
+
+Here is some math.[^1]
+
+$$
+\int_0^1 x^3 + \theta x^2\ dx
+$$
+
+::: {.column-margin}
+We know from *the first fundamental theorem of calculus* that for $x$ in $[a, b]$:
+
+$\frac{d}{dx}\left( \int_{a}^{x} f(u)\ du\right)=f(x)$.
+:::
+
+Note that Math can also be inline, like this: $y = \beta_0 + \beta_1 x_1 + \epsilon$.
+
+### Code output
+
+```{r}
+library(tidyverse)
+
+source("../../assets/theme-ndrewwm.R")
+```
+
+```{r}
+summary(airquality)
+```
+
+Some more output.^[Pay this no mind.]
+
+```{r}
+lm(mpg ~ wt + cyl, data = mtcars) |> summary()
+```
+
+### Tables
+
+Here's a simple table.
+
+```{r}
+mtcars |>
+  group_by(vs) |>
+  summarize(m = mean(mpg), s = sd(mpg)) |>
+  knitr::kable(digits = 2)
+```
+
+Here are a few that are larger.
+
+```{r}
+library(palmerpenguins)
+
+fit <- lm(flipper_length_mm ~ bill_length_mm + body_mass_g + sex + species, data = penguins)
+
+fit |>
+  broom::tidy() |>
+  knitr::kable(
+    digits = 2,
+    caption = "These are regression coefficients, and associated standard errors.",
+    format = "html"
+  )
+
+fit |> broom::glance() |> knitr::kable(digits = 2)
+```
+
+### Plots
+
+Plots are messy though.^[Hey, you can also create in-line footnotes. They seem super convenient.]
+
+```{r, dev = "png", dev.args=list(bg="transparent")}
+#| fig-align: center
+#| fig-cap: "This is the caption."
+#| fig-alt: "Maybe some alt-text?"
+
+theme_set(theme_ndrewwm())
+ 
+ggplot(mtcars, aes(x = factor(cyl), y = mpg)) + geom_boxplot()
+```
+
+Here's another plot.
+
+```{r, dev = "png", dev.args=list(bg="transparent")}
+#| fig-cap: "This is the caption."
+#| fig-alt: "Maybe some alt-text?"
+
+library(palmerpenguins)
+
+ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
+  geom_point()
+
+ggplot(penguins, aes(x = flipper_length_mm)) +
+  geom_density()
+
+ggplot(penguins, aes(x = flipper_length_mm)) +
+  geom_histogram()
+
+ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+
+ggplot(penguins, aes(x = flipper_length_mm)) +
+  geom_histogram() +
+  facet_wrap(~island)
+```
+
+Sick, this is working now.[^2]
+
+[^1]: There might be footnotes.
+
+[^2]: You could consider writing something that's incredibly long as a footnote.
+
+    These long footnotes could even span multiple paragraphs. However, note that new paragraphs need to be indented.
