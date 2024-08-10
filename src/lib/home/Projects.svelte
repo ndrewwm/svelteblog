@@ -18,7 +18,7 @@
   <ul>
     <li>
       <a href="https://github.com/ndrewwm/riddles-and-wyverns-client">Riddles & Wyverns:</a>
-      a browser-based trivia game, based on
+      a browser-based trivia game, inspired by
       <a href="https://en.wikipedia.org/wiki/Quiz_%26_Dragons:_Capcom_Quiz_Game">Quizzes & Dragons.</a>
       Very much a WIP; the game is currently unhosted, and isn't ready to be played.
     </li>
