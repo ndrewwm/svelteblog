@@ -11,5 +11,8 @@ export async function GET() {
     .limit(10)
     .all();
 
-  return json(rows);
+  return json(
+    rows,
+    { headers: { 'cache-control': 'public, max-age=7200' } }
+  );
 }
