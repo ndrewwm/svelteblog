@@ -1,13 +1,18 @@
 import { db } from "$lib/server/database/getClient";
-import { rptTrackCounts } from "$lib/server/database/schema";
+import { rptTrackCounts, fctTrackPlays } from "$lib/server/database/schema";
 import { desc } from "drizzle-orm";
 
-export async function load() {
-  const rows = await db
+export async function load({ fetch }) {
+  const artists = await fetch("/api/spotify/recent_artists");
+
+  const popu = await db
     .select()
-    .from(rptTrackCounts)
-    .orderBy(desc(rptTrackCounts.plays))
+    .from(fctTrackPlays)
+    .orderBy(desc(fctTrackPlays.played_at))
     .all();
 
-  return { rows };
+  return {
+    artists: await artists.json(),
+    popularity: popu,
+  };
 }
