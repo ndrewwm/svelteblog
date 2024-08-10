@@ -28,3 +28,9 @@
     </li>
   </ul>
 </div>
+
+<style>
+  li {
+    margin-bottom: 2vh;
+  }
+</style>
