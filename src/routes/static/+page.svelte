@@ -8,8 +8,9 @@
   import Website from "$lib/home/Website.svelte";
 </script>
 
+<Banner />
+
 <div>
-  <Banner />
   <About section={true} />
   <br>
   <Now section={true} />
@@ -22,3 +23,9 @@
   <br>
   <Website section={true} />
 </div>
+
+<style>
+  div {
+    font-size: small;
+  }
+</style>
