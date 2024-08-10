@@ -28,22 +28,27 @@
 
   export let terminalPrompt: string;
   export let command: string;
-  let cmd, args;
+  let cmd: string, args: string;
   
+  // Hack to allow the `--artists` option
+  // Not very scalable to other commands...
   if (command.includes(" ")) {
     [cmd, args] = command.split(" ");
-    command = cmd;
+    if (cmd == "tracks") {
+      command = cmd;
+    }
   }
 </script>
 
 <div class="terminal-command-record">
   <span class="prompt">{terminalPrompt}</span>
   <span>{command}</span>
-  {#if args !== undefined}
+  {#if args !== undefined && command == "tracks"}
     {" " + args}
   {/if}
 </div>
 
+<!-- The huge set of {#if} blocks is not the most elegant :/ -->
 <div class="terminal-command-output">
   <br />
   {#if !availableCommands.includes(command)}

@@ -9,7 +9,8 @@
 <div>
   <p>
     These are the top 10 tracks I've been listening to on Spotify over the <strong>past 30 days.</strong> My top 10
-    artists can be listed by typing: <strong>tracks --artists</strong>
+    artists can be listed by typing: <strong>tracks --artists</strong>. For further visualizations, you can visit 
+    my <a href="/projects/spotify">projects</a> page.
   </p>
 
   {#await getTracks()}
