@@ -5,6 +5,9 @@
   import Contact from "./Contact.svelte";
   import Cv from "./Cv.svelte";
   import Now from "./Now.svelte";
+  import Projects from "./Projects.svelte";
+  import Tracks from "./Tracks.svelte";
+  import TracksArtists from "./TracksArtists.svelte";
   import Website from "./Website.svelte";
 
   let availableCommands = [
@@ -16,6 +19,7 @@
     "website",
     "consulting",
     "projects",
+    "tracks",
     "all",
     "help",
     "clear",
@@ -24,11 +28,20 @@
 
   export let terminalPrompt: string;
   export let command: string;
+  let cmd, args;
+  
+  if (command.includes(" ")) {
+    [cmd, args] = command.split(" ");
+    command = cmd;
+  }
 </script>
 
 <div class="terminal-command-record">
   <span class="prompt">{terminalPrompt}</span>
   <span>{command}</span>
+  {#if args !== undefined}
+    {" " + args}
+  {/if}
 </div>
 
 <div class="terminal-command-output">
@@ -72,6 +85,18 @@
 
   {#if command === "cv"}
     <Cv />
+  {/if}
+
+  {#if command === "projects"}
+    <Projects />
+  {/if}
+
+  {#if command == "tracks"}
+    {#if args === "--artists"}
+      <TracksArtists />
+    {:else}
+      <Tracks />
+    {/if}
   {/if}
 
   {#if command === "website"}
