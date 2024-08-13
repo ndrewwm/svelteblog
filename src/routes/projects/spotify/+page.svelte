@@ -1,30 +1,30 @@
 <script>
   import Banner from '$lib/home/Banner.svelte';
-  import ObservablePlot from '$lib/util/ObservablePlot.svelte';
-  import * as Plot from "@observablehq/plot";
+  import BarTopArtists from './BarTopArtists.svelte';
+  import BoxPlots from './BoxPlots.svelte';
+  import LineAvgPopularity from './LineAvgPopularity.svelte';
+  import TotalCounters from './TotalCounters.svelte';
 
   export let data;
-  let artists = data.artists;
 </script>
 
-<Banner />
+<Banner sub={"Spotify Listening History"} link={"/projects/spotify"} />
 
-<center>
-  <div class="plots">
-    <ObservablePlot fixedWidth={true} options={{
-      title: "Top artists from the past 30 days",
-      marginLeft: 100,
-      y: {label: ""},
-      marks: [
-        Plot.barX(artists, {x: "plays", y: "artists", sort: {y: "-x"}}),
-      ]
-    }} />
+<p>
+  Here are some data visualizations describing my listening history on Spotify. You can read a blog post
+  explaining how I gather this data <a href="/blog/post/spotify-listening-history"> here.</a> Plots are
+  built using <a href="https://observablehq.com/plot/">Observable Plot.</a>
+</p>
+
+<TotalCounters data={data.popularity} />
+
+<h2>Artists</h2>
+
+<BarTopArtists artists={data.artists} />
   
-    <ObservablePlot fixedWidth={true} options={{
-      title: "Popularity",
-      marks: [
-        Plot.rectY(data.popularity, Plot.binX({y: "count"}, {x: "track_popularity"})),
-      ]
-    }} />
-  </div>
-</center>
+<h2>Popularity</h2>
+
+<BoxPlots popularity={data.popularity} />
+
+<!-- <br>
+<LineAvgPopularity popularity={data.popularity} /> -->

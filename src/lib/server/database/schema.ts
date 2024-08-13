@@ -1,6 +1,14 @@
 import { sql } from "drizzle-orm";
 import { text, int, real, sqliteTable } from "drizzle-orm/sqlite-core";
 
+export const dimTrack = sqliteTable("dim_track", {
+  track_id: text("track_id"),
+  album_id: text("album_id"),
+  track_name: text("track_name"),
+  artists: text("artists"),
+  duration_ms: int("duration_ms"),
+});
+
 export const fctTrackPlays = sqliteTable("fct_track_play", {
   play_id: text("play_id"),
   track_id: text("track_id"),
