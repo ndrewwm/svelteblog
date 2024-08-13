@@ -21,8 +21,6 @@
       n_tracks: d => op.distinct(d.track_id),
     })
     .object();
-
-  console.log(summary);
 </script>
 
 <center>
@@ -38,7 +36,7 @@
       <th>minutes played</th>
     </tr>
     <tr>
-      <td style="font-weight: bolder; font-size: x-large;">
+      <td style="font-weight: bolder; font-size: larger;">
         {summary.min.getMonth() + 1}/{summary.min.getFullYear() - 2000} - {summary.max.getMonth() + 1}/{summary.max.getFullYear() - 2000}
       </td>
       <td>

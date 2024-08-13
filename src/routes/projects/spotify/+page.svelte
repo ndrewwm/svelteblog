@@ -8,7 +8,7 @@
   export let data;
 </script>
 
-<Banner sub={"Spotify Listening History"} link={"/projects/spotify"} />
+<Banner sub={"Spotify History"} link={"/projects/spotify"} />
 
 <p>
   Here are some data visualizations describing my listening history on Spotify. You can read a blog post
