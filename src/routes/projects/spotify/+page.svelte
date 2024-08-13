@@ -2,7 +2,7 @@
   import Banner from '$lib/home/Banner.svelte';
   import BarTopArtists from './BarTopArtists.svelte';
   import BoxPlots from './BoxPlots.svelte';
-  import LineAvgPopularity from './LineAvgPopularity.svelte';
+  import HistPopularity from './HistPopularity.svelte';
   import TotalCounters from './TotalCounters.svelte';
 
   export let data;
@@ -12,7 +12,7 @@
 
 <p>
   Here are some data visualizations describing my listening history on Spotify. You can read a blog post
-  explaining how I gather this data <a href="/blog/post/spotify-listening-history"> here.</a> Plots are
+  explaining how I gather this data <a href="/blog/post/spotify-listening-history"> here.</a> Graphics are
   built using <a href="https://observablehq.com/plot/">Observable Plot.</a>
 </p>
 
@@ -24,7 +24,7 @@
   
 <h2>Popularity</h2>
 
+<HistPopularity popularity={data.popularity} />
+
 <BoxPlots popularity={data.popularity} />
 
-<!-- <br>
-<LineAvgPopularity popularity={data.popularity} /> -->

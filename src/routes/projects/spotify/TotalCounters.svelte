@@ -7,7 +7,7 @@
   // Duration
   let durations: number[] = [];
   for (let item of data) {
-    durations.push(item.duration_ms / 60000);
+    durations.push(item.duration_ms / 60000 / 60);
   }
   let total = Math.round(durations.reduce((x, y) => x + y));
 
@@ -33,23 +33,23 @@
       <th># plays</th>
       <th>unique tracks</th>
       <th>unique artists</th>
-      <th>minutes played</th>
+      <th>hours played</th>
     </tr>
     <tr>
-      <td style="font-weight: bolder; font-size: larger;">
-        {summary.min.getMonth() + 1}/{summary.min.getFullYear() - 2000} - {summary.max.getMonth() + 1}/{summary.max.getFullYear() - 2000}
+      <td style="font-weight: bolder; font-size: small;">
+        {summary.min.getMonth() + 1}/{summary.min.getDate()}/{summary.min.getFullYear() - 2000} - {summary.max.getMonth() + 1}/{summary.max.getDate()}/{summary.max.getFullYear() - 2000}
       </td>
       <td>
         <CountUp value={data.length} />
       </td>
       <td>
-        <CountUp value={summary.n_tracks} />
+        <CountUp value={summary.n_tracks} delay={2} />
       </td>
       <td>
         <CountUp value={summary.n_artists} />
       </td>
       <td>
-        <CountUp value={total} delay={1} />
+        <CountUp value={total} delay={100} />
       </td>
     </tr>
   </table>

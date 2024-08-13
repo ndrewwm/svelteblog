@@ -26,14 +26,11 @@
 </script>
 
 <p>
-  Spotify defines <em>popularity</em> as an integer between 0 and 100, with 100 representing a
-  track with the highest possible popularity. Overall, the median popularity value for my
-  listening history is {summary.object().med}.
+  Overall, the median popularity value for my listening history is {summary.object().med}.
 </p>
 
 <center>
   <ObservablePlot fixedWidth={true} options={{
-    title: "Track Popularity",
     marginLeft: 65,
     y: {
       label: "" 
