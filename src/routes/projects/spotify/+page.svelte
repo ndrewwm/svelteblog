@@ -1,5 +1,5 @@
 <script>
-  import Banner from '$lib/home/Banner.svelte';
+  import Banner from '$lib/util/Banner.svelte';
   import BarTopArtists from './BarTopArtists.svelte';
   import BoxPlots from './BoxPlots.svelte';
   import HistPopularity from './HistPopularity.svelte';
@@ -8,7 +8,7 @@
   export let data;
 </script>
 
-<Banner sub={"Spotify History"} link={"/projects/spotify"} />
+<Banner title={"spotify history"} />
 
 <p>
   Here are some data visualizations describing my listening history on Spotify. You can read a blog post

@@ -1,6 +1,6 @@
 <script>
   import About from "$lib/home/About.svelte";
-  import Banner from "$lib/home/Banner.svelte";
+  import Banner from "$lib/util/Banner.svelte";
   import Blog from "$lib/home/Blog.svelte";
   import Consulting from "$lib/home/Consulting.svelte";
   import Contact from "$lib/home/Contact.svelte";

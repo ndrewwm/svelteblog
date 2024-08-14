@@ -1,5 +1,5 @@
 <script>
-  import Banner from "$lib/home/Banner.svelte";
+  import Banner from "$lib/util/Banner.svelte";
   import Head from "$lib/components/Head.svelte";
 </script>
 

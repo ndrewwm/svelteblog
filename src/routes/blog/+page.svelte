@@ -1,37 +1,43 @@
 <script>
+  import Banner from '$lib/util/Banner.svelte';
   export let data;
 </script>
 
-<head>
-  <title>blog | ndrewwm</title>
-</head>
+<Banner title={"blog"} />
 
-<h1><a href="/">andrew w. moore</a> | blog</h1>
+<center>
 
-<ul>
-  {#each data.posts as post}
-    {#if !post.meta.draft}
-      <li>
-        <span class="postdt">{post.meta.date}</span>
-        | <a href={post.path}>{post.meta.title}</a>
-      </li>
-    {/if}
-  {/each}
-</ul>
+  <table>
+    {#each data.posts as post}
+      {#if !post.meta.draft}
+        <tr>
+          <td class="dt">{post.meta.date}</td>
+          <td class="title"><a href={post.path}>{post.meta.title}</a></td>
+        </tr>
+      {/if}
+    {/each}
+  </table>
+</center>
 
 <style>
-  li {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .postdt {
+  .dt {
     font-family: monospace;
     font-weight: bolder;
     font-size: larger;
   }
+  .title {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+  }
+  table {
+    border-style: none;
+  }
+  td {
+    padding: 1vh 1vw 1vh 1vw;
+  }
 
-  li {
-    margin-bottom: 10px;
-    list-style-type: none;
+  @media (width <= 1000px) {
+    table {
+      font-size: small;
+    }
   }
 </style>

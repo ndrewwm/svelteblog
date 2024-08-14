@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import Banner from "$lib/home/Banner.svelte";
+  import Banner from "$lib/util/Banner.svelte";
   import RenderCommand from "$lib/home/RenderCommand.svelte";
 
   let terminalPrompt = "$ ";
