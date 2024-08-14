@@ -5,19 +5,17 @@
 
 <Banner title={"blog"} />
 
-<center>
 
-  <table>
-    {#each data.posts as post}
-      {#if !post.meta.draft}
-        <tr>
-          <td class="dt">{post.meta.date}</td>
-          <td class="title"><a href={post.path}>{post.meta.title}</a></td>
-        </tr>
-      {/if}
-    {/each}
-  </table>
-</center>
+<table>
+  {#each data.posts as post}
+    {#if !post.meta.draft}
+      <tr>
+        <td class="dt">{post.meta.date}</td>
+        <td class="title"><a href={post.path}>{post.meta.title}</a></td>
+      </tr>
+    {/if}
+  {/each}
+</table>
 
 <style>
   .dt {
