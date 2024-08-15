@@ -8,7 +8,7 @@
 
 <style>
   main {
-    padding-left: 20px;
-    padding-right: 60px;
+    max-width: 75ch;
+    margin: 0 auto;
   }
 </style>

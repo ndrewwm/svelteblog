@@ -9,18 +9,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </svelte:head>
 
-<div class="banner">
-  <h1>
-    <a href="/">andrew w. moore</a>
-    {#if title !== ""}
-      {#if link !== ""}
-        | <a href={link}>{title}</a>
-      {:else}
-        |  {title}
-      {/if}
+<h1>
+  <a href="/">andrew w. moore</a>
+  {#if title !== ""}
+    {#if link !== ""}
+      | <a href={link}>{title}</a>
+    {:else}
+      |  {title}
     {/if}
-  </h1>
-</div>
+  {/if}
+</h1>
 
 <style>
   @media (width <= 1000px) {

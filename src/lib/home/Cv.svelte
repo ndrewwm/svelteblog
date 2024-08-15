@@ -18,7 +18,7 @@
 
 <ul>
   <li>Python (pandas, prefect, flask, fastapi)</li>
-  <li>SQL (dbt, Oracle PL-SQL, MS SQL-Server)</li>
+  <li>SQL (dbt, Oracle, Snowflake, MS SQL-Server)</li>
   <li>R (dplyr/tidyverse, devtools)</li>
   <li>JS (Svelte, SvelteKit)</li>
   <li>Statistical analysis (R, SAS, SPSS)</li>
@@ -30,47 +30,61 @@
 
 <ul>
   <li>
-    <strong>Senior Data Engineer</strong> | University of Colorado-Boulder, Office of Information Technology
+    <strong>Senior Data Engineer</strong>
+    <br>
+    University of Colorado-Boulder, Office of Information Technology
     <br>
     April 2024 to present
   </li>
   <br>
 
   <li>
-    <strong>Data Engineer</strong> | University of Colorado-Boulder, Office of Information Technology
+    <strong>Data Engineer</strong>
+    <br>
+    University of Colorado-Boulder, Office of Information Technology
     <br>
     January 2023 to April 2024
   </li>
   <br>
 
   <li>
-    <strong>Data Warehouse Developer</strong> | Boise State University, Office of Information Technology
+    <strong>Data Warehouse Developer</strong>
+    <br>
+    Boise State University, Office of Information Technology
     <br>
     July 2021 to December 2022
   </li>
   <br>
 
   <li>
-    <strong>Institutional Research Analyst</strong> | Boise State University, Office of Institutional Research
+    <strong>Institutional Research Analyst</strong>
+    <br>
+    Boise State University, Office of Institutional Research
     <br>
     January 2020 to July 2021
   </li>
   <br>
   
-  <li><strong>Data Analyst</strong> | University of Michigan, School of Social Work
+  <li><strong>Data Analyst</strong>
+    <br>
+    University of Michigan, School of Social Work
     <br>
     November 2015 to December 2019
   </li>
   <br>
 
-  <li><strong>Lab Manager & Research Technician</strong> | University of Michigan, Department of Psychology
+  <li><strong>Lab Manager & Research Technician</strong>
+    <br>
+    University of Michigan, Department of Psychology
     <br>
     June 2014 to November 2015
   </li>
   <br>
 
   <li>
-    <strong>Survey Technician</strong> | University of Michigan, Survey Research Center
+    <strong>Survey Technician</strong>
+    <br>
+    University of Michigan, Survey Research Center
     <br>
     May 2013 to June 2014
   </li>
@@ -121,6 +135,9 @@
 </ul>
 
 <style>
+  ul {
+    padding-left: 0;
+  }
   li {
     list-style-type: none;
   }

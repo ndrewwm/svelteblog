@@ -5,7 +5,6 @@
 
 <Banner title={"blog"} />
 
-
 <table>
   {#each data.posts as post}
     {#if !post.meta.draft}

@@ -126,6 +126,10 @@
     padding-right: 16px;
   }
 
+  .terminal-command-record, .terminal-command-output {
+    font-family: monospace;
+  }
+
   .command-list {
     display: flex;
     flex-wrap: wrap;
