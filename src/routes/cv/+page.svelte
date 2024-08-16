@@ -4,6 +4,6 @@
 </script>
 
 <div>
-  <Banner title={"cv"} link={"/cv"} />
+  <Banner title={"cv"} />
   <Cv />
 </div>

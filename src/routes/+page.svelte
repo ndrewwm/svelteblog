@@ -40,41 +40,45 @@
   }
 </script>
 
-<div class="terminal-content">
-  <div class="terminal-history" bind:this={divTerminalHistory} style="height: 700px; overflow: auto;">
-    <Banner />
-    <div class="terminal-welcome-message">
-      <p>Welcome to my site! (If you'd like a static view of this page, please <a href="/static">go here.</a>)</p>
-      <p>Type 'help' to view a list of available commands.</p>
-    </div>
+<div class="terminal-history" bind:this={divTerminalHistory}>
+  <Banner />
 
-    {#key terminalHistory}
-      {#each terminalHistory as command}
-        <RenderCommand {terminalPrompt} {command} />
-      {/each}
-    {/key}
+  <div class="terminal-welcome-message">
+    <p>Welcome to my site! (If you'd like a static view of this page, please <a href="/static">go here.</a>)</p>
+    <p>Type 'help' to view a list of available commands.</p>
+  </div>
 
-    <div class="terminal-input-prompt" bind:this={terminalInputPrompt}>
-      <form on:submit={enterCommand}>
-        <span class="prompt" style="color: #EFCB68;">{terminalPrompt}</span>
-        <input
-          type="text"
-          class="terminal-input"
-          bind:value={terminalCommand}
-          spellcheck="false"
-          autocomplete="off"
-          autocapitalize="off"
-          autofocus
-        />
-        <input type="submit" hidden />
-      </form>
-    </div>
+  {#key terminalHistory}
+    {#each terminalHistory as command}
+      <RenderCommand {terminalPrompt} {command} />
+    {/each}
+  {/key}
+
+  <div class="terminal-input-prompt" bind:this={terminalInputPrompt}>
+    <form on:submit={enterCommand}>
+      <span class="prompt" style="color: #EFCB68;">{terminalPrompt}</span>
+      <input
+        type="text"
+        class="terminal-input"
+        bind:value={terminalCommand}
+        spellcheck="false"
+        autocomplete="off"
+        autocapitalize="off"
+        autofocus
+      />
+      <input type="submit" hidden />
+    </form>
   </div>
 </div>
 
 <style>
   .terminal-welcome-message, .terminal-input-prompt {
     font-family: monospace;
+  }
+
+  .terminal-history {
+    height: 700px;
+    overflow: auto;
   }
 
   .terminal-input {
