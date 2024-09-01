@@ -12,7 +12,7 @@ format:
     variant: +yaml_metadata_block
 ---
 
-# thanks & goodbye, blogdown
+# Thanks & goodbye, blogdown
 
 For years, I've maintained my personal site using [blogdown](https://github.com/rstudio/blogdown), a Hugo-based static site generator. For almost everything, blogdown worked great for me. It allowed me to write in markdown and mingle written content with output from code. But over the past few years, I've been dabbling more with JS and HTML/CSS. I've wanted to explore more dynamic/interactive data visualizations/projects, and leveraging a "real" framework for web development seemed like a natural step. I landed on [SvelteKit](https://kit.svelte.dev) as my framework of choice, appreciating its file-based routing system and its minimalist approach. I first learned about the framework by stumbling across a video from [the Pudding](https://www.youtube.com/watch?v=7y6MIXZumd8&list=PLsuhXm2zs07LgUWm2AehKSaCKtC_3-Vld), watching one of their web developers live-code the rebuilding of their website. Here are a handful of reasons why I decided to make the jump:
 
@@ -89,6 +89,6 @@ source("../assets/theme-ndrewwm.r")
 theme_set(theme_ndrewwm())
 ```
 
-It's cool to have a coherent theme! I've never had one before, but it also makes me feel slightly nervous. Plots from `ggplot2` are static, so if I end up changing the site's palette, I'd have to rebuild all of the posts that include a plot. I plan on using Observable Plot in more places (whose elements can be controlled via CSS), but for most of what I'm migrating now, change isn't free.
+I've never had a dedicated theme for plotting before, and it was fun to put one together. At the same time, I feel slightly nervous. Plots from `ggplot2` are static, so if I end up changing the site's palette, I'd have to rebuild all of the posts that include a plot. I plan on using Observable Plot in more places (whose elements can be controlled via CSS), but for most of what I'm migrating now, change isn't free.
 
 Please checkout my site's [repo](https://github.com/ndrewwm/svelteblog) if you're interested in seeing how I've configured things. I'm planning on creating a "credits" page or a "design" page in which I list the resources that helped me get started.
