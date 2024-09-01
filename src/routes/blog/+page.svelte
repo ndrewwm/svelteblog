@@ -1,5 +1,6 @@
 <script>
   import Banner from '$lib/util/Banner.svelte';
+  import dayjs from 'dayjs';
   export let data;
 </script>
 
@@ -9,7 +10,7 @@
   {#each data.posts as post}
     {#if !post.meta.draft}
       <tr>
-        <td class="dt">{post.meta.date}</td>
+        <td class="dt">{dayjs(post.meta.date).format("YY.MM.DD")}</td>
         <td class="title"><a href={post.path}>{post.meta.title}</a></td>
       </tr>
     {/if}

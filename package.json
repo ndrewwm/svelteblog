@@ -30,6 +30,7 @@
 		"@libsql/client": "^0.7.0",
 		"@observablehq/plot": "^0.6.16",
 		"arquero": "^6.0.1",
+		"dayjs": "^1.11.13",
 		"dotenv": "^16.3.1",
 		"drizzle-orm": "^0.32.1",
 		"katex": "^0.16.8",
