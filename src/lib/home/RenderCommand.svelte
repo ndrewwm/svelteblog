@@ -17,7 +17,7 @@
     "contact",
     "cv",
     "website",
-    "consulting",
+    // "consulting",
     "projects",
     "tracks",
     "all",
@@ -84,9 +84,9 @@
     <Contact />
   {/if}
 
-  {#if command === "consulting"}
+  <!-- {#if command === "consulting"}
     <Consulting />
-  {/if}
+  {/if} -->
 
   {#if command === "cv"}
     <Cv />

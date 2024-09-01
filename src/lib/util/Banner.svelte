@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let title: str = "";
+  export let title: string = "";
   export let link: string = "";
   let page_title = 'ndrewwm' + (title !== "" ? ` | ${title}` : "");
 </script>
@@ -11,13 +11,14 @@
 
 <h1>
   <a href="/">andrew w. moore</a>
+  <span style="font-size: smaller;">
   {#if title !== ""}
     {#if link !== ""}
       | <a href={link}>{title}</a>
     {:else}
       |  {title}
     {/if}
-  {/if}
+  {/if}</span>
 </h1>
 
 <style>
