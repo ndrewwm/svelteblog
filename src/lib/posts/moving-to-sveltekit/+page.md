@@ -12,7 +12,9 @@ format:
     variant: +yaml_metadata_block
 ---
 
-For years, I've maintained my personal site using [blogdown](https://github.com/rstudio/blogdown), a Hugo-based static site generator. For almost everything, blogdown worked great for me. It allowed me to write in markdown and mingle written content with output from code. But over the past few years, I've been dabbling more with JS and HTML/CSS. I've wanted to explore more dynamic/interactive data visualizations/projects, and leveraging a "real" framework for web development seemed like a natural step. I landed on [SvelteKit](https://kit.svelte.dev) as my framework of choice, appreciating its file-based routing system and its minimalist approach. I first learned about the framework by stumbling across a video from [the Pudding](https://www.youtube.com/watch?v=7y6MIXZumd8&list=PLsuhXm2zs07LgUWm2AehKSaCKtC_3-Vld), watching one of their web developers live-codes the rebuilding of their website. Here are a handful of reasons why I decided to make the jump:
+# thanks & goodbye, blogdown
+
+For years, I've maintained my personal site using [blogdown](https://github.com/rstudio/blogdown), a Hugo-based static site generator. For almost everything, blogdown worked great for me. It allowed me to write in markdown and mingle written content with output from code. But over the past few years, I've been dabbling more with JS and HTML/CSS. I've wanted to explore more dynamic/interactive data visualizations/projects, and leveraging a "real" framework for web development seemed like a natural step. I landed on [SvelteKit](https://kit.svelte.dev) as my framework of choice, appreciating its file-based routing system and its minimalist approach. I first learned about the framework by stumbling across a video from [the Pudding](https://www.youtube.com/watch?v=7y6MIXZumd8&list=PLsuhXm2zs07LgUWm2AehKSaCKtC_3-Vld), watching one of their web developers live-code the rebuilding of their website. Here are a handful of reasons why I decided to make the jump:
 
 1. Svelte feels like HTML, a lot of the time.
     - This appears to be part of the framework's stated philosophy, i.e., making HTML feel like a modern programming language. Being able to use common constructs like loops/conditionals inside of HTML markup has felt flexible and intuitive to me.
@@ -21,9 +23,9 @@ For years, I've maintained my personal site using [blogdown](https://github.com/
     - Most of the time, you'll be happy to rely on the global styles that define how your site looks, but sometimes you need to slip out from under the defaults. Svelte allows developers to configure styling on a *component-by-component basis*. So, if you change the font family for the `<h1>` tag in a component, that change is isolated within that component and doesn't leak anywhere else.
 
 1. As I mentioned, SvelteKit handles routing in a way that feels clean.
-    - Similar to what I was used to in blogdown, SvelteKit encourages you to represent individual pages as directories within a file system. This makes it natural to place supporting components or assets close to the page's markup, which I think is tidy.
+    - Similar to what I was used to in blogdown, SvelteKit has you to represent individual pages as directories within a file system. This makes it natural to place supporting components or assets close to the page's markup, which I think is tidy.
 
-I set out to rebuild my personal site (including its blog), essentially from scratch. I knew I'd want the following features: 1) a route for my blog, 2) a homepage (containing a view of my current resume and background), and 3) a route (or collection of routes) for personal projects. I also knew I wanted to support the following features:
+I set out to rebuild my personal site (including this blog), essentially from scratch. I knew I'd want the following features: 1) a route for the blog, 2) a homepage (containing a view of my current resume and background), and 3) a route (or collection of routes) for personal projects. I also knew I wanted to support the following features:
 
 1. Content authoring using markdown, specifically documents produced using Quarto
 2. Relative image URLs when writing content in markdown
@@ -33,7 +35,7 @@ I set out to rebuild my personal site (including its blog), essentially from scr
 
 # Preprocessing using `mdsvex`
 
-Setting up the site to read `.md` based posts was probably the easiest step. The [`mdsvex`]() package can be used to add preprocessing to your site in its `svelte.config.js` file. Here's what my config looks like:
+Setting up the site to read `.md` based posts was probably the easiest step. The [`mdsvex`](https://mdsvex.pngwn.io/?ref=madewithsvelte.com) package can be used to add preprocessing to your site in its `svelte.config.js` file. Here's what my config looks like:
 
 ```js
 // Imports excluded
