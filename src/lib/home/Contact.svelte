@@ -15,8 +15,8 @@
 <div>
   Here are a few good ways to reach me:
   <ul>
-    <li><a href="">hello@ndrewwm.com</a></li>
-    <li><a href="https://bsky.app/profile/ndrewwm.bsky.social">@ndrewwm</a> on bluesky</li>
+    <li><a href="mailto:hello@ndrewwm.com">hello@ndrewwm.com</a></li>
+    <li><a href="https://bsky.app/profile/ndrewwm.com">@ndrewwm</a> on bluesky</li>
     <li><a href="https://github.com/ndrewwm">@ndrewwm</a> on GitHub</li>
     <li><a href="https://www.linkedin.com/in/ndrewwm/">@ndrewwm</a> on LinkedIn</li>
   </ul>
