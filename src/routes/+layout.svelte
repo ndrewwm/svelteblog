@@ -8,7 +8,7 @@
 
 <style>
   main {
-    max-width: 75ch;
+    max-width: 90ch;
     margin: 0 auto;
   }
 </style>
