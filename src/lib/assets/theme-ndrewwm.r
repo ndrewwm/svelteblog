@@ -20,6 +20,7 @@ theme_ndrewwm <- function() {
   update_geom_defaults("boxplot", aes(fill = txt_main, color = txt_main, alpha = 0.2))
   update_geom_defaults("density", aes(color = txt_main, fill = txt_main, alpha = 0.1))
   update_geom_defaults("bar", aes(color = bg_main, fill = txt_main, alpha = 0.9))
+  update_geom_defaults("col", aes(color = bg_main, fill = txt_main, alpha = 0.9))
   update_geom_defaults("smooth", aes(color = "#EFCB68"))
 
   theme_minimal(base_size = 15) +
