@@ -24,9 +24,6 @@
 </script>
 
 <center>
-  <div class = "container">
-    <!-- <h2>Overall Statistics</h2> -->
-
   <table>
     <tr class="header">
       <th>date range</th>
@@ -60,11 +57,15 @@
     font-size: smaller;
     border-top: none;
     border-bottom: none;
-    min-width: 70vw;
     text-align: center;
   }
 
   th {
     border-bottom: none ;
+  }
+
+  td {
+    padding-left: 3vw;
+    padding-right: 3vw;
   }
 </style>
