@@ -93,6 +93,15 @@ pre {
   color: #E8DDA7;
 }
 
+.token.keyword {
+  color: var(--main-code-txt-color);
+  font-weight: bold;
+}
+
+.token.function {
+  font-style: italic;
+}
+
 /**
  * TABLE FORMATTING
  */

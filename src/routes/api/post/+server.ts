@@ -6,7 +6,6 @@ export async function GET() {
   allPosts.sort((a, b) => {
     return Date.parse(a.meta.date) - Date.parse(b.meta.date);
   });
-  console.log(allPosts);
 
   return json(allPosts);
 }
