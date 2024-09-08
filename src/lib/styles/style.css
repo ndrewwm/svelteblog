@@ -81,8 +81,12 @@ pre {
   min-width: 80%;
 }
 
-.token.operator, .token.punctuation {
+.token.punctuation {
   color: var(--main-code-txt-color);
+}
+
+.token.boolean {
+  color: #87bcde;
 }
 
 .token.comment {
@@ -99,7 +103,8 @@ pre {
 }
 
 .token.function {
-  font-style: italic;
+  /* font-style: italic; */
+  color: #87bcde;
 }
 
 /**
