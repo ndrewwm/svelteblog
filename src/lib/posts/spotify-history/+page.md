@@ -2,7 +2,7 @@
 title: Gathering my listening history from Spotify
 description: Using components of the "modern data stack" to track what I've been listening to on a daily basis.
 author: Andrew Moore
-date: "2024-09-02"
+date: "2024-09-14"
 categories: [spotify, data engineering]
 slug: spotify-history
 format:
@@ -52,7 +52,7 @@ if __name__ == "__main__":
     )
 ```
 
-My team at work uses Prefect for much of its integrations, and I like how lightweight it feels. Ultimately, you're writing Python with some nice enhancements. Decorating functions with `@flow` or `@task` gives you logging within Prefect's UI, automatic retries, and a visualization of task dependencies (which can help you determine which task is responsible in the case of a failure). But, most importantly Prefect provides a framework to *deploy* flows for scheduled or triggered execution. The last part of the snippet above configures a scheduled deployment within Prefect Cloud. We're telling Prefect that it should fetch the deployment's code from a GitHub repo, and that the deployment's flow runs should use a work pool called "Managed Compute". Recently, Prefect rolled out the ability for Cloud users to start running flows on [managed infrastructure](https://docs.prefect.io/3.0/deploy/infrastructure-examples/managed). This makes getting a deployment off the ground incredibly snappy; no need to set up servers or container environments. Their free tier currently includes 10 hours of monthly usage, which has been plenty for my needs.
+My team at work uses Prefect, and I like how lightweight it feels. Ultimately, you're writing Python with some nice enhancements. Decorating functions with `@flow` or `@task` gives you logging within Prefect's UI, automatic retries, and a visualization of task dependencies (which can help you determine which task is responsible in the case of a failure). But, most importantly Prefect provides a framework to *deploy* flows for scheduled or triggered execution. The last part of the snippet above configures a scheduled deployment within Prefect Cloud. We're telling Prefect that it should fetch the deployment's code from a GitHub repo, and that the deployment's flow runs should use a work pool called "Managed Compute". Recently, Prefect rolled out the ability for Cloud users to start running flows on [managed infrastructure](https://docs.prefect.io/3.0/deploy/infrastructure-examples/managed). This makes getting a deployment off the ground incredibly snappy; no need to set up servers or container environments. Their free tier currently includes 10 hours of monthly usage, which has been plenty for my needs.
 
 ### Transformation: using dbt-core to transform raw source data into a relational model
 
