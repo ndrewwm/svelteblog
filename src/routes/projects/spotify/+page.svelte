@@ -12,7 +12,7 @@
 
 <p>
   Here are some data visualizations describing my listening history on Spotify. You can read a blog post
-  explaining how I gather this data <a href="/blog/post/spotify-listening-history"> here.</a> Graphics are
+  explaining how I gather this data <a href="/blog/post/spotify-history"> here.</a> Graphics are
   built using <a href="https://observablehq.com/plot/">Observable Plot.</a>
 </p>
 
@@ -27,4 +27,3 @@
 <HistPopularity popularity={data.popularity} />
 
 <BoxPlots popularity={data.popularity} />
-

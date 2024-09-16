@@ -21,6 +21,19 @@
     .filter(d => d.diff > 30)
     .derive({ set: d => ">30 days old" })
     .concat(recent);
+
+  let histogram = {
+    title: "Popularity of tracks played",
+    marks: [
+      Plot.rectY(out, Plot.binX({y: "count"}, {x: "track_popularity", fill: "set"}))
+    ],
+    color: {
+      legend: true,
+      marginLeft: 300,
+      domain: [">30 days old", "Last 30 days"],
+      range: ["#E1EFE6", "#EFCB68"]
+    },
+  }
 </script>
 
 <p>
@@ -32,17 +45,6 @@
 
 <center>
   <div>
-    <ObservablePlot fixedWidth={true} options={{
-      title: "Popularity of tracks played",
-      marks: [
-        Plot.rectY(out, Plot.binX({y: "count"}, {x: "track_popularity", fill: "set"}))
-      ],
-      color: {
-        legend: true,
-        marginLeft: 300,
-        domain: [">30 days old", "Last 30 days"],
-        range: ["#E1EFE6", "#EFCB68"]
-      },
-    }} />
+    <ObservablePlot fixedWidth={true} options={histogram} />
   </div>
 </center>
