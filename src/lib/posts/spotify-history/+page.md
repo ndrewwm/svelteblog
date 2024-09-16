@@ -2,7 +2,7 @@
 title: Gathering my listening history from Spotify
 description: Using components of the "modern data stack" to track what I've been listening to on a daily basis.
 author: Andrew Moore
-date: "2024-09-14"
+date: "2024-09-16"
 categories: [spotify, data engineering]
 slug: spotify-history
 format:
@@ -144,11 +144,6 @@ So, what's next? As of when I'm writing this, v2.0.0 of the project involved an 
 
 ### Wrap-up and reflections
 
-- Small custom dbt projects (like the one used in this project) might be quite useful as a pattern for different kinds of engineering tasks.
+While being a small personal feature on my site, I think this is my first complete "full stack" project. That is, it spans data collection, modeling, storage, retrieval, and rendering (via a web-based application). I'm happy I've gotten to the point where I can wire up different kinds of code, and serve up results according to my specification (rather than a tool's or template's required format). I have a lot more room to grow and polish on the web-based experience, but executing on a vision from start to finish is satisfying.
 
-- Being able to generate a standalone docs site for your transformations is really nice.
-
-- SQL is more approachable than python.
-
-- You can do the work locally in DuckDB; don't need to use Motherduck necessarily.
-
+Most of the technology I used for this project were things I'd already gathered some familiarity with. However, I do feel like this process helped illustrate a few things I'll mull on for future projects and application at work. First, small dbt projects like the one I used for this project might be a useful pattern for different engineering tasks. My sense is that teams often use dbt to model large chunks of what their organization is working with, but the general approach of writing SQL transformations is fine for a data-project of virtually any size. A dbt project also hands you a baked-in way of documenting and testing your work. You can hand the artifacts from `dbt docs` to service that consumes them, or self-host the docs site on a project's repo (like I did); either will allow you to make a collection of transformations more legible than Python/SQL comments. Second, while I'm working in the cloud with Motherduck, the approach of running small-scale dbt projects on a "local" DuckDB would work well as part of a larger data pipeline. It might be that your customer doesn't need any of the intermediate/staging steps persisted anywhere. In that case, doing all the work in a duckdb file that's deleted when its pod/container is cleaned up seems totally fine.
