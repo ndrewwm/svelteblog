@@ -1,6 +1,7 @@
 ---
 title: Gathering my listening history from Spotify
-description: Using components of the "modern data stack" to track what I've been listening to on a daily basis.
+description: |
+  Using components of the "modern data stack" to track what I've been listening to on a daily basis.
 author: Andrew Moore
 date: "2024-09-16"
 categories: [spotify, data engineering]
