@@ -2,7 +2,7 @@
   export let section = false;
   export let heading = "##";
   export let color = "#EFCB68";
-  let title = "now";
+  let title = "projects";
 </script>
 
 {#if section}

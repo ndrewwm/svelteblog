@@ -5,6 +5,7 @@
   import Consulting from "$lib/home/Consulting.svelte";
   import Contact from "$lib/home/Contact.svelte";
   import Now from "$lib/home/Now.svelte";
+  import Projects from "$lib/home/Projects.svelte";
   import Website from "$lib/home/Website.svelte";
 </script>
 
@@ -19,7 +20,9 @@
   <br>
   <Contact section={true} />
   <br>
-  <Consulting section={true} />
+  <!-- <Consulting section={true} /> -->
+  <!-- <br> -->
+  <Projects section={true} />
   <br>
   <Website section={true} />
 </div>
