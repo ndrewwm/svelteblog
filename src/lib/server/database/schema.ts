@@ -33,7 +33,7 @@ export const rptArtistCounts = sqliteTable("rpt_artist_counts", {
   minutes_played:  real("minutes_played"),
 });
 
-export const rptDiscoveryRate = sqliteTable("rpt_discovery_rate". {
+export const rptDiscoveryRate = sqliteTable("rpt_discovery_rate", {
   year_played: int("year_played"),
   week_played: int("week_played"),
   week_dt: text("week_dt"),
