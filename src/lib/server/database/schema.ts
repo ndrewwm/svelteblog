@@ -32,3 +32,16 @@ export const rptArtistCounts = sqliteTable("rpt_artist_counts", {
   plays: int("plays"),
   minutes_played:  real("minutes_played"),
 });
+
+export const rptDiscoveryRate = sqliteTable("rpt_discovery_rate". {
+  year_played: int("year_played"),
+  week_played: int("week_played"),
+  week_dt: text("week_dt"),
+  plays: int("plays"),
+  uniq_artists: int("uniq_artists"),
+  uniq_tracks: int("uniq_tracks"),
+  new_artists: int("new_artists"),
+  new_tracks: int("new_tracks"),
+  track_discovery_rate: real("track_discovery_rate"),
+  artist_discovery_rate: real("artist_discovery_rate"),
+});
