@@ -16,7 +16,7 @@
   (This is a <a href="https://nownownow.com/about">now page</a>, if you haven't seen one before.)
   <br>
   <br>
-  <span style="font-size: smaller">Updated</span> <span>8/15/2024:</span>
+  <span style="font-size: smaller">Updated</span> <span>9/23/2024:</span>
 
   <ul>
     <li>Living in Boise, ID</li>
