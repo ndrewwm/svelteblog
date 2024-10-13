@@ -1,6 +1,6 @@
 <script>
   async function getArtists() {
-    const resp = await fetch("/api/spotify/recent_artists"); 
+    const resp = await fetch("/api/v2/spotify/recent_artists"); 
     const data = await resp.json();
     return data;
   }

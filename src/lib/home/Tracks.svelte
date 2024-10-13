@@ -1,6 +1,6 @@
 <script>
   async function getTracks() {
-    const resp = await fetch("/api/spotify/recent_tracks"); 
+    const resp = await fetch("/api/v2/spotify/recent_tracks"); 
     const data = await resp.json();
     return data;
   }

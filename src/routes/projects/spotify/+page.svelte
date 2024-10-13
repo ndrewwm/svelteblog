@@ -5,7 +5,16 @@
   import HistPopularity from './HistPopularity.svelte';
   import TotalCounters from './TotalCounters.svelte';
 
-  export let data;
+  async function getData() {
+    const artists = await fetch("/api/v2/spotify/recent_artists");
+    const popu = await fetch("/api/v2/spotify/track_plays");
+    const data = {
+      artists: await artists.json(),
+      popularity: await popu.json(),
+    };
+    return data;
+  }
+  let promise = getData();
 </script>
 
 <Banner title={"spotify history"} />
@@ -16,14 +25,18 @@
   built using <a href="https://observablehq.com/plot/">Observable Plot.</a>
 </p>
 
-<TotalCounters data={data.popularity} />
+{#await promise}
+  Loading ...
+{:then data}   
+  <TotalCounters data={data.popularity} />
 
-<h2>Artists</h2>
+  <h2>Artists</h2>
 
-<BarTopArtists artists={data.artists} />
-  
-<h2>Popularity</h2>
+  <BarTopArtists artists={data.artists} />
+    
+  <h2>Popularity</h2>
 
-<HistPopularity popularity={data.popularity} />
+  <HistPopularity popularity={data.popularity} />
 
-<BoxPlots popularity={data.popularity} />
+  <BoxPlots popularity={data.popularity} />
+{/await}
