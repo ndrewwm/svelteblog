@@ -1,4 +1,5 @@
 <script lang="ts">
+  import dayjs from 'dayjs';
   export let data;
 </script>
 
@@ -15,7 +16,7 @@
   <hgroup>
     <h1>{data.meta.title}</h1>
     <p>
-      {data.meta.date}
+      {dayjs(data.meta.date).format("MMM. DD, YYYY")}
       <a href="/blog" style="text-decoration: underline; font-size: smaller; margin-left: 5px;">
         back
       </a>
