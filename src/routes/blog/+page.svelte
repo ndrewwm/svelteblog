@@ -15,6 +15,10 @@
       </tr>
     {/if}
   {/each}
+  <tr>
+    <td class="dt">00.00.00</td>
+    <td><a href="/blog/disclaimer">Disclaimer</a></td>
+  </tr>
 </table>
 
 <style>
