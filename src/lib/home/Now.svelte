@@ -24,7 +24,7 @@
     <li>I'm learning a lot about CI/CD and Snowflake, primarily through standing up dbt-core at work</li>
     <li>Still practicing a bit of German every day</li>
     <li>Working on my final two lecture courses for my degree: MATH 403 (Linear Algebra) and MATH 465 (Numerical Methods).</li>
-    <li>📖 77% <em>The Way We Never Were: American Families and the Nostalgia Trap</em> Stephanie Coontz (1992)</li>
     <li>📖 61% <em>Butter</em> Asako Yuzuki (2017)</li>
+    <li>📖 89% <em>The Storm Before the Storm: The Beginning of the End of the Roman Republic</em> Mike Duncan (2017)</li>
   </ul>
 </div>

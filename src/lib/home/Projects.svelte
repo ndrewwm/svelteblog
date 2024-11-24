@@ -30,6 +30,13 @@
       <a href="/projects/spotify">Spotify Listening History:</a>
       boutique data project, where I'm tracking my Spotify listening history over time.
     </li>
+    <li>
+      <a href="https://sitrep-prefect.vercel.app/">Prefect Sitrep:</a> this is a small web-app I developed as a proof-of-concept.
+      The app is built to surface status information about Prefect deployments, such as the status
+      of a deployment's most recent run. Integrated within each deployent's page is the ability to
+      raise a GitHub issue that's tied to the deployment, allowing customers to request improvements
+      or report problems. Data is gathered from Prefect's REST API.
+    </li>
   </ul>
 </div>
 
