@@ -2,10 +2,17 @@
   import Banner from '$lib/util/Banner.svelte';
   import BarTopArtists from './BarTopArtists.svelte';
   import BoxPlots from './BoxPlots.svelte';
+  import LineTrackDiscovery from './LineTrackDiscovery.svelte';
   import HistPopularity from './HistPopularity.svelte';
   import TotalCounters from './TotalCounters.svelte';
 
   export let data;
+
+  let cumulative = false;
+  $: text = cumulative ? "Weekly" : "Cumulative";
+  function toggleCumulative() {
+    cumulative = !cumulative;
+  }
 </script>
 
 <Banner title={"spotify history"} />
@@ -21,6 +28,13 @@
 <h2>Artists</h2>
 
 <BarTopArtists artists={data.artists} />
+
+<h2>Discovery Rate</h2>
+
+<button on:click={toggleCumulative} style="margin-bottom: 10px">{text}</button>
+{#key cumulative}
+  <LineTrackDiscovery discovery={data.discovery} {cumulative} />
+{/key}
   
 <h2>Popularity</h2>
 
