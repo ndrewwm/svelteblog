@@ -2,13 +2,13 @@
   import "$lib/styles/style.css";
 </script>
 
-<main>
+<div id="main" class="container">
   <slot />
-</main>
+</div>
 
 <style>
-  main {
+  #main {
     max-width: 90ch;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 </style>

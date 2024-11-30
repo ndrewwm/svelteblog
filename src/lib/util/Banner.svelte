@@ -9,22 +9,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </svelte:head>
 
-<h1>
+<div class="is-size-2 mb-3">
   <a href="/">andrew w. moore</a>
-  <span style="font-size: smaller;">
-  {#if title !== ""}
-    {#if link !== ""}
-      | <a href={link}>{title}</a>
-    {:else}
-      |  {title}
+  <span class="is-size-4">
+    {#if title !== ""}
+      {#if link !== ""}
+        | <a href={link}>{title}</a>
+      {:else}
+        |  {title}
+      {/if}
     {/if}
-  {/if}</span>
-</h1>
-
-<style>
-  @media (width <= 1000px) {
-    h1 {
-      font-size: medium;
-    }
-  }
-</style>
+  </span>
+</div>

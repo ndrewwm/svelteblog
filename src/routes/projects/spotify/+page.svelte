@@ -31,7 +31,7 @@
 
 <h2>Discovery Rate</h2>
 
-<button on:click={toggleCumulative} style="margin-bottom: 10px">{text}</button>
+<button class="button" on:click={toggleCumulative} style="margin-bottom: 10px">{text}</button>
 {#key cumulative}
   <LineTrackDiscovery discovery={data.discovery} {cumulative} />
 {/key}

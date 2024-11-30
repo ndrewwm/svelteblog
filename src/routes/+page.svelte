@@ -40,13 +40,10 @@
   }
 </script>
 
-<div class="terminal-history" bind:this={divTerminalHistory}>
+<div class="block" bind:this={divTerminalHistory}>
   <Banner />
-
-  <div class="terminal-welcome-message">
-    <p>Welcome to my site! (If you'd like a static view of this page, please <a href="/static">go here.</a>)</p>
-    <p>Type 'help' to view a list of available commands.</p>
-  </div>
+  <span class="mt-2">Welcome to my site! (If you'd like a static view of this page, please <a href="/static">go here.</a>)</span>
+  <span class="mb-2">Type 'help' to view a list of available commands.</span>
 
   {#key terminalHistory}
     {#each terminalHistory as command}
@@ -54,7 +51,7 @@
     {/each}
   {/key}
 
-  <div class="terminal-input-prompt" bind:this={terminalInputPrompt}>
+  <div class="block mt-2" bind:this={terminalInputPrompt}>
     <form on:submit={enterCommand}>
       <span class="prompt" style="color: #EFCB68;">{terminalPrompt}</span>
       <input
@@ -69,6 +66,9 @@
       <input type="submit" hidden />
     </form>
   </div>
+</div>
+
+<div class="block">
 </div>
 
 <style>
