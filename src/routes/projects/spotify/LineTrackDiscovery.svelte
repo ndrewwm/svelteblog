@@ -52,7 +52,7 @@
   }
 </script>
 
-<p>
+<p class="mb-3">
   This display shows weekly counts for the number of tracks played and the number of distinct tracks
   appearing for the first time in my listening history.
 </p>
