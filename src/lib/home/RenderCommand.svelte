@@ -40,7 +40,7 @@
   }
 </script>
 
-<div class="terminal-command-record">
+<div id="cmd" class="block mt-2">
   <span class="prompt">{terminalPrompt}</span>
   <span>{command}</span>
   {#if args !== undefined && command == "tracks"}
@@ -49,8 +49,7 @@
 </div>
 
 <!-- The huge set of {#if} blocks is not the most elegant :/ -->
-<div class="terminal-command-output">
-  <br />
+<div class="block pl-5">
   {#if !availableCommands.includes(command)}
     <div style="color: red;">command not found: <strong>{command}</strong></div>
     <div>Type 'help' to view a list of available commands.</div>
@@ -116,25 +115,18 @@
     <!-- <Consulting /> -->
     <Website section={true} />
   {/if}
-
-  <br />
 </div>
 
 <style>
-  .terminal-command-output {
-    padding-left: 16px;
-    padding-right: 16px;
+  #cmd {
+    font-family: "Micro 5";
+    font-size: 24px;
+    color: #EFCB68;
   }
-
-  .terminal-command-record, .terminal-command-output {
-    font-family: monospace;
-  }
-
   .command-list {
     display: flex;
     flex-wrap: wrap;
   }
-
   .command-list > div {
     margin-right: 10px;
   }

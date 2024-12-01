@@ -6,8 +6,9 @@
   }
 </script>
 
-<div>
+<div class="block">
   <p>These are the top 10 artists I've been listening to on Spotify over the <strong>past 30 days.</strong></p>
+  <br>
 
   {#await getArtists()}
     Loading ...
@@ -21,8 +22,8 @@
       {#each artists as artist}
         <tr>
           <td>{artist.artists}</td>
-          <td>{artist.plays}</td>
-          <td>{Math.round(artist.minutes_played)}</td>
+          <td style="text-align: right;">{artist.plays}</td>
+          <td style="text-align: right;">{Math.round(artist.minutes_played)}</td>
         </tr>
       {/each}
     </table>
@@ -31,7 +32,7 @@
 
 <style>
   table {
-    font-size: smaller;
+    /* font-size: smaller; */
     border-top: none;
     border-bottom: none;
   }

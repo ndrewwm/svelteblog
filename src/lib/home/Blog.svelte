@@ -12,7 +12,7 @@
   <br>
 {/if}
 
-<div>
+<div class="block">
   I maintain a blog where I post updates about side-projects and other things I'm working on.
   You can access it <a href="/blog">here.</a>
 </div>

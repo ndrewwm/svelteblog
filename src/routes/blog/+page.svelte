@@ -11,7 +11,7 @@
     {#if !post.meta.draft}
       <tr>
         <td class="dt">{dayjs(post.meta.date).format("YY.MM.DD")}</td>
-        <td class="title"><a href={post.path}>{post.meta.title}</a></td>
+        <td class="post-title"><a href={post.path}>{post.meta.title}</a></td>
       </tr>
     {/if}
   {/each}
@@ -19,12 +19,9 @@
 
 <style>
   .dt {
-    font-family: monospace;
+    font-family: 'Fira Mono';
     font-weight: bolder;
-    font-size: larger;
-  }
-  .title {
-    font-family: Arial, Arial, Helvetica, sans-serif;
+    /* font-size: larger; */
   }
   table {
     border-style: none;

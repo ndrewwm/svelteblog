@@ -6,7 +6,17 @@
   import HistPopularity from './HistPopularity.svelte';
   import TotalCounters from './TotalCounters.svelte';
 
-  export let data;
+  async function getData() {
+    const artists = await fetch("/api/spotify/recent_artists");
+    const popu = await fetch("/api/spotify/track_plays");
+    const discovery = await fetch("/api/spotify/discovery_rate");
+
+    return {
+      artists: await artists.json(),
+      popularity: await popu.json(),
+      discovery: await discovery.json(),
+    };
+  }
 
   let cumulative = false;
   $: text = cumulative ? "Weekly" : "Cumulative";
@@ -17,27 +27,39 @@
 
 <Banner title={"spotify history"} />
 
-<p>
-  Here are some data visualizations describing my listening history on Spotify. You can read a blog post
-  explaining how I gather this data <a href="/blog/post/spotify-history"> here.</a> Graphics are
-  built using <a href="https://observablehq.com/plot/">Observable Plot.</a>
-</p>
+<section class="block">
+  <p class="mb-5">
+    Here are some data visualizations describing my listening history on Spotify. You can read a blog post
+    explaining how I gather this data <a href="/blog/post/spotify-history"> here.</a> Graphics are
+    built using <a href="https://observablehq.com/plot/">Observable Plot.</a>
+  </p>  
+</section>
 
-<TotalCounters data={data.popularity} />
+{#await getData()}
+  <div class="block">
+    <button class="button is-loading">Loading...</button>
+  </div>
+{:then data}
+  <section class="block">
+    <TotalCounters data={data.popularity} />
+  </section>
 
-<h2>Artists</h2>
+  <section class="block">
+    <h1 class="title">Artists</h1>
+    <BarTopArtists artists={data.artists} />
+  </section>
 
-<BarTopArtists artists={data.artists} />
+  <section class="block">
+    <h1 class="title">Discovery Rate</h1>
+    <button class="button" on:click={toggleCumulative} style="margin-bottom: 10px">{text}</button>
+    {#key cumulative}
+      <LineTrackDiscovery discovery={data.discovery} {cumulative} />
+    {/key}
+  </section>
 
-<h2>Discovery Rate</h2>
-
-<button on:click={toggleCumulative} style="margin-bottom: 10px">{text}</button>
-{#key cumulative}
-  <LineTrackDiscovery discovery={data.discovery} {cumulative} />
-{/key}
-  
-<h2>Popularity</h2>
-
-<HistPopularity popularity={data.popularity} />
-
-<BoxPlots popularity={data.popularity} />
+  <section class="block">
+    <h1 class="title">Popularity</h1>
+    <HistPopularity popularity={data.popularity} />
+    <BoxPlots popularity={data.popularity} />
+  </section>
+{/await}

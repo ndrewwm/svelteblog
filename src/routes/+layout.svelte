@@ -2,13 +2,12 @@
   import "$lib/styles/style.css";
 </script>
 
-<main>
+<div id="main" class="container pl-2 pr-2">
   <slot />
-</main>
+</div>
 
 <style>
-  main {
+  #main {
     max-width: 90ch;
-    margin: 0 auto;
   }
 </style>

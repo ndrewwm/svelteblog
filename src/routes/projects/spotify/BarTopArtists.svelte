@@ -5,7 +5,7 @@
   export let artists;
 </script>
 
-<p>
+<p class="mb-3">
   These are some of the artists I've been listening to most frequently. A small caveat is that
   the underlying report currently treats collaborations and remixes as a single "artist". So, a song like
   <a href="https://open.spotify.com/track/4thSyFvS3TQp5lt4x4aG4t?si=b75708ac46384992">
@@ -13,7 +13,7 @@
 </p>
 
 <center>
-  <ObservablePlot fixedWidth={true} options={{
+  <ObservablePlot fixedWidth={false} options={{
     title: "Top artists from the past 30 days",
     marginLeft: 100,
     y: {label: ""},

@@ -40,13 +40,10 @@
   }
 </script>
 
-<div class="terminal-history" bind:this={divTerminalHistory}>
-  <Banner />
-
-  <div class="terminal-welcome-message">
-    <p>Welcome to my site! (If you'd like a static view of this page, please <a href="/static">go here.</a>)</p>
-    <p>Type 'help' to view a list of available commands.</p>
-  </div>
+<Banner />
+<div id="terminal" class="block" bind:this={divTerminalHistory}>
+  <span class="mt-2">Welcome to my site! (If you'd like a static view of this page, please <a href="/static">go here.</a>)</span>
+  <span class="mb-2">Type 'help' to view a list of available commands.</span>
 
   {#key terminalHistory}
     {#each terminalHistory as command}
@@ -54,7 +51,7 @@
     {/each}
   {/key}
 
-  <div class="terminal-input-prompt" bind:this={terminalInputPrompt}>
+  <div class="block mt-2" bind:this={terminalInputPrompt}>
     <form on:submit={enterCommand}>
       <span class="prompt" style="color: #EFCB68;">{terminalPrompt}</span>
       <input
@@ -72,23 +69,19 @@
 </div>
 
 <style>
-  .terminal-welcome-message, .terminal-input-prompt {
-    font-family: monospace;
-  }
-
-  .terminal-history {
-    height: 700px;
+  #terminal {
+    font-family: "Roboto Mono",monospace;
+    /* height: 700px; */
     overflow: auto;
   }
 
-  .terminal-input {
+  .terminal-input, .prompt {
     background-color: transparent;
     border: 0;
     outline: none;
-    font-family: inherit;
-    font-size: inherit;
+    font-family: "Micro 5";
+    font-size: 24px;
     font-weight: bolder;
-    width: 90%;
     caret-color: #EFCB68;
     caret-shape: block;
   }

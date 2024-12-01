@@ -1,30 +1,26 @@
 <script lang="ts">
   export let title: string = "";
-  export let link: string = "";
   let page_title = 'ndrewwm' + (title !== "" ? ` | ${title}` : "");
 </script>
 
 <svelte:head>
   <title>{page_title}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </svelte:head>
 
-<h1>
-  <a href="/">andrew w. moore</a>
-  <span style="font-size: smaller;">
-  {#if title !== ""}
-    {#if link !== ""}
-      | <a href={link}>{title}</a>
-    {:else}
-      |  {title}
+<nav class="block mb-1" aria-label="main navigation">
+  <span id="brand">
+    <a href="/">
+      andrew w. moore
+    </a>
+    {#if title !== ""}
+      | {title}
     {/if}
-  {/if}</span>
-</h1>
+  </span>
+</nav>
 
 <style>
-  @media (width <= 1000px) {
-    h1 {
-      font-size: medium;
-    }
+  #brand {
+    font-family: "Micro 5", monospace;
+    font-size: 40px;
   }
 </style>

@@ -36,7 +36,7 @@
   }
 </script>
 
-<p>
+<p class="mb-3">
   Spotify defines <em>popularity</em> as an integer between 0 and 100, with 100 representing a
   track with the highest possible popularity. Below is a histogram showing the popularity values
   for plays, colored for recency. This distribution reflects the entire set of <em>plays</em> (meaning
@@ -45,6 +45,6 @@
 
 <center>
   <div>
-    <ObservablePlot fixedWidth={true} options={histogram} />
+    <ObservablePlot fixedWidth={false} options={histogram} />
   </div>
 </center>

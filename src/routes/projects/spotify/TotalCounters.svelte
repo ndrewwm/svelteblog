@@ -23,49 +23,45 @@
     .object();
 </script>
 
-<center>
-  <table>
-    <tr class="header">
-      <th>date range</th>
-      <th># plays</th>
-      <th>unique tracks</th>
-      <th>unique artists</th>
-      <th>hours played</th>
-    </tr>
-    <tr>
-      <td style="font-weight: bolder; font-size: small;">
+<nav class="level">
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">date range</p>
+      <p class="title">
         {summary.min.getMonth() + 1}/{summary.min.getDate()}/{summary.min.getFullYear() - 2000} - {summary.max.getMonth() + 1}/{summary.max.getDate()}/{summary.max.getFullYear() - 2000}
-      </td>
-      <td>
+      </p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading"># plays</p>
+      <p class="title">
         <CountUp value={data.length} />
-      </td>
-      <td>
+      </p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">unique tracks</p>
+      <p class="title">
         <CountUp value={summary.n_tracks} delay={2} />
-      </td>
-      <td>
+      </p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">unique artists</p>
+      <p class="title">
         <CountUp value={summary.n_artists} />
-      </td>
-      <td>
+      </p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">hours played</p>
+      <p class="title">
         <CountUp value={total} delay={100} />
-      </td>
-    </tr>
-  </table>
-</center>
-
-<style>
-  table {
-    font-size: smaller;
-    border-top: none;
-    border-bottom: none;
-    text-align: center;
-  }
-
-  th {
-    border-bottom: none ;
-  }
-
-  td {
-    padding-left: 3vw;
-    padding-right: 3vw;
-  }
-</style>
+      </p>
+    </div>
+  </div>
+</nav>

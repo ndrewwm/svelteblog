@@ -12,8 +12,10 @@
   <br>
 {/if}
 
-<div>
-  Here are a few of my personal projects:
+<div class="block">
+  <p class="mb-2">
+    Here are a few of my personal projects:
+  </p>
 
   <ul>
     <li>

@@ -7,23 +7,20 @@
   --main-code-txt-color: #EFCB68;
   --main-console-output: #E8DDA7;
   --console-font-family: "Roboto Mono";
+  --bulma-primary-h: 44deg;
+  --bulma-primary-s: 81%;
+  --bulma-primary-l: 67%;
+  --bulma-family-primary: Roboto,Inter,SF Pro,Segoe UI,Roboto,Oxygen,Ubuntu,Helvetica Neue,Helvetica,Arial,sans-serif;
+  --bulma-body-background-color: #000411;
+  --bulma-body-family: Roboto,Inter,SF Pro,Segoe UI,Roboto,Oxygen,Ubuntu,Helvetica Neue,Helvetica,Arial,sans-serif;
+  --bulma-body-color: #E1EFE6;
+  --bulma-body-line-height: 1.3;
+  --bulma-code-family: Roboto Mono,monospace;
 }
 
 ::selection {
   color: var(--main-bg-color);
   background-color: var(--main-heading-color);
-}
-
-html {
-  min-width: 300px;
-  text-rendering: optimizeLegibility;
-}
-
-body {
-  background-color: var(--main-bg-color);
-  color: var(--main-txt-color);
-  font-family: "Roboto Mono", monospace;
-  line-height: 1.3;
 }
 
 body::-webkit-scrollbar, body::-webkit-scrollbar-corner {
@@ -34,8 +31,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 input {
-  background-color: var(--main-bg-color);
   color: var(--main-heading-color);
+}
+
+ul {
+  padding-left: 25px;
+}
+
+li {
+  list-style-type: disc;
 }
 
 a {
