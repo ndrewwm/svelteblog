@@ -18,8 +18,7 @@
       {data.meta.date} | <a href="/blog">back</a>
     </div>
   </hgroup>
-  <hr>
-
+  <hr class="mt-1 mb-2">
   <div class="content">
     <svelte:component this={data.content} />
   </div>
