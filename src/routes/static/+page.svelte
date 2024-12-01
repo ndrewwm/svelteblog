@@ -11,24 +11,17 @@
 
 <Banner />
 
-<div>
-  <About section={true} />
-  <br>
-  <Now section={true} />
-  <br>
-  <Blog section={true} />
-  <br>
-  <Contact section={true} />
-  <br>
-  <!-- <Consulting section={true} /> -->
-  <!-- <br> -->
-  <Projects section={true} />
-  <br>
-  <Website section={true} />
-</div>
-
-<style>
-  div {
-    font-size: small;
-  }
-</style>
+<About section={true} />
+<br>
+<Now section={true} />
+<br>
+<Blog section={true} />
+<br>
+<Contact section={true} />
+<br>
+<!-- <Consulting section={true} /> -->
+<!-- <br> -->
+<Projects section={true} />
+<br>
+<Website section={true} />
+<br>
