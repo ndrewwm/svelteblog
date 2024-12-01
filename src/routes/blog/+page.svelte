@@ -19,12 +19,9 @@
 
 <style>
   .dt {
-    font-family: monospace;
+    font-family: 'Fira Mono';
     font-weight: bolder;
-    font-size: larger;
-  }
-  .post-title {
-    font-family: Arial, Arial, Helvetica, sans-serif;
+    /* font-size: larger; */
   }
   table {
     border-style: none;

@@ -40,8 +40,8 @@
   }
 </script>
 
-<div class="block" bind:this={divTerminalHistory}>
-  <Banner />
+<Banner />
+<div id="terminal" class="block" bind:this={divTerminalHistory}>
   <span class="mt-2">Welcome to my site! (If you'd like a static view of this page, please <a href="/static">go here.</a>)</span>
   <span class="mb-2">Type 'help' to view a list of available commands.</span>
 
@@ -68,27 +68,20 @@
   </div>
 </div>
 
-<div class="block">
-</div>
-
 <style>
-  .terminal-welcome-message, .terminal-input-prompt {
-    font-family: monospace;
-  }
-
-  .terminal-history {
-    height: 700px;
+  #terminal {
+    font-family: "Roboto Mono",monospace;
+    /* height: 700px; */
     overflow: auto;
   }
 
-  .terminal-input {
+  .terminal-input, .prompt {
     background-color: transparent;
     border: 0;
     outline: none;
-    font-family: inherit;
-    font-size: inherit;
+    font-family: "Micro 5";
+    font-size: 24px;
     font-weight: bolder;
-    width: 90%;
     caret-color: #EFCB68;
     caret-shape: block;
   }

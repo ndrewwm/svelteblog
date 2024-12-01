@@ -12,8 +12,11 @@
   </div>
   <br>
 {/if}
-<div>
-  Here are a few good ways to reach me:
+
+<div class="block">
+  <p class="mb-2">
+    Here are a few good ways to reach me:
+  </p>
   <ul>
     <li><a href="mailto:hello@ndrewwm.com">hello@ndrewwm.com</a></li>
     <li><a href="https://bsky.app/profile/ndrewwm.com">@ndrewwm</a> on bluesky</li>

@@ -9,6 +9,5 @@
 <style>
   #main {
     max-width: 90ch;
-    /* margin: 0 auto; */
   }
 </style>

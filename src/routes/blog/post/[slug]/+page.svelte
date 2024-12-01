@@ -14,12 +14,9 @@
 <article>
   <hgroup>
     <h1>{data.meta.title}</h1>
-    <p>
-      {data.meta.date}
-      <a href="/blog" style="text-decoration: underline; font-size: smaller; margin-left: 5px;">
-        back
-      </a>
-    </p>
+    <div>
+      {data.meta.date} | <a href="/blog">back</a>
+    </div>
   </hgroup>
   <hr>
 
@@ -33,7 +30,16 @@
 <br>
 
 <style>
-  article {
-    font-family: Arial, Helvetica, sans-serif;
+  hgroup, h1 {
+    font-family: "Micro 5";
   }
+  h1 {
+    font-size: 40px;
+  }
+  hgroup > div {
+    font-size: 25px
+  }
+  /* article {
+    font-family: Arial, Helvetica, sans-serif;
+  } */
 </style>

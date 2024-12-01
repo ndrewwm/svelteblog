@@ -13,7 +13,7 @@
 </p>
 
 <center>
-  <ObservablePlot fixedWidth={true} options={{
+  <ObservablePlot fixedWidth={false} options={{
     title: "Top artists from the past 30 days",
     marginLeft: 100,
     y: {label: ""},

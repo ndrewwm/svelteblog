@@ -45,6 +45,6 @@
 
 <center>
   <div>
-    <ObservablePlot fixedWidth={true} options={histogram} />
+    <ObservablePlot fixedWidth={false} options={histogram} />
   </div>
 </center>

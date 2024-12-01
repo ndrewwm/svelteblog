@@ -40,7 +40,7 @@
   }
 </script>
 
-<div class="block mt-2">
+<div id="cmd" class="block mt-2">
   <span class="prompt">{terminalPrompt}</span>
   <span>{command}</span>
   {#if args !== undefined && command == "tracks"}
@@ -118,6 +118,11 @@
 </div>
 
 <style>
+  #cmd {
+    font-family: "Micro 5";
+    font-size: 24px;
+    color: #EFCB68;
+  }
   .command-list {
     display: flex;
     flex-wrap: wrap;

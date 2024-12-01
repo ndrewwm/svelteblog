@@ -30,7 +30,7 @@
 </p>
 
 <center>
-  <ObservablePlot fixedWidth={true} options={{
+  <ObservablePlot fixedWidth={false} options={{
     marginLeft: 65,
     y: {
       label: "" 

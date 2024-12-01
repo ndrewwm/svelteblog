@@ -6,29 +6,30 @@
   }
 </script>
 
-<div>
+<div class="block">
   <p>
     These are the top 10 tracks I've been listening to on Spotify over the <strong>past 30 days.</strong> My top 10
     artists can be listed by typing: <strong>tracks --artists</strong>. For further visualizations, you can visit 
     my <a href="/projects/spotify">projects</a> page.
   </p>
+  <br>
 
   {#await getTracks()}
     Loading ...
   {:then tracks}
     <table>
       <tr class="header">
-        <th>track name</th>
-        <th>artist(s)</th>
-        <th>times played</th>
-        <th>total duration (min.)</th>
+        <th style="text-align: left;">track name</th>
+        <th style="text-align: left;">artist(s)</th>
+        <th style="text-align: right;">times played</th>
+        <th style="text-align: right;">total duration (min.)</th>
       </tr>
       {#each tracks as track}
         <tr>
-          <td>{track.track_name}</td>
-          <td>{track.artists}</td>
-          <td>{track.plays}</td>
-          <td>{Math.round(track.minutes_played)}</td>
+          <td style="text-align: left;">{track.track_name}</td>
+          <td style="text-align: left;">{track.artists}</td>
+          <td style="text-align: right;">{track.plays}</td>
+          <td style="text-align: right;">{Math.round(track.minutes_played)}</td>
         </tr>
       {/each}
     </table>
@@ -37,14 +38,12 @@
 
 <style>
   table {
-    font-size: smaller;
     border-top: none;
     border-bottom: none;
   }
 
   th {
     font-weight: bold;
-    text-align: left;
     border-collapse: collapse;
     border-bottom: 1.5px dashed;
   }
