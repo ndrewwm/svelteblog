@@ -19,7 +19,7 @@
 
 <style>
   .dt {
-    font-family: 'Fira Mono';
+    font-family: 'Roboto Mono', monospace;
     font-weight: bolder;
     /* font-size: larger; */
   }
