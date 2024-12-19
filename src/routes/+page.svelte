@@ -58,6 +58,7 @@
         type="text"
         class="terminal-input"
         bind:value={terminalCommand}
+        style:width="90%"
         spellcheck="false"
         autocomplete="off"
         autocapitalize="off"

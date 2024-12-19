@@ -3,8 +3,9 @@
 
   export let value = 10;
   export let delay = 10;
+  export let offset = 200;
 
-  let i = 0;
+  let i = Math.max(value - offset, 0);
   let t;
 
   $: {

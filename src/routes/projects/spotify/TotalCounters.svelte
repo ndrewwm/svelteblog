@@ -44,7 +44,7 @@
     <div>
       <p class="heading">unique tracks</p>
       <p class="title">
-        <CountUp value={summary.n_tracks} delay={2} />
+        <CountUp value={summary.n_tracks} />
       </p>
     </div>
   </div>
@@ -60,7 +60,7 @@
     <div>
       <p class="heading">hours played</p>
       <p class="title">
-        <CountUp value={total} delay={100} />
+        <CountUp value={total} delay={10} />
       </p>
     </div>
   </div>
