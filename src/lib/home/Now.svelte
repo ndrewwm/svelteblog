@@ -18,15 +18,14 @@
   </p>
 
   <p class="mb-3">
-    Updated 11/30/2024:
+    Updated 12/29/2024:
   </p>
   
   <ul class="is-size-6">
     <li>Living in Boise, ID</li>
     <li>Working remotely in CU Boulder's OIT, as a senior data engineer</li>
-    <li>I'm learning a lot about CI/CD and Snowflake, primarily through standing up dbt-core at work</li>
-    <li>Still practicing a bit of German every day</li>
-    <li>Finished with my two math courses for the term, enjoying winter break</li>
-    <li>📖 61% <em>Butter</em> Asako Yuzuki (2017)</li>
+    <li>Frantically trying to finish my annual blog post summarizing each book I read this year</li>
+    <li>Hoping for some cloud-free ski days at Bogus Basin before the new year 🤞</li>
+    <li>📖 71% <em>Butter</em> Asako Yuzuki (2017)</li>
   </ul>
 </div>
