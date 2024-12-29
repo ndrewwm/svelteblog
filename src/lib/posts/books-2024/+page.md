@@ -3,7 +3,7 @@ title: "Books I read in 2024"
 description: Summaries of each of the books I read (or listened to) during 2024.
 author: "Andrew Moore"
 date: "2024-12-27"
-draft: true
+draft: false
 categories: [books, reading, hobbies]
 slug: books-2024
 format:
@@ -17,7 +17,7 @@ format:
 
 Alright, here they all are!
 
-<div class="columns">
+<div class="columns" id="hirohito-and-the-making-of-modern-japan">
   <div class="column is-one-fifth">
     <OpenLibraryCover isbn={"006019314X"} />
   </div>
@@ -32,7 +32,7 @@ Alright, here they all are!
   </div>
 </div>
 
-<div class="columns">
+<div class="columns" id="the-illustrated-man">
   <div class="column is-one-fifth">
     <OpenLibraryCover isbn={"9780062079978"} />
   </div>
@@ -43,12 +43,16 @@ Alright, here they all are!
     <div class="subtitle is-size-5">
       Ray Bradbury (1951)
     </div>
-    <p>Someone suggested this one for a book club I'm part of, and I was excited to have an excuse to pick it up. The book opens with an anonymous narrator allowing a travelling performer spend the night at his home. He discovers that the perfomer is covered with tattoos that seem to move (impossibly) over the performer's body. Each chapter from the book is a "scene" leaping from the performer's tattooed skin. The plots/characters are unconnected; I remember reading that Bradbury wrote them for magazine publication, and that they were later collected as this small volume.</p>
-    <p>A story from this book that folks might know is "The Veldt", which I first learned about back in college from a classic <a href="https://open.spotify.com/track/5sGIgGkeYiiWdN0NVYJZ0I?si=8b83240290b344c0">deadmau5 track.</a> The story follows a family living in what we might now call a "smart house", which takes care of any of the inhabitants needs that you might imagine. The family's two children, Peter and Wendy, are obsessed with their holodeck-esque "nursery" which generates immersive virtual realities for them. The parents, George and Lydia, become increasingly concerned with how fixated the children have become with the entertainment system. I won't spill much more, but these outlines likely feel eerily contemporary to a society that's wracked with concerns over the impact of technology on its young people, and our widespread anomie more generally. Bradbury seems to have anticipated anxieties that still haunt us nearly a century later; a mark of good sci-fi, if you ask me.</p>
+    <p>
+      Someone suggested this one for a book club I'm part of, and I was excited to have an excuse to pick it up. The book opens with an anonymous narrator allowing a travelling performer spend the night at his home. He discovers that the perfomer is covered with tattoos that seem to magically move over the performer's body. Each chapter from the book is a "scene" leaping from the performer's tattooed skin. The plots/characters are unconnected; I remember reading that Bradbury wrote them for magazine publication, and that they were later collected as this small volume.
+    </p>
+    <p>
+      A story from this book that folks might know is "The Veldt", which I first learned about back in college from a classic <a href="https://open.spotify.com/track/5sGIgGkeYiiWdN0NVYJZ0I?si=8b83240290b344c0">deadmau5 track.</a> The story follows a family living in what we might now call a "smart house", which takes care of any of the inhabitants' needs that you might imagine. The family's two children, Peter and Wendy, are obsessed with their holodeck-esque "nursery" which generates immersive virtual realities. The parents, George and Lydia, grow increasingly concerned with how fixated the children have become with the entertainment system. I won't spill much more, but these outlines likely feel eerily contemporary to a society wracked with concerns over impacts of technology on young people, and widespread anomie more generally. Bradbury seems to have anticipated anxieties that still haunt us nearly a century later; a mark of good sci-fi, if you ask me.
+    </p>
   </div>
 </div>
 
-<div class="columns">
+<div class="columns" id="bomb-power">
   <div class="column is-one-fifth">
     <OpenLibraryCover isbn={"9781594202407"} />
   </div>
@@ -59,11 +63,21 @@ Alright, here they all are!
     <div class="subtitle is-size-5">
       Garry Wills (2010)
     </div>
-    <p></p>
+    <p>Dr. Wills kindly provides a straightforward summary of the book's central argument in its first paragraph:</p>
+    <blockquote>
+      This book has a basic thesis, that the Bomb altered our subsequent history down to its deepest constitutional roots. It redefined the presidency, as in all respects America's "Commander in Chief" (a term that took on a new and unconstitutional meaning in this period). It fostered an anxiety of continuing crisis, so that society was pervasively militarized. It redefined the government as a National Security State, with an apparatus of secrecy and executive control.
+    </blockquote>
+    <p>
+      Control over "the button" is what Wills refers to as <em>Bomb power</em>. In the United States, authority over our atomic weapons lies solely in the hands of the sitting president. As Wills argues, this is a departure from the traditional role that the office has played. The US constitution intended the congress to be responsible for committing US forces to wartime activity. In exceptional circumstances when presidents acted beyond the constitution (e.g., Lincoln's suspension of habeaus corpus during the US civil war), order was ultimately restored following the resolution of the crisis. However, the US exited the second world war without an off-ramp for the executive to relinquish authority over atomic power. The Manhattan Project's secretive origins under Roosevelt's orders (rather than by direction of congress) established an unbroken line of authority tracing to the executive branch. The apocalyptic power of atomic weapons provided a logic to justify the proliferation of US airbases worldwide. This massive resource commitment was rationalized as being necessary during the Cold War, and was repurposed without much difficulty during the War on Terror.
+    </p>
+    <p>
+      This has had the effect of rendering congressional and judicial oversight over the executive essentially meaningless. "If the President has the sole authority to launch nation-destroying weapons", Wills says, "he has license to use every other power at his disposal that might safeguard that supreme necessity." Restraint from other government branches introduces friction on the deployment of atomic weapons, undermining their presumed deterrant powers. The steady expansion of executive powers is easily excused in the name of <em>national security</em>, and seldomly are such extensions withdrawn. Information needed to understand how the office is using powers granted to it is almost always classified. An example Wills highlights is the Air Force's vigorous attempts to avoid accountability for deaths of military contractors during test flights. Lengthy and protracted legal struggle on the part of surviving family members revealed the flights held no special importance to national defense. It was simply more expedient for the Air Force to avoid taking responsibility for negligently caused deaths.
+    </p>
+    <p>Wills doesn't provide a prescription on how we can begin stepping down from the status quo, but I think the book is useful for framing our understanding of the US presidency over the last 75-ish years. Meaningful democratic oversight has been made impossible by the cult of the Commander in Chief and the aura of secrecy that it entails. Any efforts to move away from the atmosphere of permanent emergency will need to contend with them.</p>
   </div>
 </div>
 
-<div class="columns">
+<div class="columns" id="the-song-of-achilles">
   <div class="column is-one-fifth">
     <OpenLibraryCover isbn={"9780062060617"} />
   </div>
@@ -74,11 +88,13 @@ Alright, here they all are!
     <div class="subtitle is-size-5">
       Madeline Miller (2011)
     </div>
-    <p></p>
+    <p>
+      This is another book I read as part of a book club. Jenny had also wanted me to read this one for a while. Similar to <em>Circe</em>, Miller revisits themes from classical stories under a new perspective. The novel follows the life of Patroclus, companion and lover of fabled Achilles, from boyhood to his mortal end on the battlefields of the Trojan war. A thread connecting <em>Circe</em> and <em>Song</em> is the pain that stems from children being different or below the expectations that their parents set out for them. This is particularly visible in Thetis's (Achilles's mother) dismissal of Patroclus as a distraction from her son's 
+    </p>
   </div>
 </div>
 
-<div class="columns">
+<div class="columns" id="children-of-memory">
   <div class="column is-one-fifth">
     <OpenLibraryCover isbn={"9781529087185"} />
   </div>
@@ -89,11 +105,19 @@ Alright, here they all are!
     <div class="subtitle is-size-5">
       Adrian Tchaikovsky (2023)
     </div>
-    <p></p>
+    <p>
+      This is the latest novel from the <em>Children of Time</em> series. As with the other two, we listened to this one as an audiobook. I think I enjoyed this one more than the second, but not as much as the first. Tchaikovsky has been building a pallete with each novel, and I've enjoyed seeing the base colors enriched with additions from subsequent works. The story opens with another unfortunate colony ship, the <em>Enkidu</em>, barely surviving arrival at its exoplanet destination. Worse, it appears that planet's terraforming is incomplete. Its atmosphere is breathable, but conditions are harsh. This poses an immediete dilemma for the <em>Enkidu's</em> captain, who must decide the fates of the ship's thousands of cryosleeping colonists, knowing the planet below can only support a fraction of them.
+    </p>
+    <p>
+      The story jumps forward, landing on the perspective of Liff (age 12, in earth years), granddaughter of the <em>Enkidu's</em> captain. The planet's settlement, Landfall, is in the midst of decline due to repeated crop failures. Townspeople blame "Watchers" and "Seccers" lurking unseen in the surrounding forest for lost tools, suspected sabotage, and stolen food. A hungry, roaming wolf haunts Liff's dreams. After seeing her grandfather (who'd gone missing years prior) at night in the hills outside her home, Liff becomes convinced that the "witch" rumored to live in the forest is holding him captive. The only person that takes her seriously is Miranda, Liff's kind schoolteacher, who'd recently moved with her relatives (Fabian, Portia, and Paul) from the outskirts to Landfall. Despite Miranda's and her companions' usefulness to the struggling community (in particular, Fabian's knack for repairing degrading farm equipment), their newcomer status attracts suspicion from an increasingly desperate community. Tchaikovsky builds a sense of dread that holds throughout the story, and layers of unease are added until the story's interesting conclusion.
+    </p>
+    <p>
+      Similar to what I wrote about <em>Lovecraft Country</em>, I think this story would make a wonderful graphic novel. I wish I had the talent and skill required to do it justice. The scenes of early and declining Landfall feel vivid, and the dreamlike sequences that Liff experiences would lend themselves to visual form. And, the cast of characters (spindly Fabian; robust Portia; aloof Paul and his 8 children; the equally curious and resigned duo of Gothi and Gethli) are vibrant and contrast each other beautifully. If you enjoyed the first two books of this series, definitely pick this one up.
+    </p>
   </div>
 </div>
 
-<div class="columns">
+<div class="columns" id="drive-your-plow-over-the-bones-of-the-dead">
   <div class="column is-one-fifth">
     <OpenLibraryCover isbn={"9780525541349"} />
   </div>
@@ -108,7 +132,7 @@ Alright, here they all are!
   </div>
 </div>
 
-<div class="columns">
+<div class="columns" id="the-three-body-problem">
   <div class="column is-one-fifth">
     <OpenLibraryCover isbn={"9781784971571"} />
   </div>
@@ -123,7 +147,7 @@ Alright, here they all are!
   </div>
 </div>
 
-<div class="columns">
+<div class="columns" id="debt-the-first-5000-years">
   <div class="column is-one-fifth">
     <OpenLibraryCover isbn={"9781933633862"} />
   </div>
@@ -135,7 +159,6 @@ Alright, here they all are!
       David Graeber (2011)
     </div>
     <p>This is the book I brought to an annual holiday party hosted by two friends, in which the attendees bring a book that will be taken home by another guest. I had several strong candidates from titles I read this year, but after deliberation, I opted for this one. Early in this book, Graeber (who passed away in 2020) takes up the task of demolishing the classic story we're told about the invention of money, that is: humanity invented money to dispense with the bartering problem. While this tale seems facially logical, Graeber observes that we don't really have evidence to support the claim. Coins have the property of being archaeologically durable; we can recover them as clues to how people from previous times lived. However, customs and practices that 
-    
     - archaeologically, coins are easier to track and study, but this doesn't mean that coins emerged before credit systems
     - most importantly, money/currency emerges from states
     - soldiers need to be paid, plunder needs to be redeemable
@@ -144,7 +167,7 @@ Alright, here they all are!
   </div>
 </div>
 
-<div class="columns">
+<div class="columns" id="the-history-of-sexuality">
   <div class="column is-one-fifth">
     <OpenLibraryCover isbn={"9780140222999"} />
   </div>
@@ -155,11 +178,17 @@ Alright, here they all are!
     <div class="subtitle is-size-5">
       Michel Foucalt (1976)
     </div>
-    <p></p>
+    <p>
+      This book is one of the places where Foucalt developed his concept of <em>biopower</em>. As states transitioned to modernity, duties of sovereignty expanded beyond determining the conditions of how subjects of the state might die (i.e., through enforcement of laws, conscription into wars, etc.). To sustain the industrial transition to capitalism, sovereignty also needed to be concerned with how subjects of the state live. Thus, states came to care about the concept (and health) of populations, entailing a more active role in managing reproduction. Foucalt argues that <em>sexuality</em>, as a concept and discursive tool, was used to assist with this task. Sexuality became the object of scientific and medical investigation, forming new discourses and categories of deviance. These ultimately helped states legitimize intervention into the private lives of their subjects, imposing discipline and conformity.
+    </p>
+    <p>
+      I never read much Foucault during college, but having finished this book, I wish I'd had the opportunity. I'm not sure if I'll continue reading the other 3 volumes in 2025, but I've gained a greater appreciation for why Foucault's concepts lurk in the background of many modern sociological works. Establishing a framework for investigating how and why modern societies seek to manage and discipline their subjects is incredibly useful. However, this doesn't make Foucalt's writing any easier to parse. I doubt it'd be easier going even if I could read the original French.
+    </p>
   </div>
 </div>
 
-<div class="columns">
+<!--  -->
+<div class="columns" id="milton-friedman-the-last-conservative">
   <div class="column is-one-fifth">
     <OpenLibraryCover isbn={"9780374601157"} />
   </div>
@@ -174,7 +203,7 @@ Alright, here they all are!
   </div>
 </div>
 
-<div class="columns">
+<div class="columns" id="the-storm-before-the-storm">
   <div class="column is-one-fifth">
     <OpenLibraryCover isbn={"9781610397216"} />
   </div>
@@ -189,7 +218,7 @@ Alright, here they all are!
   </div>
 </div>
 
-<div class="columns">
+<div class="columns" id="the-way-we-never-were">
   <div class="column is-one-fifth">
     <OpenLibraryCover isbn={"0465001351"} />
   </div>
@@ -204,7 +233,7 @@ Alright, here they all are!
   </div>
 </div>
 
-<div class="columns">
+<div class="columns" id="go-went-gone">
   <div class="column is-one-fifth">
     <OpenLibraryCover isbn={"9780811225946"} />
   </div>
