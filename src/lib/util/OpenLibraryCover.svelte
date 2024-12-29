@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let isbn: str;
+  export let isbn: string;
   export let size = "M";
 
   let img_url = `https://covers.openlibrary.org/b/isbn/${isbn}-${size}.jpg`;
