@@ -15,8 +15,6 @@ format:
   import OpenLibraryCover from "$lib/util/OpenLibraryCover.svelte";
 </script>
 
-Alright, here they all are!
-
 <div class="columns" id="hirohito-and-the-making-of-modern-japan">
   <div class="column is-one-fifth">
     <OpenLibraryCover isbn={"006019314X"} />
@@ -28,7 +26,7 @@ Alright, here they all are!
     <div class="subtitle is-size-5">
       Herbert P. Bix (2000)
     </div>
-    <p>This is what I would write about Hirohito</p>
+    <p>Bix demonstrates persuasively and meticulously that the western conception of Hirohito as a passive ruler (used instrumentally by militarists that surrounding him) is false. Instead, the emperor and his court actively perpetuated and shaped the role of imperial ideology in modern Japan. Hirohito idolized his grandfather, the Meiji Emperor, and was deeply invested in surpassing what he perceived as faults of his father, the reculsive and sickly Taisho. During Hirohito's reign, the emperor and his court maintained the imperial house's divinity, traced to ancestral lineage from the Shinto goddess Amaterasu. The court, military, and factions within Japan's civilian government upheld this belief, their engagements with it reflecting their preferred visions for the country (this is visible in the struggle between the <em>Imperial Way</em> and <em>Control</em> factions within the military, and Prime Minister Konoe's articulation of <a href="https://en.wikipedia.org/wiki/Hakk%C5%8D_ichiu">Hakko ichiu</a>). A different path might have been open to Japan in the period before and around Hirohito's ascension, where the country might have continued towards constitutional monarchy. However, this would've required a commitment that Hirohito was disinclined to provide. Ultimately, in a mixture of collaboration and refusal to check the ambitions of the separate military branches, Hirohito's decisions (and acts of omission) helped overextend Japan's military, and pushed the country towards a virtually inevitable defeat.</p>
   </div>
 </div>
 
@@ -89,7 +87,7 @@ Alright, here they all are!
       Madeline Miller (2011)
     </div>
     <p>
-      This is another book I read as part of a book club. Jenny had also wanted me to read this one for a while. Similar to <em>Circe</em>, Miller revisits themes from classical stories under a new perspective. The novel follows the life of Patroclus, companion and lover of fabled Achilles, from boyhood to his mortal end on the battlefields of the Trojan war. A thread connecting <em>Circe</em> and <em>Song</em> is the pain that stems from children being different or below the expectations that their parents set out for them. This is particularly visible in Thetis's (Achilles's mother) dismissal of Patroclus as a distraction from her son's 
+      This is another book I read as part of a book club. Jenny had also wanted me to read this one for a while. Similar to <em>Circe</em>, Miller revisits themes from classical stories under a new perspective. The novel follows the life of Patroclus, the companion and lover of Achilles, from boyhood to his mortal end on the battlefields of the Trojan war. A thread connecting <em>Circe</em> and <em>Song</em> is the pain that stems from children being different or below the expectations that their parents set out for them.
     </p>
   </div>
 </div>
@@ -128,7 +126,7 @@ Alright, here they all are!
     <div class="subtitle is-size-5">
       Olga Tokarczuk (2009)
     </div>
-    <p></p>
+    <p>While it starts somewhat slowly, I enjoyed this one. The book's plot is a bit of a mystery (told in the first person), with different figures in the narrator's community turning up dead. However, while you can spend some time speculating about the causes of the string of deaths, the meat of the book is its wandering through the mostly quiet rhythms of the narrator's life in rural Poland, and her thoughts about people, animals, William Blake, and astrology. Through its narrator, the book is committed to examining how humans casually (and frequently, cruelly) disregard the creatures that share the earth with us. Her voice is adamant and filled with a moral certainty that's refreshing, or at least interesting. If you're willing to be patient with the story, this one is worth picking up.</p>
   </div>
 </div>
 
@@ -143,7 +141,7 @@ Alright, here they all are!
     <div class="subtitle is-size-5">
       Liu Cixin (2008)
     </div>
-    <p></p>
+    <p>I think the hype around this book was ultimately greater than my experience with it, but I shouldn't underrate the unique and influential aspects of it. There's something deeply unsettling about the idea that our naive radio broadcasts into deep space might lure extraterrestrial predators toward us (Liu's second title in the series, <a href="https://en.wikipedia.org/wiki/Dark_forest_hypothesis"><em>the Dark Forest</em></a>, is now a preferred name for this resolution of the Fermi paradox). The book's prologue, taking place during China's violent Cultural Revolution, is heartbreaking. It's understandable how someone facing Ye Wenjie's grief might despair for humanity's future. The book's antagonists are compelling and interesting, and the Trisolaran race against time to disrupt humanity's technological advancement is an interesting cliffhanger.</p>
   </div>
 </div>
 
@@ -158,11 +156,8 @@ Alright, here they all are!
     <div class="subtitle is-size-5">
       David Graeber (2011)
     </div>
-    <p>This is the book I brought to an annual holiday party hosted by two friends, in which the attendees bring a book that will be taken home by another guest. I had several strong candidates from titles I read this year, but after deliberation, I opted for this one. Early in this book, Graeber (who passed away in 2020) takes up the task of demolishing the classic story we're told about the invention of money, that is: humanity invented money to dispense with the bartering problem. While this tale seems facially logical, Graeber observes that we don't really have evidence to support the claim. Coins have the property of being archaeologically durable; we can recover them as clues to how people from previous times lived. However, customs and practices that 
-    - archaeologically, coins are easier to track and study, but this doesn't mean that coins emerged before credit systems
-    - most importantly, money/currency emerges from states
-    - soldiers need to be paid, plunder needs to be redeemable
-    - history has moved through cycles in which virtual currency has been the normal 
+    <p>
+      This is the book I brought to an annual holiday party hosted by two friends, in which the attendees bring a book that will be taken home by another guest. I had several strong candidates from titles I read this year, but after deliberation, I opted for this one. Early in this book, Graeber (who passed away in 2020) takes up the task of demolishing the classic story we're told about the invention of money, that is: humanity invented money to dispense with the bartering problem. While this tale seems facially logical, Graeber observes that we don't really have evidence to support the claim. Coins have the property of being archaeologically durable; we can recover them as clues to how people from previous times lived. However, coinage doesn't always show up in sufficiently advanced ancient societies (such as Babylon) at the rate you might expect. Instead, Graeber argues persuasively that "virtual" money, arising from social obligations and mutual aid amongst community members precedes coinage. In <em>Debt</em>, Graeber traces cyclical progressions across history in which civilizations move between virtual/credit based accounting and bullion-based coinage. The latter is linked to periods defined by conflict and low social trust. Metal based currency is ideal for paying soldiers, and it can be stolen, allowing armies and mercenaries to supplement their pay as they move during campaigns. I'm barely scratching the surface of everything that Graeber covers in this book (his analysis of language connecting debt to morality, and his analysis/reminder that much of the financial tools characteristic of modern capitalism were developed before the Industrial Revolution are each fascinating). It's a longer work, but you won't regret giving it the time it requires.
     </p>
   </div>
 </div>
@@ -187,7 +182,6 @@ Alright, here they all are!
   </div>
 </div>
 
-<!--  -->
 <div class="columns" id="milton-friedman-the-last-conservative">
   <div class="column is-one-fifth">
     <OpenLibraryCover isbn={"9780374601157"} />
@@ -214,7 +208,9 @@ Alright, here they all are!
     <div class="subtitle is-size-5">
       Mike Duncan (2017)
     </div>
-    <p></p>
+    <p>
+      Between 2016-2019, I listened through Mike Duncan's <em>History of Rome</em> podcast series, but I never picked up his first book. As appropriate, I listened to this one as an audiobook. This book helped remind me of the role that street violence and political violence played in pushing Roman society towards its autocratic destiny. Duncan's book recounts the fractures that opened in Roman society over inequality and land reform, the Social War (concerning the establishment of citizenship for residents of Italy), and concludes with a recounting of Sulla's time as permanent dictator of Rome. At least in the way that Duncan tells it, the story feels very legible in modern terms, beginning with politicians being outpaced by popular forces they unleash, to seeing political descendants cynically harnessing those energies, and culminating with undemocratic (and conservative) reforms that misdiagnose the problems faced by their society.
+    </p>
   </div>
 </div>
 
@@ -244,6 +240,6 @@ Alright, here they all are!
     <div class="subtitle is-size-5">
       Jenny Erpenbeck (2015)
     </div>
-    <p></p>
+    <p>I'd been working through this one for a while. The story follows Richard, a widower academic living in Berlin, recently retired.</p>
   </div>
 </div>
