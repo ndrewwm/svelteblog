@@ -2,7 +2,7 @@
 title: "Books I read in 2024"
 description: Summaries of each of the books I read (or listened to) during 2024.
 author: "Andrew Moore"
-date: "2024-12-27"
+date: "2025-01-03"
 draft: false
 categories: [books, reading, hobbies]
 slug: books-2024
@@ -10,6 +10,10 @@ format:
   gfm:
     variant: +yaml_metadata_block
 ---
+
+<div class="block">
+I didn't get through 18 books like I'd hoped, but here are the ones I read cover-to-cover this year.
+</div>
 
 <script>
   import OpenLibraryCover from "$lib/util/OpenLibraryCover.svelte";
@@ -87,7 +91,7 @@ format:
       Madeline Miller (2011)
     </div>
     <p>
-      This is another book I read as part of a book club. Jenny had also wanted me to read this one for a while. Similar to <em>Circe</em>, Miller revisits themes from classical stories under a new perspective. The novel follows the life of Patroclus, the companion and lover of Achilles, from boyhood to his mortal end on the battlefields of the Trojan war. A thread connecting <em>Circe</em> and <em>Song</em> is the pain that stems from children being different or below the expectations that their parents set out for them.
+      This is another book I read as part of a book club. Jenny had also wanted me to read this one for a while. In <em>Song</em>, Miller is able to coax newly tragic threads from one of the most retold stories in western culture. The novel follows the life of Patroclus, Achilles's lover and companion, from boyhood to his mortal end on the battlefields of the Trojan war. A connection between <em>Circe</em> and <em>Song</em> is the pain that stems from children being different or below the expectations that their parents set out for them. By crafting the narrative over the entire lifetime of the book's protagonists, we see an Achilles whose divine-born gifts and prophesized glory are burden handed down from the gods and his wounded mother. I've never been disappointed by Miller's work; if you've only read <em>Circe</em>, definitely pick this one up.
     </p>
   </div>
 </div>
@@ -126,7 +130,7 @@ format:
     <div class="subtitle is-size-5">
       Olga Tokarczuk (2009)
     </div>
-    <p>While it starts somewhat slowly, I enjoyed this one. The book's plot is a bit of a mystery (told in the first person), with different figures in the narrator's community turning up dead. However, while you can spend some time speculating about the causes of the string of deaths, the meat of the book is its wandering through the mostly quiet rhythms of the narrator's life in rural Poland, and her thoughts about people, animals, William Blake, and astrology. Through its narrator, the book is committed to examining how humans casually (and frequently, cruelly) disregard the creatures that share the earth with us. Her voice is adamant and filled with a moral certainty that's refreshing, or at least interesting. If you're willing to be patient with the story, this one is worth picking up.</p>
+    <p>While it starts somewhat slowly, I enjoyed this one. The book's plot is a bit of a mystery (told in the first person), with different figures in the narrator's community turning up dead. While you can spend some time speculating about the causes of the string of deaths, the meat of the book is its wandering through the mostly quiet rhythms of the narrator's life in rural Poland, and her thoughts about people, animals, William Blake, and astrology. Through its narrator, the book is committed to examining how humans casually (and frequently, cruelly) disregard the creatures that share the earth with us. Her voice is adamant and filled with a moral certainty that's refreshing, or at least interesting. If you're willing to be patient with the story, this one is worth picking up.</p>
   </div>
 </div>
 
@@ -193,7 +197,15 @@ format:
     <div class="subtitle is-size-5">
       Jennifer Burns (2023)
     </div>
-    <p></p>
+    <p>
+      I picked this one up after listening to the <em>Know Your Enemy</em> <a href="https://open.spotify.com/episode/5Hy4YEWK1vNQsBHyFnuEz1?si=081f4d92332143b0">episode</a> in which the hosts interviewed the author. Before reading this book, I knew that Friedman was one of the central figures of the "Chicago School" of economics, a faction that displaced the rival Keynesian approach to become essentially synonymous with mainstream economics. Reading Burns's book probably wouldn't offer a different one-sentence summary of the Chicago School's trajectory, but my picture of the characters on the stage has appreciably changed, as well as my sense of Friedman, "the first neoliberal", himself.
+    </p>
+    <p>
+      It's interesting to think about the world in which Friedman goes on to become a professor of statistics rather than economics. I hadn't realized that it was within the field of statistics where Friedman made his first academic contributions (such as his involvement in the development of <a href="https://en.wikipedia.org/wiki/Sequential_analysis">sequential analysis</a>). One of the most interesting aspects of the book is how Burns contrasts Friedman with his contemporaries, especially in the middle of Friedman's career. Despite being talented mathematically, Friedman comes off as being practical, avoiding overly formal or mathematically complex treatments of economic theory. This is perhaps best seen in the debates between Friedman and members of the Cowles commission, which Burns uses to illustrate Friedman's rejection of physics-inspired mathematics applied economic modeling. Another example is Friedman's collaboration with Anna Schwarz in <em>A Monetary History of the United States</em>, whose arguments (enabled via painstaking data collection from Schwarz) gain their fundamental heft through descriptive analysis.
+    </p>
+    <p>
+      Some of Friedman's signature policy views (such as fixing growth of monetary supply to GDP) were <a href="https://en.wikipedia.org/wiki/Monetarism#Decline">abandoned</a> after being attempted, but in many ways Burns argues we're still living in the world that Friedman helped create. I hadn't fully appreciated Friedman's role in popularizing the idea that anticipating and managing lender expecations is critical to controlling inflation. By the time I was born in the 90s, this notion was on its way to becoming conventional wisdom. Under Alan Greenspan, the Fed took steps to publish its meeting notes more frequently and began requiring the Fed use fresher (rather than lagged) data for its reporting. These reforms might seem small (or even boring), but they're a powerful example of how institutional transparency and consistency undergird the regularity of day-to-day life. Burns shows that Friedman's correspondence and public writing influenced Greenspan's decisions over these reforms, at least to some degree. Considering Friedman's often antagonistic views towards the Fed, it's ironic that he helped reform the institution to better support its stabilizing role for the US economy.
+    </p>
   </div>
 </div>
 
@@ -223,9 +235,10 @@ format:
       <em>The Way We Never Were: American Families and the Nostalgia Trap</em>
     </div>
     <div class="subtitle is-size-5">
-      Stephanie Coontz (1992)
+      Stephanie Coontz (2016)
     </div>
-    <p></p>
+    <p>There's a conservative tendency in the United States to construct idealized conceptions of the "traditional" family. In our current era, this nostalgic impulse frequently lands on an image from the 1950s, the archetypal nuclear family. Rather than being a natural state that can be returned to (through the practice of proper/"traditional" values), Coontz's book shows how the exceptional political economy of midcentury America resulted in an equally exceptional form of family life. It was a unique combination of legal and social pressures that pushed US women out of the workforce (and into the household) post-WWII, rather than a spontaneous seachange about the roles of women and motherhood. Coontz shows how societal changes preceded rationalizations of the nuclear family, and how conditions during the 1950s primed multiple generations for feminist ideas that would be popularized in the 1960s.</p>
+    <p>A fair amount of this book might feel unsurprising for some readers, but I think it's worth reading despite its age (first published in 1992, updated in 2016). In particular, Coontz connects the establishment of the idealized nuclear family form with the contemporaneous process of suburbanization. The reshaping of cities during this period has had extremely far-reaching consequences. But these changes would not have occurred without subsidized construction of highways and roads, and easy access to favorable housing loans (whose distribution favored white americans). Further, the GI Bill amounted to a massive and widespread investment in the educational success of men, ushering in an era of social mobility that hasn't been repeated. Each of these things puts a lie to the idea that nuclear families from this period succeeded without "handouts" from the government. Above all, Coontz urges us to abandon our demands families conform to a particular shape or moral framework, and asks us to focus on ensuring our society provides parents and children with what they need to thrive.</p>
   </div>
 </div>
 
@@ -240,6 +253,6 @@ format:
     <div class="subtitle is-size-5">
       Jenny Erpenbeck (2015)
     </div>
-    <p>I'd been working through this one for a while. The story follows Richard, a widower academic living in Berlin, recently retired.</p>
+    <p>I'd been working through this one for a while. The story follows Richard, a professor of classic literature living in Berlin, widowed, and recently retired. Richard comes to meet and advocate for a group of men, refugees from northern Africa and the middle-east, that are seeking work in Berlin. While its events are fictional, I think <em>Go, Went, Gone</em> is excellent for examining the practice and consequences of Achile Mbembe's theory of <a href="/blog/post/books-2022#Necropolitics"><em>necropolitics</em></a>. Through its characters, the novel satirizes and criticizes bureaucratic processes that exclude and sweep vulnerable people out of public view. It's extremely easy to quietly, even politely, avoid the gaze of people in our communities that need help. That aversion sustains the legal structures that enable our society to treat people as disposable, burdens, or less than human. Encounters that <em>Go, Went, Gone</em>'s characters have with formalistic language (drawn from administrative correspondence or legislative pronouncements) help illustrate this. These moments surface contradictions between liberal society's nominal concern and respect for individual rights with its policing of boundaries for participation. At times, <em>Go, Went, Gone</em>'s pace can be slow, but it provides much to chew on, and is worth picking up.</p>
   </div>
 </div>
