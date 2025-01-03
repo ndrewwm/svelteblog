@@ -21,7 +21,9 @@ format:
   import OpenLibraryCover from "$lib/util/OpenLibraryCover.svelte";
 </script>
 
+<div class="block">
 This year I tried to make sure I read at least 1 book per month. This was something I managed to do! Maybe we can do 18 in 2024. Here's what they were:
+</div>
 
 <div class="columns" id="desert-solitaire">
   <div class="column is-one-fifth">
