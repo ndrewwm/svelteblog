@@ -7,6 +7,7 @@
   --main-code-txt-color: #EFCB68;
   --main-console-output: #E8DDA7;
   --console-font-family: "Roboto Mono";
+  --bulma-background: #000411;
   --bulma-primary-h: 44deg;
   --bulma-primary-s: 81%;
   --bulma-primary-l: 67%;
@@ -16,7 +17,7 @@
   --bulma-body-color: #E1EFE6;
   --bulma-body-line-height: 1.3;
   --bulma-code-family: Roboto Mono,monospace;
-  --bulma-content-blockquote-background-color: var(--bulma-body-background-color);
+  /* --bulma-content-blockquote-background-color: var(--bulma-body-background-color); */
 }
 
 ::selection {
