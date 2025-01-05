@@ -17,7 +17,8 @@
   --bulma-body-color: #E1EFE6;
   --bulma-body-line-height: 1.3;
   --bulma-code-family: Roboto Mono,monospace;
-  --bulma-title-color: var(--main-txt-color);
+  --bulma-title-color: #E1EFE6;
+  /* --bulma-subtitle-color:  */
   /* --bulma-content-blockquote-background-color: var(--bulma-body-background-color); */
 }
 
