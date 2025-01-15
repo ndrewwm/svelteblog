@@ -11,7 +11,8 @@
       dt: d => op.parse_date(d.week_dt),
     })
     .select({dt: "Date", plays: "Plays", new_tracks: "New tracks"})
-    .fold(not("Date"), { as: ["var", "val"] });
+    .fold(not("Date"), { as: ["var", "val"] })
+    .orderby("Date");
 
   if (cumulative) {
     console.log("todo");
