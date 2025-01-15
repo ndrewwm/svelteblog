@@ -54,7 +54,7 @@ li {
 a {
   color: var(--main-txt-color);
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {

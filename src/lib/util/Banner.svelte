@@ -23,4 +23,8 @@
     font-family: "Micro 5", monospace;
     font-size: 40px;
   }
+
+  a {
+    text-decoration: none;    
+  }
 </style>
