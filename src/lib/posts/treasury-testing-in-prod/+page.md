@@ -1,5 +1,5 @@
 ---
-title: "jobs where you control 20% of GDP and you test in prod"
+title: "Jobs where you control 20% of GDP and you test in prod"
 description: This is bad
 author: "Andrew Moore"
 date: "2025-02-04"
