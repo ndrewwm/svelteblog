@@ -29,6 +29,9 @@
   td {
     padding: 1vh 1vw 1vh 1vw;
   }
+  td > a {
+    text-decoration: none;
+  }
 
   @media (width <= 1000px) {
     table {
