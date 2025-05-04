@@ -39,6 +39,12 @@
       raise a GitHub issue that's tied to the deployment, allowing customers to request improvements
       or report problems. Data is gathered from Prefect's REST API.
     </li>
+    <li>
+      <a href="https://ndrewwm.github.io/math-401">Math-401:</a> this is the project homepage for the
+      final project I completed in fulfillment of my applied math degree. I focused on Gaussian Processes (GPs)
+      and Guassian Process Regression, with specific attention to the area of <em>multitask</em> or <em>multioutput</em>
+      Gaussian Process Regression.
+    </li>
   </ul>
 </div>
 
