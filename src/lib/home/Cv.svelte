@@ -104,7 +104,7 @@
     <li>
       <strong>B.S. Applied Mathematics,</strong> Statistics Emphasis
       <br />
-      Boise State University, 2021 - 2025 (anticipated)
+      Boise State University, 2021 - 2025
     </li>
     <br />
     <li>
