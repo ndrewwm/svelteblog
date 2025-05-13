@@ -22,6 +22,8 @@ theme_ndrewwm <- function() {
   update_geom_defaults("bar", aes(color = bg_main, fill = txt_main, alpha = 0.9))
   update_geom_defaults("col", aes(color = bg_main, fill = txt_main, alpha = 0.9))
   update_geom_defaults("smooth", aes(color = "#EFCB68"))
+  update_geom_defaults("text", aes(color = txt_main))
+  update_geom_defaults("segment", aes(color = txt_main))
 
   theme_minimal(base_size = 15) +
     theme(
