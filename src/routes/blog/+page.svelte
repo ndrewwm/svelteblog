@@ -1,10 +1,18 @@
 <script>
-  import Banner from '$lib/util/Banner.svelte';
   import dayjs from 'dayjs';
   export let data;
 </script>
 
-<Banner title={"blog"} />
+<svelte:head>
+  <title>ndrewwm | blog</title>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Andrew Moore | Blog"/>
+  <meta name="description" content="My blog." />
+</svelte:head>
+
+<header>
+  <h1><a href="/">andrew w. moore</a> | blog</h1>
+</header>
 
 <table>
   {#each data.posts as post}
@@ -18,6 +26,22 @@
 </table>
 
 <style>
+    a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  header {
+    font-family: "Micro 5";
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
   .dt {
     font-family: 'Roboto Mono', monospace;
     font-weight: bolder;

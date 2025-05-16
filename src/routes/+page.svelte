@@ -1,89 +1,93 @@
 <script lang="ts">
-  import { onMount, tick } from "svelte";
-  import Banner from "$lib/util/Banner.svelte";
-  import RenderCommand from "$lib/home/RenderCommand.svelte";
-
-  let terminalPrompt = "$ ";
-  let terminalCommand = "";
-  let terminalHistory: string[] = [];
-  let terminalInputPrompt: HTMLInputElement;
-  let divTerminalHistory: HTMLDivElement;
-
-  onMount(() => scrollToBottom(terminalInputPrompt));
-
-  async function scrollToBottom(node) {
-    node.scroll({ top: node.scrollHeight, behavior: 'smooth' });
-  }
-
-  async function enterCommand() {
-    // A bit more friendly to clear out the whitespace
-    terminalCommand = terminalCommand.trim();
-
-    if (terminalCommand === "") {
-      return;
-    }
-
-    if (terminalCommand === "clear") {
-      terminalHistory = [];
-      terminalCommand = "";
-      return;
-    }
-
-    if (terminalCommand === "all") {
-      terminalHistory = [];
-    }
-
-    terminalHistory = [...terminalHistory, terminalCommand];
-    terminalCommand = "";
-    await tick();
-    scrollToBottom(divTerminalHistory);
-  }
+  import Now from "$lib/components/Now.svelte";
+  import Tracks from "$lib/home/Tracks.svelte";
+  export let data;
 </script>
 
-<Banner />
-<div id="terminal" class="block" bind:this={divTerminalHistory}>
-  <span class="mt-2">Welcome to my site! (If you'd like a static view of this page, please <a href="/static">go here.</a>)</span>
-  <span class="mb-2">Type 'help' to view a list of available commands.</span>
+<svelte:head>
+  <title>ndrewwm | home</title>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ndrewwm.com | Home"/>
+  <meta name="description" content="My homepage." />
+</svelte:head>
 
-  {#key terminalHistory}
-    {#each terminalHistory as command}
-      <RenderCommand {terminalPrompt} {command} />
+<header>
+  <h1><a href="/about">andrew w. moore</a></h1>
+</header>
+
+<main>
+  <section>
+    <h2><a href="/now">Now</a></h2>
+    <Now />
+  </section>
+
+  <section class="mt-5">
+    <h2 class="mb-2"><a href="/blog">Writing</a></h2>
+
+    {#each data.posts as post}
+      <p class="title is-6">
+        <a href={post.slug}>{post.meta.title}</a>
+      </p>
+      <p class="subtitle is-6 mb-4 dt">{post.meta.date}</p>
     {/each}
-  {/key}
+  </section>
 
-  <div class="block mt-2" bind:this={terminalInputPrompt}>
-    <form on:submit={enterCommand}>
-      <span class="prompt" style="color: #EFCB68;">{terminalPrompt}</span>
-      <input
-        type="text"
-        class="terminal-input"
-        bind:value={terminalCommand}
-        style:width="90%"
-        spellcheck="false"
-        autocomplete="off"
-        autocapitalize="off"
-        autofocus
-      />
-      <input type="submit" hidden />
-    </form>
-  </div>
-</div>
+  <section class="mt-5">
+    <h2 class="mt-2 mb-2"><a href="/projects">Projects</a></h2>
+
+    <p class="title is-6">
+      <a href="https://ndrewwm.github.io/math-401">Math-401</a>
+    </p>
+    <p class="subtitle is-6 mb-4">Project site for the capstone research I conducted for my applied math degree.</p>
+    
+    <p class="title is-6">
+      <a href="/projects/spotify">Spotify Listening Habits</a>
+    </p>
+    <p class="subtitle is-6 mb-4">Summarizing my daily listening on Spotify.</p>
+  </section>
+
+  <section class="mt-5">
+    <h2 class="mt-2 mb-2"><a href="/reading">Reading</a></h2>
+
+    {#each data.reviews as review}
+      <p class="title is-6">
+        <a href="reading/{review.meta.slug}">{review.meta.title}</a>
+      </p>
+      <p class="subtitle is-6 mb-2 dt">
+        {#if review.meta.stars !== null}
+          {"★".repeat(review.meta.stars)}
+        {:else}
+          📖 {review.meta.pct}%
+        {/if}
+      </p>
+    {/each}
+  </section>
+
+  <section class="mt-5 mb-5">
+    <h2><a href="/projects/spotify">Listening habits</a></h2>
+
+    <Tracks />
+  </section>
+</main>
 
 <style>
-  #terminal {
-    font-family: "Roboto Mono",monospace;
-    /* height: 700px; */
-    overflow: auto;
+  a {
+    text-decoration: none;
   }
 
-  .terminal-input, .prompt {
-    background-color: transparent;
-    border: 0;
-    outline: none;
+  a:hover {
+    text-decoration: underline;
+  }
+
+  header, .dt {
     font-family: "Micro 5";
-    font-size: 24px;
-    font-weight: bolder;
-    caret-color: #EFCB68;
-    caret-shape: block;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 20px;
   }
 </style>

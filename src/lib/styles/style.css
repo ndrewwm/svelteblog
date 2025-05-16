@@ -1,31 +1,62 @@
 :root {
-  --main-bg-color: #000411;
-  --main-txt-color: #E1EFE6;
-  --main-heading-color: #EFCB68;
+  --main-bg-color: #E1EFE6;
+  --main-txt-color: #000411;
+  --main-heading-color: #000411;
   --main-pre-bg-color: #160C28;
-  --main-pre-txt-color: #EFCB68;
+  --main-pre-txt-color: #E1EFE6;
   --main-code-txt-color: #EFCB68;
   --main-console-output: #E8DDA7;
   --console-font-family: "Roboto Mono";
-  --bulma-background: #000411;
   --bulma-primary-h: 44deg;
   --bulma-primary-s: 81%;
   --bulma-primary-l: 67%;
+  --bulma-background: #E1EFE6;
   --bulma-family-primary: Roboto,Inter,SF Pro,Segoe UI,Roboto,Oxygen,Ubuntu,Helvetica Neue,Helvetica,Arial,sans-serif;
-  --bulma-body-background-color: #000411;
-  --bulma-body-family: Roboto,Inter,SF Pro,Segoe UI,Roboto,Oxygen,Ubuntu,Helvetica Neue,Helvetica,Arial,sans-serif;
-  --bulma-body-color: #E1EFE6;
+  --bulma-body-background-color: #E1EFE6;
+  --bulma-body-family: Roboto,Inter,SF Pro,Segoe UI,Roboto,Oxygen,Ubuntu,Helvetica Neue,Helvetica,Arial,sans-serif; 
+  --bulma-body-color: #000411;
   --bulma-body-line-height: 1.3;
   --bulma-code-family: Roboto Mono,monospace;
+  --bulma-text: #000411;
+  --bulma-text-strong: #000411;
+  --bulma-strong-color: #000411;
+  --bulma-title-color: #000411;
+  --bulma-subtitle-color: #000411;
+  --bulma-content-heading-color: #000411;
+  --bulma-border: #000411;
 }
 
-.title {
-  --bulma-title-color: #E1EFE6;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bulma-background: #000411;
+    --bulma-body-background-color: #000411;
+    --bulma-body-color: #E1EFE6;
+    --bulma-title-color: #E1EFE6;
+    --bulma-subtitle-color: #E1EFE6;
+    --bulma-text: #E1EFE6;
+    --bulma-content-heading-color: #E1EFE6;
+    --bulma-text-strong: #E1EFE6;
+    --bulma-strong-color: #E1EFE6;
+    --bulma-border: #E1EFE6;
+    --main-bg-color: #000411;
+    --main-txt-color: #E1EFE6;
+    --main-heading-color: #EFCB68;
+  }
+
+  body::-webkit-scrollbar, body::-webkit-scrollbar-corner {
+    background-color: var(--main-bg-color);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--main-txt-color);
+  }
+  
 }
 
-.content {
-  --bulma-content-heading-color: #E1EFE6;
-}
+/* Update CSS variables */
+/* [data-theme=dark],
+.theme-dark {
+
+} */
 
 ::selection {
   color: var(--main-bg-color);
@@ -66,6 +97,7 @@ a:hover {
  */
 
 code {
+  color: var(--main-pre-txt-color);
   background-color: var(--main-pre-bg-color);
   font-family: var(--console-font-family), monospace;
   scrollbar-color: var(--main-code-txt-color);
@@ -75,7 +107,7 @@ code {
 
 pre {
   border-radius: 15px;
-  color: var(--main-txt-color);
+  color: var(--main-pre-txt-color);
   background-color: var(--main-pre-bg-color);
   padding: 2%;
   border-radius: 15px;

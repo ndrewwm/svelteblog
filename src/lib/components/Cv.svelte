@@ -1,22 +1,6 @@
 <script>
-  export let section = false;
   export let heading = "##";
-  export let color = "#EFCB68";
-  let title = "cv";
 </script>
-
-{#if section}
-  <div style="color: {color}">
-    <strong>{heading} {title}</strong>
-  </div>
-  <br />
-{/if}
-
-<div class="block is-size-7">
-  Further details available on my <a href="https://www.linkedin.com/in/ndrewwm/"
-    >LinkedIn.</a
-  >
-</div>
 
 <section class="block">
   <h1 class="title is-size-6">{heading} Technical Skills</h1>
