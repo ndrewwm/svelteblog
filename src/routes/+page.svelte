@@ -26,7 +26,7 @@
 
     {#each data.posts as post}
       <p class="title is-6">
-        <a href={post.slug}>{post.meta.title}</a>
+        <a href="/blog/post/{post.meta.slug}">{post.meta.title}</a>
       </p>
       <p class="subtitle is-6 mb-4 dt">{post.meta.date}</p>
     {/each}
