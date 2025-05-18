@@ -58,7 +58,7 @@
 
   <section class="mt-4">
     <h2>Contact</h2>
-    You can reach me at <a href="mailto:hello@ndrewwm.com">hello@ndrewwm.com</a>.
+    You can reach me on <a href="https://bsky.app/profile/ndrewwm.com">Bluesky</a>.
   </section>
 </main>
 
