@@ -3,10 +3,10 @@ title: The Three-Body Problem
 author: Liu Cixin
 year: 2008
 isbn: 9781784971571
-started: 2024-10-10
-finished: 2024-12-12
+started: 2024-04-10
+finished: 2024-04-14
 pct: 100
-stars: 4
+stars: 3
 slug: cixin-three-body
 ---
 

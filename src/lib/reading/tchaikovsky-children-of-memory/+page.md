@@ -3,8 +3,8 @@ title: Children of Memory
 author: Adrian Tchaikovsky
 year: 2023
 isbn: 9781529087185
-started: 2024-10-10
-finished: 2024-12-12
+started: 2024-02-13
+finished: 2024-02-29
 pct: 100
 stars: 4
 slug: tchaikovsky-children-of-memory

@@ -3,10 +3,10 @@ title: "Beyond the Wall: East Germany, 1949-1990"
 author: Katja Hoyer
 year: 2023
 isbn: 9781541602571
-started: 2024-10-10
-finished: 2024-12-12
+started: 2023-09-05
+finished: 2023-09-15
 pct: 100
-stars: 4
+stars: 5
 slug: hoyer-beyond-the-wall
 ---
 

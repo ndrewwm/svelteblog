@@ -3,10 +3,10 @@ title: "Females: A Concern"
 author: Andrea Long Chu
 year: 2019
 isbn: 9781788737371
-started: 2023-10-10
-finished: 2023-12-12
+started: 2023-08-28
+finished: 2023-08-29
 pct: 100
-stars: 4
+stars: 3
 slug: chu-females
 ---
 

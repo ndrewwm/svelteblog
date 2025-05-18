@@ -3,10 +3,10 @@ title: Children of Ruin
 author: Adrian Tchaikovsky
 year: 2020
 isbn: 9781509865857
-started: 2024-10-10
-finished: 2024-12-12
+started: 2023-11-01
+finished: 2023-11-07
 pct: 100
-stars: 4
+stars: 5
 slug: tchaikovsky-children-of-ruin
 ---
 

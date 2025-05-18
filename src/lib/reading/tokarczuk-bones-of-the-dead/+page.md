@@ -3,10 +3,10 @@ title: Drive Your Plow Over the Bones of the Dead
 author: Olga Tokarczuk
 year: 2009
 isbn: 9780525541349
-started: 2024-10-10
-finished: 2024-12-12
+started: 2024-03-06
+finished: 2024-04-01
 pct: 100
-stars: 4
+stars: 3
 slug: tokarczuk-bones-of-the-dead
 ---
 

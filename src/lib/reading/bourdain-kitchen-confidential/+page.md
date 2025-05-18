@@ -3,10 +3,10 @@ title: "Kitchen Confidential: Adventures in the Culinary Underbelly"
 author: Anthony Bourdain
 year: 2000
 isbn: 158234082X
-started: 2024-10-10
-finished: 2024-12-12
+started: 2022-01-15
+finished: 2023-08-19
 pct: 100
-stars: 4
+stars: 5
 slug: bourdain-kitchen-confidential
 ---
 

@@ -3,10 +3,10 @@ title: "Red Plenty: Inside the Fifties' Soviet Dream"
 author: Francis Spufford
 year: 2010
 isbn: 9781555976040
-started: 2024-10-10
-finished: 2024-12-12
+started: 2023-08-03
+finished: 2023-08-09
 pct: 100
-stars: 4
+stars: 5
 slug: spufford-red-plenty
 ---
 

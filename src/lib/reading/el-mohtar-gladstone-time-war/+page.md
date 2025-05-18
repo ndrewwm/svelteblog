@@ -3,8 +3,8 @@ title: This is How You Lose the Time War
 author: Amal El-Mohtar, Max Gladstone
 year: 2019
 isbn: 9781534431003
-started: 2024-10-10
-finished: 2024-12-12
+started: 2023-05-16
+finished: 2023-05-18
 pct: 100
 stars: 4
 slug: el-mohtar-gladstone-time-war

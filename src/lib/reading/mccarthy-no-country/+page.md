@@ -3,10 +3,10 @@ title: No Country for Old Men
 author: Cormac McCarthy
 year: 2005
 isbn: 9780330454537
-started: 2024-10-10
-finished: 2024-12-12
+started: 2023-12-01
+finished: 2023-12-18
 pct: 100
-stars: 4
+stars: 5
 slug: mccarthy-no-country
 ---
 

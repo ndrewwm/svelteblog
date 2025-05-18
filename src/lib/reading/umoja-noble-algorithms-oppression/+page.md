@@ -3,10 +3,10 @@ title: "Algorithms of Oppression: How Search Engines Reinforce Racism"
 author: Safiya Umoja Noble
 year: 2018
 isbn: 9781479849949
-started: 2024-10-10
-finished: 2024-12-12
+started: 2023-02-10
+finished: 2023-08-19
 pct: 100
-stars: 4
+stars: 5
 slug: umoja-noble-algorithms-oppression
 ---
 

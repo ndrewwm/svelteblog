@@ -3,8 +3,8 @@ title: Hirohito and the Making of Modern Japan
 author: Herbert P. Bix
 year: 2000
 isbn: 006019314X
-started: 2024-10-10
-finished: 2024-12-12
+started: 2023-11-18
+finished: 2024-01-13
 pct: 100
 stars: 4
 slug: bix-hirohito

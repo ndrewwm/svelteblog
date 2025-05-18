@@ -3,10 +3,10 @@ title: Go, Went, Gone
 author: Jenny Erpenbeck
 year: 2015
 isbn: 9780811225946
-started: 2024-10-10
-finished: 2024-12-12
+started: 2023-08-31
+finished: 2024-11-29
 pct: 100
-stars: 4
+stars: 5
 slug: erpenbeck-go-went-gone
 ---
 

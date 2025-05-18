@@ -3,10 +3,10 @@ title: Boys Weekend
 author: Mattie Lubchansky
 year: 2023
 isbn: 9780593316719
-started: 2024-10-10
-finished: 2024-12-12
+started: 2023-06-10
+finished: 2023-06-11
 pct: 100
-stars: 4
+stars: 5
 slug: lubchansky-boys-weekend
 ---
 

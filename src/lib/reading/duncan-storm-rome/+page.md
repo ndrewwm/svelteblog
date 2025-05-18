@@ -3,8 +3,8 @@ title: "The Storm Before the Storm: The Beginning of the End of the Roman Republ
 author: Mike Duncan
 year: 2017
 isbn: 9781610397216
-started: 2024-10-10
-finished: 2024-12-12
+started: 2024-11-21
+finished: 2024-11-24
 pct: 100
 stars: 4
 slug: duncan-storm-rome

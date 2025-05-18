@@ -4,10 +4,10 @@ author: Bruce Cummings
 year: 2011
 isbn: 9780812978964
 slug: cummings-korean-war
-started: null
-finished: null
+started: 2022-01-15
+finished: 2022-12-18
 pct: 100
-stars: null
+stars: 5
 ---
 
 Out of all of the books I read this year, I think this one was the most impactful. As Cummings notes about the war, citing Richard Stokes (p. 92):
