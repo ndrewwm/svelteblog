@@ -63,11 +63,12 @@
     {/each}
   </section>
 
-  <section class="mt-5 mb-5">
+  <!-- TODO: fix this :/ -->
+  <!-- <section class="mt-5 mb-5">
     <h2><a href="/projects/spotify">Listening habits</a></h2>
 
     <Tracks />
-  </section>
+  </section> -->
 </main>
 
 <style>
