@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { date } from 'drizzle-orm/mysql-core';
+
   export let data;
 </script>
 
@@ -11,25 +13,44 @@
   <meta name="description" content={data.meta.description} />
 </svelte:head>
 
+<header>
+  <h1><a href="/">andrew w. moore</a> | <a href="/blog">blog</a></h1>
+  <h2 id="title">{data.meta.title}</h2>
+  <hr class="mt-1 mb-2">
+</header>
+
 <article class="mb-5">
-  <hgroup>
-    <h1>{data.meta.title}</h1>
-    <h2>{data.meta.date} | <a href="/blog">back</a></h2>
-    <hr class="mt-1 mb-2">
-  </hgroup>
   <div class="content">
     <svelte:component this={data.content} />
   </div>
 </article>
 
+<footer>
+  <p><strong>{data.meta.date}</strong> <a href="/about">andrew moore</a></p>
+  <p><a href="https://bsky.app/profile/ndrewwm.com">@ndrewwm.com on bluesky</a>, <a href="https://github.com/ndrewwm">@ndrewwm on GitHub</a></p>
+</footer>
+
 <style>
-  hgroup, h1 {
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  header, footer {
     font-family: "Micro 5";
+  }
+  footer {
+    font-size: larger;
+    margin-bottom: 2vh;
   }
   h1 {
     font-size: 40px;
   }
   h2 {
-    font-size: 25px
+    font-size: 25px;
+  }
+  #title {
+    font-size: 35px
   }
 </style>

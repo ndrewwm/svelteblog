@@ -5,6 +5,7 @@ description: |
 author: Andrew Moore
 date: "2025-02-14"
 categories: ["til", "programming", "IDEs"]
+slug: til-vscode-keybindings-json
 format:
   gfm:
     variant: +yaml_metadata_block

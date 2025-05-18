@@ -1,0 +1,13 @@
+---
+title: Desert Solitaire
+author: Edward Abbey
+year: 1968
+isbn: 0345326490
+started: 2023-01-08
+finished: 2023-01-31
+pct: 100
+stars: 5
+slug: abbey-desert-solitaire
+---
+
+Abbey is a salty man, not always the most kind, but he wrote some beautiful things in this book.
