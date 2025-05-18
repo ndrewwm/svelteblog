@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-  <title>ndrewwm | I read {data.meta.title}</title>
+  <title>ndrewwm | {data.meta.title}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:type" content="article" />
   <meta property="og:title" content="I read {data.meta.title}" />

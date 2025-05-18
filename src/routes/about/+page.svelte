@@ -48,7 +48,10 @@
       The source code for this website can be found <a href="https://github.com/ndrewwm/svelteblog">here.</a>
     </p>
     <p class="mt-2">
-
+      <a href="https://macwright.com">Tom MacWright's</a> website was a major influence on the minimal look and feel of
+      this version of ndrewwm.com.
+      I remain indebted to <a href="https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog">Josh Collinsworth's</a>
+      website and blog post which helped me gain my footing on working with Svelte/SvelteKit.
     </p>
     <p class="mt-2">
       I do not use LLMs or AI tools to write, research, or publish anything on this website.
