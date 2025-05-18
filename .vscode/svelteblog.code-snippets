@@ -15,6 +15,26 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"New Blog Post": {
+		"scope": "markdown,md",
+		"prefix": "post",
+		"body": [
+			"---",
+			"title: \"$1\"",
+			"author: Andrew Moore",
+			"date: \"$2\"",
+			"slug: $3",
+			"description: null",
+			"draft: false",
+			"categories: []",
+			"format:",
+			"  gfm:",
+			"    variant: +yaml_metadata_block",
+			"---",
+			"",
+			"$0"
+		]
+	},
 	"New Book Review": {
 		"scope": "markdown,md",
 		"prefix": "book",
