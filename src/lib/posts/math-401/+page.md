@@ -4,6 +4,7 @@ description: |
   Done with my final project (and my program)
 author: Andrew Moore
 date: "2025-05-02"
+slug: math-401
 format:
   gfm:
     variant: +yaml_metadata_block
