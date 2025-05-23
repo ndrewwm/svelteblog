@@ -11,20 +11,47 @@
 </svelte:head>
 
 <header>
-  <h1><a href="/">andrew w. moore</a> | reading</h1>
+  <h1><a href="/">andrew w. moore</a> | reading | <a href="/reading/list">list</a></h1>
 </header>
 
-<table>
-  {#each data.posts as post}
-    <tr>
-      <td class="dt">{dayjs(post.meta.date).format("YY.MM.DD")}</td>
-      <td class="post-title"><a href="/reading/{post.meta.slug}">{post.meta.title}</a></td>
-    </tr>
+<div class="block">
+</div>
+
+<section class="block">
+  {#if data.reading.length !== 0}    
+    {#each data.reading as book}      
+      <div class="columns mb-0">
+        <div class="column is-narrow dt">
+          📖 {book.meta.pct}%
+        </div>
+        <div class="column dt">
+          <a class="title is-size-6" href="/reading/{book.meta.slug}">{book.meta.title}</a>
+          <p class="subtitle is-size-6">{book.meta.author}</p>
+        </div>
+      </div>
+    {/each}
+  {/if}
+</section>
+
+<section>
+  {#each data.reviews as book}
+    <div class="columns mb-1">
+      <div class="column is-narrow dt">
+        <p class="title is-size-5">{"★".repeat(book.meta.stars)}</p>
+        <p class="subtitle is-size-7">
+          {dayjs(book.meta.date).format("YY.MM.DD")}
+        </p>
+      </div>
+      <div class="column dt">
+        <a class="title is-size-6" href="/reading/{book.meta.slug}">{book.meta.title}</a>
+        <p class="subtitle is-size-6">{book.meta.author}</p>
+      </div>
+    </div>
   {/each}
-</table>
+</section>
 
 <style>
-    a {
+  a {
     text-decoration: none;
   }
 
@@ -44,20 +71,5 @@
     font-family: 'Roboto Mono', monospace;
     font-weight: bolder;
     /* font-size: larger; */
-  }
-  table {
-    border-style: none;
-  }
-  td {
-    padding: 1vh 1vw 1vh 1vw;
-  }
-  td > a {
-    text-decoration: none;
-  }
-
-  @media (width <= 1000px) {
-    table {
-      font-size: small;
-    }
   }
 </style>
