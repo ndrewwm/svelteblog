@@ -20,7 +20,7 @@
 <section class="block">
   {#if data.reading.length !== 0}    
     {#each data.reading as book}      
-      <div class="columns mb-0">
+      <div class="columns is-mobile mb-0">
         <div class="column is-narrow dt">
           📖 {book.meta.pct}%
         </div>
@@ -35,7 +35,7 @@
 
 <section>
   {#each data.reviews as book}
-    <div class="columns mb-1">
+    <div class="columns is-mobile mb-1">
       <div class="column is-narrow dt">
         <p class="title is-size-5">{"★".repeat(book.meta.stars)}</p>
         <p class="subtitle is-size-7">
