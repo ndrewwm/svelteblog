@@ -6,8 +6,8 @@ isbn: null
 pages: 140
 slug: mommsen-capitalism-bureaucracy-weber
 started: 2024-04-01
-finished: null
-pct: 15
-stars: null
+finished: 2025-05-26
+pct: 100
+stars: 4
 ---
 

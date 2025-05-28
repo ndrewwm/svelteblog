@@ -6,8 +6,9 @@ isbn: null
 pages: 150
 slug: frase-four-futures
 started: 2025-05-20
-finished: null
-pct: 30
-stars: null
+finished: 2025-05-26
+pct: 100
+stars: 4
 ---
+
 
