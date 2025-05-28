@@ -14,18 +14,22 @@
     Loading ...
   {:then artists}
     <table>
-      <tr class="header">
-        <th>artist(s)</th>
-        <th># plays</th>
-        <th>total duration (min.)</th>
-      </tr>
-      {#each artists as artist}
-        <tr>
-          <td>{artist.artists}</td>
-          <td style="text-align: right;">{artist.plays}</td>
-          <td style="text-align: right;">{Math.round(artist.minutes_played)}</td>
+      <thead>
+        <tr class="header">
+          <th>artist(s)</th>
+          <th># plays</th>
+          <th>total duration (min.)</th>
         </tr>
-      {/each}
+      </thead>
+      <tbody>
+        {#each artists as artist}
+          <tr>
+            <td>{artist.artists}</td>
+            <td style="text-align: right;">{artist.plays}</td>
+            <td style="text-align: right;">{Math.round(artist.minutes_played)}</td>
+          </tr>
+        {/each}
+      </tbody>
     </table>
   {/await}
 </div>

@@ -1,7 +1,11 @@
-<script>
-  export let section = false;
-  export let heading = "##";
-  export let color = "#EFCB68";
+<script lang="ts">
+  interface Props {
+    section?: boolean;
+    heading?: string;
+    color?: string;
+  }
+
+  let { section = false, heading = "##", color = "#EFCB68" }: Props = $props();
   let title = "projects";
 </script>
 

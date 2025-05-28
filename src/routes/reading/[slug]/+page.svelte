@@ -1,7 +1,7 @@
-<script>
-  export let data;
+<script lang="ts">
   import dayjs from 'dayjs';
   import OpenLibraryCover from '$lib/util/OpenLibraryCover.svelte';
+  let { data } = $props();
 </script>
 
 <svelte:head>
@@ -50,7 +50,7 @@
     <div class="column">
       {#if data.content}
         <div class="content">
-          <svelte:component this={data.content} />
+          <data.content />
         </div>
       {/if}
     </div>

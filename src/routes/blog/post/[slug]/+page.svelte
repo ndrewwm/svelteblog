@@ -1,7 +1,7 @@
 <script lang="ts">
     import { date } from 'drizzle-orm/mysql-core';
 
-  export let data;
+  let { data } = $props();
 </script>
 
 <svelte:head>
@@ -21,7 +21,7 @@
 
 <article class="mb-5">
   <div class="content">
-    <svelte:component this={data.content} />
+    <data.content />
   </div>
 </article>
 

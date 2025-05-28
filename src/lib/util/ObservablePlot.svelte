@@ -5,13 +5,18 @@
 
   const dispatch = createEventDispatcher();
 
-  export let options: Plot.PlotOptions;
 
-  export let fixedWidth = false;
+  interface Props {
+    options: Plot.PlotOptions;
+    fixedWidth?: boolean;
+    [key: string]: any
+  }
 
-  let width = 400;
+  let { options, fixedWidth = false, ...rest }: Props = $props();
 
-  $: hash = JSON.stringify({ ...options, width });
+  let width = $state(400);
+
+  let hash = $derived(JSON.stringify({ ...options, width }));
 
   let plot: HTMLElement | SVGElement & Plot.Plot;
 
@@ -27,7 +32,7 @@
 
 {#key hash}
   <div bind:clientWidth={width} class="plot">
-      <div use:myplot {...$$restProps}><span /></div>
+      <div use:myplot {...rest}><span></span></div>
   </div>
 {/key}
 

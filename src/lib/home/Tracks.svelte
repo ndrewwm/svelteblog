@@ -17,20 +17,24 @@
     Loading ...
   {:then tracks}
     <table>
-      <tr class="header">
-        <th style="text-align: left;">track name</th>
-        <th style="text-align: left;">artist(s)</th>
-        <th style="text-align: right;">times played</th>
-        <th style="text-align: right;">total duration (min.)</th>
-      </tr>
-      {#each tracks as track}
-        <tr>
-          <td style="text-align: left;">{track.track_name}</td>
-          <td style="text-align: left;">{track.artists}</td>
-          <td style="text-align: right;">{track.plays}</td>
-          <td style="text-align: right;">{Math.round(track.minutes_played)}</td>
+      <thead>
+        <tr class="header">
+          <th style="text-align: left;">track name</th>
+          <th style="text-align: left;">artist(s)</th>
+          <th style="text-align: right;">times played</th>
+          <th style="text-align: right;">total duration (min.)</th>
         </tr>
-      {/each}
+      </thead>
+      <tbody>
+        {#each tracks as track}
+          <tr>
+            <td style="text-align: left;">{track.track_name}</td>
+            <td style="text-align: left;">{track.artists}</td>
+            <td style="text-align: right;">{track.plays}</td>
+            <td style="text-align: right;">{Math.round(track.minutes_played)}</td>
+          </tr>
+        {/each}
+      </tbody>
     </table>
   {/await}
 </div>

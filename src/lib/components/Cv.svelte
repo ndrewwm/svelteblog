@@ -1,5 +1,9 @@
-<script>
-  export let heading = "##";
+<script lang="ts">
+  interface Props {
+    heading?: string;
+  }
+
+  let { heading = "##" }: Props = $props();
 </script>
 
 <section class="block">

@@ -18,8 +18,8 @@
     };
   }
 
-  let cumulative = false;
-  $: text = cumulative ? "Weekly" : "Cumulative";
+  let cumulative = $state(false);
+  let text = $derived(cumulative ? "Weekly" : "Cumulative");
   function toggleCumulative() {
     cumulative = !cumulative;
   }
@@ -51,7 +51,7 @@
 
   <section class="block">
     <h1 class="title">Discovery Rate</h1>
-    <button class="button" on:click={toggleCumulative} style="margin-bottom: 10px">{text}</button>
+    <button class="button" onclick={toggleCumulative} style="margin-bottom: 10px">{text}</button>
     {#key cumulative}
       <LineTrackDiscovery discovery={data.discovery} {cumulative} />
     {/key}

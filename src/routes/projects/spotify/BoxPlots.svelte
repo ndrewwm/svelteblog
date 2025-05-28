@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
   import ObservablePlot from "$lib/util/ObservablePlot.svelte";
   import * as Plot from "@observablehq/plot";
   import { from, op } from "arquero";
 
-  export let popularity;
+  let { popularity } = $props();
 
   let t_pop = from(popularity)
     .derive({

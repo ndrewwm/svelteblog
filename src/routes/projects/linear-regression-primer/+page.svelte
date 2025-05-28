@@ -20,18 +20,20 @@
 
 <center>
   <table>
-    <tr>
-      <td>Part 1</td>
-      <td><a href="/projects/linear-regression-primer/1">Ordinary Least Squares</a></td>
-    </tr>
-    <tr>
-      <td>Part 2</td>
-      <td><a href="/projects/linear-regression-primer/2">Fitting a model using R</a></td>
-    </tr>
-    <tr>
-      <td>Part 3</td>
-      <td><a href="/projects/linear-regression-primer/3">Multiple regression and model comparison</a></td>
-    </tr>
+    <tbody>
+      <tr>
+        <td>Part 1</td>
+        <td><a href="/projects/linear-regression-primer/1">Ordinary Least Squares</a></td>
+      </tr>
+      <tr>
+        <td>Part 2</td>
+        <td><a href="/projects/linear-regression-primer/2">Fitting a model using R</a></td>
+      </tr>
+      <tr>
+        <td>Part 3</td>
+        <td><a href="/projects/linear-regression-primer/3">Multiple regression and model comparison</a></td>
+      </tr>
+    </tbody>
   </table>
 </center>
 

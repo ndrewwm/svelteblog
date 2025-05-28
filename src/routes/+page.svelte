@@ -1,7 +1,7 @@
 <script lang="ts">
   import Now from "$lib/components/Now.svelte";
   import Tracks from "$lib/home/Tracks.svelte";
-  export let data;
+  let { data } = $props();
 </script>
 
 <svelte:head>

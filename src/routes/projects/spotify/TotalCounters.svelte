@@ -2,7 +2,7 @@
   import CountUp from "$lib/util/CountUp.svelte";
   import { from, op } from "arquero";
 
-  export let data;
+  let { data } = $props();
 
   // Duration
   let durations: number[] = [];

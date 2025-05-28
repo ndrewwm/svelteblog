@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import ObservablePlot from '$lib/util/ObservablePlot.svelte';
   import * as Plot from "@observablehq/plot";
 
-  export let artists;
+  let { artists } = $props();
 </script>
 
 <p class="mb-3">

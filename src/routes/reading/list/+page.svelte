@@ -1,6 +1,6 @@
-<script>
-  export let data;
+<script lang="ts">
   import dayjs from 'dayjs';
+  let { data } = $props();
 </script>
 
 <svelte:head>

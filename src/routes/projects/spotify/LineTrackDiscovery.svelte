@@ -1,10 +1,14 @@
-<script >
+<script lang="ts" >
   import ObservablePlot from "$lib/util/ObservablePlot.svelte";
   import * as Plot from "@observablehq/plot";
   import { from, op, not, rolling } from "arquero";
 
-  export let discovery;
-  export let cumulative = false;
+  interface Props {
+    discovery: any;
+    cumulative?: boolean;
+  }
+
+  let { discovery, cumulative = false }: Props = $props();
 
   let data = from(discovery)
     .derive({
