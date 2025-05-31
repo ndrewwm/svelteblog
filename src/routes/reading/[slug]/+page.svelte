@@ -33,11 +33,17 @@
       </progress>
     {/if}
 
-    <p class="is-size-5">
-      {#if data.meta.finished}
+    {#if data.meta.finished}
+      <p class="is-size-5">
         Finished: {dayjs(data.meta.finished).format("YYYY-MM-DD")}
-      {/if}
-    </p>
+      </p>
+    {/if}
+
+    {#if data.meta.who}
+      <p class="is-size-5">
+        Recommended by: {data.meta.who}
+      </p>
+    {/if}
   </h2>
   <hr class="mt-1 mb-2">
 </header>
