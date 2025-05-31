@@ -8,6 +8,7 @@ finished: 2024-02-14
 pct: 100
 stars: 5
 slug: wills-bomb-power
+who: KYE
 ---
 
 Dr. Wills kindly provides a straightforward summary of the book's central argument in its first paragraph:

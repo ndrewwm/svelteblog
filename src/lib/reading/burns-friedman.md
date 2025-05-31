@@ -8,6 +8,7 @@ finished: 2024-08-08
 pct: 100
 stars: 4
 slug: burns-friedman
+who: KYE
 ---
 
 I picked this one up after listening to the <em>Know Your Enemy</em> <a href="https://open.spotify.com/episode/5Hy4YEWK1vNQsBHyFnuEz1?si=081f4d92332143b0">episode</a> in which the hosts interviewed the author. Before reading this book, I knew that Friedman was one of the central figures of the "Chicago School" of economics, a faction that displaced the rival Keynesian approach to become essentially synonymous with mainstream economics. Reading Burns's book probably wouldn't offer a different one-sentence summary of the Chicago School's trajectory, but my picture of the characters on the stage has appreciably changed, as well as my sense of Friedman, "the first neoliberal", himself.

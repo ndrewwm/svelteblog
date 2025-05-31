@@ -8,6 +8,7 @@ finished: 2024-02-13
 pct: 100
 stars: 4
 slug: bradbury-illustrated-man
+who: OIT Book Club
 ---
 
 Someone suggested this one for a book club I'm part of, and I was excited to have an excuse to pick it up. The book opens with an anonymous narrator allowing a travelling performer spend the night at his home. He discovers that the perfomer is covered with tattoos that seem to magically move over the performer's body. Each chapter from the book is a "scene" leaping from the performer's tattooed skin. The plots/characters are unconnected; I remember reading that Bradbury wrote them for magazine publication, and that they were later collected as this small volume.

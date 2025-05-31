@@ -8,6 +8,7 @@ finished: 2023-01-31
 pct: 100
 stars: 5
 slug: abbey-desert-solitaire
+who: Nick
 ---
 
 Abbey is a salty man, not always the most kind, but he wrote some beautiful things in this book.
