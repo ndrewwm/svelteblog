@@ -7,7 +7,7 @@ pages: null
 slug: strogatz-infinite-powers
 started: 2024-12-03
 finished: null
-pct: 49
+pct: 62
 stars: null
 ---
 
