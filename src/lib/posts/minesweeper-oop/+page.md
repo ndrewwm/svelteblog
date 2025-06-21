@@ -11,6 +11,11 @@ format:
     variant: +yaml_metadata_block
 ---
 
+<svelte:head>
+  <meta property="og:image" content="./sweeper.png" />
+  <meta name="twitter:image" content="./sweeper.png" />
+</svelte:head>
+
 Most introductions to object-oriented programming (OOP) I've seen use a common example of an `Animal` class, which is then inherited by a `Dog` or `Cat` class to demonstrate basic attributes and methods. These are simple enough, especially if the reader is already familiar with OOP and the primary goal is understanding a language's syntax. However, for those new to programming or OOP as a paradigm, I think a better learning example might be found in the classic game of _Minesweeper._
 
 This week I've been teaching myself a bit about terminal-based applications, and have been exploring concepts by implementing _Minesweeper_ in Python. It's possible _Minesweeper_ was the first computer game I ever played (probably on my grandparents' ancient PC on Windows 98). Despite being simple in concept and its mechanics, it's a fun little logic game. Like many classics, the rules can be described concisely:
