@@ -11,6 +11,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content={data.meta.title} />
   <meta name="description" content={data.meta.description} />
+  <meta name="og:description" content={data.meta.description} />
 </svelte:head>
 
 <header>
