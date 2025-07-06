@@ -27,6 +27,7 @@
 			"description: null",
 			"draft: false",
 			"categories: []",
+			"preview: null",
 			"format:",
 			"  gfm:",
 			"    variant: +yaml_metadata_block",
