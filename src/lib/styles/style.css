@@ -23,6 +23,7 @@
   --bulma-title-color: #000411;
   --bulma-subtitle-color: #000411;
   --bulma-content-heading-color: #000411;
+  --bulma-hr-background-color: #000411;
   --bulma-border: #000411;
 }
 
@@ -40,6 +41,7 @@
     --bulma-border: #E1EFE6;
     --main-bg-color: #000411;
     --main-txt-color: #E1EFE6;
+    --bulma-hr-background-color: #E1EFE6;
     --main-heading-color: #EFCB68;
   }
 

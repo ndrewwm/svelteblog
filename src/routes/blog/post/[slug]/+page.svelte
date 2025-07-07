@@ -21,13 +21,10 @@
 <header>
   <h1><a href="/">andrew w. moore</a> | <a href="/blog">blog</a></h1>
   <h2 id="title">{data.meta.title}</h2>
-  <hr class="mt-1 mb-2">
 </header>
 
-<article class="mb-5">
-  <div class="content">
-    <data.content />
-  </div>
+<article class="mb-5 content">
+  <data.content />
 </article>
 
 <footer>
