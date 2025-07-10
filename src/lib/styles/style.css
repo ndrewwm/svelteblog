@@ -94,6 +94,12 @@ a:hover {
   text-decoration: underline;
 }
 
+/* FOOTNOTES */
+
+.footnote-ref, .footnote-backref {
+  text-decoration: none;
+}
+
 /**
  * CODE & LANGUAGE FORMATTING
  */
