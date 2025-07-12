@@ -7,7 +7,7 @@ pages: 432
 slug: singh-code-book
 started: 2024-05-15
 finished: null
-pct: 46
+pct: 68
 stars: null
 who: Tim
 ---
