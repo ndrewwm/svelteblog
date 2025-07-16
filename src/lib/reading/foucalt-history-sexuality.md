@@ -2,10 +2,11 @@
 title: The History of Sexuality, Volume 1
 author: Michel Foucalt
 year: 1976
-isbn: 9780140222999
+isbn: 9780679724698
 started: 2024-06-16
 finished: 2024-07-06
 pct: 100
+pages: 279
 stars: 3
 slug: foucalt-history-sexuality
 ---

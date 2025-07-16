@@ -2,9 +2,10 @@
 title: "The Way We Never Were: American Families and the Nostalgia Trap"
 author: Stephanie Coontz
 year: 2016
-isbn: 0465001351
+isbn: 9780465001354
 started: 2024-09-23
 finished: 2024-11-18
+pages: 391
 pct: 100
 stars: 5
 slug: coontz-nostalgia-trap
