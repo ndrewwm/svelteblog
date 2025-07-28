@@ -1,14 +1,18 @@
 <script lang="ts" >
+  import { MediaQuery } from "svelte/reactivity";
   import ObservablePlot from "$lib/util/ObservablePlot.svelte";
   import * as Plot from "@observablehq/plot";
   import { from, op, not, rolling } from "arquero";
 
+  let prefersDark = new MediaQuery('(prefers-color-scheme: dark)', false);
+
   interface Props {
     discovery: any;
     cumulative?: boolean;
+    prefersDark: boolean;
   }
 
-  let { discovery, cumulative = false }: Props = $props();
+  let { discovery, cumulative = false}: Props = $props();
 
   let data = from(discovery)
     .derive({
@@ -32,7 +36,7 @@
       // legend: true,
       type: "categorical",
       domain: ["Plays", "New tracks"],
-      range: ["#E1EFE6", "#EFCB68"]
+      range: prefersDark.current ? ["#E1EFE6", "#EFCB68"] : ["#000411", "#EFCB68"],
     },
     x: {
       label: "Week",

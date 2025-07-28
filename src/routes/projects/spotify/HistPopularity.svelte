@@ -2,6 +2,9 @@
   import ObservablePlot from "$lib/util/ObservablePlot.svelte";
   import * as Plot from "@observablehq/plot";
   import { from, op } from "arquero";
+    import { MediaQuery } from "svelte/reactivity";
+
+  let prefersDark = new MediaQuery('(prefers-color-scheme: dark)', false);
 
   let { popularity } = $props();
 
@@ -31,7 +34,7 @@
       legend: true,
       marginLeft: 300,
       domain: [">30 days old", "Last 30 days"],
-      range: ["#E1EFE6", "#EFCB68"]
+      range: prefersDark.current ? ["#E1EFE6", "#EFCB68"] : ["lightgray", "#EFCB68"],
     },
   }
 </script>

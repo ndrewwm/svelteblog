@@ -1,10 +1,13 @@
 <script>
+  import { MediaQuery } from 'svelte/reactivity';
   import Banner from '$lib/util/Banner.svelte';
   import BarTopArtists from './BarTopArtists.svelte';
   import BoxPlots from './BoxPlots.svelte';
   import LineTrackDiscovery from './LineTrackDiscovery.svelte';
   import HistPopularity from './HistPopularity.svelte';
   import TotalCounters from './TotalCounters.svelte';
+
+  const prefersDark = $state(new MediaQuery('(prefers-color-scheme: dark)', false));
 
   async function getData() {
     const artists = await fetch("/api/spotify/recent_artists");
@@ -46,14 +49,14 @@
 
   <section class="block">
     <h1 class="title">Artists</h1>
-    <BarTopArtists artists={data.artists} />
+    <BarTopArtists artists={data.artists} prefersDark={prefersDark.current} />
   </section>
 
   <section class="block">
     <h1 class="title">Discovery Rate</h1>
     <button class="button" onclick={toggleCumulative} style="margin-bottom: 10px">{text}</button>
     {#key cumulative}
-      <LineTrackDiscovery discovery={data.discovery} {cumulative} />
+      <LineTrackDiscovery discovery={data.discovery} {cumulative} prefersDark={prefersDark.current} />
     {/key}
   </section>
 

@@ -27,7 +27,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@libsql/client": "^0.7.0",
+		"@libsql/client": "^0.15.9",
 		"@observablehq/plot": "^0.6.16",
 		"arquero": "^6.0.1",
 		"dayjs": "^1.11.13",

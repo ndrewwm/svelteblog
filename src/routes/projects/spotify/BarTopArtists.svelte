@@ -1,8 +1,12 @@
 <script lang="ts">
+  import { MediaQuery } from 'svelte/reactivity';
   import ObservablePlot from '$lib/util/ObservablePlot.svelte';
   import * as Plot from "@observablehq/plot";
 
   let { artists } = $props();
+  let charLengths = artists.map((track) => track.artists.length);
+  let maxChars = Math.max(...charLengths);
+  let prefersDark = new MediaQuery('(prefers-color-scheme: dark)', false);
 </script>
 
 <p class="mb-3">
@@ -15,11 +19,16 @@
 <center>
   <ObservablePlot fixedWidth={false} options={{
     title: "Top artists from the past 30 days",
-    marginLeft: 100,
+    marginLeft: maxChars >= 30 ? 180 : 100, 
     y: {label: ""},
     marks: [
       Plot.barX(artists, {x: "plays", y: "artists", sort: {y: "-x"}}),
-      Plot.gridX({interval: 10, stroke: "#000411", strokeOpacity: 1, strokeWidth: 1.5}),
+      Plot.gridX({
+        interval: 10,
+        stroke: prefersDark.current ? "#000411" : "#E1EFE6",
+        strokeOpacity: 1,
+        strokeWidth: 1.5,
+      }),
     ]
   }} />
 </center>
