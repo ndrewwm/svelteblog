@@ -1,5 +1,5 @@
 ---
-title: How are we feeling about LLMs in 2025? (part 2)
+title: 'How are we feeling about LLMs? (part 2): waiting for (model) collapse'
 author: Andrew Moore
 date: '2025-09-01'
 slug: llms-2025-part-2
@@ -35,26 +35,27 @@ format:
 
 This is a continuation of my midyear temperature check regarding LLMs;
 you can find part 1 [here](./llms-2025). In this post, I’m gathering my
-thoughts about model collapse, and the environmental impacts of the tech
-(with a general focus on how this is playing out in the United States,
-but I might branch out– we’ll see). But, first a quick return to the
-topic of LLMs being used to support developer productivity.
+thoughts about “model collapse”, focusing on a
+[paper](https://www.nature.com/articles/s41586-024-07566-y) published in
+2024. To my chagrin, I think I’ll need a part 3 to discuss where my
+head’s at re: environmental and economic impacts. But, first a brief
+return to the topic of LLMs being used to support developer
+productivity.
 
 ### Aside: productivity boosts from LLM-based tools are not achieved as easily as anecdotes might suggest.
 
-I know I’ve already talked about LLMs and their usage related to
-software development at length, but the day after posting part 1, I came
-across a post from METR (Model Evaluation & Threat Research) reporting
-an RCT they’d conducted. METR recruited 16 experienced developers
-responsible for maintaining large open-source GitHub repositories
-(averaging 1M+ lines of code being maintained). The developers
-identified 246 high-priority issues (bug fixes or feature requests)
-across the repositories to address. METR then randomly assigned whether
-a developer was allowed to use LLM-based tools (Claude Cursor, Copilot,
-etc.) to complete the issue. During and after developers wrote code to
-address an issue, they were asked to estimate the degree to which the
-LLM-tool(s) impacted their speed. Here’s a key visualization summarizing
-one of their findings:
+The day after posting part 1, I came across a post from an organization
+called METR (Model Evaluation & Threat Research) describing an RCT
+they’d conducted. METR recruited 16 experienced developers responsible
+for maintaining large open-source GitHub repositories (averaging 1M+
+lines of code being maintained). The developers identified 246
+high-priority issues (bug fixes or feature requests) across the
+repositories to address. METR then randomly assigned whether a developer
+was allowed to use LLM-based tools (Claude Cursor, Copilot, etc.) to
+complete the issue. During and after developers wrote code to address an
+issue, they were asked to estimate the degree to which the LLM-tool(s)
+impacted their speed. Here’s a key visualization summarizing one of
+their findings:
 
 <center>
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:dll3hepzq76nymel5c3yt6nk/app.bsky.feed.post/3ltn3t3amms2x" data-bluesky-cid="bafyreif63ykwtnggvqdmk57fbq4khfpkvykiwngmsnofvs7bv2rikr4aym" data-bluesky-embed-color-mode="system">
@@ -74,29 +75,30 @@ or embed\]</a>— METR
 </blockquote>
 </center>
 
-In summary, all the parties involved in this study (including the
-authors) *overestimated* the degree to which LLM-tools would boost
-productivity. Instead, their results show that using LLMs actually
-decreased their productivity. One study doesn’t close discussion, but
-this feels like reasonable empirical support to the notions that LLMs
-aren’t very helpful for maintaining/extending existing projects, and
-that *self-reports aren’t reliable.* The benefits from these tools
-aren’t accrued uniformly, as I mentioned in part 1. There’s a useful
-idea from computer science known as [“Amdahl’s
-Law”](https://en.wikipedia.org/wiki/Amdahl%27s_law), which states that
-performance improvements gained through optimizing a single part of a
-system are limited by the proportion of time that part is actually used.
-LLMs may allow us to throw spaghetti (code) at the wall at unprecedented
-rates, but this likely isn’t the most important bottleneck (further,
-this ability can be [actively
-harmful](https://www.theregister.com/2025/07/21/replit_saastr_vibe_coding_incident/)).
+The full thread/study is worth looking at. In summary, all the parties
+involved in this study (including the authors) *overestimated* the
+degree to which LLM-tools would boost productivity. Instead, their
+results show that using LLMs actually decreased their performance. One
+study doesn’t close discussion, but it supports the hypothesis that LLMs
+aren’t as helpful for maintaining/extending existing projects, and
+provides empirical data showing that *self-reports about AI-boosted
+productivity aren’t reliable.* The benefits of these tools, if any,
+aren’t accrued uniformly. There’s a useful idea from computer science
+known as [“Amdahl’s Law”](https://en.wikipedia.org/wiki/Amdahl%27s_law),
+which states that performance improvements gained through optimizing a
+single part of a system are limited by the proportion of time that part
+is actually used. LLMs may allow us to throw spaghetti (code) at the
+wall at unprecedented rates, but this likely isn’t the most important
+bottleneck (further, this ability can be actively harmful, as we keep
+[finding
+out](https://www.theregister.com/2025/07/21/replit_saastr_vibe_coding_incident/)).
 
-### Adjusting: we’re still waiting for (model) collapse.
+### Adjusting: model collapse might not be a practical issue for providers.
 
 In part 1, I talked about my fears that LLM-based tools like ChatGPT
 would negatively impact knowledge-sharing communities like
 StackOverflow. However, I didn’t discuss an important aspect of this
-recent history, which is that the site’s moderators [banned the use of
+recent history, in which the site’s moderators [banned the use of
 ChatGPT](https://meta.stackoverflow.com/questions/421831/policy-generative-ai-e-g-chatgpt-is-banned)
 for generating questions/answers shortly after its release. Not only are
 LLMs capable of spitting out Javascript at inhuman speeds, they’re able
@@ -107,18 +109,15 @@ strength in the long-running conflict between spammers and mods. It’s
 pretty bad that LLMs are augmenting this already considerable advantage.
 
 The issue is that human comprehension is always slower than the rate of
-text-production. For a Q&A site like StackOverflow, random users can
-collectively “answer” thousands of questions via LLM-tools in an
-afternoon, but the site’s human users still need to determine if any of
-this content is actually useful or applicable. The fluency and dynamic
-nature of LLM outputs means that certain anti-spam automations are less
-effective.[^1] As we’ve seen over the past few years, LLMs are being
-used to generate email replies, social media posts, long-form
-documentation, essays, reports, articles, novels, etc. Various forms of
-slop, as the kids say. Much of this LLM output is intended to land
-somewhere on the internet, where many people can read it. This being the
-case, it seems inevitable that future generations of LLMs will ingest
-LLM-generated text as part of their training.
+text-production. The fluency and dynamic nature of LLM outputs means
+that certain anti-spam automations are less effective.[^1] As we’ve seen
+over the past few years, LLMs are being used to generate email replies,
+social media posts, long-form documentation, essays, reports, articles,
+novels, etc. Various forms of slop, as the kids say. Much of this LLM
+output is intended to land somewhere on the internet, where many people
+could (in theory) read it. Thus, it seems inevitable that future
+iterations of LLMs will ingest LLM-generated text as part of their
+training.
 
 A reasonable intuition is that this seems bad for the future utility of
 these models. LLMs model natural language probabilistically; as
@@ -129,10 +128,11 @@ This being the case, LLMs share a quality of all statistical models, in
 that their performance depends on the quality and diversity of data used
 for training. “Garbage in, garbage out” (GIGO), as the saying goes. To
 the point: indiscriminantly mixing *generated* text with human-written
-text for training seems questionable. So, what will happen to these
-models as output from prior LLMs accumulates in their training data? I
-was excited to find this paper in 2024, [*“AI models collapse when
-trained on recursively generated
+text for training seems highly questionable, because generated text
+isn’t part of the distribution being targeted. So, what will happen to
+these models as output from prior LLMs accumulates in their training
+data? I was excited to find this paper in 2024, [*“AI models collapse
+when trained on recursively generated
 data”*](https://www.nature.com/articles/s41586-024-07566-y) (Shumailov
 et al., 2024), which works through some of the theory behind this
 question.
@@ -150,22 +150,20 @@ As the paper’s authors describe it, *model collapse* is “a degenerative
 process whereby, over time, models forget the true underlying data
 distribution, even in the absence of a shift in the distribution”. The
 phenomena is caused by “indiscriminate learning” from data produced by
-other models, rather than actual examples (i.e., for LLMs, human-written
-language). As we’ve seen, LLM providers train their models
+other models, rather than actual examples (i.e., human-written language,
+in the context of LLMs). As we’ve seen, LLM providers train their models
 generationally, with each new generation getting access to newer data.
-Shumailov et al. speculate about what might happen in a future where
-“*GPT-n*” is trained on data consisting of mostly LLM output. Their
-conclusions, based on theoretical results and experimentation, motivate
-the authors’ concerns that use of LLMs at scale to publish internet
-content will contaminate the data necessary for training successor
-models.
+Shumailov et al. ask what happens in a future where “*GPT-n*” is trained
+on data consisting of mostly LLM output. Their conclusions, based on
+theoretical results and experimentation, motivate the authors’ concerns
+that use of LLMs at scale to publish internet content will gradually
+contaminate data necessary for training successor models.
 
 The next few paragraphs are a little technical, but I want to walk
 through some of what the authors are discussing. In particular, I want
-to reproduce one of their simpler examples to help demonstrate what the
-authors mean by a model “forgetting” part of the original distribution.
-This involves a bit of mathematical notation, but I hope you’ll bear
-with me!
+to reproduce one of their simpler examples to show what the authors mean
+by a model “forgetting” part of the original distribution. This involves
+a bit of mathematical notation, but I hope you’ll bear with me!
 
 The authors describe a generational process of model fitting, in which
 model outputs are subsequently used for training future generations.
@@ -192,8 +190,8 @@ $$
 
 Here, $\alpha_i$, $\beta_i$, and $\gamma_i$ represent proportions of
 $\mathcal{D}_{i + 1}$ coming from generation $i$, $i - 1$, and the
-original data, respectively.[^3] To demonstrate model collapse, they
-discuss several examples, setting $\alpha_i = 1$ and
+original data, respectively.[^3] [^4] To demonstrate model collapse,
+they discuss several examples, setting $\alpha_i = 1$ and
 $\beta_i = \gamma_i = 0$.
 
 As is tradition, the authors provide an example using the 1-dimensional
@@ -218,7 +216,9 @@ $\mu_0 = 0$, and $\sigma^2_0 = 1$), we clearly see how the
 distribution’s variance (the distribution’s “spread”) approaches 0 in
 just a few generations. You could say that after the first generation,
 the model “forgets” about the possibility of data with an absolute value
-greater than 2. By the fifth generation, all values are between -0.19
+greater than 2. This is what the authors call “early” model collapse. By
+the fifth generation, we have “late” model collapse, in which the
+distribution’s variance disappears: here, all values are between -0.19
 and 0.16.
 
 <img src="./+page_files/unnamed-chunk-1-1.png"
@@ -270,37 +270,60 @@ paper, which you may have already seen in popular coverage:
 
 “Collapse” certainly feels apt as a description for what we see as a
 response in Gen 9. That said, if we’re persuaded by the authors’
-results, how should we think about what they suggest for models trained
-in the (near) future? The authors consider two different scenarios for
-training LLMs: $\gamma_i = 0.0$, and $\gamma_i = 0.1$. The first
+results, what might they suggest for models trained in the (near-ish)
+future? In the main text, the authors consider two different scenarios
+for training LLMs: $\gamma_i = 0.0$, and $\gamma_i = 0.1$. The first
 imagines a world in which all text that’s available for training is
-output from a prior LLM. We can grant that this isn’t meant to be
-realistic, and understand it’s meant to demonstrate the process of
-interest. But, the second scenario, $\gamma_i = 0.1$, also doesn’t feel
-satisfying to me; it reads too similar to the first. The authors show
+output from a prior LLM. We can grant this isn’t meant to be realistic,
+and understand it’s meant to demonstrate the process of interest. But,
+the second scenario, $\gamma_i = 0.1$, also doesn’t feel satisfying to
+me; it reads too similar to the first. Unsurprisingly, the authors show
 that model collapse still occurs, just a bit more slowly. In their
-supplemental materials, they also observe that the issue persists in the
-long-run when you randomly vary $\alpha_i$, $\beta_i$, and $\gamma_i$.
-Fair enough, but
+supplemental materials, they also observe that model collapse eventually
+occurs when $\alpha_i$, $\beta_i$, and $\gamma_i$ are allowed to vary
+randomly.
 
-- it hasn’t happened (yet)
+Fair enough, but the most realistic scenario anticipates practitioners
+actively working to ensure that future datasets are clean when they
+arrive in their hands. That is, when a dataset is assembled for training
+LLM-generation $i$, the true values for $\alpha_{i - 1}$,
+$\beta_{i - 1}$ and $\gamma_{i - 1}$ will be unknown and random, but I
+think we should assume that $\mathcal{D}_i$ will be constructed in a way
+that tries to minimize $\alpha_{i - 1}$ and $\beta_{i - 1}$. My guess is
+that reaching “late” model collapse will take many more generations if
+$\gamma$ is consistently high. As a ballpark, when rerunning the
+Gaussian simulation using $\gamma = 0.9$ and $\alpha = 0.1$, the
+distribution’s variance at $i = 300$ was still very close to the
+true/original value of 1.0.
+
+Currently, it seems to take providers roughly 6-12 months to produce a
+new generation of their models. This leads me to wonder whether model
+collapse is actually a practical issue. Perhaps in the future it will be
+costly to constrain $\alpha$ and $\beta$, but data cleaning is a normal
+part of model development. Even before the advent of current LLMs,
+practitioners were developing methods to avoid training models on
+duplicated documents/text.[^5] New approaches used to flag LLM-generated
+output may have varying levels of success, but I wish the authors had
+addressed this a bit more directly with their results, rather than
+touching on it in the paper’s discussion.
+
+#### Some possible futures
+
+So, it’s not clear (to me) if model collapse will threaten the viability
+of future models developed within the lifespan of humans on Earth. After
+reading through this paper, I don’t think the authors’ concerns are
+invalid– in fact, I think
+
 - metaphor of pure steel (uncontaminated from nuclear radiation)
 - returning to the topic of search: retrieval augmented generation (RAG)
   - adding the contents of the web to the the LLM’s context window
   - slop serving slop
 
-### Adjusting: concerns related to the environmental impact of LLMs may have been overstated.
+<!-- Maybe -->
 
-- LLMs take *more* energy than standard searches, but it’s not
-  drastically different
-- Data centers do use a lot of water, they might be creating negative
-  ecological impacts, but agricultural practices in the US are still so
-  much more concerning
-- Transit use is also much more problematic in the US
-- The sociotechnical impacts of the technology are much more concerning–
-  we need to address them head on, and ensure our critiques are
-  effective (how are they actually harmful, what do they enable, what
-  are they being used to do?)
+### More in [part 3.](./blog/post/llms-2025-part-3)
+
+…
 
 <style>
   h3 {
@@ -318,9 +341,10 @@ Fair enough, but
 </style>
 
 [^1]: In some cases, traditional approaches still work when
-    spam-producers don’t bother to remove common tells in chatbot output
-    (like “happy to help!”, or “certainly!”). But, we’ve definitely
-    kicked off a new arms-race between factions in this conflict.
+    spam-producers don’t bother to remove common tells that indicate
+    chatbot output (like “happy to help!”, or “certainly!”). But, we’ve
+    definitely kicked off a new arms-race between factions in this
+    conflict.
 
     I haven’t discussed the issue in either of these posts, but it’s
     extremely concerning to read reports about LLM usage for writing
@@ -337,21 +361,62 @@ Fair enough, but
     “language”, I don’t know if the probability distribution they model
     can faithfully describe “our” language(s).
 
-    Training the foundation models required massive amounts of text.
-    Necessarily, this means that text used for training is sourced
-    across large spans of time, and relects what was been *available*
-    for scraping. Some argue that this resembles how humans acquire
-    their own linguistic abilities (i.e., people develop their way of
-    writing/speaking via cumulative experiences and sampling), but I
-    think this analogy is unconvincing. Children don’t read the entirety
-    of Wikipedia to acquire fluency; these are vastly different
+    The foundation models required massive amounts of text for
+    (pre-)training. Necessarily, this means that text used was sourced
+    across large spans of time, and relects what was *available* for
+    ingestion. That is, there are real selection processes in
+    determining what text lands on the internet, and they’re relevant
+    even if we’ll never fully understand them. Some argue that this
+    resembles how humans acquire their own linguistic abilities (i.e.,
+    people develop their way of writing/speaking via cumulative
+    experiences and sampling, which is biased in all sorts of ways), but
+    I think this analogy is unconvincing. Children don’t read the
+    entirety of Wikipedia to acquire fluency; these are vastly different
     processes, and their comparison is largely unhelpful.
 
     I think a moderate perspective is that LLMs produce “machine
-    language”. Their outputs resemble what humans produce, but the
-    qualifier is a necessary floor for discussion. We should be
-    foregrounding this difference (rather than eliding it).
+    language” or “synthetic language”. Output from a LLM-based service
+    like ChatGPT is largely a smoothed amalgam of text from [Common
+    Crawl](https://dl.acm.org/doi/10.1145/3630106.3659033). It resembles
+    what humans produce, but the qualifier is a necessary floor for
+    discussion. We should be foregrounding this difference (rather than
+    eliding it).
 
-[^3]: The definition for $p_{i + 1}$ and $\alpha$, $\beta$, and $\gamma$
-    characterizes $p_{i + 1}$ as a [finite mixture
+[^3]: The definition for $p_{i + 1}$ and $\alpha_i$, $\beta_i$, and
+    $\gamma_i$ characterizes $p_{i + 1}$ as a [finite mixture
     distribution.](https://en.wikipedia.org/wiki/Mixture_distribution)
+    This is equivalent to saying that for a random draw from
+    $p_{i + 1}$, the values of $\alpha_i$, $\beta_i$, and $\gamma_i$ are
+    probabilities of selection from the distributions
+    $p_{\theta_{i + 1}}$, $p_i$, and $p_0$.
+
+[^4]: By the “original distribution”, $p_0$, I believe the authors mean
+    a probability mass/density function whose parameters are unknown but
+    fixed at time 0. In the context of LLMs, we might not be able to
+    write down $p_0$, but in practice we could sample from it by
+    tokenizing documents/text available before generation $i = 1$.
+    However, I’ve found myself thinking about another definition for
+    $p_{i + 1}$, reformulated as:
+
+    $$
+    p_{i + 1} = \alpha_i p_{\theta_{i + 1}} + \beta_i p_i + \gamma_i p_0 + \eta_i p_i^*,
+    $$
+
+    where again $\alpha_i + \beta_i + \gamma_i + \eta_i = 1$,
+    $\alpha_i, \beta_i, \gamma_i, \eta_i > 0$, and $p_i^*$ is the
+    probability mass/density function for data available at generation
+    $i$ that is *not* generated by a model. I think this is helpful, in
+    that it explicitly acknowledges that practitioners will likely want
+    to include “fresher” data (e.g., authentic human-generated text, in
+    the context of LLMs) reflecting the state of the world at generation
+    $i$. Maybe this distinction isn’t critical, but datasets never
+    simply fall from the sky. In order for it to be used for training,
+    $D_{i + 1}$ will be *collected* and/or *assembled* by practitioners,
+    through various means. It might be that $\alpha_i$, $\beta_i$,
+    $\gamma_i$, and $\eta_i$ are allowed to be random, but I can imagine
+    instances where practitioners might intervene to constrain one or
+    more of these values.
+
+[^5]: While different from model collapse, training on data using
+    duplicated information also results in a fitted distribution with
+    smaller variance than the actual distribution.
