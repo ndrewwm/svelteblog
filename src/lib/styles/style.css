@@ -87,7 +87,7 @@ ul > li {
 a {
   color: var(--main-txt-color);
   font-weight: bold;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 a:hover {
@@ -98,6 +98,10 @@ a:hover {
 
 .footnote-ref, .footnote-backref {
   text-decoration: none;
+}
+
+.footnotes > li {
+  margin-bottom: 50%;
 }
 
 /**
