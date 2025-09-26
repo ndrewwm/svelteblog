@@ -25,35 +25,35 @@
     <h2 class="mb-2"><a href="/blog">Writing</a></h2>
 
     {#each data.posts as post}
-      <p class="title is-6">
+      <p class="title is-6 mb-1">
         <a href="/blog/post/{post.meta.slug}">{post.meta.title}</a>
       </p>
-      <p class="subtitle is-6 mb-4 dt">{post.meta.date}</p>
+      <p class="subtitle is-6 mb-3 dt">{post.meta.date}</p>
     {/each}
   </section>
 
   <section class="mt-5">
     <h2 class="mt-2 mb-2"><a href="/projects">Projects</a></h2>
 
-    <p class="title is-6">
+    <p class="title is-6 mb-1">
       <a href="https://ndrewwm.github.io/math-401">Math-401</a>
     </p>
-    <p class="subtitle is-6 mb-4">Project site for the capstone research I conducted for my applied math degree.</p>
+    <p class="subtitle is-6 mb-3">Project site for the capstone research I conducted for my applied math degree.</p>
     
-    <p class="title is-6">
+    <p class="title is-6 mb-1">
       <a href="/projects/spotify">Spotify Listening Habits</a>
     </p>
-    <p class="subtitle is-6 mb-4">Summarizing my daily listening on Spotify.</p>
+    <p class="subtitle is-6 mb-3">Summarizing my daily listening on Spotify.</p>
   </section>
 
   <section class="mt-5">
     <h2 class="mt-2 mb-2"><a href="/reading">Reading</a></h2>
 
     {#each data.reviews as review}
-      <p class="title is-6">
+      <p class="title is-6 mb-1">
         <a href="reading/{review.meta.slug}">{review.meta.title}</a>
       </p>
-      <p class="subtitle is-6 mb-2 dt">
+      <p class="subtitle is-6 mb-3 dt">
         {#if review.meta.stars !== null}
           {"★".repeat(review.meta.stars)}
         {:else}
