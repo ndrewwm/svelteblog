@@ -1,7 +1,7 @@
 ---
 title: "How are we feeling about LLMs? (part 2): waiting for (model) collapse"
 author: Andrew Moore
-date: "2025-09-24"
+date: "2025-09-26"
 slug: llms-2025-part-2
 description: |
   Part 2 of my midyear temperature check on LLMs. An aside on how useful these tools are for software development, and my thoughts on Shumailov et al.'s 2024 paper covering model collapse.
@@ -34,11 +34,11 @@ The full thread/study is worth looking at. In summary, all the parties involved 
 
 ### Adjusting: model collapse might not be a practical issue for providers.
 
-In part 1, I talked about my fears that LLM-based tools like ChatGPT would negatively impact knowledge-sharing communities like StackOverflow. However, I didn't discuss an important aspect of this recent history, in which the site's moderators [banned the use of ChatGPT](https://meta.stackoverflow.com/questions/421831/policy-generative-ai-e-g-chatgpt-is-banned) for generating questions/answers shortly after its release. Not only are LLMs capable of spitting out Javascript at inhuman speeds, they're able to do the same for any written text. This poses an ecological problem for the broader internet, where a large share of communication is still text-based. The rate at which spam can be produced has always been a strength in the long-running conflict between spammers and mods. It's pretty bad that LLMs are augmenting this already considerable advantage.
+In part 1, I talked about my fears that LLM-based tools like ChatGPT would negatively impact knowledge-sharing communities like StackOverflow. However, I didn't discuss an important aspect of this recent history, in which the site's moderators [banned the use of ChatGPT](https://meta.stackoverflow.com/questions/421831/policy-generative-ai-e-g-chatgpt-is-banned) for generating questions/answers shortly after its release. Not only are LLMs capable of spitting out Javascript at inhuman speeds, they're able to do the same for any form of text. This poses an ecological problem for the broader internet, where a large share of communication is still text-based. The rate at which spam can be produced has always been a strength in the long-running conflict between spammers and mods. It's not great that LLMs are augmenting this already considerable advantage.
 
-The issue is that human comprehension is always slower than the rate of text-production. The fluency and dynamic nature of LLM outputs means that certain anti-spam automations are less effective.[^1] As we've seen over the past few years, LLMs are being used to generate email replies, social media posts, long-form documentation, essays, reports, articles, novels, etc. Various forms of slop, as the kids say. Much of this LLM output is intended to land somewhere on the internet, where many people could (in theory) read it. Thus, it seems inevitable that future iterations of LLMs will ingest LLM-generated text as part of their training.
+The issue is that human comprehension is always slower than the rate of text-production. The fluency and dynamic nature of LLM outputs means that certain anti-spam automations are less effective.[^1] As we've seen over the past few years, LLMs are being used to generate email replies, social media posts, long-form documentation, essays, reports, articles, novels, etc. Various forms of slop, as the kids say. Much of this output is intended to land publicly on the internet, where many people could (in theory) read it. Thus, it seems inevitable that future iterations of LLMs will ingest LLM-generated text as part of their training.
 
-A reasonable intuition is that this seems bad for the future utility of these models. LLMs model natural language probabilistically; as machines, they're products of statistical learning upon massive corpora of textual data. Without getting into the weeds, you could say that LLMs are approximating a probability distribution of (textual) language.[^2] This being the case, LLMs share a quality of all statistical models, in that their performance depends on the quality and diversity of data used for training. "Garbage in, garbage out" (GIGO), as the saying goes. To the point: indiscriminantly mixing _generated_ text with human-written text for training seems highly questionable, because generated text isn't part of the distribution being targeted. So, what will happen to these models as output from prior LLMs accumulates in their training data? I was excited to find this paper in 2024, [_"AI models collapse when trained on recursively generated data"_](https://www.nature.com/articles/s41586-024-07566-y) (Shumailov et al., 2024), which works through some of the theory behind this question.
+A reasonable intuition is that this seems bad for the future utility of these models. LLMs model natural language probabilistically; they're products of statistical learning upon massive corpora of textual data. As models, LLMs are approximate a (conditional) probability distribution of language.[^2] This being the case, LLMs share a quality of all statistical models, in that their performance depends on the quality and diversity of data used for training. "Garbage in, garbage out" (GIGO), as the saying goes. To the point: indiscriminantly mixing _generated_ text with human-written text for training seems problematic, because generated text isn't part of the real/target distribution. So, what will happen as LLM output accumulates in available training data? I was excited to find this paper in 2024, [_"AI models collapse when trained on recursively generated data"_](https://www.nature.com/articles/s41586-024-07566-y) (Shumailov et al., 2024), which works through some of the theory behind this question.
 
 #### What is model collapse?
 
@@ -69,22 +69,22 @@ p_{i + 1} = \alpha_i p_{\theta_{i + 1}} + \beta_i p_i + \gamma_i p_0, \text{ whe
 \end{align*}
 $$
 
-Here, $\alpha_i$, $\beta_i$, and $\gamma_i$ represent proportions of $\mathcal{D}_{i + 1}$ coming from generation $i$, $i - 1$, and the original data, respectively.[^3] [^4] To demonstrate model collapse, they discuss several examples, setting $\alpha_i = 1$ and $\beta_i = \gamma_i = 0$.
+Here, $\alpha_i$, $\beta_i$, and $\gamma_i$ represent proportions of $\mathcal{D}_{i + 1}$ coming from the current generation $i$, previous generation $i - 1$, and the original data, respectively.[^3] [^4] To demonstrate model collapse, they discuss several examples, setting $\alpha_i = 1$ and $\beta_i = \gamma_i = 0$.
 
 As is tradition, the authors provide an example using the 1-dimensional Gaussian distribution to build intuition. We can treat this as a vastly simpler stand-in for the more involved process of building an LLM with billions of parameters. To model a Gaussian distribution (the classical "bell curve"), we only need to estimate two parameters from a dataset $\mathcal{D}_i$: the mean $\mu_{i + 1}$, and variance $\sigma^2_{i + 1}$. Once these parameters are found, we can sample from $p_{i + 1}$ to produce $\mathcal{D}_{i + 1}$: 
 
 $$
 \begin{align*}
-\mathcal{D}_i &= \{ X^i_1, \cdots, X^i_{M_i} \overset{i.i.d.}{\sim} \mathcal{N}(\mu_i, \sigma^2_i) \} \\
-\mu_{i + 1} &= \frac{1}{M_i} \sum_j X^i_j \\ \sigma^2_{i + 1} &= \frac{1}{M_i - 1} \sum_j (X^i_j - \mu_{i + 1})^2 \\
-\mathcal{D}_{i + 1} &= \{ X^{i + 1}_1, \cdots, X^{i + 1}_{M_{i + 1}} \overset{i.i.d.}{\sim} \mathcal{N}(\mu_{i + 1}, \sigma^2_{i + 1}) \}
+\mathcal{D}_i &= \{ X^i_1, \cdots, X^i_{M} \overset{i.i.d.}{\sim} \mathcal{N}(\mu_i, \sigma^2_i) \} \\
+\mu_{i + 1} &= \frac{1}{M} \sum_j X^i_j \\ \sigma^2_{i + 1} &= \frac{1}{M - 1} \sum_j (X^i_j - \mu_{i + 1})^2 \\
+\mathcal{D}_{i + 1} &= \{ X^{i + 1}_1, \cdots, X^{i + 1}_M \overset{i.i.d.}{\sim} \mathcal{N}(\mu_{i + 1}, \sigma^2_{i + 1}) \}
 \end{align*}
 $$
 
-Visualizing this process via simulation (using initial values $\mu_0 = 0$, and $\sigma^2_0 = 1$), we clearly see how the distribution's variance (the distribution's "spread") approaches 0 in just a few generations. You could say that after the first generation, the model "forgets" about the possibility of data with an absolute value greater than 2. This is what the authors call "early" model collapse. By the fifth generation, we have "late" model collapse, in which the distribution's variance disappears: here, all values are between -0.19 and 0.16.
+Visualizing this process via simulation (using initial values $\mu_0 = 0$, $\sigma^2_0 = 1$, and fixed $M = 100$), we clearly see how the distribution's variance (the distribution's "spread") approaches 0 in just a few generations. You could say that after the fourth generation, the model "forgets" about the possibility of data with an absolute value greater than 2. This is what the authors call "early" model collapse. By the sixth generation, we have "late" model collapse, in which the distribution's variance disappears.
 
 <script>
-  import { Plot, RectY, binX, RuleY, Dot } from 'svelteplot';
+  import { Plot, RectY, binX } from 'svelteplot';
   import { range } from 'd3-array';
   import { randomNormal, randomLcg } from 'd3-random';
   import { mean, sum } from 'd3';
@@ -102,13 +102,13 @@ Visualizing this process via simulation (using initial values $\mu_0 = 0$, and $
       let x = [
         ...range(m * alpha).map(rnorm(mu, sd)),
         ...range(m * beta).map(rnorm(mu_1, sd_1)),
-        ...range(m * gamma).map(rnorm(mu_0, mu_0))
+        ...range(m * gamma).map(rnorm(mu_0, mu_0)),
       ];
 
       mu = mean(x);
-      sd = (m - 1)**(-1) * sum(x.map((i) => (i - mu)**2));
+      sd = (m - 1)**(-1) * sum(x.map(i => (i - mu)**2));
 
-      d.push(...x.map((item) => ({ i: `i = ${index + 1}`, "x": item })));
+      d.push(...x.map(item => ({ i: `i = ${index + 1}`, "x": item })));
     }
 
     return d;
@@ -120,12 +120,12 @@ Visualizing this process via simulation (using initial values $\mu_0 = 0$, and $
 <Plot grid>
     <RectY
         {...binX(
-            { data: res, x: "x", fx: "i" },
+            { data: res, x: 'x', fx: 'i' },
             { y: 'count' }
         )} />
 </Plot>
 
-This toy example risks being so simple as to be obvious, but it illustrates how building models recursively can be fraught. More interestingly, however, the authors demonstrate that LLMs are vulnerable to the same problem. By fine-tuning a published model over successive generations (in which the model is trained with samples from the prior generation), high probability outputs from generation 0 become even more probable in the model's future descendants. Here's a passage from the paper, which you may have already seen in popular coverage:
+This toy example risks being so simple as to be obvious, but it illustrates how building models recursively can be fraught. More interestingly, however, the authors show that LLMs are vulnerable to the same problem. By fine-tuning a published model over successive generations (in which the model is trained with samples from the prior generation), high probability outputs from generation 0 become even more probable in the model's descendants. Here's a passage from the paper, which you may have already seen in popular coverage:
 
 > Example of text outputs of an OPT-125m model affected by model collapse—models degrade over generations, for which each new generation is trained on data produced by the previous generation.
 > 
@@ -143,7 +143,7 @@ This toy example risks being so simple as to be obvious, but it illustrates how 
 
 "Collapse" certainly feels apt as a description for what we see as a response in Gen 9. That said, if we're persuaded by the authors' results, what might they suggest for models trained in the (near-ish) future? In the main text, the authors consider two different scenarios for training LLMs: $\gamma_i = 0.0$, and $\gamma_i = 0.1$. The first imagines a world in which all text that's available for training is output from a prior LLM. We can grant this isn't meant to be realistic, and understand it's meant to demonstrate the process of interest. But, the second scenario, $\gamma_i = 0.1$, also doesn't feel satisfying to me; it reads too similar to the first. Unsurprisingly, the authors show that model collapse still occurs, just a bit more slowly. In their supplemental materials, they also observe that model collapse eventually occurs when $\alpha_i$, $\beta_i$, and $\gamma_i$ are allowed to vary randomly. 
 
-Fair enough, but the most realistic scenario anticipates practitioners actively working to ensure that future datasets are clean when they arrive in their hands. That is, when a dataset is assembled for training LLM-generation $i$, the true values for $\alpha_{i - 1}$, $\beta_{i - 1}$ and $\gamma_{i - 1}$ may be unknown and random, but I think we should assume that $\mathcal{D}_i$ will be constructed in a way that tries to minimize $\alpha_{i - 1}$ and $\beta_{i - 1}$. My sense is that reaching "late" model collapse will take many more generations if $\gamma$ is consistently high. As a ballpark, when rerunning the Gaussian simulation using $\gamma = 0.9$ and $\alpha = 0.1$, the distribution's variance at $i = 300$ was still very close to the true/original value of 1.0.
+Fair enough, but the most realistic scenario anticipates practitioners actively working to ensure that future datasets are clean when they arrive in their hands. That is, when a dataset is assembled for training LLM-generation $i$, the true values for $\alpha_{i - 1}$, $\beta_{i - 1}$ and $\gamma_{i - 1}$ may be unknown and random, but I think we should assume that $\mathcal{D}_i$ will be constructed in a way that tries to minimize $\alpha_{i - 1}$ and $\beta_{i - 1}$. My sense is that reaching "late" model collapse will take many more generations if $\gamma$ is consistently high. This seems to hold up in the Gaussian simulation if we set $\gamma = 0.9$ and $\alpha = 0.1$. At $i = 300$, the distribution's variance was still very close to the true/original value of 1.
 
 Currently, it seems to take providers roughly 6-12 months to produce a new generation of their models. This leads me to wonder whether model collapse is actually a practical issue. Perhaps in the future it will be costly (or otherwise problematic) to constrain $\alpha$ and $\beta$, but data cleaning is a normal part of model development. Even before the advent of current LLMs, practitioners developed methods to avoid training models on duplicated documents/text.[^5] New approaches to flag LLM-generated output may have varying levels of success, but I wish the authors had addressed this a bit more directly with their results, rather than touching on it in the paper's discussion.
 
@@ -151,15 +151,15 @@ Currently, it seems to take providers roughly 6-12 months to produce a new gener
 
 After reading through this paper, it's not clear that model collapse will threaten the viability of future models. It's inevitable that model providers will take proactive steps to avoid or mitigate this problem. Maybe hoping the technology would conveniently poison itself was never realistic, but it's still disappointing. I worry we're destined for a future where the digital commons are polluted by these models, and we don't get the consolation of it becoming unusable for these machines.
 
-In the paper's discussion, the authors sketch two possible directions to sustain future training of LLMs. First, the broader community of model-builders/providers could coordinate in order to establish the provenance of data being used to train LLMs. There's a bit of precedent for this; one example is the use of "model cards" to summarize a published model (which should contain metadata about the model's data sources), but these efforts are not standardized. More importantly, despite a shared reliance on certain common data sources (such as Common Crawl), model-builders/providers are focused on competing for users and service contracts. All sorts of startups are attempting to sell LLM-based services or integrations, and virtually all of them are doomed to fold. The idea that a handful or even one of these startups will take time away from development and user acquisition to spearhead coordination efforts seems unlikely. Even if a larger/better resourced provider took strides on this front, I'm not sure what incentive smaller companies would have to participate. Long-run concerns about the technology's impact don't strike me as being high on the list of priorities for companies attempting to monetize said technology.
+In the paper's discussion, the authors sketch two possible directions to sustain future training of LLMs. First, the broader community of model-builders/providers could coordinate in order to establish the provenance of data being used to train LLMs. There's a bit of precedent for this; one example is the use of "model cards" to summarize a published model (which should contain metadata about the model's data sources), but these efforts are not standardized. Major providers could also engage in what's called ["watermarking"](https://arxiv.org/abs/2301.10226) LLM output, in which certain tokens in the LLM's vocabulary are made (imperceptibly) more likely. However, as David Gilbertson [summarizes](https://ai.gopubby.com/why-llm-watermarking-will-never-work-1b76bdeebbd1), watermarking is unlikely to be successful, primarily because we have no means of requiring the technique be used. In any case, model-builders/providers are focused principally on competing with each other for users/contracts. Time spent on coordination and harm mitigation only distantly (if at all) supports a firm's overriding objectives, and other firms can free-ride on those efforts. In short, _this is a classic tragedy of the commons_, one that's been apparent from the outset.
 
-Further, as the authors allude to, screening methods needed to attribute the origins of text "in the wild" to various models or humans are still being developed. Right now, our ability to track the publication of content that's either wholly or partially generated by LLMs is quite weak. In the case of academic/scientific publications, I've seen estimates as low as [1-3%](https://www.mdpi.com/2504-2289/8/10/133) and as high as [25%](https://www.nature.com/articles/d41586-025-02936-6). These two citations focus on detection of _any_ LLM-generated text, cover different disciplines, and focused on different parts of sampled manuscripts (introductions for the former, abstracts for the latter), but getting precise estimates of this phenomena seems challenging.
+Further, even if there was meaningful interest among model-builders/providers to coordinate, screening methods needed to attribute the origins of text "in the wild" to various models or humans are still being developed. Right now, our ability to track the publication of content that's either wholly or partially generated by LLMs is limited. In the case of undeclared LLM usage in scientific/academic publishing, I've seen estimates as low as [1-3%](https://www.mdpi.com/2504-2289/8/10/133) and as high as [25%](https://www.nature.com/articles/d41586-025-02936-6). These two citations focus on detection of _any_ LLM-generated text, cover different disciplines, and focused on different parts of sampled manuscripts (introductions in the former, abstracts in the latter), but getting precise estimates of this phenomena seems challenging. It's also likely that future training efforts will continually blunt the effectiveness of detection methods (Wu et al., [2025](https://direct.mit.edu/coli/article/51/1/275/127462/A-Survey-on-LLM-Generated-Text-Detection-Necessity); see section 8.2 "Training Threat Models").
 
-
+It's not clear how the collective action problem can be overcome in our current context, and the fact that detection methods 
 
 > To sustain learning over a long period of time, we need to make sure that access to the original data source is preserved and that further data not generated by LLMs remain available over time. The need to distinguish data generated by LLMs from other data raises questions about the provenance of content that is crawled from the Internet: it is unclear how content generated by LLMs can be tracked at scale. *One option is community-wide coordination* to ensure that different parties involved in LLM creation and deployment share the information needed to resolve questions of provenance.*Otherwise, it may become increasingly difficult to train newer versions of LLMs without access to data that were crawled from the Internet before the mass adoption of the technology or direct access to data generated by humans at scale.*
 
-- metaphor of pure steel (uncontaminated from nuclear radiation)
+- metaphor of [pure steel](https://futurism.com/chatgpt-polluted-ruined-ai-development) (uncontaminated from nuclear radiation)
 - returning to the topic of search: retrieval augmented generation (RAG)
   - adding the contents of the web to the the LLM's context window
   - slop serving slop
@@ -176,17 +176,17 @@ Further, as the authors allude to, screening methods needed to attribute the ori
 
     The foundation models required massive amounts of text for (pre-)training. Necessarily, this means that text used was sourced across large spans of time, and relects what was _available_ for ingestion. That is, there are real selection processes in determining what text lands on the internet, and they're relevant even if we'll never fully understand them. Some argue that this resembles how humans acquire their own linguistic abilities (i.e., people develop their way of writing/speaking via cumulative experiences and sampling, which is biased in all sorts of ways), but I think this analogy is unconvincing. Children don't read the entirety of Wikipedia to acquire fluency; these are vastly different processes, and their comparison is largely unhelpful.
 
-    I think a moderate perspective is that LLMs produce "machine language" or "synthetic language". Output from a LLM-based service like ChatGPT is largely a smoothed amalgam of text from [Common Crawl](https://dl.acm.org/doi/10.1145/3630106.3659033). It resembles what humans produce, but the qualifier is a necessary floor for discussion. We should be foregrounding this difference (rather than eliding it).
+    I think a moderate perspective is that LLMs produce "machine language" or "synthetic language". Output from a LLM-based service like ChatGPT is largely a smoothed amalgam of text from Common Crawl (this [paper](https://dl.acm.org/doi/10.1145/3630106.3659033) reports that 80% of the ChatGPT-1's tokens came from it). It resembles what humans produce, but the qualifier is a necessary floor for discussion. We should be foregrounding this difference (rather than eliding it).
 
 [^3]: The definition for $p_{i + 1}$ and $\alpha_i$, $\beta_i$, and $\gamma_i$ characterizes $p_{i + 1}$ as a [finite mixture distribution.](https://en.wikipedia.org/wiki/Mixture_distribution) This is equivalent to saying that for a random draw from $p_{i + 1}$, the values of $\alpha_i$, $\beta_i$, and $\gamma_i$ are probabilities of selection from the distributions $p_{\theta_{i + 1}}$, $p_i$, and $p_0$.
 
-[^4]: By the "original distribution", $p_0$, I believe the authors mean a probability mass/density function whose parameters are unknown but fixed at time 0. In the context of LLMs, we might not be able to write down $p_0$, but in practice we could sample from it by tokenizing documents/text available before generation $i = 1$. However, I've found myself thinking about another definition for $p_{i + 1}$, reformulated as:
+[^4]: By the "original distribution", $p_0$, I believe the authors mean a probability mass/density function whose parameters are unknown but fixed at time 0. In the context of LLMs, we might not be able to write down $p_0$, but we could sample from it by tokenizing documents/text available before generation $i = 1$. However, I've found myself thinking about another definition for $p_{i + 1}$, reformulated as:
 
     $$
     p_{i + 1} = \alpha_i p_{\theta_{i + 1}} + \beta_i p_i + \gamma_i p_0 + \eta_i p_i^*,
     $$
     
-    where again $\alpha_i + \beta_i + \gamma_i + \eta_i = 1$, $\alpha_i, \beta_i, \gamma_i, \eta_i > 0$, and $p_i^*$ is the probability mass/density function for data available at generation $i$ that is _not_ generated by a model. I think this is helpful, in that it explicitly acknowledges that practitioners will likely want to include "fresher" data (e.g., authentic human-generated text, in the context of LLMs) reflecting the state of the world at generation $i$. Maybe this distinction isn't critical, but datasets never simply fall from the sky. In order for it to be used for training, $D_{i + 1}$ will be _collected_ and/or _assembled_ by practitioners, through various means. It might be that $\alpha_i$, $\beta_i$, $\gamma_i$, and $\eta_i$ are allowed to be random, but I can imagine instances where practitioners might intervene to constrain one or more of these values.
+    where again $\alpha_i + \beta_i + \gamma_i + \eta_i = 1$, $\alpha_i, \beta_i, \gamma_i, \eta_i > 0$, and $p_i^*$ is the probability mass/density function for data available at generation $i$ that is _not_ generated by a model. I think this is helpful, in that it explicitly acknowledges that practitioners will likely want to include "fresher" data (e.g., authentic human-generated text, in the context of LLMs) reflecting the state of the world at generation $i$. Maybe this distinction isn't critical, but datasets never simply fall from the sky. $D_{i + 1}$ will be _collected_ and/or _assembled_ by practitioners in order for it to be used for training. It might be that $\alpha_i$, $\beta_i$, $\gamma_i$, and $\eta_i$ are allowed to be random, but I can imagine instances where practitioners might intervene to constrain one or more of these values.
 
 [^5]: While different from model collapse, training on data using duplicated information also results in a fitted distribution with smaller variance than the actual distribution.
 
@@ -198,9 +198,5 @@ Further, as the authors allude to, screening methods needed to attribute the ori
   h4 {
     font-size: 1.15em;
     margin-bottom: .8em;
-  }
-  img {
-    object-fit: scale-down;
-    max-width: 100vw;
   }
 </style>
