@@ -9,6 +9,7 @@ started: 2024-09-29
 finished: 2025-01-12
 pct: 100
 stars: 2
+embed_skeet: true
 ---
 
 <center>
@@ -22,7 +23,3 @@ stars: 2
   FRANK HERBERT: Duncan Idaho is Incredibly Cool and Extremely Hot&mdash; Andrew 🧮 (<a href="https://bsky.app/profile/did:plc:j2i2dl3aow3rwprvh4hidcg4?ref_src=embed">@ndrewwm.com</a>) <a href="https://bsky.app/profile/did:plc:j2i2dl3aow3rwprvh4hidcg4/post/3l6qleapkpb2v?ref_src=embed">October 17, 2024 at 5:13 PM</a>
 </blockquote>
 </center>
-
-<svelte:head>
-  <script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
-</svelte:head>

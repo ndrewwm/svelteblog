@@ -16,6 +16,10 @@
     <meta property="og:image" content={data.meta.preview} />
     <meta name="twitter:image" content={data.meta.preview} />
   {/if}
+
+  {#if data.meta.embed_skeet}
+      <script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+  {/if}
 </svelte:head>
 
 <header>

@@ -9,6 +9,7 @@ slug: spotify-history
 format:
   gfm:
     variant: +yaml_metadata_block
+embed_skeet: true
 ---
 
 I've started [tracking](/projects/spotify) my listening history on Spotify. This post is a condensed write-up of how the project works. I've had a Spotify account since at least 2015, and have created a monthly playlist every month I've used it. I initially only used Spotify for music, but now it's also where I listen to podcasts and audiobooks. Similar to Gmail, it's become a service that's ubiquitous in my daily life. Each year, I've enjoyed looking at my Spotify Wrapped display, and the accompanying "Top Songs" playlist that Spotify generates. At the same time, I've always wanted a journal of what I was listening to. What does it look like when I'm getting into a new artist? What does the week before/after I attend a concert look like? Are there periods where I'm not listening to anything new, or periods where I'm not doing any listening at all? You'd need to know what your listening history looks like on a fairly fine level to get at these questions. Fortunately, you might be able to start answering some of this via Spotify's API and some automation.
@@ -85,9 +86,6 @@ This model is quite simple, but it showcases dbt's approach of treating products
 <center>
   <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:j2i2dl3aow3rwprvh4hidcg4/app.bsky.feed.post/3l3cfteoikm24" data-bluesky-cid="bafyreihlwezcfwxhl3omgml6pcqmrv24bpfasg6zxbcjqgxkozvv3qvkp4"><p lang="en">I have resisted my worst instincts<br><br><a href="https://bsky.app/profile/did:plc:j2i2dl3aow3rwprvh4hidcg4/post/3l3cfteoikm24?ref_src=embed">[image or embed]</a></p>&mdash; Andrew 🧮 (<a href="https://bsky.app/profile/did:plc:j2i2dl3aow3rwprvh4hidcg4?ref_src=embed">@ndrewwm.com</a>) <a href="https://bsky.app/profile/did:plc:j2i2dl3aow3rwprvh4hidcg4/post/3l3cfteoikm24?ref_src=embed">Sep 3, 2024 at 9:41 PM</a></blockquote>
 </center>
-<svelte:head>
-  <script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
-</svelte:head>
 
 While small, this project helped reinforce some of my learning w.r.t. dbt-core, and it's satisfying how the tool subtly encourages good practices concerning documenting and testing your work. If it's of interest, you can browse the project's dbt-docs page [here](https://ndrewwm.github.io/spotify-tracks/#!/overview) (hosted via GH pages).
 

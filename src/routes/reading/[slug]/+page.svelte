@@ -10,6 +10,10 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="I read {data.meta.title}" />
   <meta name="description" content={data.meta.description} />
+
+  {#if data.meta.embed_skeet}
+      <script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+  {/if}
 </svelte:head>
 
 <header>

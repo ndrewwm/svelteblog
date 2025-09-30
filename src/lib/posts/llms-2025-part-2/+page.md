@@ -10,11 +10,8 @@ categories: ["temp-check", "LLMs"]
 format:
   gfm:
     variant: +yaml_metadata_block
+embed_skeet: true
 ---
-
-<svelte:head>
-  <script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
-</svelte:head>
 
 This is a continuation of my midyear temperature check regarding LLMs; you can find part 1 [here](/llms-2025). In this post, I'm gathering my thoughts about "model collapse", focusing on a [paper](https://www.nature.com/articles/s41586-024-07566-y) published in 2024. To my chagrin, I think I'll need a part 3 to discuss where my head's at re: environmental and economic impacts. But, first a brief return to the topic of LLMs being used to support developer productivity.
 
