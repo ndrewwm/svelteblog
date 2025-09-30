@@ -7,7 +7,7 @@ pages: 590
 slug: wills-reagans-america
 started: 2025-06-30
 finished: null
-pct: 19
+pct: 29
 stars: null
 who: KYE
 ---
