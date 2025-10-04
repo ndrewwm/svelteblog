@@ -7,6 +7,8 @@ started: 2023-11-23
 finished: 2024-02-13
 pct: 100
 stars: 4
+pages: 304
+mode: print
 slug: bradbury-illustrated-man
 who: OIT Book Club
 ---

@@ -10,6 +10,8 @@ finished: 2025-01-12
 pct: 100
 stars: 2
 embed_skeet: true
+mode: print
+pages: 608
 ---
 
 <center>

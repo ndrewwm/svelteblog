@@ -8,6 +8,8 @@ finished: 2024-02-29
 pct: 100
 stars: 4
 slug: tchaikovsky-children-of-memory
+mode: audiobook
+pages: 609
 ---
 
 This is the latest novel from the *Children of Time* series. As with the other two, we listened to this one as an audiobook. I think I enjoyed this one more than the second, but not as much as the first. Tchaikovsky has been building a pallete with each novel, and I've enjoyed seeing the base colors enriched with additions from subsequent works. The story opens with another unfortunate colony ship, the *Enkidu*, barely surviving arrival at its exoplanet destination. Worse, it appears that planet's terraforming is incomplete. Its atmosphere is breathable, but conditions are harsh. This poses an immediete dilemma for the *Enkidu's* captain, who must decide the fates of the ship's thousands of cryosleeping colonists, knowing the planet below can only support a fraction of them.

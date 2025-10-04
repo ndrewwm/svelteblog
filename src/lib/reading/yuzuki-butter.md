@@ -8,4 +8,6 @@ stars: 3
 started: 2024-10-05
 finished: 2025-09-30
 slug: yuzuki-butter
+mode: audiobook
+pages: 464
 ---

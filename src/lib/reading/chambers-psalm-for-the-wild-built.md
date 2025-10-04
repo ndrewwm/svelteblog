@@ -9,6 +9,7 @@ started: 2025-05-22
 finished: 2025-05-22
 pct: 100
 stars: 5
+mode: print
 who: [Piper, Aaron]
 ---
 

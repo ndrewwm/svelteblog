@@ -5,7 +5,9 @@ year: 2000
 isbn: 006019314X
 started: 2023-11-18
 finished: 2024-01-13
+pages: 832
 pct: 100
+mode: audiobook
 stars: 4
 slug: bix-hirohito
 ---

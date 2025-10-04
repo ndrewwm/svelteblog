@@ -6,7 +6,9 @@ isbn: 158234082X
 started: 2022-01-15
 finished: 2023-08-19
 pct: 100
+pages: 312
 stars: 5
+mode: audiobook
 slug: bourdain-kitchen-confidential
 ---
 

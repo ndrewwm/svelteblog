@@ -9,5 +9,7 @@ started: 2024-12-03
 finished: null
 pct: 84
 stars: null
+pages: 400
+mode: audiobook
 ---
 

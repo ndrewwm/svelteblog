@@ -8,6 +8,8 @@ finished: 2023-12-18
 pct: 100
 stars: 5
 slug: mccarthy-no-country
+mode: audiobook
+pages: 309
 ---
 
 This one reads quickly; the story is just as strong in its printed form, and reading it made me appreciate how good the film's adaptation really is.

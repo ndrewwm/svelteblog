@@ -6,6 +6,7 @@ isbn: 9781788737371
 started: 2023-08-28
 finished: 2023-08-29
 pct: 100
+pages: 112
 stars: 3
 slug: chu-females
 ---
