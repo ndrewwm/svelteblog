@@ -10,7 +10,6 @@ finished: 2025-05-26
 pct: 100
 stars: 4
 mode: print
-pages: 160
 ---
 
 I first read Frase's _Four Futures_ while traveling in 2017. The book's introduction opens cheekily with the following line: _"Two specters are haunting Earth in the twenty-first century: the specters of ecological catastrophe and automation."_ These specters haven't disappeared since I first picked up this book; if anything, much has gotten worse. We continue to see record-breaking temperatures almost every summer, and some questions re: automation feel less abstract than they did in 2017. For these reasons, I picked up the book during another trip to see how it's aged.

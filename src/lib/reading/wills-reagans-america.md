@@ -11,6 +11,5 @@ pct: 29
 stars: null
 who: KYE
 mode: ebook
-pages: 596
 ---
 

@@ -9,7 +9,6 @@ started: 2024-04-01
 finished: 2025-05-26
 pct: 100
 stars: 4
-pages: 124
 mode: ebook
 ---
 

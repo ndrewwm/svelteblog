@@ -10,7 +10,6 @@ pages: 279
 stars: 3
 slug: foucalt-history-sexuality
 mode: audiobook
-pages: 168
 ---
 
 This book is one of the places where Foucalt developed the concept of <em>biopower</em>. As states transitioned to modernity, duties of sovereignty expanded beyond determining the conditions of how subjects of the state might die (i.e., through enforcement of laws, conscription into wars, etc.). To sustain the industrial transition to capitalism, sovereignty also needed to be concerned with how subjects of the state live. Thus, states came to care about the concept (and health) of populations, entailing a more active role in managing reproduction. Foucalt argues that <em>sexuality</em>, as a concept and discursive tool, was used to assist with this task. Sexuality became the object of scientific and medical investigation, forming new discourses and categories of deviance. These ultimately helped states legitimize intervention into the private lives of their subjects, imposing discipline and conformity.
