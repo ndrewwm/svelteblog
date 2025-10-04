@@ -47,12 +47,17 @@
 
         <p class="is-size-5">ISBN: {data.meta.isbn}</p>
 
+        {#if data.meta.publisher}
+          <p class="is-size-5">Publisher: {data.meta.publisher}</p>
+        {/if}
+
         {#if data.meta.who}
           <p class="is-size-5">
             Recommended by: {data.meta.who}
           </p>
         {/if}
       </h2>
+      <br>
     </div>
   </div>
   <!-- <hr class="mt-1 mb-2"> -->
