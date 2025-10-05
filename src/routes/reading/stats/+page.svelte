@@ -45,7 +45,12 @@
     like "Goodreads" provide. You can view different years by clicking the buttons below.
   </p>
   {#each range(2022, currentYear + 1) as year}
-    <button class="button mr-1" onclick={() => selectedYear = year}>{year}</button>
+    <button 
+      class="button mr-1 {selectedYear === year ? 'is-primary' : ''}"
+      onclick={() => selectedYear = year}
+    >
+      {year}
+    </button>
   {/each}
 </div>
 <hr>
