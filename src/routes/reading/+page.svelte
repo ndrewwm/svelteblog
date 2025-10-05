@@ -1,5 +1,6 @@
 <script lang="ts">
   import dayjs from 'dayjs';
+  import ReadingHeader from './ReadingHeader.svelte';
   let { data } = $props();
 </script>
 
@@ -10,9 +11,7 @@
   <meta name="description" content="Books I'm reading, or have finished." />
 </svelte:head>
 
-<header>
-  <h1><a href="/">andrew w. moore</a> | reading | <a href="/reading/list">list</a></h1>
-</header>
+<ReadingHeader />
 
 <div class="block">
 </div>
