@@ -11,6 +11,11 @@
     .sort((a, b) => a.days - b.days);
 </script>
 
+<p class="mb-4">
+  And here's a list of each book I read. You can read my notes/summary of the book by clicking
+  on its title.
+</p>
+
 <table>
   <thead>
     <tr>
