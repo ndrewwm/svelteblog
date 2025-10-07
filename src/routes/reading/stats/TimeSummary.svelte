@@ -55,7 +55,7 @@
 <Plot 
   grid
   x={{ label: "Reading Time (Days)", domain: [0, 600], ticks: [0, 30, 90, 180, 365, 545] }}
-  y={{ label: "Probability a book needs X-many days to be finished", domain: [0, 1], ticks: [0, 0.25, 0.5, 0.75, 1] }}
+  y={{ label: "Probability a book was still in-progress after X days", domain: [0, 1], ticks: [0, 0.25, 0.5, 0.75, 1] }}
 >
   <Line data={Y} x="x" y="p" />
   <Dot data={Y} x="x" y="p" symbol="plus" />
