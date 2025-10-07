@@ -1,28 +1,36 @@
 <script lang="ts">
   import { median, max } from "d3";
   import { Plot, Line, Dot, TickX } from "svelteplot";
-  import { range } from "d3-array";
 
   let { books, currentBooks, primaryColor } = $props();
-  let bins = range(-1, 545, 30);
-
-  let y = [];
-  for (const bin of bins) {
-    let n = books.filter(book => book.days > bin).length;
-    let p = n / books.length;
-    y.push({ bin, n, p });
-  }
-
-  let y_current = [];
-  for (const bin of bins) {
-    let n = currentBooks.filter(book => book.days > bin).length;
-    let p = n / currentBooks.length;
-    y_current.push({ bin, n, p });
-  }
-
   let medianDays = Math.round(median(currentBooks.map(book => book.days)));
   let longestTime = max(currentBooks.map(book => book.days));
   let longestBook = currentBooks.filter(book => book.days == longestTime).at(0).title;
+
+  // Kaplan-Meier estimator for \hat{S}(t)
+  function km(booksArray) {
+    booksArray = booksArray.sort((a, b) => a.days - b.days);
+    let X = [... new Set(booksArray.map(book => book.days))].sort((a, b) => a - b);
+    let Y = [];
+
+    // Ensure that we have an estimate at the left-most bound of the plot
+    if (!booksArray.map(book => book.days).includes(0)) {
+      Y.push({ x: 0, p: 1, d_i: null, n_i: null });
+    }
+
+    for (const x of X) {
+      let d_i = booksArray.filter(book => book.days === x).length;
+      let n_i = booksArray.filter(book => book.days >= x).length;
+      let p = 1 - (d_i / n_i);
+      p *= Y.length > 0 ? Y.at(-1).p : 1;
+      Y.push({ x, p, d_i, n_i });
+    }
+
+    return Y;
+  }
+
+  let Y = km(books);
+  let Y_c = km(currentBooks);
 </script>
 
 {#if currentBooks.length > 1}
@@ -38,19 +46,19 @@
 </Plot>
 
 <p class="mb-2">
-  We can also visualize this distribution as a survival curve. This plot shows the proportion of
-  books that are still in-progress after X-many days have passed since starting it.
-  Using the entire dataset (the black line), we can see that I finish just under 50% of books within 30 days of starting them,
-  and that almost 75% are finished within 90 days.
+  We can also visualize this distribution as a survival curve. From this plot, we can estimate the
+  probability of a new book taking X-many days to finish. Looking at the entire dataset, the curve
+  predicts that almost 50% of books are finished before 30 days, and around 75% are finished after
+  90 days.
 </p>
 
 <Plot 
   grid
-  x={{ label: "Reading Time (Days)", domain: [0, 560], ticks: [0, 30, 90, 180, 365, 545] }}
-  y={{ label: "Proportion of books in-progress after X days", domain: [0, 1], ticks: [0, 0.25, 0.5, 0.75, 1] }}
+  x={{ label: "Reading Time (Days)", domain: [0, 600], ticks: [0, 30, 90, 180, 365, 545] }}
+  y={{ label: "Probability a book needs X-many days to be finished", domain: [0, 1], ticks: [0, 0.25, 0.5, 0.75, 1] }}
 >
-  <Line data={y} x="bin" y="p" curve="step-after" />
-  <Dot data={y} x="bin" y="p" symbol="plus" />
-  <Line data={y_current} x="bin" y ="p" curve="step-after" stroke={primaryColor} />
-  <Dot data={y_current} x="bin" y="p" symbol="plus" stroke={primaryColor} />
+  <Line data={Y} x="x" y="p" />
+  <Dot data={Y} x="x" y="p" symbol="plus" />
+  <Line data={Y_c} x="x" y="p"stroke={primaryColor} />
+  <Dot data={Y_c} x="x" y="p" symbol="plus" stroke={primaryColor} />
 </Plot>
