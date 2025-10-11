@@ -1,13 +1,14 @@
 <div class="block mt-2 mb-2">
   <p class="dt mb-1 is-size-5">
-    2025-05-15:
+    2025-10-11:
   </p>
   
   <ul class="is-size-6">
     <li>Living in Boise, ID</li>
     <li>Working remotely in CU Boulder's OIT, as a senior data engineer</li>
-    <li>I've finished up my <a href="/blog/post/math-401">second degree</a> (BS Applied Math) at Boise State</li>
-    <li>I got engaged to my longtime partner in April</li>
+    <li>Wrangling final details on a trip to Spain this November</li>
+    <li>I've been really enjoying using <a href="https://svelteplot.dev/">SveltePlot</a></li>
+    <li>Wrapping up a little <a href="https://github.com/ndrewwm/svelteblog/pull/15">feature</a> to summarize my reading activity</li>
   </ul>
 </div>
 
