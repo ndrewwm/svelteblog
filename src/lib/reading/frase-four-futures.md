@@ -19,7 +19,7 @@ To inform this question, Frase argues that society faces two simultaneous crises
 
 Second, firms continue to pursue automation as a means of reducing production costs. By virtually any analysis, the past 100 years have seen vast increases in productivity, largely due to changing technology. Food production has historically been the most labor-intensive activity in human society, but this work is now substantially mechanized (at least within the global north).[^1] In my own lifetime, we've seen meaningful advances in robotics. _Bladerunner_'s replicants remain far-fetched, but the driverless shipping trucks from _Logan_ (2017) feel much more plausible, if not imminent. While still hypothetical, our society is haunted by the idea of machines displacing consequential shares human labor, resulting in its devaluation and/or mass unemployment.
 
-The convergence of these two crises is what forces transition to a new social system. In the hypotheticals Frase describes, he assumes that automation will continue to increase across all sectors of the economy. What will vary is the extent to which the fruits of automation will be distributed, and how humanity will cope with climate change. Frase establishes two axes (abundance/scarcity, and equality/hierarchy) from these uncertainties, and the following typology: communism, rentism, socialism, and exterminism. 
+The convergence of these two crises is what forces transition to a new social system. Rather than being a discrete break, we should assume the shift will be gradual (similar to others we've observed in history, such as the move from feudalism to capitalism), and vestiges of the preceding system will persist. In the hypotheticals Frase describes, he assumes that automation will continue to increase across all sectors of the economy. What will vary is the extent to which the fruits of automation will be distributed, and how humanity will cope with climate change. In other words, political struggle will determine where humanity lands, rather than technological change. It's from these uncertainties that Frase establishes two axes (abundance/scarcity, and equality/hierarchy), and the associated typology: communism, rentism, socialism, and exterminism.
 
 <script>
   import { Plot, Text, RuleX, RuleY } from 'svelteplot';
@@ -55,13 +55,13 @@ The convergence of these two crises is what forces transition to a new social sy
 
 Frase describes each of these futures as [ideal types](https://en.wikipedia.org/wiki/Ideal_type): "simplified, pure models of how society can be organized, designed to illuminate a few key issues that confront us today and will confront us in the future". Each of the book's main chapters are dedicated to one of the futures:
 
-_**Communism:** abundance and equality._ An archetypal society is the kind found in _Star Trek_. While we see some military hierarchy in the form of Starfleet's command structure, humanity's civilization appears to be generally egalitarian. People are free to pursue their interests and passions, with material needs no longer a chief concern.
+_**Communism:** abundance and equality._ In this future, Frase describes a world where climate change's impacts are mitigated to the strongest possible degree, _and_ a resurgent left succeeds in democratizing the economy. A popular culture analog within this type is _Star Trek: the Next Generation_. People are free to pursue their interests and passions, with material needs no longer a chief concern. However, as Frase explores, there are less utopian possibilities-- basic needs might be guaranteed, but humanity will face hierarchies and conflicts, with competition over immaterial goods (such as reputation and prestige) still occurring.
 
-_**Rentism:** abundance and hierarchy._
+_**Rentism:** abundance and hierarchy._ 
 
-_**Socialism:** scarcity and equality._
+_**Socialism:** scarcity and equality._ I'm not as familiar with the books that Frase mentions to sketch this future, but in thinking about how to describe this future, I find myself thinking about Becky Chambers's _Psalm for the Wild-Built_. Within this quadrant, humanity hasn't automated away its material needs. There's still work to be done, 
 
-_**Exterminism:** scarcity and hierarchy._
+_**Exterminism:** scarcity and hierarchy._ The 
 
 This vantage point is one of the things that makes _Four Futures_ different from other writing I've encountered regarding the anticipated impacts of technology. In much writing for popular audiences (which Frase critiques in the book's introduction), we often see a vaguely utopian outlook with regards to technological advances. Instead of assuming that improved technology results in shared prosperity and the creation of new forms of work, 
 
