@@ -1,5 +1,5 @@
 ---
-title: "Guessing the # of pages from an audiobook's duration"
+title: "Guessing a book's page length from the audiobook's duration"
 author: Andrew Moore
 date: "2025-10-19"
 slug: audiobook-pages
