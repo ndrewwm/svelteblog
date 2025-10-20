@@ -28,9 +28,9 @@ format:
   let pred = $derived(fit.predict(durationInMin));
 </script>
 
-Over the past year, I've been gradually replacing features I used from Goodreads within the <a href="/reading">/reading</a> route of my site. I've got dedicated pages for each book that I've finished, a timeline, and a display of books I'm currently reading. Most recently, I've been working on a <a href="/reading/stats">/stats</a> page that summarizes at my reading activity each year.
+Over the past year, I've been gradually replacing features I used from Goodreads within the <a href="/reading">/reading</a> route of my site. I've got dedicated pages for each book that I've finished, a timeline, and a display of books I'm currently reading. Most recently, I've been working on a <a href="/reading/stats">/reading/stats</a> page that summarizes at my reading activity each year.
 
-Aside from the book covers, all of the metadata I add about each book is recorded by hand. For example, I'll write down the number of pages in the edition I'm reading. The newest data point I've started tracking the medium used when I read a book (e.g., ebook, vs. audiobook, vs. print). As I went back to note which books I'd listened to, I started to feel itchy: are audiobook lengths and page-lengths really comparable? I'd like to be able to have a general sense for how "large" books are within my collection, and it'd be nice if I could use a standard measure.
+Aside from the book covers, all of the metadata I add about each book is recorded by hand. For example, I'll write down the number of pages in the edition I'm reading. The newest data point I've started tracking the medium I used when reading a book (e.g., ebook, vs. audiobook, vs. print). As I went back to note which books I'd listened to, I started to feel itchy: are audiobook lengths and page-lengths really comparable? I'd like to be able to have a general sense for how "large" books are within my collection, and it'd be nice if I could use a standard measure.
 
 Books are printed in various sizes, which means the the number of words on a page varies by book. However, most e-readers can track progress based on the print edition's page numbers, so at least there's some correspondence. But, what about audiobooks? From personal experience, it does seem like some narrators are a bit faster or slower. Perhaps the book's subject matter or genre also influences how fast the book is read. These hunches suggest that we'll see variability in audio-length at different page-lengths.
 
@@ -40,7 +40,7 @@ Comparing these lengths directly is probably the best starting point. At the tim
 | :-- | :-- | :-- |
 | {bookData.length} | {mean(bookData.map(d => d.pages)).toFixed(1)} [{deviation(bookData.map(d => d.pages)).toFixed(1)}] | {mean(bookData.map(d => d.minutes)).toFixed(1)} [{deviation(bookData.map(d => d.minutes)).toFixed(1)}] |
 
-This is an average of 11-ish hours of listening time. Here's what things look like when plotted. Herbert P. Bix's _Hirohito and the Making of Modern Japan_ is a bit of an outlier, but the relationship looks fairly linear. The equation for the regression line is **pages** $=$ {fit.a.toFixed(2)} $\times$ **minutes** $+$ {fit.b.toFixed(2)}. Across the whole collection, the model makess prediction errors of about {deviation(resid).toFixed(2)} pages (RMSE).
+This is an average of 11-ish hours of listening time. Here's what things look like when plotted. Herbert P. Bix's _Hirohito and the Making of Modern Japan_ is a bit of an outlier, but the relationship looks fairly linear. The equation for the regression line is **pages** $=$ {fit.a.toFixed(2)} $\times$ **minutes** $+$ {fit.b.toFixed(2)}. Across the whole collection, the model makes prediction errors of about {deviation(resid).toFixed(2)} pages (RMSE).
 
 <Plot
   grid
