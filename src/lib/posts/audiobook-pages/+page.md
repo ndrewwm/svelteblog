@@ -3,7 +3,8 @@ title: "Guessing the # of pages from an audiobook's duration"
 author: Andrew Moore
 date: "2025-10-19"
 slug: audiobook-pages
-description: "Are page-lengths and listening-times comparable? Some basic analysis using my collection of finished books."
+description: >
+  Are page-lengths and listening-times comparable? Some basic analysis using my collection of finished books.
 draft: false
 categories: []
 preview: null
@@ -28,7 +29,7 @@ format:
   let pred = $derived(fit.predict(durationInMin));
 </script>
 
-Over the past year, I've been gradually replacing features I used from Goodreads within the <a href="/reading">/reading</a> route of my site. I've got dedicated pages for each book that I've finished, a timeline, and a display of books I'm currently reading. Most recently, I've been working on a <a href="/reading/stats">/reading/stats</a> page that summarizes at my reading activity each year.
+Over the past year, I've been gradually adding features I used from Goodreads within the <a href="/reading">/reading</a> route of my site. I've made dedicated subpages for each book that I've finished, a timeline, and a display of books I'm currently reading. Most recently, I've been working on a <a href="/reading/stats">/reading/stats</a> page that summarizes my reading activity each year.
 
 Aside from the book covers, all of the metadata I add about each book is recorded by hand. For example, I'll write down the number of pages in the edition I'm reading. The newest data point I've started tracking the medium I used when reading a book (e.g., ebook, vs. audiobook, vs. print). As I went back to note which books I'd listened to, I started to feel itchy: are audiobook lengths and page-lengths really comparable? I'd like to be able to have a general sense for how "large" books are within my collection, and it'd be nice if I could use a standard measure.
 
