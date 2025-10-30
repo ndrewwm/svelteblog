@@ -10,12 +10,9 @@ export async function fetchMarkdownPosts() {
         .replace("/+page.md", "")
         .replace(".md", "");
 
-      return {
-        meta: metadata,
-        path: postPath,
-      }
+      return { meta: metadata, path: postPath };
     })
-  )
+  );
 
   return allPosts;
 }
