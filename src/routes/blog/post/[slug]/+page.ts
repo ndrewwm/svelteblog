@@ -19,6 +19,14 @@ export async function load({ params }) {
 				throw redirect(308, url + "3");
 			}
 		}
-		error(404, `Could not find ${params.slug}`);
+		try {
+			const post = await import(`$lib/posts/${params.slug}.md`);
+			return {
+				content: post.default,
+				meta: post.metadata
+			}
+		} catch (e) {
+			error(404, `Could not find ${params.slug}`);
+		}
 	}
 }
