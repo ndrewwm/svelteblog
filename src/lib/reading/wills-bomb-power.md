@@ -9,6 +9,8 @@ pct: 100
 stars: 5
 slug: wills-bomb-power
 who: KYE
+pages: 290
+mode: audiobook # and ebook
 ---
 
 Dr. Wills kindly provides a straightforward summary of the book's central argument in its first paragraph:

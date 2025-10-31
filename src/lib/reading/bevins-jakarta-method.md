@@ -9,5 +9,6 @@ started: "2025-09-29"
 finished: null
 pct: 11
 stars: null
+mode: ebook
 ---
 

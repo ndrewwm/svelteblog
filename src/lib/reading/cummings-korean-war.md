@@ -8,6 +8,8 @@ started: 2022-01-15
 finished: 2022-12-18
 pct: 100
 stars: 5
+mode: ebook
+pages: 320
 ---
 
 Out of all of the books I read this year, I think this one was the most impactful. As Cummings notes about the war, citing Richard Stokes (p. 92):

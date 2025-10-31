@@ -41,11 +41,21 @@
           </p>
         {/if}
 
+        {#if data.meta.reviewed}
+          <p class="is-size-5">
+            Reviewed: {dayjs(data.meta.reviewed).format("YYYY-MM-DD")}
+          </p>
+        {/if}
+
         {#if data.meta.pages}
           <p class="is-size-5">Pages: {data.meta.pages}</p>
         {/if}
 
         <p class="is-size-5">ISBN: {data.meta.isbn}</p>
+
+        {#if data.meta.mode}
+          <p class="is-size-5">Mode: {data.meta.mode}</p>
+        {/if}
 
         {#if data.meta.publisher}
           <p class="is-size-5">Publisher: {data.meta.publisher}</p>

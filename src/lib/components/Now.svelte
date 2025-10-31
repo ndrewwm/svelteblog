@@ -16,4 +16,8 @@
   .dt {
     font-family: "Micro 5";
   }
+
+  li {
+    margin-bottom: 1px;
+  }
 </style>

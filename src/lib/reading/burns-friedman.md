@@ -7,7 +7,9 @@ started: 2024-07-06
 finished: 2024-08-08
 pct: 100
 stars: 4
+pages: 592
 slug: burns-friedman
+mode: audiobook
 who: KYE
 ---
 

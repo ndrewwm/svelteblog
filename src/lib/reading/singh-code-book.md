@@ -10,6 +10,7 @@ finished: 2025-07-14
 pct: 100
 stars: 3
 who: Tim
+mode: print
 ---
 
 Despite taking a long time to get into this one (I started this one but didn't make it through the first chapter before letting it sit for about 10 months), I think I'm happy with where I landed with this book. I took a class on cryptography as part of my math degree, the majority of which was dedicated to learning about RSA and elliptic curve based cryptosystems. Today, encryption is so ubiquitous that having working knowledge of its primary instantiations feels necessary for the average citizen. However, the journey to RSA/ECC was incredibly long.

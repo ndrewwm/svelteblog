@@ -10,5 +10,6 @@ finished: null
 pct: 29
 stars: null
 who: KYE
+mode: ebook
 ---
 

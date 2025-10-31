@@ -7,7 +7,9 @@ started: 2024-04-10
 finished: 2024-04-14
 pct: 100
 stars: 3
+pages: 416
 slug: cixin-three-body
+mode: audiobook
 who: Ian
 ---
 

@@ -9,6 +9,7 @@ pages: 391
 pct: 100
 stars: 5
 slug: coontz-nostalgia-trap
+mode: audiobook
 ---
 
 There's a conservative tendency in the United States to construct idealized conceptions of the "traditional" family. In our current era, this nostalgic impulse frequently lands on an image from the 1950s, the archetypal nuclear family. Rather than being a natural state that can be returned to (through the practice of proper/"traditional" values), Coontz's book shows how the exceptional political economy of midcentury America resulted in an equally exceptional form of family life. It was a unique combination of legal and social pressures that pushed US women out of the workforce (and into the household) post-WWII, rather than a spontaneous seachange about the roles of women and motherhood. Coontz shows how societal changes preceded rationalizations of the nuclear family, and how conditions during the 1950s primed multiple generations for feminist ideas that would be popularized in the 1960s.
