@@ -4,10 +4,10 @@ author: James Baldwin
 year: 1992
 isbn: 9780679744726
 started: 2025-11-01
-finished: null
+finished: 2025-11-07
 pages: 160
-pct: 84
+pct: 100
 mode: ebook
-stars: null
+stars: 5
 slug: baldwin-fire-next-time
 ---
