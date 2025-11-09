@@ -1,6 +1,6 @@
 <div class="block mt-2 mb-2">
   <p class="dt mb-1 is-size-5">
-    2025-10-11:
+    2025-11-09:
   </p>
   
   <ul class="is-size-6">
