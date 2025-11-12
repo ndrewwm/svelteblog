@@ -7,7 +7,7 @@ pages: 340
 slug: bevins-jakarta-method
 started: "2025-09-29"
 finished: null
-pct: 51
+pct: 67
 stars: null
 mode: ebook
 ---
