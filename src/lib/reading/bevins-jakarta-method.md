@@ -6,9 +6,9 @@ isbn: 9781541730199
 pages: 340
 slug: bevins-jakarta-method
 started: "2025-09-29"
-finished: null
-pct: 67
-stars: null
+finished: "2025-11-14"
+pct: 100
+stars: 4
 mode: ebook
 ---
 
