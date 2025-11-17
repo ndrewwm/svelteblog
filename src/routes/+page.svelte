@@ -33,7 +33,7 @@
   </section>
 
   <section class="mt-5">
-    <h2 class="mt-2 mb-2"><a href="/projects">Projects</a></h2>
+    <h2 class="mt-2 mb-2" style="font-weight: bolder;">Projects</h2>
 
     <p class="title is-6 mb-1">
       <a href="https://ndrewwm.github.io/math-401">Math-401</a>
