@@ -32,7 +32,13 @@
 </article>
 
 <footer>
-  <p><strong>{data.meta.date}</strong> <a href="/about">andrew moore</a></p>
+  <p>
+    <strong>{data.meta.date}</strong> 
+    {#if data.meta.updated}
+      <strong>(Updated: {data.meta.updated})</strong>
+    {/if}
+    <a href="/about">andrew moore</a>
+  </p>
   <p><a href="https://bsky.app/profile/ndrewwm.com">@ndrewwm.com on bluesky</a>, <a href="https://github.com/ndrewwm">@ndrewwm on GitHub</a></p>
 </footer>
 
