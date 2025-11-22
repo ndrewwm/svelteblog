@@ -179,4 +179,4 @@
   Metrics
 </h3>
 
-<Plot metrics={data}/>
+<Plot metrics={data} />
