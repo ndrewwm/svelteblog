@@ -82,101 +82,120 @@
   ];
 </script>
 
-<HeroImage img={coverPhoto.src} title={"Bilbao"} subtitle={"11/1 - 11/4"} alt={coverPhoto.alt} />
+<!-- Bilbao -->
+<section>
+  <HeroImage img={coverPhoto.src} title={"Bilbao"} subtitle={"11/1 - 11/4"} alt={coverPhoto.alt} />
 
-<p class="block">
-  Bilbao is the de facto capital of the Basque Country (<em>Euskal Herria</em> [Euskara], <em>Pais Vasco</em> [Spanish]).
-  Boise is home to the largest Basque diaspora outside of Spain, and the city hosts <em>Jaialdi</em>, a Basque cultural festival,
-  roughly every 5 years <a href="https://www.jaialdi.com/history-of-jaialdi/">since 1987</a> (although this was disrupted by the 2020 pandemic).
-  We visit downtown's Basque block almost every week, but Jenny and I were excited to visit the region for ourselves.
-</p>
+  <p class="block">
+    Bilbao is the de facto capital of the Basque Country (<em>Euskal Herria</em> [Euskara], <em>Pais Vasco</em> [Spanish]).
+    Boise is home to the largest Basque diaspora outside of Spain, and the city hosts <em>Jaialdi</em>, a Basque cultural festival,
+    roughly every 5 years <a href="https://www.jaialdi.com/history-of-jaialdi/">since 1987</a> (although this was disrupted by the 2020 pandemic).
+    We visit downtown's Basque block almost every week, but Jenny and I were excited to visit the region for ourselves.
+  </p>
 
-<PhotoGrid array={bilbaoColor} />
+  <PhotoGrid array={bilbaoColor} />
+</section>
 
-<h3 class="title">
-  The Guggenheim Museum
-</h3>
+<!-- Guggenheim -->
+<section>
+  <h3 class="title">
+    The Guggenheim Museum
+  </h3>
 
-<p class="block">
-  Bilbao has undergone a transformation away from its long-running industrial history. During the 80s and through the late 90s,
-  the shipbuilding and mining industries that had previously sustained the city were fading. Some bombings carried out by
-  the ETA (a Basque separatist group) were done to 
-  <a href="https://www.cnn.com/WORLD/9710/17/spain.eta/index.html">protest the opening</a> of the Guggenheim itself.
-  Today, the Guggenheim is a symbol for how Bilbao has reinvented itself, and become an international destination.
-  Directly and indirectly, the museum produces about €400M for the city
-  <a href="https://www.bbc.co.uk/programmes/articles/1HL3drXNNWQVq7tpC6pMRsJ/the-bilbao-effect-how-20-years-of-gehrys-guggenheim-transformed-the-city">each year</a>.
-</p>
+  <p class="block">
+    Bilbao has undergone a transformation away from its long-running industrial history. During the 80s and through the late 90s,
+    the shipbuilding and mining industries that had previously sustained the city were fading. Some bombings carried out by
+    the ETA (a Basque separatist group) were done to 
+    <a href="https://www.cnn.com/WORLD/9710/17/spain.eta/index.html">protest the opening</a> of the Guggenheim itself.
+    Today, the Guggenheim is a symbol for how Bilbao has reinvented itself, and become an international destination.
+    Directly and indirectly, the museum produces about €400M for the city
+    <a href="https://www.bbc.co.uk/programmes/articles/1HL3drXNNWQVq7tpC6pMRsJ/the-bilbao-effect-how-20-years-of-gehrys-guggenheim-transformed-the-city">each year</a>.
+  </p>
 
-<p class="block">
-  The museum almost felt smaller inside than I expected. Its second floor was hosting an exhibition from American artist Barbara Kruger,
-  titled <a href="https://www.guggenheim-bilbao.eus/en/exhibitions/barbara-kruger">"Another day. Another night."</a>
-</p>
+  <p class="block">
+    The museum almost felt smaller inside than I expected. Its second floor was hosting an exhibition from American artist Barbara Kruger,
+    titled <a href="https://www.guggenheim-bilbao.eus/en/exhibitions/barbara-kruger">"Another day. Another night."</a>
+  </p>
 
-<PhotoGrid array={gug} />
+  <PhotoGrid array={gug} />
+</section>
 
-<h3 class="title">Gaztelugatxe, Mundaka, Gernika-Lumo</h3>
+<!-- Basque Country -->
+<section>
+  <h3 class="title">Gaztelugatxe, Mundaka, Gernika-Lumo</h3>
 
-<p class="block">On our second day in the city, we booked a tour that got us outside Bilbao.</p>
+  <p class="block">On our second day, we booked a tour that got us outside Bilbao.</p>
 
-<PhotoGrid array={basqueCountry} />
+  <PhotoGrid array={basqueCountry} />
 
-<img src={Mundaka} alt="" style="padding: 0 8px; margin-top: -6px; margin-bottom: 8px;">
+  <img src={Mundaka} alt="" style="padding: 0 8px; margin-top: -6px; margin-bottom: 8px;">
 
-<p class="block">
-  Here are some interesting things we learned about the Basque country:
-</p>
+  <p class="block">
+    Here are some interesting things we learned about the Basque country:
+  </p>
 
-<ul>
-  <li>
-    The Basque language, <em>Euskara</em>, is a language isolate. It might use some Spanish loanwords, but
-    is linguistically unrelated to other languages in Europe. The language was banned during Franco's
-    regime, but after Spain returned to democratic governance, the region was able to (re)establish Euskara as an official
-    language. Our guide, Asier, told us that 75% of secondary school students take their finishing exams in Euskara.
-  </li>
-  <li>
-    94% of tax revenue collected within the Basque Country remains within the region. This has roots in
-    the ancient "Basque Privileges" that the Basques have held across centuries.
-  </li>
-  <li>
-    Support for an independent Basque country is fairly low; it reached highs of around 40% in 2021/2022,
-    but appears to have dropped to around 19-25% today.
-  </li>
-</ul>
+  <ul>
+    <li>
+      The Basque language, <em>Euskara</em>, is a language isolate. It might use some Spanish loanwords, but
+      is linguistically unrelated to other languages in Europe. The language was banned during Franco's
+      regime, but after Spain returned to democratic governance, the region was able to (re)establish Euskara as an official
+      language. Our guide, Asier, told us that 75% of secondary school students take their finishing exams in Euskara.
+    </li>
+    <li>
+      94% of tax revenue collected within the Basque Country remains within the region. This has roots in
+      the ancient "Basque Privileges" that the Basques have held across centuries.
+    </li>
+    <li>
+      Support for an independent Basque country is fairly low; it reached highs of around 40% in 2021/2022,
+      but appears to have dropped to around 19-25% today.
+    </li>
+  </ul>
+</section>
 
-<h3 class="title">
-  Pinxtos ("pinch-o", Spanish <em>pinchar</em>, "puncture")
-</h3>
+<!-- Pinxtos -->
+<section>
+  <h3 class="title">
+    Pinxtos ("pinch-o", Spanish <em>pinchar</em>, "puncture")
+  </h3>
+  
+  <p class="block">
+    Pinxtos are a lovely feature of northern dining. Rather than going out for tapas, the Basque people
+    have <em>pinxto potelo</em>, the act of hopping between bars to try different pinxtos. 
+    Pinxtos are bar snacks, so they might seem reminiscent to tapas, but they differ from tapas in a few ways:
+  </p>
+  
+  <ul>
+    <li>
+      Pinxtos are always standalone items, rather than a small portion of a larger dish.
+      Instead of getting a slice of tortilla or a plate of paella, you're more likely to get a small bun or sandwich.
+    </li>
+    <li>
+      Many pinxtos include a wooden skewer (pinchar). A classic pinxto is the <a href="https://es.wikipedia.org/wiki/Gilda_(pincho)">"gilda"</a>:
+      a skewered trio of an olive, anchovie, and pickled banana pepper. These are super tasty, perfectly paired with a zurito (a half-pint from the bar's tap).
+    </li>
+    <li>
+      Pinxtos almost always include bread, which is usually standard Spanish <em>pan</em>. However, we also saw restaurants experimenting with bao buns.
+    </li>
+    <li>
+      The best thing we tried was probably the set of pinxtos in the bottom right. This was a
+      caramelized apple with pulled duck, and a cup of fried swordfish (with a creamy sauce) and
+      thinly sliced onions. Paired surprisingly well with <em>Vermut Preparativo</em> 
+      (sweet vermouth mixed with a bit of Campari over ice).
+    </li>
+  </ul>
+  
+  <PhotoGrid array={pinxtos} />
+</section>
 
-<p class="block">
-  Pinxtos are a lovely feature of northern dining. Rather than going out for tapas, the Basque people
-  have <em>pinxto potelo</em>, the act of hopping between bars to try different pinxtos. 
-  Pinxtos are bar snacks, so they might seem reminiscent to tapas, but they differ from tapas in a few ways:
-</p>
+<!-- Metrics -->
+<section>
+  <h3 class="title">
+    Metrics
+  </h3>
 
-<ul>
-  <li>
-    Pinxtos are always standalone items, rather than a small portion of a larger dish.
-    Instead of getting a slice of tortilla or a plate of paella, you're more likely to get a small bun or sandwich.
-  </li>
-  <li>
-    Many pinxtos include a wooden skewer (pinchar). A classic pinxto is the <a href="https://es.wikipedia.org/wiki/Gilda_(pincho)">"gilda"</a>:
-    a skewered trio of an olive, anchovie, and pickled banana pepper. These are super tasty, perfectly paired with a zurito (a half-pint from the bar's tap).
-  </li>
-  <li>
-    Pinxtos almost always include bread, which is usually standard Spanish <em>pan</em>. However, we also saw restaurants experimenting with bao buns.
-  </li>
-  <li>
-    The best thing we tried was probably the set of pinxtos in the bottom right. This was a
-    caramelized apple with pulled duck, and a cup of fried swordfish (with a creamy sauce) and
-    thinly sliced onions. Paired surprisingly well with <em>Vermut Preparativo</em> 
-    (sweet vermouth mixed with a bit of Campari over ice).
-  </li>
-</ul>
+  <p class="block">
+    We were on our feet 
+  </p>
 
-<PhotoGrid array={pinxtos} />
-
-<h3 class="title">
-  Metrics
-</h3>
-
-<Plot metrics={data} />
+  <Plot metrics={data} />
+</section>

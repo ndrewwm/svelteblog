@@ -143,13 +143,12 @@
   {#if segment === "bilbao"}
     <Bilbao {metrics} />
   {:else if segment === "norte"}
-    <NorteSantander />
+    <NorteSantander {metrics} />
   {:else if segment === "picos"}
-    <Picos />
+    <Picos {metrics} />
   {:else}
-    <XijonOviedo />
+    <XijonOviedo {metrics} />
   {/if}
-
 </main>
 
 <style>
