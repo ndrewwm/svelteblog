@@ -14,32 +14,28 @@
   }
 </script>
 
-<div class="field">
-  <div class="control">
-    <div class="select">
-      <select name="measure" id="measure" bind:value={measure}>
-        <option value="steps">Steps</option>
-        <option value="floors">Floors</option>
-        <option value="dist">Distance (mi)</option>
-      </select>
+<div class="is-flex">
+  <div class="field">
+    <div class="control">
+      <div class="select">
+        <select name="measure" id="measure" bind:value={measure}>
+          <option value="steps">Steps</option>
+          <option value="floors">Floors</option>
+          <option value="dist">Distance (mi)</option>
+        </select>
+      </div>
     </div>
   </div>
-</div>
-<div class="field">
-  <label for="checkbox" class="checkbox">
-    <input 
-      type="checkbox"
-      name="cumulative"
-      id="cumulative"
-      bind:checked={cumulative}
-    >
-    Cumulative?
-  </label>
+  <div class="field ml-2">
+    <button class="button" onclick={cumulative = !cumulative}>
+      {cumulative ? "Daily" : "Cumulative"}
+    </button>
+  </div>
 </div>
 
 <div class="mt-2 mb-5">
   {#if cumulative}
-    <Plot grid x={{ tickFormat: d => [31, 1].includes(d.getDate()) ? dayjs(d).format("MMM D") : d.getDate() }}>
+    <Plot grid inset={10} x={{ tickFormat: d => [31, 1].includes(d.getDate()) ? dayjs(d).format("MMM D") : d.getDate() }}>
       <AxisX tickCount={ metrics.length } />
       <LineY data={metrics} x="date" y={measureVar} marker="circle" strokeWidth={2.5} />
       {#if min_dt}
@@ -47,7 +43,7 @@
       {/if}
     </Plot>
   {:else}
-    <Plot grid x={{ tickFormat: (d) => [31, 1].includes(d.getDate()) ? dayjs(d).format("MMM D") : d.getDate() }}>
+    <Plot grid inset={10} x={{ tickFormat: (d) => [31, 1].includes(d.getDate()) ? dayjs(d).format("MMM D") : d.getDate() }}>
       <AxisX title="" />
       <BarY data={metrics} x="date" y={measureVar} />
       {#if min_dt}
