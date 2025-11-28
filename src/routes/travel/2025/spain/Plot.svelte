@@ -34,21 +34,11 @@
 </div>
 
 <div class="mt-2 mb-5">
-  {#if cumulative}
-    <Plot grid inset={10} x={{ tickFormat: d => [31, 1].includes(d.getDate()) ? dayjs(d).format("MMM D") : d.getDate() }}>
-      <AxisX tickCount={ metrics.length } />
-      <LineY data={metrics} x="date" y={measureVar} marker="circle" strokeWidth={2.5} />
-      {#if min_dt}
-        <LineY data={current} x="date" y={measureVar} stroke={emphasis} marker="circle" strokeWidth={2.5} />
-      {/if}
-    </Plot>
-  {:else}
-    <Plot grid inset={10} x={{ tickFormat: (d) => [31, 1].includes(d.getDate()) ? dayjs(d).format("MMM D") : d.getDate() }}>
-      <AxisX title="" />
-      <BarY data={metrics} x="date" y={measureVar} />
-      {#if min_dt}
-        <BarY data={current} x="date" y={measureVar} stroke={emphasis} fill={emphasis} />
-      {/if}
-    </Plot>
-  {/if}
+  <Plot grid inset={10} x={{ tickFormat: d => [31, 1].includes(d.getDate()) ? dayjs(d).format("MMM D") : d.getDate() }}>
+    <AxisX tickCount={ metrics.length } />
+    <LineY data={metrics} x="date" y={measureVar} marker="circle" strokeWidth={2.5} />
+    {#if min_dt}
+      <LineY data={current} x="date" y={measureVar} stroke={emphasis} marker="circle" strokeWidth={2.5} />
+    {/if}
+  </Plot>
 </div>
