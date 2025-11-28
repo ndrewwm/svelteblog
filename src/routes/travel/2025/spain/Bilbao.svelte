@@ -164,7 +164,7 @@
     conducted by Nazi Germany's Condor Legion. From the limited background reading I've done,
     there seems to be fair amount of ambivalence from non-Basque authors on how to understand the
     event, with much ink spent on the grim accounting of how many people actually died during the
-    raids. You can see examples of this debate playing out in miniature within the Wikipedia
+    raids. You can see this debate playing out in miniature within the Wikipedia
     <a href="https://web.archive.org/web/20251128222127/https://en.wikipedia.org/wiki/Bombing_of_Guernica">article</a> on the bombing.
   </p>
   
