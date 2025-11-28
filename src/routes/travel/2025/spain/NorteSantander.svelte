@@ -92,6 +92,10 @@
     we remedied this at a shop in Santander.
   </p>
 
+  <p class="block">
+    We had an unexpectedly good meal in Laredo, in a tiny restaurant called Casa Capuchin. 
+  </p>
+
   <PhotoGrid array={coast} />
 
 </section>
