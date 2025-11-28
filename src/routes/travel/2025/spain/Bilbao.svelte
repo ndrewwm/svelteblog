@@ -190,7 +190,7 @@
     itself as part of a broader community of survivors of excessive and industrialized violence. 
     The city has been working to preserve the historical memory of what happened, via the recording of oral
     accounts from survivors, and archiving photography from before and after the bombing. A sapling from the
-    Ginkgo tree that survived the atomic bombing of Hiroshima has been planted in a park north of the "Guernica"
+    Ginkgo tree that survived the atomic bombing of Hiroshima has been planted in a park south of the "Guernica"
     mural. While the particulars differ greatly, I believe this broader historical understanding is why
     we saw so many expressions of solidarity with the Palestinian people throughout the region. It's almost
     inconspicuous in the photo above, but the idea of a Palestinian flag being displayed on a city hall in
