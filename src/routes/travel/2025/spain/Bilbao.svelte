@@ -70,7 +70,7 @@
   let basqueCountry = [
     { src: Gaztelugatxe, alt: "Gaztelugatxe (\"Castle Rock\" in Euskara); famous as a set in \"Game of Thrones\"." },
     { src: Coast, alt: "Looking out at the Bay of Biscay, close to Gaztelugatxe." },
-    { src: Urdaibai, alt: "" },
+    { src: Urdaibai, alt: "The Urdaibai Estuary." },
     { src: Gernika, alt: "A reproduction of Picasso's \"Guernica\" as a mural in Gernika-Lumo. The words \"'Guernica' gernikara\" (\"bring 'Guernica' to Gernika\") are inscribed below it." },
     { src: GernikaCityHall, alt: "Gernika-Lumo city hall." },
   ];
@@ -145,7 +145,7 @@
 
   <PhotoGrid array={basqueCountry} />
 
-  <img src={Mundaka} alt="" style="padding: 0 8px; margin-top: -6px; margin-bottom: 8px;">
+  <img src={Mundaka} alt="Panoramic view of the Urdaibai estuary." style="padding: 0 8px; margin-top: -6px; margin-bottom: 8px;">
 
   <p class="block">
     I was quite struck by our visit to Gernika-Lumo. The town is home to the 
