@@ -1,7 +1,7 @@
 <script lang="ts">
   let { currentYear, selectedYear, currentBooks, lastBooks, primaryColor } = $props();
 
-  let phrase = "last year";
+  let phrase = $state("last year");
   if (selectedYear !== currentYear) {
     phrase = `in ${selectedYear - 1}`;
   }
