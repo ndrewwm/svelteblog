@@ -11,7 +11,17 @@
   import Shell from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251105_094729747.jpg";
   import Flags from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251105_095804475.jpg";
   import Coast from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251105_135425291.jpg";
-  import BuenCamino from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251105_152023086.jpg";
+
+  import Church from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251106_111857721.jpg";
+  import Marker from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251106_114114965.jpg";
+  import Laredo from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251106_151350307.jpg";
+  import Fishermen from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251106_164113945.jpg";
+
+  import Mercado from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251107_121336289.MP.jpg";
+  import Snaps from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251107_130952656.MP.jpg";
+  import Sculpture from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251107_130805120.MP.jpg";
+  import FoodHall from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251107_184948175.MP.jpg";
+  import CentroBotin from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251115_164707904.jpg";
 
   let { metrics } = $props();
   let data = metrics.filter((d) => d.date <= dayjs("11/07/2025"));
@@ -28,11 +38,26 @@
     { src: Flags, alt: "The Basque and Palestinean flag, flying together over a silo." },
     { src: Coast, alt: "Coastal Spain." },
   ];
+
+  let coast = [
+    { src: Marker, alt: "" },
+    { src: Laredo, alt: "" },
+    { src: Church, alt: "" },
+    { src: Fishermen, alt: "" },
+  ];
+
+  let santander = [
+    { src: Mercado, alt: "" },
+    { src: CentroBotin, alt: "" },
+    { src: Sculpture, alt: "" },
+    { src: Snaps, alt: "" },
+    { src: FoodHall, alt: "" },
+  ];
 </script>
 
 <!-- Camino del Norte -->
 <section>
-  <HeroImage title="Cantabria" subtitle="11/5 - 11/6" img={coverPhoto.src} alt={coverPhoto.alt} />
+  <HeroImage title="Cantabria" subtitle="11/5 - 11/7" img={coverPhoto.src} alt={coverPhoto.alt} />
 
   <p class="block">
     After a few days in Bilbao, we packed up our things and took the metro to Portugalete.
@@ -43,17 +68,38 @@
     The modal traveler on the Camino is likely to be Spanish, with the country representing 43% of pilgrims in 2025, 
     followed by the United States at 8%.
   </p>
-  <p class="block">
-    Camino purists would
-  </p>
 
   <PhotoGrid array={camino} />
 
-  <img src={BuenCamino} alt="Buen Camino!" style="padding: 0 8px; margin-top: -6px; margin-bottom: 8px;">
+  <p class="block">
+    Our route on the first day took us from Portugalete, to Castro Urdiales, a small beach town.
+    I'd agree with Camino purists in that it would be a stretch to refer to ourselves as pilgrims. We didn't
+    complete the full trail, started midway within a route, and neither of us had a religious motivation to
+    make the journey. However, the Camino Norte seems like an excellent way to take in the scenary of España Verde
+    (Green Spain). This region (which includes Cantabria, Asturias, and the Basque Country) experiences a ton of rain,
+    and differs a lot from other parts of Spain as far as its climate. In Bilbao, it usually rains upwards of 200 days per year.
+    We lucked out both days-- some overcast skies, but aside from perhaps a 20 minute period, we never really needed to
+    dig out our rain jackets.
+  </p>
+
+  <p class="block">
+    On the second day, we set out from Castro Urdiales to reach Laredo. We covered about half the distance we did on the
+    preceding day, but I threw in the towel when we reached the small town of Islares. I'd been wrapping some blisters
+    that had cropped up at the end of our stay in Bilbao, and made a judgement call. Our route for the remainder of the
+    day would've deviated from the Camino Norte's standard path, and would've been a bit more remote (but promised some
+    stellar views of the ocean). However, I didn't like the idea of a small limp getting worse, so we hopped on a bus for
+    the remaining 8 miles. Turns out the pair of boots I'd been using for the past few years were a bit too small for my feet--
+    we remedied this at a shop in Santander.
+  </p>
+
+  <PhotoGrid array={coast} />
+
 </section>
 
+<!-- Santander -->
 <section>
-
+  <h3 class="title">Santander</h3>
+  <PhotoGrid array={santander} />
 </section>
 
 <!-- Metrics -->
