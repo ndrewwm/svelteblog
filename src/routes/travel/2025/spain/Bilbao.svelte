@@ -180,7 +180,7 @@
     explosive weapons dropped on cities and homes recognizes that their shockwaves aren't containable.
     They leave physical and psychological scars on those unfortunate to be near them. There has never
     been such a thing as "pinpoint bombing", even with the technology we have today. In the aftermath,
-    Franco's government propagated lies that communists (<em>rojos</em>) had intentionally set fire to
+    Francoists propagated lies that communists (<em>rojos</em>) had intentionally set fire to
     the city, and that no one actually died during the events.
   </p>
 
@@ -194,7 +194,7 @@
     mural. While the particulars differ greatly, I believe this broader historical understanding is why
     we saw so many expressions of solidarity with the Palestinian people throughout the region. It's almost
     inconspicuous in the photo above, but the idea of a Palestinian flag being displayed on a city hall in
-    the US is almost inconceivable.
+    the US is nearly inconceivable.
   </p>
 
   <p class="block">
