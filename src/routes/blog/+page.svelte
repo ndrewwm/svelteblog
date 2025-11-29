@@ -26,7 +26,7 @@
 </table>
 
 <style>
-    a {
+  a {
     text-decoration: none;
   }
 
@@ -39,7 +39,7 @@
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .dt {
