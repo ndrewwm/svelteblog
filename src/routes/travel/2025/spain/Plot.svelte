@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Plot, AxisX, LineY, BarY } from "svelteplot";
+  import { Plot, AxisX, LineY } from "svelteplot";
   import dayjs from "dayjs";
 
   let { metrics, min_dt = null, max_dt = null } = $props();
