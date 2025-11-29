@@ -20,7 +20,6 @@
     left: 10px;
     color: #E1EFE6;
     padding: 10px;
-    /* font-size: 6rem; */
     font-weight: bold;
   }
 
@@ -31,7 +30,6 @@
     color: #E1EFE6;
     padding-bottom: 2px;
     padding-left: 10px;
-    /* font-size: 3rem; */
   }
 
   @media (width <= 1000px) {
