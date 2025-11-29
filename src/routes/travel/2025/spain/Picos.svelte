@@ -15,6 +15,7 @@
 
   import Picos1 from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251109_093123053.PANO.jpg";
   import Station from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251109_092723266.MP.jpg";
+  import Selfie from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251109_092841017.jpg";
   import ElCable from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251109_141305052.jpg";
   import Cairns from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251109_095537868.jpg";
   import Valley from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251109_101821606.jpg";
@@ -31,8 +32,9 @@
     { src: Station, alt: "View from the top of the station", col: "left" },
     { src: Valley, alt: "Valley", col: "left" },
     { src: ElCable, alt: "El Cable", col: "right" },
+    { src: Selfie, alt: "Us at the top", col: "right" },
     { src: Cairns, alt: "Cairns along the trail", col: "right" },
-    { src: Trail, alt: "Our route", col: "right" },
+    { src: Trail, alt: "Our route", col: "left" },
   ];
 </script>
 
@@ -64,7 +66,10 @@
     The next morning, we drove about 15 minutes to the <em>Fuente De</em> cable car ("El Cable").
     The cable's length is just under a mile, and climbs about 2,400 feet from the bottom station.
     I remember reading somewhere this is the largest aerial gain for a cable car in Europe.
-    Hands down, this is one of the best hikes I think I've ever taken.
+    Hands down, for both Jenny and me, this is one of the best hikes we've taken. From the upper station,
+    we circled the summit and worked our way down to the bottom. The whole route took us about 3.5 hours.
+    Again, we lucked out with completely clear weather; if the trail had been muddy, the last hour might
+    have been a little less pleasant.
   </p>
 
   <img src={Picos1} alt="Picos de Europa" style="padding: 0 8px; margin-top: -6px; margin-bottom: 0px;">
@@ -74,5 +79,10 @@
 <!-- Metrics -->
 <section>
   <h3 class="title">Metrics</h3>
+
+  <p class="block">
+    The 8th was a bit of a car day, but we made up for things on the 9th. At this point we're
+  </p>
+  
   <Plot metrics={data} min_dt={dayjs("11/08/2025")} />
 </section>
