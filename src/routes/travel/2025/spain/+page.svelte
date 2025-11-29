@@ -148,9 +148,15 @@
   {/if}
 </main>
 
+<footer class="mt-2 is-size-5">
+  2025-11-21 (Updated: 2025-11-29) <a href="/about">andrew w. moore</a>
+</footer>
+
 <style>
-  header {
+  header, footer {
     font-family: "Micro 5";
-    font-size: 40px;
+  }
+  header {
+    font-size: 2.5rem;
   }
 </style>

@@ -18,6 +18,7 @@
   import Fishermen from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251106_164113945.jpg";
 
   import Mercado from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251107_121336289.MP.jpg";
+  import Fish from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251107_113346280.jpg";
   import Snaps from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251107_130952656.MP.jpg";
   import Sculpture from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251107_130805120.MP.jpg";
   import FoodHall from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251107_184948175.MP.jpg";
@@ -40,18 +41,19 @@
   ];
 
   let coast = [
-    { src: Marker, alt: "" },
-    { src: Laredo, alt: "" },
-    { src: Church, alt: "" },
-    { src: Fishermen, alt: "" },
+    { src: Marker, alt: "Camino marker, overlooking the coast." },
+    { src: Laredo, alt: "Sculpture greeting those arriving at Laredo's bus stop." },
+    { src: Church, alt: "Exterior of a church we passed in Cerdigo." },
+    { src: Fishermen, alt: "Monumento a los pescadores, Laredo." },
   ];
 
   let santander = [
-    { src: Mercado, alt: "" },
-    { src: CentroBotin, alt: "" },
-    { src: Sculpture, alt: "" },
-    { src: Snaps, alt: "" },
-    { src: FoodHall, alt: "" },
+    { src: Mercado, alt: "Mercado de la Esperanza, exterior." },
+    { src: CentroBotin, alt: "A page from my journal, showing a rough sketch of the Centro Botín and describing the exhibit we saw." },
+    { src: Sculpture, alt: "Monument to Spanish poet, José Hierro." },
+    { src: Fish, alt: "Fish on display in the Mercado de la Esperanza." },
+    { src: Snaps, alt: "Jenny, pursuing photodocumentation." },
+    { src: FoodHall, alt: "Mercado del Este, interior." },
   ];
 </script>
 
@@ -93,7 +95,9 @@
   </p>
 
   <p class="block">
-    We had an unexpectedly good meal in Laredo, in a tiny restaurant called Casa Capuchin. 
+    We had an unexpectedly good meal in Laredo, in a tiny restaurant called Casa Capuchin. This was the second time we
+    got to try a dish called <em>Bacalao al pil pil</em>, a traditional style of preparing cod that features an emulsion
+    made from the cod's natural juices and gelatin.
   </p>
 
   <PhotoGrid array={coast} />
@@ -103,6 +107,17 @@
 <!-- Santander -->
 <section>
   <h3 class="title">Santander</h3>
+
+  <p class="block">
+    Our stay in Santander was lighter on local history, but we enjoyed the city. My guess is that it would be a
+    lovely place to spend part of one's summer, although the fall suited it just fine. A must-see is the
+    <a href="https://www.centrobotin.org/en/">Centro Botín</a>, even just for its architecture. 
+    My sketch below doesn't do it justice, but the building is inviting in unexpected ways. The museum is 
+    segmented into two pieces, connected by a walkway. Aside from the gift shop and a small cafe,
+    the entire structure is elevated, allowing people to move freely underneath the building.
+    The museum is located right next to the bay, and we saw several fishermen casting off under the building's shade.
+  </p>
+
   <PhotoGrid array={santander} />
 </section>
 
