@@ -67,14 +67,14 @@
     whose capital city is Santander. Jenny and I followed the Camino del Norte (<em>Northern Way</em>), one of many routes of pilgrimage
     to Santiago on the western edge of Spain. The Camino del Norte is the 6th most popular route to reach Santiago,
     with about <a href="https://oficinadelperegrino.com/en/statistics-2/">21k pilgrims</a> finishing the route in 2025.
-    The modal traveler on the Camino is likely to be Spanish, with the country representing 43% of pilgrims in 2025, 
+    The modal traveler on the Camino is Spanish, with the country representing 43% of pilgrims in 2025, 
     followed by the United States at 8%.
   </p>
 
   <PhotoGrid array={camino} />
 
   <p class="block">
-    Our route on the first day took us from Portugalete, to Castro Urdiales, a small beach town.
+    Our route on the first day took us from Portugalete to Castro Urdiales, a small beach town.
     I'd agree with Camino purists in that it would be a stretch to refer to ourselves as pilgrims. We didn't
     complete the full trail, started midway within a route, and neither of us had a religious motivation to
     make the journey. However, the Camino Norte seems like an excellent way to take in the scenary of España Verde

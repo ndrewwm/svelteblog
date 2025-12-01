@@ -162,15 +162,14 @@
     However, most people outside the Basque Country probably know of the city due to Picasso's
     famous painting, <em>Guernica</em>. The mural depicts the bombing of the town during April 1937,
     conducted by Nazi Germany's Condor Legion. From the limited background reading I've done,
-    there seems to be fair amount of ambivalence from non-Basque authors on how to understand the
-    event, with much ink spent on the grim accounting of how many people actually died during the
-    raids. You can see this debate playing out in miniature within the Wikipedia
-    <a href="https://web.archive.org/web/20251128222127/https://en.wikipedia.org/wiki/Bombing_of_Guernica">article</a> on the bombing.
+    there seems to be some ambivalence from non-Basque authors on how to understand the
+    event, revolving around the grim accounting of how many people actually died during the
+    raids. You can see this debate playing out in miniature within the bombing's Wikipedia
+    <a href="https://web.archive.org/web/20251128222127/https://en.wikipedia.org/wiki/Bombing_of_Guernica">article</a>.
   </p>
   
   <p class="block">
-    I lack familiarity with this historical debate, but there are undisputed details that make the
-    bombing rightly understood as a war crime. Nominally, the bombing was meant to impede the
+    Nominally, the bombing was meant to impede the
     retreat of Republican forces on the front east of Gernika. Specifically, bridges and roads were
     key targets, if you accept this view. However, the Luftwaffe used incendiary bombs, setting fires
     that burned for several days. This isn't easily reconciled with claims that the bombing was
@@ -185,8 +184,7 @@
   </p>
 
   <p class="block">
-    The particular circumstances are unique, an ugly mix of military tactics and punishment of a fascist
-    movement's enemies, but my sense is that Gernika-Lumo (and the Basque Country more generally) understands
+    The particular circumstances are unique, but my sense is that Gernika-Lumo (and the Basque Country more generally) understands
     itself as part of a broader community of survivors of excessive and industrialized violence. 
     The city has been working to preserve the historical memory of what happened, via the recording of oral
     accounts from survivors, and archiving photography from before and after the bombing. A sapling from the

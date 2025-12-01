@@ -1,8 +1,10 @@
 <script lang="ts">
+  import dayjs from "dayjs";
+  import { mean } from "d3";
+
   import HeroImage from "./HeroImage.svelte";
   import PhotoGrid from "./PhotoGrid.svelte";
   import Plot from "./Plot.svelte";
-  import dayjs from "dayjs";
 
   let { metrics } = $props();
   let data = metrics.filter(d => d.date <= dayjs("11/09/2025"));
@@ -81,7 +83,9 @@
   <h3 class="title">Metrics</h3>
 
   <p class="block">
-    The 8th was a bit of a car day, but we made up for things on the 9th. At this point we're
+    The 8th was a bit of a car day, but we made up for things on the 9th.
+    At this point we're averaging {Math.round(mean(data.map(d => d.steps))).toLocaleString()}
+    steps per day.
   </p>
   
   <Plot metrics={data} min_dt={dayjs("11/08/2025")} />
