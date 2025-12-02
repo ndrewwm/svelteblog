@@ -24,7 +24,6 @@
   import GHMuseo3 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_142145041.jpg";
   import GHMuseo4 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_141455846.MP.jpg";
   import GHMuseo5 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_142054254.jpg";
-  import GHMuseo6 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_142059110.MP.jpg";
   import GHMuseo7 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_145206082.jpg";
   import GHMuseo8 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_075705570.jpg";
   import GHMuseoExt from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_145156921.jpg"
@@ -40,7 +39,7 @@
   // Pinxtos
   import Pinxto1 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_114743169.jpg";
   import Pinxto2 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_143647908.jpg";
-  import Pinxto3 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_185048065.jpg";
+  // import Pinxto3 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_185048065.jpg";
   import Pinxto4 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251104_191558220.MP.jpg";
 
   let bilbaoColor = [
