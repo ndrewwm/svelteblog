@@ -1,9 +1,10 @@
 <script lang="ts">
+  import dayjs from "dayjs";
+  import { mean } from "d3";
+
   import HeroImage from "./HeroImage.svelte";
   import PhotoGrid from "./PhotoGrid.svelte";
   import Plot from "./Plot.svelte";
-  import dayjs from "dayjs";
-  import { mean } from "d3";
 
   let { metrics } = $props();
   let data = metrics.filter(d => d.date <= dayjs("11/04/2025"));
@@ -26,6 +27,7 @@
   import GHMuseo6 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_142059110.MP.jpg";
   import GHMuseo7 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_145206082.jpg";
   import GHMuseo8 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_075705570.jpg";
+  import GHMuseoExt from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_145156921.jpg"
 
   // San Juan de Gaztelugatxe, Mundaka, Gernika-Lumo
   import Gaztelugatxe from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_090105126.jpg";
@@ -63,8 +65,9 @@
     { src: GHMuseo7, alt: "\"Maman\", Louise Bourgeois, 1999" },
     { src: GHMuseo4, alt: "\"Untitled (Forever)\", Barbara Kruger, 2025" },
     { src: GHMuseo5, alt: "\"Untitled (Forever)\", Barbara Kruger, 2025" },
-    { src: GHMuseo6, alt: "\"Untitled (Forever)\", Barbara Kruger, 2025" },
     { src: GHMuseo8, alt: "Exterior of the Guggenheim, featuring \"the puppy\"." },
+    { src: GHMuseoExt, alt: "Northern exterior of the Guggenheim." },
+    // { src: GHMuseo6, alt: "\"Untitled (Forever)\", Barbara Kruger, 2025" },
   ];
 
   let basqueCountry = [
@@ -161,30 +164,19 @@
   <p class="block">
     However, most people outside the Basque Country probably know of the city due to Picasso's
     famous painting, <em>Guernica</em>. The mural depicts the bombing of the town during April 1937,
-    conducted by Nazi Germany's Condor Legion. From the limited background reading I've done,
-    there seems to be some ambivalence from non-Basque authors on how to understand the
-    event, revolving around the grim accounting of how many people actually died during the
-    raids. You can see this debate playing out in miniature within the bombing's Wikipedia
-    <a href="https://web.archive.org/web/20251128222127/https://en.wikipedia.org/wiki/Bombing_of_Guernica">article</a>.
-  </p>
-  
-  <p class="block">
-    Nominally, the bombing was meant to impede the
-    retreat of Republican forces on the front east of Gernika. Specifically, bridges and roads were
-    key targets, if you accept this view. However, the Luftwaffe used incendiary bombs, setting fires
-    that burned for several days. This isn't easily reconciled with claims that the bombing was
-    tactical. Ultimately, something like 75% of the city was destroyed as a result of the raids.
-    I've seen arguments that "pinpoint bombing" was not possible due to technical limitations,
-    but this particular phrase has always been pernicious. An honest understanding of
-    explosive weapons dropped on cities and homes recognizes that their shockwaves aren't containable.
-    They leave physical and psychological scars on those unfortunate to be near them. There has never
-    been such a thing as "pinpoint bombing", even with the technology we have today. In the aftermath,
-    Francoists propagated lies that communists (<em>rojos</em>) had intentionally set fire to
-    the city, and that no one actually died during the events.
+    conducted by Nazi Germany's Condor Legion. Nominally, the bombing was meant to impede the retreat
+    of Republican forces on the front east of Gernika. Specifically, bridges and roads were key targets,
+    if you accept this view. However, the Luftwaffe used incendiary bombs, setting fires that burned for
+    several days. This isn't easily reconciled with claims that the bombing was tactical. Ultimately,
+    something like 75% of the city was destroyed as a result of the attack. In the aftermath, Nationalists
+    propagated lies that communists (<em>rojos</em>) had intentionally set fire to the city, and that no
+    one actually died during the events. Nationalist forces occupied the city 3 days after the bombing,
+    seizing records and preventing the local government from properly determining the number of casualties
+    from the attack.
   </p>
 
   <p class="block">
-    The particular circumstances are unique, but my sense is that Gernika-Lumo (and the Basque Country more generally) understands
+    Its circumstances are unique, but my sense is that Gernika-Lumo (and the Basque Country more generally) understands
     itself as part of a broader community of survivors of excessive and industrialized violence. 
     The city has been working to preserve the historical memory of what happened, via the recording of oral
     accounts from survivors, and archiving photography from before and after the bombing. A sapling from the
@@ -230,7 +222,7 @@
   <h3 class="title">Pinxtos ("pinch-o", Spanish <em>pinchar</em>, "puncture")</h3>
   
   <p class="block">
-    Turning to much lighter subjects, Pinxtos are a lovely feature of northern dining. Rather than going out for tapas, the Basque people
+    Turning to much lighter subjects, Pinxtos are a lovely feature of northern dining. Rather than going out for tapas, the Basques
     have <em>pinxto potelo</em>, the act of hopping between bars to try different pinxtos. 
     Pinxtos are bar snacks, so they might seem reminiscent to tapas, but they differ from tapas in a few ways:
   </p>

@@ -49,7 +49,7 @@
   <p class="block">
     In Santander, we rented a car and drove about 1.5 hours southwest towards <em>Picos de Europa.</em>
     Picos is a national park, and has entrances from all 4 directions. The park is massive, and we only
-    explored one section. On our way to our lodgings (a small guesthouse), we passed through a tiny town
+    explored a small part of it. On our way to our lodgings (a small guesthouse), we passed through a tiny town
     called Potes. The town has grown outwards from a medieval tower that's served variously as a fortress,
     prison, and city hall. It has a small river running through it, with beautiful stone bridges and streets.
     We happened to be visiting during the town's annual <em>Fiesta del Orujo</em>. Spirits were high, and the
@@ -68,7 +68,7 @@
     The next morning, we drove about 15 minutes to the <em>Fuente De</em> cable car ("El Cable").
     The cable's length is just under a mile, and climbs about 2,400 feet from the bottom station.
     I remember reading somewhere this is the largest aerial gain for a cable car in Europe.
-    Hands down, for both Jenny and me, this is one of the best hikes we've taken. From the upper station,
+    Hands down, for both Jenny and me, this is one of the best hikes we've ever taken. From the upper station,
     we circled the summit and worked our way down to the bottom. The whole route took us about 3.5 hours.
     Again, we lucked out with completely clear weather; if the trail had been muddy, the last hour might
     have been a little less pleasant.

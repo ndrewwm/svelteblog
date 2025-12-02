@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Plot, AxisX, LineY } from "svelteplot";
+  import { Plot, AxisX, AxisY, LineY } from "svelteplot";
   import dayjs from "dayjs";
 
   let { metrics, min_dt = null, max_dt = null } = $props();
@@ -36,6 +36,7 @@
 <div class="mt-2 mb-5">
   <Plot grid inset={10} x={{ tickFormat: d => [31, 1].includes(d.getDate()) ? dayjs(d).format("MMM D") : d.getDate() }}>
     <AxisX tickCount={ metrics.length } />
+    <AxisY title={"↑ " + measureVar.replace("_cum", " (cumulative)")} />
     <LineY data={metrics} x="date" y={measureVar} marker="circle" strokeWidth={2.5} />
     {#if min_dt}
       <LineY data={current} x="date" y={measureVar} stroke={emphasis} marker="circle" strokeWidth={2.5} />
