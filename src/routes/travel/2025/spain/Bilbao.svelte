@@ -39,7 +39,6 @@
   // Pinxtos
   import Pinxto1 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_114743169.jpg";
   import Pinxto2 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_143647908.jpg";
-  // import Pinxto3 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_185048065.jpg";
   import Pinxto4 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251104_191558220.MP.jpg";
 
   let bilbaoColor = [
@@ -66,7 +65,6 @@
     { src: GHMuseo5, alt: "\"Untitled (Forever)\", Barbara Kruger, 2025" },
     { src: GHMuseo8, alt: "Exterior of the Guggenheim, featuring \"the puppy\"." },
     { src: GHMuseoExt, alt: "Northern exterior of the Guggenheim." },
-    // { src: GHMuseo6, alt: "\"Untitled (Forever)\", Barbara Kruger, 2025" },
   ];
 
   let basqueCountry = [
@@ -80,7 +78,6 @@
   let pinxtos = [
     { src: Pinxto1, alt: "Pinxtos! Left: brie cheese, apple, jam, and mango puree. Right: quail egg, brie cheese, chorizo, and fried potato." },
     { src: Pinxto2, alt: "Another pairing of pinxtos." },
-    { src: Pinxto3, alt: "Still more. This one includes a cheese soup, and a boiled egg with paprika, pork belly, potatoes, and mayo." },
     { src: Pinxto4, alt: "And more." },
   ];
 </script>
