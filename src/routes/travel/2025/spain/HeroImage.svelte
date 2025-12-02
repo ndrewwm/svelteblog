@@ -3,7 +3,7 @@
 </script>
 
 <div class="opener mb-2">
-  <img class="openerImg" src={img} alt={alt} title={alt} loading="lazy">
+  <img class="openerImg" src={img} alt={alt} title={alt}>
   <span class="openerTitle">{title}</span>
   <span class="openerSubtitle">{subtitle}</span>
 </div>
