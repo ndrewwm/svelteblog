@@ -15,7 +15,7 @@
 </script>
 
 {#await preload(img)}
-  <div class="opener mb-2 is-skeleton">
+  <div class="opener mb-2 skeleton-block">
   </div>
 {:then base64} 
   <div class="opener mb-2">
