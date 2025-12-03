@@ -152,7 +152,7 @@
     Gernika"), whose ancestors were a traditional meeting place for the region's representative
     assemblies during the middle ages. The tree is considered a symbol of the Basque people's tradition
     of self-governance, formalized as laws called <em>fueros</em>. The <em>fueros</em> are recognized
-    as having influenced John Adams (and the subsequent writing of the US constitution), who
+    as having influenced John Adams (and the subsequent drafting of the US constitution), who
     <a href="https://josephlvdonica.substack.com/i/155235405/back-to-adams">wrote about them</a>
     during his trip to Europe in 1780, in which he passed through Bilbao.
   </p>
