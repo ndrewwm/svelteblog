@@ -1,12 +1,29 @@
 <script lang="ts">
   let { img, title, subtitle, alt = "" } = $props();
+
+  const preload = async (src) => {
+    const resp = await fetch(src);
+    const blob = await resp.blob();
+  
+    return new Promise(function (resolve, reject) {
+      let reader = new FileReader();
+      reader.readAsDataURL(blob);
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+    });
+  };
 </script>
 
-<div class="opener mb-2">
-  <img class="openerImg" src={img} alt={alt} title={alt}>
-  <span class="openerTitle">{title}</span>
-  <span class="openerSubtitle">{subtitle}</span>
-</div>
+{#await preload(img)}
+  <div class="opener mb-2 is-skeleton">
+  </div>
+{:then base64} 
+  <div class="opener mb-2">
+    <img class="openerImg" src="{base64}" alt={alt} title={alt}>
+    <span class="openerTitle">{title}</span>
+    <span class="openerSubtitle">{subtitle}</span>
+  </div>
+{/await}
 
 <style>
   .opener {
