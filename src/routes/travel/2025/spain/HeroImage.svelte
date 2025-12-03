@@ -28,6 +28,7 @@
 <style>
   .opener {
     position: relative;
+    min-height: 50vh;
     width: 100%;
   }
 
