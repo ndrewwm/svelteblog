@@ -149,7 +149,7 @@
 </main>
 
 <footer class="mt-2 mb-4 is-size-5">
-  2025-11-21 (Updated: 2025-12-01) <a href="/about">andrew w. moore</a>
+  2025-11-21 (Updated: 2025-12-02) <a href="/about">andrew w. moore</a>
 </footer>
 
 <style>
