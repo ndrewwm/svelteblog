@@ -34,6 +34,6 @@
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 </style>

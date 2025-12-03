@@ -1,9 +1,7 @@
 <script lang="ts">
   import dayjs from "dayjs";
   import { range } from "d3-array";
-  import { mean, sum, max } from 'd3';
-  import { Plot, Line, Dot, TickX } from 'svelteplot';
-  
+
   import ReadingHeader from "../ReadingHeader.svelte";
   import YearOverview from "./YearOverview.svelte";
   import PagesSummary from "./PagesSummary.svelte";

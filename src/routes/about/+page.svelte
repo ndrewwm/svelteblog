@@ -86,10 +86,10 @@
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   
   h2 {
-    font-size: 25px;
+    font-size: 1.3rem;
   }
 </style>
