@@ -15,7 +15,7 @@
 </script>
 
 {#await preload(img)}
-  <div class="opener mb-2 skeleton-block">
+  <div class="openerwait mb-2 skeleton-block">
   </div>
 {:then base64} 
   <div class="opener mb-2">
@@ -26,9 +26,12 @@
 {/await}
 
 <style>
-  .opener {
-    position: relative;
+  .openerwait {
     min-height: 50vh;
+  }
+
+  .openerwait, .opener {
+    position: relative;
     width: 100%;
   }
 
