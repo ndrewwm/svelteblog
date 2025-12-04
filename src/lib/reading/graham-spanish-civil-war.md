@@ -8,7 +8,7 @@ slug: graham-spanish-civil-war
 mode: audiobook
 started: 2025-12-01
 finished: null
-pct: 36
+pct: 44
 stars: null
 ---
 
