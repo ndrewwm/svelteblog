@@ -7,8 +7,7 @@ pages: 192
 slug: graham-spanish-civil-war
 mode: audiobook
 started: 2025-12-01
-finished: null
-pct: 67
-stars: null
+finished: 2025-12-05
+pct: 100
+stars: 5
 ---
-
