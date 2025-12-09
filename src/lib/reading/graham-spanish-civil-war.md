@@ -12,7 +12,13 @@ pct: 100
 stars: 5
 ---
 
-I wish I had finished this book before heading to Spain! I would've had additional questions for our guides. The focus of Graham's book is not military history-- its goal is to detail the war's causes, the experiences of the Spanish people, and its aftermath.
+Before reading this book, if you'd asked me what most people know about the Civil War, I would've answered with something like the following:
+
+- people remember the war primarily for its impact: the installation and oppressions of Francoism;
+- Francoism is a sibling of German and Italian forms of fascism appearing in interwar Europe; and
+- for travelers on the political left, one's description of the war's course is something of a shibboleth.
+
+I don't think the above are incorrect, but Graham's book has prepared me to contextualize each a bit better. The focus of Graham's book is not military history. As she says, the book's purpose is to "explain the Civil War, its causes, course, and consequences", both domestically and internationally. I feel I learned the most with regards to the pre-war period. Spain's empire was essentially gone by 1898, which had several important effects. First, loss of its colonies meant Spain no longer had a captive market for its goods, triggering political debates over how the country should modernize. Spain's economy was still mostly agricultural in 1931. The rural poor did not have their own holdings, and earned their living by working the estates of large landowners. Second, without an empire to police, the military's traditional external role was displaced.
 
 One gets a sense for the course of the war, but not through descriptions of how armies maneuvered. Instead, Graham concentrates on the more important factors, specifically how the respective factions assembled and supplied their armies. Before reading, I had a cursory understanding of the war's events: a coup in the officer corps was able to embed itself in eastern Spain, and (via assistance from fascist states) experienced soldiers from Morocco were airlifted to serve as the core of the nationalists' forces. The Republic initially repelled the Nationalist advance to Madrid, but was defeated in the north, presaging their eventual defeat in the west. However, I'd been underappreciating the degree to which diplomatic factors determined the course of the war. I was aware of the International Brigades and German/Italian support for the Nationalists, but Graham highlights how a jointly dishonest pact of "non-intervention" between Britain, France, and Germany hamstrung the Republican government's ability to acquire materiel needed to defend itself. This same policy also prevented the Republic from searching German and Italian ships that were covertly delivering weapons to the Nationalists.
 
