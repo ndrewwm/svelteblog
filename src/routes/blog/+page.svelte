@@ -15,14 +15,16 @@
 </header>
 
 <table>
-  {#each data.posts as post}
-    {#if !post.meta.draft}
-      <tr>
-        <td class="dt">{dayjs(post.meta.date).format("YY.MM.DD")}</td>
-        <td class="post-title"><a href={post.path}>{post.meta.title}</a></td>
-      </tr>
-    {/if}
-  {/each}
+  <tbody>
+    {#each data.posts as post}
+      {#if !post.meta.draft}
+        <tr>
+          <td class="dt">{dayjs(post.meta.date).format("YY.MM.DD")}</td>
+          <td class="post-title"><a href={post.path}>{post.meta.title}</a></td>
+        </tr>
+      {/if}
+    {/each}
+  </tbody>
 </table>
 
 <style>
@@ -47,12 +49,15 @@
     font-weight: bolder;
     /* font-size: larger; */
   }
+
   table {
     border-style: none;
   }
+  
   td {
     padding: 1vh 1vw 1vh 1vw;
   }
+  
   td > a {
     text-decoration: none;
   }
