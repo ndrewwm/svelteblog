@@ -16,7 +16,7 @@
   on its title.
 </p>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       {#each headers as header}

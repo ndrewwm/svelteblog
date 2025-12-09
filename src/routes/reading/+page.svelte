@@ -13,41 +13,35 @@
 
 <ReadingHeader />
 
-<div class="block">
-</div>
-
-<section class="block">
-  {#if data.reading.length !== 0}    
-    {#each data.reading as book}      
-      <div class="columns is-mobile mb-0">
-        <div class="column is-narrow dt">
-          📖 {book.meta.pct}%
-        </div>
-        <div class="column dt">
+<table class="list">
+  <tbody>
+    {#if data.reading.length !== 0}
+      {#each data.reading as book}        
+        <tr>
+          <td class="dt pt-2 pb-2">📖 {book.meta.pct}%</td>
+          <td class=" pt-2 pb-2">
+            <a class="title is-size-6" href="/reading/{book.meta.slug}">{book.meta.title}</a>
+            <p class="subtitle is-size-6">{book.meta.author}</p>
+          </td>
+        </tr>
+      {/each}
+    {/if}
+    {#each data.reviews as book}
+      <tr>
+        <td class="dt pt-2 pb-2">
+          <p class="title is-size-5">{"★".repeat(book.meta.stars)}</p>
+          <p class="subtitle is-size-7">
+            {dayjs(book.meta.date).format("YY.MM.DD")}
+          </p>
+        </td>
+        <td class=" pt-2 pb-2">
           <a class="title is-size-6" href="/reading/{book.meta.slug}">{book.meta.title}</a>
           <p class="subtitle is-size-6">{book.meta.author}</p>
-        </div>
-      </div>
+        </td>
+      </tr>
     {/each}
-  {/if}
-</section>
-
-<section>
-  {#each data.reviews as book}
-    <div class="columns is-mobile mb-1">
-      <div class="column is-narrow dt">
-        <p class="title is-size-5">{"★".repeat(book.meta.stars)}</p>
-        <p class="subtitle is-size-7">
-          {dayjs(book.meta.date).format("YY.MM.DD")}
-        </p>
-      </div>
-      <div class="column dt">
-        <a class="title is-size-6" href="/reading/{book.meta.slug}">{book.meta.title}</a>
-        <p class="subtitle is-size-6">{book.meta.author}</p>
-      </div>
-    </div>
-  {/each}
-</section>
+  </tbody>
+</table>
 
 <style>
   a {
@@ -57,18 +51,15 @@
   a:hover {
     text-decoration: underline;
   }
-  
-  header {
-    font-family: "Micro 5";
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
 
   .dt {
     font-family: 'Roboto Mono', monospace;
     font-weight: bolder;
-    /* font-size: larger; */
+    min-width: 80px;
+  }
+
+  .list {
+    border-color: none;
+    border-width: 0px;
   }
 </style>
