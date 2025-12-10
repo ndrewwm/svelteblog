@@ -55,7 +55,7 @@
   .dt {
     font-family: 'Roboto Mono', monospace;
     font-weight: bolder;
-    min-width: 85px;
+    min-width: 90px;
   }
 
   .list {
