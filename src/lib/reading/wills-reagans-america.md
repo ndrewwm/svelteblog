@@ -7,7 +7,7 @@ pages: 590
 slug: wills-reagans-america
 started: 2025-06-30
 finished: null
-pct: 60
+pct: 65
 stars: null
 who: KYE
 mode: ebook
