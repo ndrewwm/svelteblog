@@ -53,6 +53,8 @@
 			"stars: ${10:null}",
 			"---",
 			"",
+			"<!-- Remember, 400-2,000 words is the target range. Ideally <1,000. -->",
+			"",
 			"$0"
 		]
 	}
