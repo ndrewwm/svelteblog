@@ -3,7 +3,6 @@
   import dayjs from 'dayjs';
   import ReadingHeader from './ReadingHeader.svelte';
   let { data } = $props();
-
   let mobile = new MediaQuery("width < 500px");
 </script>
 
@@ -32,11 +31,10 @@
     {#each data.reviews as book}
       <tr>
         <td class="dt pt-2 pb-2">
-          {#if mobile.current}
-            <p class="title is-size-6">{"★".repeat(book.meta.stars)}</p>
-          {:else}
-            <p class="title is-size-5">{"★".repeat(book.meta.stars)}</p>
-          {/if}
+          <!-- Use a smaller font when we think the user is on a mobile device -->
+          <p class={"title is-size-" + (mobile.current ? "6" : "5")}>
+            {"★".repeat(book.meta.stars)}
+          </p>
           <p class="subtitle is-size-7">
             {dayjs(book.meta.date).format("YY.MM.DD")}
           </p>
@@ -63,12 +61,6 @@
     font-family: 'Roboto Mono', monospace;
     font-weight: bolder;
     min-width: 90px;
-  }
-
-  @media (width < 500px) {
-    .dt {
-      font-size: smaller;
-    }
   }
 
   .list {
