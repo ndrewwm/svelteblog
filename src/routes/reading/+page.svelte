@@ -1,7 +1,10 @@
 <script lang="ts">
+  import { MediaQuery } from 'svelte/reactivity';
   import dayjs from 'dayjs';
   import ReadingHeader from './ReadingHeader.svelte';
   let { data } = $props();
+
+  let mobile = new MediaQuery("width < 500px");
 </script>
 
 <svelte:head>
@@ -29,7 +32,11 @@
     {#each data.reviews as book}
       <tr>
         <td class="dt pt-2 pb-2">
-          <p class="title is-size-5">{"★".repeat(book.meta.stars)}</p>
+          {#if mobile.current}
+            <p class="title is-size-6">{"★".repeat(book.meta.stars)}</p>
+          {:else}
+            <p class="title is-size-5">{"★".repeat(book.meta.stars)}</p>
+          {/if}
           <p class="subtitle is-size-7">
             {dayjs(book.meta.date).format("YY.MM.DD")}
           </p>
