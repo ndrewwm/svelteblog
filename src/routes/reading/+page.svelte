@@ -58,6 +58,12 @@
     min-width: 90px;
   }
 
+  @media (width < 500px) {
+    .dt {
+      font-size: smaller;
+    }
+  }
+
   .list {
     border-color: none;
     border-width: 0px;
