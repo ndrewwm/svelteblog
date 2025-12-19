@@ -25,8 +25,8 @@
   --bulma-content-heading-color: #000411;
   --bulma-hr-background-color: #000411;
   --bulma-border: #000411;
-  --bulma-table-background-color: var(--bulma-background);
-  --bulma-table-body-background-color: var(--bulma-background);
+  --bulma-table-background-color: #E1EFE6;
+  --bulma-table-body-background-color: #E1EFE6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,8 +41,8 @@
     --bulma-text-strong: #E1EFE6;
     --bulma-strong-color: #E1EFE6;
     --bulma-border: #E1EFE6;
-    --bulma-table-background-color: var(--bulma-background);
-    --bulma-table-body-background-color: var(--bulma-background);
+    --bulma-table-background-color: #000411;
+    --bulma-table-body-background-color: #000411;
     --main-bg-color: #000411;
     --main-txt-color: #E1EFE6;
     --bulma-hr-background-color: #E1EFE6;
