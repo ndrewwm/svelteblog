@@ -2,13 +2,13 @@
 title: "Losing Our Minds: What Mental Illness Really Is - And What It Isn't"
 author: Lucy Foulkes
 year: 2021
-isbn: null
+isbn: 9781529113372
 pages: 230
 slug: foulkes-losing-our-minds
 added: 2025-05-22
-started: null
+started: 2025-12-20
 finished: null
-pct: null
+pct: 12
 stars: null
 who: Julia
 ---
