@@ -121,7 +121,7 @@
     {#snippet overlay()}
       <HTMLTooltip data={data} x="yday" y="value">
         {#snippet children({ datum })}
-          <div class="tooltip m-0 p-0">
+          <div class="tooltip m-1 p-0">
             <div>Year: {datum.year}</div>
             <div>Date: {datum.yday <= 30 ? `11/${datum.yday+1}` : `12/${datum.yday - 30}`}</div>
             <div>Snow depth (in): {datum.value}</div>
@@ -139,7 +139,13 @@
 
   .tooltip {
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 1);
-    opacity: 1;
+    background-color: #E1EFE6;
+    opacity: 0.75;
+  }
+
+  @media(prefers-color-scheme: dark) {
+    .tooltip {
+      background-color: #000411;
+    }
   }
 </style>
