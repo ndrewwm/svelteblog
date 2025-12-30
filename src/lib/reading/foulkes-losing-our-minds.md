@@ -8,7 +8,7 @@ slug: foulkes-losing-our-minds
 added: 2025-05-22
 started: 2025-12-20
 finished: null
-pct: 12
+pct: 25
 stars: null
 who: Julia
 ---
