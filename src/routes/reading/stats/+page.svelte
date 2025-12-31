@@ -35,6 +35,10 @@
   let lastBooks = $derived(books.filter(book => book.finished.year() == lastYear));
 </script>
 
+<svelte:head>
+  <title>Annual reading summary</title>
+</svelte:head>
+
 <ReadingHeader />
 
 <div>
