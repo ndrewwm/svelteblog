@@ -25,19 +25,29 @@
   </a>
 </div>
 
-
-<div class="block">
-  {#each data.books as book}
-    <div class="columns">
-      <div class="column is-narrow dt">
-        {dayjs(book.meta.date).format("YY.MM.DD")}
-      </div>
-      <div class="column dt">
-        <a href="/reading/{book.meta.slug}">{book.meta.title}</a>
-      </div>
-    </div>
-  {/each}
-</div>
+<table class="list">
+  <thead>
+    <tr>
+      <th>Added</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {#each data.books as book}
+      <tr>
+        <td class="dt pt-2 pb-2">
+          <p class="subtitle is-size-7">
+            {dayjs(book.meta.added).format("YY.MM.DD")}
+          </p>
+        </td>
+        <td class=" pt-2 pb-2">
+          <a class="title is-size-6" href="/reading/{book.meta.slug}">{book.meta.title}</a>
+          <p class="subtitle is-size-6">{book.meta.author}</p>
+        </td>
+      </tr>
+    {/each}
+  </tbody>
+</table>
 
 <style>
   a {
@@ -47,18 +57,15 @@
   a:hover {
     text-decoration: underline;
   }
-  
-  header {
-    font-family: "Micro 5";
-  }
-
-  h1 {
-    font-size: 40px;
-  }
 
   .dt {
     font-family: 'Roboto Mono', monospace;
     font-weight: bolder;
-    /* font-size: larger; */
+    min-width: 90px;
+  }
+
+  .list {
+    border-color: none;
+    border-width: 0px;
   }
 </style>
