@@ -39,7 +39,7 @@
 
 <div>
   <p class="mb-2">
-    This is a summary of my reading habits, similar to the year-end report that services like
+    This is a summary of my reading habits, similar to the year-end report that services
     like "Goodreads" provide. You can view different years by clicking the buttons below.
   </p>
   {#each range(2022, currentYear + 1) as year}
