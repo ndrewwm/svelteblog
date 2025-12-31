@@ -9,7 +9,7 @@ added: 2025-05-22
 started: 2025-12-20
 finished: 2025-12-31
 pct: 100
-stars: null
+stars: 4
 mode: ebook
 who: Julia
 ---
