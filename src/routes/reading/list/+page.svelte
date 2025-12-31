@@ -29,7 +29,7 @@
   <thead>
     <tr>
       <th>Added</th>
-      <th></th>
+      <th>Details</th>
     </tr>
   </thead>
   <tbody>
