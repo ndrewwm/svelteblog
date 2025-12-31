@@ -36,7 +36,7 @@
 </script>
 
 <svelte:head>
-  <title>Annual reading summary</title>
+  <title>ndrewwm | Annual reading summary</title>
 </svelte:head>
 
 <ReadingHeader />
