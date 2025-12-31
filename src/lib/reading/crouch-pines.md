@@ -12,5 +12,6 @@ mode: null
 stars: null
 owned: null
 who: Nick
+fiction: true
 slug: crouch-pines
 ---

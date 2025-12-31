@@ -30,6 +30,7 @@
     <tr>
       <th>Added</th>
       <th>Details</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -39,6 +40,16 @@
           <p class="subtitle is-size-7">
             {dayjs(book.meta.added).format("YY.MM.DD")}
           </p>
+        </td>
+        <td>
+          {#if book.meta.fiction}
+            <div class="tag is-success">fiction</div>
+          {/if}
+          {#if book.meta.who}
+            {#each book.meta.who.split(",") as name}
+              <div class="tag is-danger">{name.toLowerCase()}</div>
+            {/each}
+          {/if}
         </td>
         <td class=" pt-2 pb-2">
           <a class="title is-size-6" href="/reading/{book.meta.slug}">{book.meta.title}</a>

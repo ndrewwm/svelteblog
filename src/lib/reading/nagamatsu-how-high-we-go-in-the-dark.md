@@ -12,5 +12,6 @@ mode: null
 stars: null
 owned: null
 who: Nick
+fiction: true
 slug: nagamatsu-how-high-we-go-in-the-dark
 ---

@@ -11,5 +11,6 @@ pct: null
 mode: null
 stars: null
 owned: null
+fiction: true
 slug: le carre-spy-who-came-in-from-the-cold
 ---

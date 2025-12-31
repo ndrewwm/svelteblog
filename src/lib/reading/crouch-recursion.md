@@ -12,5 +12,6 @@ mode: null
 stars: null
 owned: null
 who: Nick,Ian
+fiction: true
 slug: crouch-recursion
 ---

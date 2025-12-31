@@ -11,5 +11,6 @@ pct: null
 mode: null
 stars: null
 owned: null
+fiction: true
 slug: ayatsuji-decagon-house-murders
 ---

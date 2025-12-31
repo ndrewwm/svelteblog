@@ -12,5 +12,6 @@ mode: null
 stars: null
 owned: null
 who: Alysia
+fiction: true
 slug: higashino-devotion-of-suspect-x
 ---
