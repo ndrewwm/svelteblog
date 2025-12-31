@@ -7,9 +7,10 @@ pages: 230
 slug: foulkes-losing-our-minds
 added: 2025-05-22
 started: 2025-12-20
-finished: null
-pct: 66
+finished: 2025-12-31
+pct: 100
 stars: null
+mode: ebook
 who: Julia
 ---
 
