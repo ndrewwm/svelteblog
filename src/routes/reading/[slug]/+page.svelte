@@ -31,9 +31,17 @@
           <p class="is-size-6">{"★".repeat(data.meta.stars)}</p>
         {/if}
 
-        <p class="is-size-5">
-          Started: {dayjs(data.meta.started).format("YYYY-MM-DD")}
-        </p>
+        {#if !data.meta.started && data.meta.added}
+          <p class="is-size-5">
+            Added: {dayjs(data.meta.added).format("YYYY-MM-DD")}
+          </p>
+        {/if}
+
+        {#if data.meta.started}
+          <p class="is-size-5">
+            Started: {dayjs(data.meta.started).format("YYYY-MM-DD")}
+          </p>
+        {/if}
 
         {#if data.meta.finished}
           <p class="is-size-5">
@@ -51,7 +59,7 @@
           <p class="is-size-5">Pages: {data.meta.pages}</p>
         {/if}
 
-        <p class="is-size-5">ISBN: {data.meta.isbn}</p>
+        <p class="is-size-5">ISBN: {data.meta.isbn ? data.meta.isbn : "null"}</p>
 
         {#if data.meta.mode}
           <p class="is-size-5">Mode: {data.meta.mode}</p>

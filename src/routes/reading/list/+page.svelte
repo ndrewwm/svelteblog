@@ -13,11 +13,18 @@
 
 <ReadingHeader />
 
-<p>
-  This is a list of books that I'm planning on reading.
-  They're sorted by the date I've added them.
-</p>
-<hr>
+<div class="block">
+  <p class="block">
+    This is a list of books that I'm planning on reading.
+    They're sorted by the date I've added them.
+  </p>
+  <a href="/reading/list/random">
+    <button class="button is-primary">
+      Random Book
+    </button>
+  </a>
+</div>
+
 
 <div class="block">
   {#each data.books as book}
