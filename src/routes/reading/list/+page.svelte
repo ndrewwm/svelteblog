@@ -23,6 +23,9 @@
       Random Book
     </button>
   </a>
+  <a href="/reading/list/suggest">
+    <button class="button">Suggest a book for me to read</button>
+  </a>
 </div>
 
 <table class="list">

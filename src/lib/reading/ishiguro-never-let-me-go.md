@@ -11,5 +11,6 @@ pct: null
 mode: null
 stars: null
 owned: null
+fiction: false
 slug: ishiguro-never-let-me-go
 ---

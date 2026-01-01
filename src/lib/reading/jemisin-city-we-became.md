@@ -12,5 +12,6 @@ mode: null
 stars: null
 owned: null
 who: Ian
+fiction: true
 slug: jemisin-city-we-became
 ---
