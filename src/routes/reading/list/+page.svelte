@@ -32,7 +32,7 @@
   <thead>
     <tr>
       <th>Added</th>
-      <th>Details</th>
+      <th>Tags</th>
       <th></th>
     </tr>
   </thead>
@@ -56,7 +56,13 @@
         </td>
         <td class=" pt-2 pb-2">
           <a class="title is-size-6" href="/reading/{book.meta.slug}">{book.meta.title}</a>
-          <p class="subtitle is-size-6">{book.meta.author}</p>
+          <p class="subtitle is-size-6">
+            {book.meta.author}
+            {#if book.meta.pages}
+              <br>
+              {book.meta.pages} pages
+            {/if}
+          </p>
         </td>
       </tr>
     {/each}
