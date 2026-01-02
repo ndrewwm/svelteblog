@@ -10,29 +10,33 @@
   import BookTable from "./BookTable.svelte";
 
   let { data } = $props();
-  let primaryColor = $state("#EFCB68");
+  let primaryColor = "#EFCB68";
 
-  // Determine the current year, and set an initial state
-  let currentYear = dayjs().year();
+  let booksArray = JSON.parse(data.books);
+  let books = booksArray.map(book => {
+    book.started = dayjs(book.started);
+    book.finished = dayjs(book.finished);
+    book.days = book.finished.diff(book.started, "day");
+    book.pages = book.pages !== null && book.pages !== undefined ? book.pages : -1;
+    book.yr_finished = book.finished.year();
+    return book;
+  });
+
+  // As we cross into a new year, it's likely I won't have finished a new book.
+  // To ensure we populate the currentBooks/lastBooks arrays (and actually display content)
+  // we need to update/set currentYear based on whether we have a finished book from the actualYear.
+  let actualYear = dayjs().year();
+  let currentYear = actualYear;
+  if (books.filter(book => book.yr_finished === actualYear).length === 0) {
+    currentYear -= 1;
+  }
+
+  // Give the selectedYear an initial state
   let selectedYear = $state(currentYear);
   let lastYear = $derived(selectedYear - 1);
 
-  // Clean up the retrieved books
-  let booksArray = $derived(JSON.parse(data.books));
-  let books = $derived.by(() => {
-    let out = booksArray.map(book => {
-      book.started = dayjs(book.started);
-      book.finished = dayjs(book.finished);
-      book.days = book.finished.diff(book.started, "day");
-      book.pages = book.pages !== null && book.pages !== undefined ? book.pages : -1;
-      book.yr_finished = book.finished.year();
-      return book;
-    });
-    return out;
-  });
-
-  let currentBooks = $derived(books.filter(book => book.finished.year() === selectedYear));
-  let lastBooks = $derived(books.filter(book => book.finished.year() == lastYear));
+  let currentBooks = $derived(books.filter(book => book.yr_finished === selectedYear));
+  let lastBooks = $derived(books.filter(book => book.yr_finished === lastYear));
 </script>
 
 <svelte:head>
@@ -41,7 +45,7 @@
 
 <ReadingHeader />
 
-<div>
+<div class="mb-5">
   <p class="mb-2">
     This is a summary of my reading habits, similar to the year-end report that services
     like "Goodreads" provide. You can view different years by clicking the buttons below.
@@ -55,10 +59,9 @@
     </button>
   {/each}
 </div>
-<hr>
 
 {#key selectedYear}
-  <YearOverview {currentYear} {selectedYear} {currentBooks} {lastBooks} {primaryColor} />
+  <YearOverview {actualYear} {selectedYear} {currentBooks} {lastBooks} {primaryColor} />
 
   <PagesSummary {books} {currentBooks} {primaryColor} />
 
