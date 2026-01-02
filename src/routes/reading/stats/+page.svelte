@@ -62,7 +62,7 @@
 <hr>
 
 {#key selectedYear}
-  <YearOverview {actualYear} {currentYear} {selectedYear} {currentBooks} {lastBooks} {primaryColor} />
+  <YearOverview {actualYear} {selectedYear} {currentBooks} {lastBooks} {primaryColor} />
 
   <PagesSummary {books} {currentBooks} {primaryColor} />
 
