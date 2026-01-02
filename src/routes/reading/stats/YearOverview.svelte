@@ -1,5 +1,5 @@
 <script lang="ts">
-  let { currentYear, selectedYear, currentBooks, lastBooks, primaryColor } = $props();
+  let { actualYear, currentYear, selectedYear, currentBooks, lastBooks, primaryColor } = $props();
 
   let phrase = $state("last year");
   if (selectedYear !== currentYear) {
@@ -9,7 +9,7 @@
 
 <div class="title">
   During
-  {#if currentYear === selectedYear}
+  {#if actualYear === selectedYear}
     <span style="color: {primaryColor}">
       this year, 
     </span> I've
