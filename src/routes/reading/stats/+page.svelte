@@ -45,7 +45,7 @@
 
 <ReadingHeader />
 
-<div>
+<div class="mb-5">
   <p class="mb-2">
     This is a summary of my reading habits, similar to the year-end report that services
     like "Goodreads" provide. You can view different years by clicking the buttons below.
@@ -59,7 +59,6 @@
     </button>
   {/each}
 </div>
-<hr>
 
 {#key selectedYear}
   <YearOverview {actualYear} {selectedYear} {currentBooks} {lastBooks} {primaryColor} />
