@@ -27,7 +27,7 @@
   // we need to update/set currentYear based on whether we have a finished book from the actualYear.
   let actualYear = dayjs().year();
   let currentYear = actualYear;
-  if (books.filter(book => book.yr_finished === dayjs().year()).length === 0) {
+  if (books.filter(book => book.yr_finished === actualYear).length === 0) {
     currentYear -= 1;
   }
 
