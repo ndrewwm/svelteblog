@@ -7,7 +7,7 @@ pages: 817
 slug: piketty-capital
 started: 2025-11-07
 finished: null
-pct: 2
+pct: 6
 stars: null
 mode: ebook
 ---
