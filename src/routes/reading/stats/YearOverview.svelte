@@ -10,15 +10,18 @@
 <div class="title">
   During
   {#if actualYear === selectedYear}
-    <span style="color: {primaryColor}">
+    <span style:color={primaryColor}>
       this year, 
     </span> I've
   {:else}
-    <span style="color: {primaryColor}">
+    <span style:color={primaryColor}>
       {selectedYear},
     </span> I
   {/if}
-  finished reading {currentBooks.length} books.
+  finished reading
+  <span style:color={primaryColor}>
+    {currentBooks.length} books.
+  </span>
 </div>
 {#if currentBooks.length !== 0}
   <p class="subtitle">
