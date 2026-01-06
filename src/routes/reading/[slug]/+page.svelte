@@ -78,16 +78,9 @@
       <br>
     </div>
   </div>
-  <!-- <hr class="mt-1 mb-2"> -->
 </header>
 
 <article class="mb-5">
-  {#if data.meta.pct !== 100}
-    <progress class="progress" value={data.meta.pct} max="100">
-      {data.meta.pct}%
-    </progress>
-  {/if}
-
   {#if data.content}
     <div class="content">
       <data.content />
@@ -106,9 +99,9 @@
     font-family: "Micro 5";
   }
   h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   h2 {
-    font-size: 25px;
+    font-size: 1.8rem;
   }
 </style>
