@@ -25,7 +25,13 @@
 <style>
   #brand {
     font-family: "Micro 5", monospace;
-    font-size: 40px;
+    font-size: 2.5rem;
+  }
+
+  @media(width < 1000px) {
+    #brand {
+      font-size: 2.1rem;
+    }
   }
 
   a {

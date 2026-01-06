@@ -1,5 +1,8 @@
 <script>
   import { page } from "$app/state";
+  import { MediaQuery } from "svelte/reactivity";
+
+  let small = new MediaQuery("width < 1000px");
   let links = [
     { href: "/reading", text: "reading" },
     { href: "/reading/list", text: "list" },
@@ -9,10 +12,10 @@
 
 <header>
   <h1>
-    <a href="/">andrew w. moore</a>
+    <a href="/">{small.current ? "ndrewwm" : "andrew w. moore"}</a>
     {#each links as link}
       {#if page.url.pathname !== link.href}
-        | <a class="mr-3" href="{link.href}">{link.text}</a>
+        | <a class="mr-3" href={link.href}>{link.text}</a>
       {:else}
         | <span class="mr-3">{link.text}</span>
       {/if}
@@ -35,5 +38,11 @@
 
   h1 {
     font-size: 2.5rem;
+  }
+
+  @media(width < 1000px) {
+    h1 {
+      font-size: 2.1rem;
+    }
   }
 </style>
