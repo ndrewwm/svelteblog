@@ -32,18 +32,18 @@
         {/if}
 
         <p class="is-size-5">
-          Started: {dayjs(data.meta.started).format("YYYY-MM-DD")}
+          Started: {dayjs(data.meta.started).add(1, "day").format("YYYY-MM-DD")}
         </p>
 
         {#if data.meta.finished}
           <p class="is-size-5">
-            Finished: {dayjs(data.meta.finished).format("YYYY-MM-DD")}
+            Finished: {dayjs(data.meta.finished).add(1, "day").format("YYYY-MM-DD")}
           </p>
         {/if}
 
         {#if data.meta.reviewed}
           <p class="is-size-5">
-            Reviewed: {dayjs(data.meta.reviewed).format("YYYY-MM-DD")}
+            Reviewed: {dayjs(data.meta.reviewed).add(1, "day").format("YYYY-MM-DD")}
           </p>
         {/if}
 
