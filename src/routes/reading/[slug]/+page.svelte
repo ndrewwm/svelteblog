@@ -18,12 +18,12 @@
 
 <header>
   <h1><a href="/">andrew w. moore</a> | <a href="/reading">reading</a></h1>
-  <div class="columns mt-1 mb-1">
+  <div class="columns mt-1">
     <div class="column is-one-fifth">
       <OpenLibraryCover isbn={data.meta.isbn} />
     </div>
     <div class="column">
-      <h2 id="title" class="title mt-2">{data.meta.title}</h2>
+      <h2 id="title" class="title is-size-3">{data.meta.title}</h2>
       <h2 class="subtitle">
         {data.meta.author} ({data.meta.year})
         <br>
