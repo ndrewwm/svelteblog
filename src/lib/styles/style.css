@@ -102,6 +102,12 @@ li {
   margin-bottom: 2vh;
 }
 
+@media(max-width <= 800) {
+  li {
+    margin-left: 1vw;
+  }
+}
+
 a {
   color: var(--main-txt-color);
   font-weight: bold;
