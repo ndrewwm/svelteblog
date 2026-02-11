@@ -1,5 +1,5 @@
 ---
-title: The Mexican Revolution: A Very Short Introduction
+title: "The Mexican Revolution: A Very Short Introduction"
 author: Alan Knight
 year: 2016
 isbn: 9780191062865
