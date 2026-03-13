@@ -51,6 +51,8 @@
 			"finished: ${8:null}",
 			"pct: $9",
 			"stars: ${10:null}",
+			"mode: ${11:ebook}",
+			"who: ${12:null}",
 			"---",
 			"",
 			"<!-- Remember, 400-2,000 words is the target range. Ideally <1,000. -->",
