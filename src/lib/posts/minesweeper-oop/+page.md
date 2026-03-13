@@ -3,7 +3,7 @@ title: "Using Minesweeper to think about object oriented programming"
 author: Andrew Moore
 date: "2025-06-20"
 slug: minesweeper-oop
-description: We can have improved examples, rather than the classic Animal, Dog, and Cat.
+description: Some alternative examples, rather than the classic Animal, Dog, and Cat.
 draft: false
 categories: ["programming"]
 format:

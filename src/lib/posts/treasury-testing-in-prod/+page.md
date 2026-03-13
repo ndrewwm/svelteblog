@@ -1,6 +1,6 @@
 ---
 title: "Jobs where you control 20% of GDP and you test in prod"
-description: This is bad
+description: Moving fast and breaking the Treasury Department's IT (this is bad).
 author: "Andrew Moore"
 date: "2025-02-04"
 draft: false

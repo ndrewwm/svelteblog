@@ -1,6 +1,6 @@
 ---
 title: "Books I read in 2023"
-description: I feel like I should write this down someplace
+description: Summaries and reflections on what I read in 2023.
 author: "Andrew Moore"
 date: "2023-12-27"
 draft: false
