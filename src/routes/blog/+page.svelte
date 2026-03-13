@@ -1,6 +1,8 @@
 <script lang="ts">
   import dayjs from 'dayjs';
+  import { MediaQuery } from 'svelte/reactivity';
   let { data } = $props();
+  let mobile = new MediaQuery("width < 800px");
 </script>
 
 <svelte:head>
@@ -14,18 +16,33 @@
   <h1><a href="/">andrew w. moore</a> | blog</h1>
 </header>
 
-<table>
-  <tbody>
-    {#each data.posts as post}
-      {#if !post.meta.draft}
-        <tr>
-          <td class="dt">{dayjs(post.meta.date).format("YY.MM.DD")}</td>
-          <td class="post-title"><a href={post.path}>{post.meta.title}</a></td>
-        </tr>
+<div id="posts">
+  {#each data.posts as post}
+    {#if !post.meta.draft}
+      {#if mobile.current}
+        <div class="block">
+          <p class="post-title"><a href={post.path}>{post.meta.title}</a></p>
+          <p class="dt">{dayjs(post.meta.date).format("YY.MM.DD")}</p>
+          {#if post.meta.description}
+            <p class="mt-1">{post.meta.description}</p>
+          {/if}
+        </div>
+      {:else}
+        <div class="columns">
+          <div class="column is-narrow dt">
+            {dayjs(post.meta.date).format("YY.MM.DD")}
+          </div>
+          <div class="column">
+            <p class="post-title">
+              <a href={post.path}>{post.meta.title}</a>
+            </p>
+            <p>{post.meta.description}</p>
+          </div>
+        </div>
       {/if}
-    {/each}
-  </tbody>
-</table>
+    {/if}
+  {/each}
+</div>
 
 <style>
   a {
@@ -48,23 +65,5 @@
     font-family: 'Roboto Mono', monospace;
     font-weight: bolder;
     /* font-size: larger; */
-  }
-
-  table {
-    border-style: none;
-  }
-  
-  td {
-    padding: 1vh 1vw 1vh 1vw;
-  }
-  
-  td > a {
-    text-decoration: none;
-  }
-
-  @media (width <= 1000px) {
-    table {
-      font-size: small;
-    }
   }
 </style>
