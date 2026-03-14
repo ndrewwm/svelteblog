@@ -16,27 +16,47 @@
   <h1><a href="/">andrew w. moore</a> | blog</h1>
 </header>
 
+{#snippet title(title: string, path: string)}
+  <p class="post-title"><a href={path}>{title}</a></p>
+{/snippet}
+
+{#snippet date(date: string)}
+  <p class="dt">{dayjs(date).format("YY.MM.DD")}</p>
+{/snippet}
+
+{#snippet description(description: string)}
+  {#if description}
+    <p class="mt-1">{description}</p>
+  {/if}
+{/snippet}
+
+{#snippet categories(categories: string[])}  
+  {#if categories}
+    {#each categories as category}
+      <div class="tag mt-1 mr-1">{category}</div>
+    {/each}
+  {/if}
+{/snippet}
+
 <div id="posts">
   {#each data.posts as post}
     {#if !post.meta.draft}
       {#if mobile.current}
         <div class="block">
-          <p class="post-title"><a href={post.path}>{post.meta.title}</a></p>
-          <p class="dt">{dayjs(post.meta.date).format("YY.MM.DD")}</p>
-          {#if post.meta.description}
-            <p class="mt-1">{post.meta.description}</p>
-          {/if}
+          {@render title(post.meta.title, post.path)}
+          {@render date(post.meta.date)}
+          {@render description(post.meta.description)}
+          {@render categories(post.meta.categories)}
         </div>
       {:else}
         <div class="columns">
-          <div class="column is-narrow dt">
-            {dayjs(post.meta.date).format("YY.MM.DD")}
+          <div class="column is-narrow">
+            {@render date(post.meta.date)}
           </div>
           <div class="column">
-            <p class="post-title">
-              <a href={post.path}>{post.meta.title}</a>
-            </p>
-            <p>{post.meta.description}</p>
+            {@render title(post.meta.title, post.path)}
+            {@render description(post.meta.description)}
+            {@render categories(post.meta.categories)}
           </div>
         </div>
       {/if}
