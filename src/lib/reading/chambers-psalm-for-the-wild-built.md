@@ -35,7 +35,7 @@ Over the first and second chapters, we see Dex master the practice of serving te
 
 Science fiction is maybe uniquely positioned to imagine and examine interactions between humanity and other modes of existence. This is true going all the way back to Shelley; _Psalm_ easily falls into this tradition, but again, it's constructive and optimistic in the way it does so. An early exchange between the book's main characters helps illustrate this:
 
-> A chatterbird alighted on a nearby branch, singing its famous staccato song. Mosscap smiled and returned the cal, mimicking the sound in near perfection.
+> A chatterbird alighted on a nearby branch, singing its famous staccato song. Mosscap smiled and returned the call, mimicking the sound in near perfection.
 >
 > Dex looked askance at the robot as they pedaled. "That's creepily good", they said.
 > 
