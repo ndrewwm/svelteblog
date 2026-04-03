@@ -47,6 +47,10 @@
           <p class="is-size-5">
             Finished: {dayjs(data.meta.finished).add(1, "day").format("YYYY-MM-DD")}
           </p>
+        {:else}
+          <p class="is-size-5">
+            Progress: {data.meta.pct}%
+          </p>
         {/if}
 
         {#if data.meta.reviewed}
@@ -81,7 +85,7 @@
 </header>
 
 <article class="mb-5">
-  {#if data.content}
+  {#if data.content && data.meta.finished}
     <div class="content">
       <data.content />
     </div>
