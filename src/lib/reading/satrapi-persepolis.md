@@ -11,5 +11,4 @@ pct: 100
 stars: 5
 mode: print
 who: [jenny]
-fiction: true
 ---
