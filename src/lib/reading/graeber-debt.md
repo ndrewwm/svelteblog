@@ -6,7 +6,7 @@ isbn: 9781933633862
 started: 2024-05-07
 finished: 2024-06-15
 pct: 100
-stars: 5
+stars: 4
 slug: graeber-debt
 pages: 560
 mode: audiobook # and ebook

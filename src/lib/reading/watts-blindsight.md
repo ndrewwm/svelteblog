@@ -9,7 +9,7 @@ finished: 2026-02-12
 pages: 384
 pct: 100
 mode: ebook
-stars: 4
+stars: 3
 owned: true
 fiction: true
 slug: watts-blindsight

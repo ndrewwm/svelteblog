@@ -7,7 +7,7 @@ slug: wheelan-naked-economics
 started: 2022-01-15
 finished: 2022-05-31
 pct: 100
-stars: 3
+stars: 2
 who: Tim
 mode: print
 pages: 400

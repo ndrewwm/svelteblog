@@ -6,7 +6,7 @@ isbn: 9781541602571
 started: 2023-09-05
 finished: 2023-09-15
 pct: 100
-stars: 5
+stars: 3
 slug: hoyer-beyond-the-wall
 mode: audiobook
 pages: 512

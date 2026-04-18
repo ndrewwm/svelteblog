@@ -6,7 +6,7 @@ isbn: 9780593316719
 started: 2023-06-10
 finished: 2023-06-11
 pct: 100
-stars: 5
+stars: 3
 slug: lubchansky-boys-weekend
 pages: 232
 mode: print
