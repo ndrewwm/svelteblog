@@ -6,7 +6,7 @@ isbn: 9781534431003
 started: 2023-05-16
 finished: 2023-05-18
 pct: 100
-stars: 4
+stars: 3
 slug: el-mohtar-gladstone-time-war
 who: twitter
 pages: 224
