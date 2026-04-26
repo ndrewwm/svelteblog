@@ -7,7 +7,7 @@ added: 2023-10-21
 started: 2026-04-17
 finished: null
 pages: 400
-pct: 20
+pct: 57
 mode: audiobook
 stars: null
 owned: false
