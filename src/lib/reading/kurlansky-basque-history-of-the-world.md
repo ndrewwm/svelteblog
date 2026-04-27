@@ -6,8 +6,8 @@ isbn: 9780140298512
 added: 2023-10-21
 started: 2026-04-17
 finished: null
-pages: 400
-pct: 57
+pages: 509
+pct: 81
 mode: audiobook
 stars: null
 owned: false
