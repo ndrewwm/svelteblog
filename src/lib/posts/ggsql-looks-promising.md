@@ -13,7 +13,9 @@ format:
     variant: +yaml_metadata_block
 ---
 
-Posit (FKA RStudio) has unveiled a new software tool: [ggsql](https://ggsql.org/). It's a grammar-of-graphics approach to data visualization but  does so by extending the capabilities of SQL. After you've written a standard `select` query, you add a `visualize/visualise` clause, followed by layers (created with `draw` statements). Here's a comparison of the new ggsql syntax (currently in alpha v0.3.0):
+Posit (FKA RStudio) has unveiled a new software tool: [ggsql](https://ggsql.org/). It's a grammar-of-graphics approach to data visualization but  does so by extending the capabilities of SQL. After you've written a standard query, you add a `visualize/visualise` clause, followed by layers (created with `draw` statements).
+
+Here's a comparison of the new ggsql syntax (currently in alpha v0.3.0):
 
 ```sql
 select *
@@ -47,7 +49,7 @@ palmerpenguins::penguins |>
     )
 ```
 
-The resemblence between the two is pleasantly familiar. This alone is an impressive design achievement. But I think the declarative nature of SQL really shines here: we `draw` new layers, `place` annotations on our figures and `facet` them by a relevant grouping. While I learned how to compose data visualizations using `ggplot2` and `dplyr`, these days it's not as common that I find myself in an R session with these tools at my fingertips. Instead, the bulk of my time is spent working across different databases, i.e., writing SQL. I often find myself running a query and wish I could quickly look at a time series or density to make sure nothing looks funny. Being able to do this by tacking a couple lines onto the query is really handy.
+The resemblance between the two is pleasantly familiar. This alone is an impressive design achievement. But, I think the declarative nature of SQL shines here: we `draw` new layers, `place` annotations on our figures and `facet` them by a relevant grouping. While I learned how to compose data visualizations using `ggplot2` and `dplyr`, these days it's not as common that I find myself in an R session with these tools at my fingertips. Instead, the bulk of my time is spent working across different databases, i.e., writing SQL. I often find myself running a query and wish I could quickly look at a time series or density to make sure nothing looks funny. Being able to do this by tacking a couple lines onto the query is really handy.
 
 ```sql
 -- If no 'y' is specified, ggsql performs a count
@@ -58,4 +60,4 @@ draw bar
 
 These kinds of quick interactive plots are a normal part of EDA. Even for someone who's not summarizing data as frequently (like me), quick visual inspections are helpful for getting context on a table or the results of a transformation. Being able to do this minus the cognitive costs of porting my "micro-analysis" into an R session is quite promising.
 
-So, where do things go from here? It seems like Posit is developing a VS Code/Positron extensions that will let users run `.gsql` files using different database connections and target/output destinations. Currently, it appears that ggsql can only play with a few backends (such as DuckDB or SQLite-- but this software is very young; new options are bound to appear). I'm looking forward to playing around with it as the tooling improves. Hopefully cloud database providers will also take notice as well-- it'd be nice if I could write up visualizations natively within e.g., Snowsight.
+So, where do things go from here? It seems like Posit is developing VS Code/Positron extensions that will let users run `.gsql` files using different database connections and target/output destinations. Currently, it appears that ggsql can only play with a few backends (such as DuckDB or SQLite-- but this software is very young; new options are bound to appear). I'm looking forward to playing around with it as the tooling improves. Hopefully cloud database providers will also take notice as well-- it'd be nice if I could write up visualizations natively within e.g., Snowsight.
