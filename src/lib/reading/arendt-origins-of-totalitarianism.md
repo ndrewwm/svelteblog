@@ -7,7 +7,7 @@ pages: 582
 slug: arendt-origins-of-totalitarianism
 started: "2026-02-10"
 finished: null
-pct: 50
+pct: 54
 stars: null
 mode: ebook
 who: null
