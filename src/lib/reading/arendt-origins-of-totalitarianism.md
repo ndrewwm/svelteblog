@@ -8,7 +8,7 @@ slug: arendt-origins-of-totalitarianism
 started: "2026-02-10"
 finished: "2026-05-06"
 pct: 100
-stars: 4
+stars: 5
 mode: ebook
 who: null
 ---
