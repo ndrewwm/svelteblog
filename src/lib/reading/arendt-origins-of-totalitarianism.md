@@ -6,9 +6,9 @@ isbn: 9780547543154
 pages: 582
 slug: arendt-origins-of-totalitarianism
 started: "2026-02-10"
-finished: null
-pct: 59
-stars: null
+finished: "2026-05-06"
+pct: 100
+stars: 4
 mode: ebook
 who: null
 ---
