@@ -20,7 +20,10 @@
     {#if data.reading.length !== 0}
       {#each data.reading as book}        
         <tr>
-          <td class="dt pt-2 pb-2">📖 {book.meta.pct}%</td>
+          <td class="dt pt-2 pb-2">
+            {book.meta.mode == "audiobook" ? "🎧" : "📖"}
+            {book.meta.pct}%
+          </td>
           <td class=" pt-2 pb-2">
             <a class="title is-size-6" href="/reading/{book.meta.slug}">{book.meta.title}</a>
             <p class="subtitle is-size-6">{book.meta.author}</p>
