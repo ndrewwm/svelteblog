@@ -8,7 +8,7 @@
 
 <section class="block">
   <h1 class="title is-size-6">{heading} Technical Skills</h1>
-  <ul>
+  <ul class="ml-0">
     <li>Python (pandas, prefect, flask, fastapi)</li>
     <li>SQL (dbt, Oracle, Snowflake, MS SQL-Server)</li>
     <li>R (dplyr/tidyverse, devtools)</li>
@@ -21,7 +21,7 @@
 
 <section class="block">
   <h1 class="title is-size-6">{heading} Professional Experience</h1>
-  <ul>
+  <ul class="ml-0">
     <li>
       <strong>Senior Data Engineer</strong>
       <br />
@@ -88,7 +88,7 @@
 
 <section class="block">
   <h1 class="title is-size-6">{heading} Education</h1>
-  <ul>
+  <ul class="ml-0">
     <li>
       <strong>B.S. Applied Mathematics,</strong> Statistics Emphasis
       <br />
@@ -103,12 +103,23 @@
   </ul>
 </section>
 
+<!-- Author(s). (Year, Month Day-Day). Title of work [Description]. Conference Name, Location. URL -->
+<section class="block">
+  <h1 class="title is-size-6">{heading} Presentations</h1>
+  <ul class="ml-0">
+    <li>
+      <strong>Moore A.</strong> (2026, April 27-29). <em>Finding shared language: Standardizing data transformation, testing, and
+      documentation with dbt core</em> [Invited talk]. Presented at Higher Education Data World, Austin TX.
+    </li>
+  </ul>
+</section>
+
 <section class="block">
   <h1 class="title is-size-6">{heading} Selected Publications</h1>
-  <ul>
+  <ul class="ml-0">
     <li>
-      Perron, B.E., Victor, B.G., Bushman, G., <strong>Moore, A.,</strong> Ryan,
-      J.P., Lu, A.J., & Piellusch, E.K. (2019). Detecting substance-related
+      Perron B.E., Victor B.G., Bushman G., <strong>Moore A.,</strong> Ryan
+      J.P., Lu A.J., & Piellusch E.K. (2019). Detecting substance-related
       problems in narrative investigation summaries of child abuse and neglect
       using text mining and machine learning. <em>Child Abuse & Neglect,</em> 98,
       104180. doi:10.1016/j.chiabu.2019.104180
@@ -125,7 +136,7 @@
 <section>
   <h1 class="title is-size-6">{heading} Community Engagement</h1>
 
-  <ul>
+  <ul class="ml-0">
     <li>
       <strong>Co-Organizer,</strong> Ann Arbor R-Users Group
       <br />
