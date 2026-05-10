@@ -7,7 +7,7 @@ pages: null
 slug: plato-republic
 started: 2026-05-04
 finished: null
-pct: 65
+pct: 72
 stars: null
 mode: audiobook
 who: null
