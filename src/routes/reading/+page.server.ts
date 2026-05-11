@@ -5,6 +5,5 @@ export async function load({ fetch }) {
 
   const reviewsResp = await fetch(`/api/books/finished`);
   const reviews: Object[] = await reviewsResp.json();
-  reviews.reverse();
   return { reading, reviews };
 }

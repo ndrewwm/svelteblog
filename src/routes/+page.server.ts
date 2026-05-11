@@ -9,6 +9,6 @@ export async function load({ fetch }) {
   const bookReviews: Object[] = await bookReviewsResp.json();
   return { 
     posts: posts.filter((book) => !book.meta.draft).slice(0, 5),
-    reviews: bookReviews.toReversed().slice(0, 5),
+    reviews: bookReviews.slice(0, 5),
   };
 }
