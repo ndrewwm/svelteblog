@@ -6,7 +6,7 @@
   --main-pre-txt-color: #E1EFE6;
   --main-code-txt-color: #EFCB68;
   --main-console-output: #E8DDA7;
-  --console-font-family: "Roboto Mono";
+  --console-font-family: "Fira Code", "Roboto Mono";
   --bulma-primary-h: 44deg;
   --bulma-primary-s: 81%;
   --bulma-primary-l: 67%;
@@ -138,6 +138,7 @@ code {
   font-family: var(--console-font-family), monospace;
   scrollbar-color: var(--main-code-txt-color);
   scrollbar-track-color: var(--main-bg-color);
+  font-variant-ligatures: contextual;
   margin: 2px
 }
 
@@ -148,6 +149,7 @@ pre {
   padding: 2%;
   border-radius: 15px;
   font-family: var(--console-font-family), monospace;
+  font-variant-ligatures: contextual;
   overflow-x: auto;
 }
 
