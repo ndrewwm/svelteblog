@@ -3,12 +3,12 @@ title: "The Republic"
 author: Plato
 year: 2020
 isbn: null
-pages: null
+pages: 399
 slug: plato-republic
 started: 2026-05-04
-finished: null
-pct: 93
-stars: null
+finished: 2026-05-15
+pct: 100
+stars: 3
 mode: audiobook
 who: null
 ---
