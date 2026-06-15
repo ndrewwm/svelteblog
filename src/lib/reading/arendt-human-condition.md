@@ -7,7 +7,7 @@ pages: 370
 slug: arendt-human-condition
 started: 2026-05-02
 finished: null
-pct: 39
+pct: 47
 stars: null
 mode: ebook
 who: null
