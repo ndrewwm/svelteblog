@@ -11,5 +11,7 @@
 </script>
 
 <a href={book_url}>
-  <img src={img_url} alt="Book cover for {isbn}." />
+  <figure class="image">
+    <img src={img_url} alt="Book cover for {isbn}." />
+  </figure>
 </a>
