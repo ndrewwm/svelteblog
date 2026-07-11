@@ -6,9 +6,9 @@ isbn: 9780226025988
 pages: 370
 slug: arendt-human-condition
 started: 2026-05-02
-finished: null
-pct: 59
-stars: null
+finished: 2026-07-10
+pct: 100
+stars: 4
 mode: ebook
 who: null
 ---
