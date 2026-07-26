@@ -7,7 +7,7 @@ pages: 312
 slug: arendt-eichmann-in-jerusalem
 started: 2026-07-20
 finished: null
-pct: 25
+pct: 83
 stars: null
 mode: audiobook
 who: null
