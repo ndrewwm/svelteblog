@@ -1,0 +1,367 @@
+---
+title: "Avoid double pips"
+author: Andrew Moore
+date: "2026-07-30"
+slug: avoid-double-pips
+description: >
+  This post explores why it's not advisable to splash an expensive "double-pipped" card
+  when playing a standard 40-card deck in MtG limited. I construct a simulation to 
+draft: false
+categories: [mtg, simulation]
+preview: null
+knitr:
+  opts_knit: 
+    base.url: "/"
+  opts_chunk:
+    fig.path: "./+page_files/"
+    class-output: qmdresults
+    class-message: qmdmessage
+    warning: false
+    message: false
+    fig-align: center
+format:
+  gfm:
+    variant: +yaml_metadata_block
+---
+
+Consider this hypothetical:
+
+> You've just finished a booster draft with 8 of your friends. During the draft, you were able to pick a 5GG bomb that wins you the game when you cast it. The rest of your picks support an aggressive white-red deck with a low curve, combat tricks, and some removal. However, you decide to include the off-color card due to its power. Your 40-card deck has 5 mana sources that produce green mana: 3 forests, a [Mana Confluence](https://scryfall.com/card/jou/163/mana-confluence), and a utility [artifact](https://scryfall.com/card/a25/229/prophetic-prism) that can produce green mana. Your remaining lands (13) are split between plains and mountains.
+
+For a limited format that doesn't emphasize multicolor play, this configuration of lands/sources is usually about as far as you can stretch things. Now, here's a question: is splashing for this powerful card a good idea? The answer ultimately depends on one's goals. If the goal is to build the deck to cast the exciting spell, this post isn't here to yuck anyone's yum. However, if winning games is part of what makes limited fun for you, I hope to convince you to avoid splashes like this when building your decks. In this post, we'll use a bit of math and simulation to see what happens when we build a deck to splash a double-pipped card (i.e., a card whose casting cost is something like 5GG; each "G" is called a "pip").
+
+Let's start by naming some probabilities of interest:
+
+- $Pr(\text{Keep}) =$ "the probability you have a viable opening hand",
+- $Pr(\text{Bomb}) =$ "the probability you see the bomb in the first 18 cards of your deck",
+- $Pr(\text{Splash}) = Pr(\text{2+ green sources in first 18 cards}) =$ "the probability you see two or more green sources in the first 18 cards of your deck",
+- $Pr(\text{Lands}) = Pr(\text{7+ lands in first 18 cards}) =$ "the probability you see at least 7 lands in the first 18 cards of your deck",
+- $Pr(\text{Cast}) = Pr(\text{Bomb} \cap \text{Splash} \cap \text{Lands}) =$ "the probability you can cast the bomb, after seeing 18 cards", and
+- $Pr(\text{Cast} \ | \ \text{Keep}) =$ "the probability you can cast the bomb after seeing 18 cards, given that the opening hand was viable".
+
+The natural way to think about these events is that we're flipping over the first 18 cards of a shuffled deck.[^1] Either we're drawing them one at a time or surveiling/scrying.[^2] This means we're ignoring scenarios where your opponent puts cards from play *back* into your deck. We're also assuming you'll *survive* to see 18 cards: your opponent might be able to win in the first 7-ish turns, they might cause you to discard one or more cards you need, etc. All kinds of things can happen in the course of real play, but let's be as generous as possible to what this hypothetical deck is trying to do on paper.
+
+Deriving $Pr(\text{Cast})$ or $Pr(\text{Cast} \ | \ \text{Keep})$ is complicated, due to the fact that the events ($\text{Bomb}$, $\text{Splash}$, and $\text{Lands}$) are not independent. For example, drawing a forest implies you're also closer to having the lands needed on-time to cast your bomb. However, we can get around this by simulating the process, letting a computer shuffle the deck thousands of times, to get an estimate. Laying things out, this is what we'll be giving to the computer to shuffle for each "game":
+
+```{r}
+#| echo: false
+
+library(knitr)
+library(dplyr)
+library(tidyr)
+library(purrr)
+library(tibble)
+library(stringr)
+
+set.seed(20260730)
+N <- 10000
+
+fmt_prob <- function(x) str_c(round(x * 100), "/100")
+
+creatures <- c(
+  "CW",
+  rep("CR1", 3), rep("CW1", 2),
+  rep("CR2", 3), rep("CW2", 2),
+  rep("CR3", 2), rep("CW3", 1),
+  "C4R"
+)
+spells <- c("B", "A2", "SR1", "SW1", "SW1", "SR2", "SR2", "SW4")
+lands <- c(rep("P", 7), rep("M", 6), rep("F", 3), "E")
+deck <- c(creatures, spells, lands)
+
+tibble(
+  Category = c("Lands", "Spells", "Creatures"),
+  Cards = c(str_c(lands, collapse = ", "), str_c(spells, collapse = ", "), str_c(creatures, collapse = ", "))
+) |>
+  arrange(desc(Category)) |>
+  kable(caption = "B = bomb, A = artifact, C = creature, S = inst/sorc, F = forest, P = plains, M = mountain, E = mana confluence")
+```
+
+```{r}
+#| echo: false
+#| eval: false
+
+library(distributions3)
+
+K <- 18
+B <- HyperGeometric(m = 1, n = 39, k = K)
+S <- HyperGeometric(m = 5, n = 35, k = K)
+L <- HyperGeometric(m = 17, n = 23, k = K)
+
+pr_bomb   <- pmf(B, 1)
+pr_splash <- 1 - cdf(S, 1)
+pr_lands  <- 1 - cdf(L, 6)
+```
+
+
+For our simulation, we'll perform the following `r scales::comma(N)` times:
+
+1. shuffle the deck
+2. draw 7 cards from the top (the opening hand)
+3. determine if the opening hand is viable:
+    - **mulligan** if the hand contains 0-1 lands, or more than 4 lands
+    - **keep** the hand if it contains 2 lands and 2+ playable spells (at least 1 being a creature)
+    - **keep** the hand if it contains 3 lands and 2+ playable creatures
+    - **keep** the hand if it contains 4 lands, 3 playable spells (at least 2 being creatures)
+    - **mulligan** all other scenarios
+4. draw until you've seen 18 cards, and then count:
+    - the total number of green sources observed,
+    - the total number of lands observed, and
+    - whether the bomb was found
+
+**Note:** in step 3, a "playable" card is one that can be cast using the lands available in the hand. Our utility artifact (`"A2"` in our list) can fix our colors, but we need to spend mana in order to put the artifact into play. This is has a cost, chiefly that we're not able to play something more immediately impactful on the game during early turns.
+
+<!-- Simulation -->
+
+```{r}
+#| echo: false
+
+playable <- function(card, lands) {
+  n_lands <- length(lands)
+
+  if (card == "B") {
+    return(FALSE)
+  }
+
+  if (card == "A2") {
+    return(TRUE)
+  }
+
+  mana_value <- (card |> str_extract("[0-9]") |> replace_na("0") |> as.numeric()) + 1
+  if (mana_value > n_lands) {
+    return(FALSE)
+  }
+
+  color <- str_extract(card, "R|W|G")
+  if ("E" %in% lands) {
+    return(TRUE)
+  }
+  if (color == "R") {
+    return("M" %in% lands)
+  }
+  if (color == "W") {
+    return("P" %in% lands)
+  }
+}
+
+sim <- function(deck, N) {
+  M <- length(deck)
+  games <- tibble()
+  for (i in 1:N) {
+    shuffled <- sample(deck, M)
+    hand <- shuffled[1:7]
+
+    n_m <- sum(hand == "M")
+    n_p <- sum(hand == "P")
+    n_f <- sum(hand == "F")
+    n_e <- sum(hand == "E")
+    n_a <- sum(hand == "A2")
+
+    lands <- hand[hand %in% c("M", "P", "F", "E")]
+    n_lands <- length(lands)
+
+    # Too few or too many lands, mulligan
+    if (n_lands < 2 | n_lands >= 5) {
+      game <- tibble(i, n_m, n_p, n_f, n_e, n_a, n_lands, mull = 1)
+      out <- bind_rows(games, game)
+      next
+    }
+
+    creatures <- hand[str_detect(hand, "C")]
+    spells <- hand[str_detect(hand, "S|A|B")]
+    n_creat <- length(creatures)
+
+    # No creatures, mulligan
+    if (n_creat == 0) {
+      game <- tibble(i, n_m, n_p, n_f, n_e, n_a, n_lands, n_creat, mull = 1)
+      games <- bind_rows(games, game)
+      next
+    }
+
+    n_playable_creatures <- map_lgl(creatures, \(card) playable(card, lands)) |> sum()
+    if (length(spells) > 0) {
+      n_playable_spells <- map_lgl(spells, \(card) playable(card, lands)) |> sum()
+    } else {
+      n_playable_spells <- 0
+    }
+    n_playable <- n_playable_creatures + n_playable_spells
+
+    # On 2 lands: must have a 2-drop creature, and at least 1 other playable spell
+    if (n_lands == 2) {
+      if (n_playable_creatures < 1 | n_playable < 2) {
+        game <- tibble(i, n_m, n_p, n_f, n_e, n_a, n_lands, n_creat, n_playable_creatures, n_playable_spells, mull = 1)
+        games <- bind_rows(games, game)
+        next
+      }
+    }
+
+    if (n_lands == 3 & n_playable_creatures < 2) {
+      game <- tibble(i, n_m, n_p, n_f, n_e, n_a, n_lands, n_creat, n_playable_creatures, n_playable_spells, mull = 1)
+      games <- bind_rows(games, game)
+      next
+    }
+
+    if (n_lands == 4) {
+      if (n_playable_creatures < 2 | n_playable < 3) {
+        game <- tibble(i, n_m, n_p, n_f, n_e, n_a, n_lands, n_creat, n_playable_creatures, n_playable_spells, mull = 1)
+        games <- bind_rows(games, game)
+        next       
+      }
+    }
+
+    # Do they find the bomb by the time they could cast it?
+    finds_bomb <- sum(shuffled[1:18] == "B")
+    finds_splash <- sum(shuffled[1:18] %in% c("F", "E", "A"))
+    finds_lands <- sum(shuffled[1:18] %in% c("F", "P", "M", "E"))
+
+    game <- tibble(
+      i, n_m, n_p, n_f, n_e, n_a, n_lands, n_creat,
+      n_playable_creatures, n_playable_spells, mull = 0, 
+      finds_bomb, finds_splash, finds_lands
+    )
+    games <- bind_rows(games, game)
+  }
+
+  return(games)
+}
+
+res <- sim(deck, N)
+```
+
+```{r}
+#| echo: false
+
+res <- res |>
+  mutate(across(everything(), ~replace_na(., 0))) |>
+  mutate(
+    can_keep = !mull,
+    can_cast = finds_bomb == 1 & finds_splash >= 2 & finds_lands >= 7
+  )
+
+conditionals <- res |>
+  filter(can_keep) |>
+  summarise(
+    `Pr(Keep)` = sum(can_keep) / nrow(res),
+    `Pr(Bomb | Keep)` = sum(finds_bomb) / n(),
+    `Pr(Splash | Keep)` = sum(finds_splash >= 2) / n(),
+    `Pr(Lands | Keep)` = sum(finds_lands >= 7) / n(),
+    `Pr(Cast | Keep)` = sum(can_cast) / n(),
+  ) |>
+  pivot_longer(cols = everything(), names_to = "condition", values_to = "estimate")
+
+pr_bomb_no_cast_given_keep <- res |>
+  filter(
+    can_keep,
+    finds_bomb == 1,
+    finds_splash < 2 | finds_lands <= 6,
+  ) |>
+  nrow() |>
+  magrittr::divide_by(N)
+
+pr_splash_no_cast_given_keep <- res |>
+  filter(
+    can_keep,
+    finds_bomb == 0 | finds_lands <= 6,
+    finds_splash >= 2
+  ) |>
+  nrow() |>
+  magrittr::divide_by(N)
+```
+
+Now, here are the results. Under this list and heuristic for mulligans, the simulation suggests you'll only be able to find a viable hand in `r fmt_prob(conditionals$estimate[1])` games. 
+In instances where we see a viable hand, we'll only be able to cast the bomb in `r fmt_prob(conditionals$estimate[5])` games.
+
+```{r}
+#| echo: false
+
+conditionals |>
+  kable(
+    digits = 3,
+    col.names = c("Quantity", "Estimate"),
+    align = c("r", "r")
+  )
+```
+
+<!-- Alternative: a "normal" deck -->
+
+```{r}
+#| echo: false
+
+deck2 <- deck
+deck2[37:39] <- c("P", "P", "M")
+deck2[17] <- "SR1"
+
+res2 <- sim(deck2, N)
+res2 <- mutate(res2, can_keep = !mull)
+pr_keep2 <- sum(res2$can_keep) / nrow(res2)
+```
+
+This could sound appealing, but this means that in `r fmt_prob(1 - conditionals$estimate[5])` games one of those conditions isn't true (including the awkward scenario where in `r fmt_prob(pr_bomb_no_cast_given_keep)` games you've found the bomb but can't cast it). Something crucial to emphasize here is that our simulation's estimate for $Pr(\text{Keep})$ is lower than what we'd expect if we swapped the three forests for three basics of our base colors, and the utility artifact for a 2-mana creature. Using the same simulation procedure, we'd estimate that $Pr(\text{Keep}) \approx$ `r round(pr_keep2, 3)`, suggesting that this configuration will contribute to around 6 additional mulligans out of 100 games.
+
+```{r}
+#| eval: false
+#| echo: false
+
+library(tidyverse)
+library(duckdb)
+library(dbplyr)
+library(jsonlite)
+
+# links <- c(
+#   "eoe" = "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.EOE.TradDraft.csv.gz",
+#   "ecl" = "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.ECL.TradDraft.csv.gz",
+#   "tdm" = "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.TDM.TradDraft.csv.gz",
+#   "dft" = "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.DFT.TradDraft.csv.gz",
+#   "fdn" = "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.FDN.TradDraft.csv.gz"
+# )
+# 
+# walk2(names(links), links, \(set, url) {
+#   print(str_glue("create table {set}_boe as select * from read_csv('{url}');"))
+# })
+
+con <- dbConnect(duckdb("/Users/andrew/Desktop/17lands.duckdb"))
+
+X <- map_df(c("eoe", "ecl", "tdm", "dft", "fdn"), \(set) {
+  tbl(con, str_glue("bo3_{set}")) |>
+    select(expansion, draft_id, game_number, on_play, num_mulligans, num_turns, won) |>
+    collect()
+})
+
+dbDisconnect(con)
+
+by_set <- X |>
+  group_by(expansion, num_mulligans) |>
+  summarise(won = sum(won) / n()) |>
+  ungroup()
+
+by_set <- X |>
+  group_by(num_mulligans) |>
+  summarise(expansion = "Overall", won = sum(won) / n()) |>
+  bind_rows(by_set)
+
+toJSON(by_set, pretty = TRUE)
+
+# library(brms)
+# library(tidybayes)
+# 
+# fit <- brm(won ~ num_mulligans, data = X, family = bernoulli())
+# add_linpred_draws(tibble(num_mulligans = 0:5), fit, transform = TRUE) |>
+#   ggplot(aes(x = num_mulligans, y = .linpred)) +
+#   stat_pointinterval(.width = c(.66, .95))
+```
+
+<script>
+  import MullPlot from "$lib/posts/avoid-double-pips/MullPlot.svelte";
+</script>
+
+<MullPlot />
+
+<style>
+  ul {
+    margin-top: 1vh;
+  }
+</style>
+
+[^1]: Why 18? This is a bit of a subjective choice, but it's meant to compromise between a few things. First, in our scenario the player will need to play one land per turn for seven turns in order to cast their bomb. This means they'll see between 6-7 cards from draw steps over that period (depending on whether they played first or second) in addition to their opening hand. Thus, a player will see 14-ish cards as a minimum. Second, in modern limited play, casting creatures or spells usually gives players the chance to see one or more cards from the top of their deck. Choosing 18 cards lets us assume the player is seeing around 4-ish extra cards in addition to what they'd draw normally. I think one could argue that this is either too generous or too conservative, but regardless, we should assume players will see more than what they're given each draw step.
+
+[^2]: Here we can pretend that scrying and surveiling essentially behave the same way. For a "normal" limited game that takes a "normal" number of turns (9±5.8), it's unlikely that a player will ever draw all the cards in their deck. We might say that if we haven't shuffled, putting a card on the bottom of your library means it's "out of the deck" until we reveal _all_ of the preceding cards above it. 
