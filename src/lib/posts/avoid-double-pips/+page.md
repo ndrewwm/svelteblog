@@ -21,6 +21,7 @@ knitr:
     class-message: qmdmessage
     warning: false
     message: false
+    echo: false
     fig-align: center
 format:
   gfm:
@@ -28,14 +29,16 @@ format:
 ---
 
 
-Consider this hypothetical:
+This post is a bit of theory about building limited decks in *Magic: the
+Gathering*. Consider this hypothetical:
 
 > You’ve just finished a booster draft with 8 of your friends. During
-> the draft, you were able to pick a 5GG bomb that wins you the game
-> when you cast it. The rest of your picks support an aggressive
-> white-red deck with a low curve, combat tricks, and some removal.
-> However, you decide to include the off-color card due to its power.
-> Your 40-card deck has 5 mana sources that produce green mana: 3
+> the draft, you were able to pick a 5GG
+> [bomb](https://scryfall.com/card/ecc/98/avenger-of-zendikar) that wins
+> you the game when you cast it. The rest of your picks support an
+> aggressive white-red deck with a low curve, combat tricks, and some
+> removal. However, you decide to include the off-color card due to its
+> power. Your 40-card deck has 5 mana sources that produce green mana: 3
 > forests, a [Mana
 > Confluence](https://scryfall.com/card/jou/163/mana-confluence), and a
 > utility [artifact](https://scryfall.com/card/a25/229/prophetic-prism)
@@ -48,8 +51,8 @@ stretch things. Now, here’s a question: is splashing for this powerful
 card a good idea? The answer ultimately depends on one’s goals. If the
 goal is to build the deck to cast the exciting spell, this post isn’t
 here to yuck anyone’s yum. However, if winning games is part of what
-makes limited fun for you, I hope to convince you to avoid splashes like
-this when building your decks. In this post, we’ll use a bit of math and
+makes limited fun for you, my hope is to convince you to avoid splashes
+like this when building your decks. Below, we’ll use a bit of math and
 simulation to see what happens when we build a deck to splash a
 double-pipped card (i.e., a card whose casting cost is something like
 5GG; each “G” is called a “pip”).
@@ -77,9 +80,9 @@ at a time or surveiling/scrying.[^2] This means we’re ignoring scenarios
 where your opponent puts cards from play *back* into your deck. We’re
 also assuming you’ll *survive* to see 18 cards: your opponent might be
 able to win in the first 7-ish turns, they might cause you to discard
-one or more cards you need, etc. All kinds of things can happen in the
-course of real play, but let’s be as generous as possible to what this
-hypothetical deck is trying to do on paper.
+one or more cards you need, etc. We’ll revisit this later, but let’s be
+as generous as possible to what this hypothetical deck is trying to do
+on paper, for now.
 
 Deriving $Pr(\text{Cast})$ or $Pr(\text{Cast} \ | \ \text{Keep})$ is
 complicated, due to the fact that the events ($\text{Bomb}$,
@@ -120,15 +123,20 @@ For our simulation, we’ll perform the following 10,000 times:
 lands available in the hand. Our utility artifact (`"A2"` in our list)
 can fix our colors, but we need to spend mana in order to put the
 artifact into play. This is has a cost, chiefly that we’re not able to
-play something more immediately impactful on the game during early
-turns.
+play something more immediately impactful during early turns.
 
 <!-- Simulation -->
 
 Now, here are the results. Under this list and heuristic for mulligans,
 the simulation suggests you’ll only be able to find a viable hand in
-49/100 games. In instances where we see a viable hand, we’ll only be
-able to cast the bomb in 20/100 games.
+49/100 games. In instances where we see a viable opening hand, we’ll
+only be able to cast the bomb in 20/100 games. This could sound
+appealing, but this means that in 80/100 games at least one of those
+conditions isn’t true. Maybe the rest of your deck functions well, but a
+large share of the time your utility artifact isn’t helping you attack
+and your forests are only adding generic mana (this issue is even more
+problematic when your deck includes double-pipped cards in your base
+colors, e.g., 2RR).
 
 |           Quantity | Estimate |
 |-------------------:|---------:|
@@ -140,21 +148,28 @@ able to cast the bomb in 20/100 games.
 
 <!-- Alternative: a "normal" deck -->
 
-This could sound appealing, but this means that in 80/100 games one of
-those conditions isn’t true, including the awkward scenario where in
-9/100 games you’ve found the bomb but can’t cast it. Something crucial
-to realize here is that our simulation’s estimate for $Pr(\text{Keep})$
-is lower than what we’d expect if we swapped the three forests for three
-basics of our base colors, and the utility artifact for a 2-mana
-creature. Using the same simulation procedure, we’d estimate that
-$Pr(\text{Keep}) \approx$ 0.549, suggesting that this configuration will
-contribute to around 6 additional mulligans out of 100 games.
+Something that’s crucial to remember is that our simulation’s estimate
+for $Pr(\text{Keep})$ is lower than what we’d expect if we excluded the
+splash (swapping the three forests for three basics of our base colors,
+and the utility artifact for a 2-mana creature). Using the same
+simulation procedure with an updated list, we’d estimate that
+$Pr(\text{Keep}) \approx$ 0.597, a much more comfortable proportion of
+viable hands. This matters quite a bit, given how costly a mulligan can
+be.
 
 <script>
   import MullPlot from "$lib/posts/avoid-double-pips/MullPlot.svelte";
 </script>
 
 <MullPlot />
+
+As every player knows, mulligans hurt your win percentage, because each
+one reduces your starting resources. With this simulation, I hope I’ve
+illustrated that the stretch to support a powerful card is either
+directly or effectively taking cards out of your hand in a significant
+number of games. Lastly, outside the contrived world we’ve constructed,
+we should remember that our match opponents aren’t passive– if possible,
+they’ll want to win
 
 <style>
   ul {
