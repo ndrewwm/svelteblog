@@ -1,5 +1,5 @@
 ---
-title: Avoid double pips
+title: "Taking splash damage: why you should avoid double pips"
 author: Andrew Moore
 date: '2026-07-30'
 slug: avoid-double-pips
