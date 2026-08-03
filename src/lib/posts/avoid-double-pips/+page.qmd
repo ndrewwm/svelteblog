@@ -261,7 +261,7 @@ pr_splash_no_cast_given_keep <- res |>
   magrittr::divide_by(N)
 ```
 
-Now, here are the results. Under this list and heuristic for mulligans, the simulation suggests you'll only be able to find a viable hand in `r fmt_prob(conditionals$estimate[1])` games. Notably, this means the chance that you have to mulligan twice in a row is $Pr(\text{Mull Twice}) = Pr(\text{Keep}^C) \cdot Pr(\text{Keep}^C) = (1 - 0.488)^2 = 0.262$! In instances where we see a viable opening hand, we'll only be able to cast the bomb in `r fmt_prob(conditionals$estimate[5])` games.
+Now, here are the results. Under this list and heuristic for mulligans, the simulation suggests you'll only be able to find a viable hand in `r fmt_prob(conditionals$estimate[1])` games. Notably, this means the chance that you have to mulligan twice in a row is $Pr(\text{Mull Twice}) = Pr(\text{Keep}^c) \cdot Pr(\text{Keep}^c) = (1 - 0.488)^2 = 0.262$! In instances where we see a viable opening hand, we'll only be able to cast the bomb in `r fmt_prob(conditionals$estimate[5])` games.
 
 ```{r}
 conditionals |>

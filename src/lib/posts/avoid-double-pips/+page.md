@@ -134,7 +134,7 @@ Now, here are the results. Under this list and heuristic for mulligans,
 the simulation suggests you’ll only be able to find a viable hand in
 49/100 games. Notably, this means the chance that you have to mulligan
 twice in a row is
-$Pr(\text{Mull Twice}) = Pr(\text{Keep}^C) \cdot Pr(\text{Keep}^C) = (1 - 0.488)^2 = 0.262$!
+$Pr(\text{Mull Twice}) = Pr(\text{Keep}^c) \cdot Pr(\text{Keep}^c) = (1 - 0.488)^2 = 0.262$!
 In instances where we see a viable opening hand, we’ll only be able to
 cast the bomb in 20/100 games.
 
