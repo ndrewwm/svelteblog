@@ -184,7 +184,7 @@
   />
   {#snippet footer()}
     <p class="caption">
-      Results reflect N=458,272 best-of-3 games from EOE, ECL, TDM, DFT, and FDN.
+      Results reflect N=458,282 best-of-3 games from EOE, ECL, TDM, DFT, and FDN.
       Data sourced from 17lands.com on 2026-08-01.
     </p>
   {/snippet}
