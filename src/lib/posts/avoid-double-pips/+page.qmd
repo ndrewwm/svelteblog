@@ -99,7 +99,7 @@ For our simulation, we'll perform the following `r scales::comma(N)` times:
     - **keep** the hand if it contains 4 lands, and 3 playable spells (at least 2 being creatures)
     - **mulligan** all other scenarios; return to step 1
 4. draw until you've seen 18 cards, and then count:
-    - the total number of green sources observed,
+    - the total number of blue sources observed,
     - the total number of lands observed, and
     - whether the bomb was found
 
