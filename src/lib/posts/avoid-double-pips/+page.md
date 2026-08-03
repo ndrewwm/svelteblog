@@ -190,6 +190,9 @@ manabase (and I!) will thank you.
   ul {
     margin-top: 1vh;
   }
+  p > a {
+    text-decoration: underline;
+  }
 </style>
 
 [^1]: Why 18? This is a bit of a subjective choice, but it’s meant to

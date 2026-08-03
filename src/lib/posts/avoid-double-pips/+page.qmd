@@ -353,6 +353,9 @@ Lastly, I don't want any readers come away from this post thinking they should m
   ul {
     margin-top: 1vh;
   }
+  article a {
+    text-decoration: underline;
+  }
 </style>
 
 [^1]: Why 18? This is a bit of a subjective choice, but it's meant to compromise between a few things. First, in our scenario the player will need to play one land per turn for seven turns in order to cast their bomb. This means they'll see between 6-7 cards from draw steps over that period (depending on whether they played first or second) in addition to their opening hand. Thus, a player will see 14-ish cards as a minimum. 
