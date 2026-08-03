@@ -5,8 +5,10 @@ date: '2026-08-02'
 slug: avoid-double-pips
 description: >
   This post explores why it's not advisable to splash an expensive
-  "double-pipped" card when playing a standard 40-card deck in MtG limited. I
-  construct a simulation to 
+  "double-pipped" card when playing a 40-card deck in MtG limited. I construct a
+  simulation to estimate the joint probability of drawing and casting an
+  expensive splash, and use data from 17lands.com to assess the impact of
+  mulligans on a player's win rate.
 draft: false
 categories:
   - mtg
@@ -112,8 +114,8 @@ For our simulation, we’ll perform the following 10,000 times:
     - **keep** the hand if it contains 2 lands and 2+ playable spells
       (at least 1 being a creature)
     - **keep** the hand if it contains 3 lands and 2+ playable creatures
-    - **keep** the hand if it contains 4 lands, 3 playable spells (at
-      least 2 being creatures)
+    - **keep** the hand if it contains 4 lands, and 3 playable spells
+      (at least 2 being creatures)
     - **mulligan** all other scenarios
 4.  draw until you’ve seen 18 cards, and then count:
     - the total number of green sources observed,
