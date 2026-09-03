@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-vercel';
 import { mdsvex } from "mdsvex";
 import relativeImages from "mdsvex-relative-images";
 import remarkFootnotes from "remark-footnotes";
