@@ -1,6 +1,6 @@
 ---
 title: "The Mismeasure of Man"
-author: Gould, Stephen Jay
+author: Stephen Jay Gould
 year: 1982
 isbn: 9780393314250
 added: 2025-04-13

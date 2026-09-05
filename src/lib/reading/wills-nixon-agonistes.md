@@ -1,6 +1,6 @@
 ---
 title: "Nixon Agonistes: The Crisis of the Self-Made Man"
-author: Wills, Garry
+author: Garry Wills
 year: 1969
 isbn: 9780618134328
 added: 2022-11-23

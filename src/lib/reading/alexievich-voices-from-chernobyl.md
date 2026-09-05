@@ -1,6 +1,6 @@
 ---
 title: "Voices from Chernobyl: The Oral History of a Nuclear Disaster"
-author: Alexievich, Svetlana
+author: Svetlana Alexievich
 year: 1997
 isbn: 9780312425845
 added: 2023-01-31

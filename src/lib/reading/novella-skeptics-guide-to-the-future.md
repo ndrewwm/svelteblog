@@ -1,6 +1,6 @@
 ---
 title: "The Skeptics' Guide to the Future: What Yesterday's Science and Science Fiction Tell Us About the World of Tomorrow"
-author: Novella, Steven
+author: Steven Novella
 year: 2022
 isbn: 9781538709542
 added: 2023-12-25

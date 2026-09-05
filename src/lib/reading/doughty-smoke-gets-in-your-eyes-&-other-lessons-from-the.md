@@ -1,6 +1,6 @@
 ---
 title: "Smoke Gets in Your Eyes & Other Lessons from the Crematory"
-author: Doughty, Caitlin
+author: Caitlin Doughty
 year: 2014
 isbn: 9780393351903
 added: 2023-01-07

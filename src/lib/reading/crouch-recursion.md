@@ -1,6 +1,6 @@
 ---
 title: "Recursion"
-author: Crouch, Blake
+author: Blake Crouch
 year: 2019
 isbn: 9781524759780
 added: 2023-12-08

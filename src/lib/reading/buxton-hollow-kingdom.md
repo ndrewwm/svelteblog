@@ -1,6 +1,6 @@
 ---
 title: "Hollow Kingdom (Hollow Kingdom, #1)"
-author: Buxton, Kira Jane
+author: Kira Jane Buxton
 year: 2019
 isbn: 9781538745823
 added: 2025-03-15

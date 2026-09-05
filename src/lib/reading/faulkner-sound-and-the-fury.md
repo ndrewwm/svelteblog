@@ -1,6 +1,6 @@
 ---
 title: "The Sound and the Fury"
-author: Faulkner, William
+author: William Faulkner
 year: 1929
 isbn: null
 added: 2024-08-07

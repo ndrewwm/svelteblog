@@ -1,6 +1,6 @@
 ---
 title: "A City on Mars: Can We Settle Space, Should We Settle Space, and Have We Really Thought This Through?"
-author: Weinersmith, Kelly
+author: Kelly Weinersmith
 year: 2023
 isbn: 9781984881731
 added: 2024-09-08

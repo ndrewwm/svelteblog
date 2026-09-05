@@ -1,6 +1,6 @@
 ---
 title: "The Wretched of the Earth"
-author: Fanon, Frantz
+author: Frantz Fanon
 year: 1961
 isbn: 9780802141323
 added: 2022-03-13

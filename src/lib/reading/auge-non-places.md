@@ -1,6 +1,6 @@
 ---
 title: "Non-Places: Introduction to an Anthropology of Supermodernity"
-author: Augé, Marc
+author: Marc Augé
 year: Apr 1992
 isbn: 9781859840511
 added: 2022-01-31

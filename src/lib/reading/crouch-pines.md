@@ -1,6 +1,6 @@
 ---
 title: "Pines (Wayward Pines, #1)"
-author: Crouch, Blake
+author: Blake Crouch
 year: 2012
 isbn: 9781612183954
 added: 2023-12-14

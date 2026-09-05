@@ -1,6 +1,6 @@
 ---
 title: "The Myths of Sisphus and Other Essays"
-author: Camus, Albert
+author: Albert Camus
 year: null
 isbn: null
 added: 2025-07-07

@@ -1,6 +1,6 @@
 ---
 title: "The City We Became (Great Cities, #1)"
-author: Jemisin, N.K.
+author: N.K. Jemisin
 year: 2020
 isbn: null
 added: 2024-06-05

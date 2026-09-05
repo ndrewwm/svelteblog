@@ -1,6 +1,6 @@
 ---
 title: "Making It Count: Statistics and Statecraft in the Early People's Republic of China"
-author: Ghosh, Arunabh
+author: Arunabh Ghosh
 year: null
 isbn: 9780691179476
 added: 2023-02-10

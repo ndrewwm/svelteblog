@@ -1,6 +1,6 @@
 ---
 title: "Kinship by Design: A History of Adoption in the Modern United States"
-author: Herman, Ellen
+author: Ellen Herman
 year: 2008
 isbn: 9780226328072
 added: 2022-10-17

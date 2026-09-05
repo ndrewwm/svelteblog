@@ -1,6 +1,6 @@
 ---
 title: "White Noise"
-author: DeLillo, Don
+author: Don DeLillo
 year: 1985
 isbn: 9780143129554
 added: 2022-01-15

@@ -1,6 +1,6 @@
 ---
 title: "The Water Knife"
-author: Bacigalupi, Paolo
+author: Paolo Bacigalupi
 year: 2015
 isbn: 9780385352871
 added: 2023-12-18

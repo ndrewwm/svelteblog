@@ -1,6 +1,6 @@
 ---
 title: "Technofeudalism: What Killed Capitalism"
-author: Varoufakis, Yanis
+author: Yanis Varoufakis
 year: null
 isbn: null
 added: 2025-05-23

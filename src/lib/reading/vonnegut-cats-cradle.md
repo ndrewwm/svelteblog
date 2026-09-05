@@ -1,6 +1,6 @@
 ---
 title: "Cat's Cradle"
-author: Vonnegut Jr., Kurt
+author: Kurt Vonnegut Jr.
 year: 1963
 isbn: null
 added: 2024-06-18

@@ -1,6 +1,6 @@
 ---
 title: "How to Keep House While Drowning"
-author: Davis, K.C.
+author: K.C. Davis
 year: 2022
 isbn: 9781668002858
 added: 2025-09-21

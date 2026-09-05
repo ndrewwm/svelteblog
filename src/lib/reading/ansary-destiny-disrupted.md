@@ -1,6 +1,6 @@
 ---
 title: "Destiny Disrupted: A History of the World Through Islamic Eyes"
-author: Ansary, Tamim
+author: Tamim Ansary
 year: 2009
 isbn: null
 added: 2024-06-24

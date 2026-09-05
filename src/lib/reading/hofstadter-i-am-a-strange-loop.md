@@ -1,6 +1,6 @@
 ---
 title: "I Am a Strange Loop"
-author: Hofstadter, Douglas R.
+author: Douglas R. Hofstadter
 year: 2007
 isbn: 9780465030781
 added: 2024-02-19

@@ -1,6 +1,6 @@
 ---
 title: "Staring at the Sun: Overcoming the Terror of Death"
-author: Yalom, Irvin D.
+author: Irvin D. Yalom
 year: Jan 2008
 isbn: 9780787996680
 added: 2024-07-01

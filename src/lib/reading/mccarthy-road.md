@@ -1,6 +1,6 @@
 ---
 title: "The Road"
-author: McCarthy, Cormac
+author: Cormac McCarthy
 year: 2006
 isbn: 9780307265432
 added: 2023-07-17

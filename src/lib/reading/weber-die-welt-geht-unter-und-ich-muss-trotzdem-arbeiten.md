@@ -1,6 +1,6 @@
 ---
 title: "Die Welt geht unter, und ich muss trotzdem arbeiten?"
-author: Weber, Sara
+author: Sara Weber
 year: null
 isbn: 9783462004151
 added: 2023-01-23

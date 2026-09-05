@@ -1,6 +1,6 @@
 ---
 title: "Exhalation"
-author: Chiang, Ted
+author: Ted Chiang
 year: 2019
 isbn: null
 added: 2024-12-27

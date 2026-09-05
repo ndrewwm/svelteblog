@@ -1,6 +1,6 @@
 ---
 title: "Creation Lake"
-author: Kushner, Rachel
+author: Rachel Kushner
 year: 2024
 isbn: 9781982116521
 added: 2025-08-02

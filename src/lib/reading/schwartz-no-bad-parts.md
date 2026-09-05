@@ -1,6 +1,6 @@
 ---
 title: "No Bad Parts: Healing Trauma and Restoring Wholeness with the Internal Family Systems Model"
-author: Schwartz, Richard C.
+author: Richard C. Schwartz
 year: 2021
 isbn: 9781683646686
 added: 2022-08-01

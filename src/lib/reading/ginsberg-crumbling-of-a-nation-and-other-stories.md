@@ -1,6 +1,6 @@
 ---
 title: "The Crumbling of a Nation and other stories"
-author: Ginsberg, Ryan David
+author: Ryan David Ginsberg
 year: 2024
 isbn: null
 added: 2025-06-04

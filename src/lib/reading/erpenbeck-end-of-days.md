@@ -1,6 +1,6 @@
 ---
 title: "The End of Days"
-author: Erpenbeck, Jenny
+author: Jenny Erpenbeck
 year: 2012
 isbn: 9780811221924
 added: 2024-03-15

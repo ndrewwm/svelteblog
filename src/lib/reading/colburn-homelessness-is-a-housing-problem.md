@@ -1,6 +1,6 @@
 ---
 title: "Homelessness Is a Housing Problem: How Structural Factors Explain U.S. Patterns"
-author: Colburn, Gregg
+author: Gregg Colburn
 year: 2022
 isbn: 9780520383760
 added: 2022-12-13

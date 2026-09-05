@@ -1,6 +1,6 @@
 ---
 title: "Logic of Statistical Inference"
-author: Hacking, Ian
+author: Ian Hacking
 year: 1965
 isbn: 9780521290593
 added: 2022-01-15

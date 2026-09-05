@@ -1,6 +1,6 @@
 ---
 title: "The Future of Nostalgia"
-author: Boym, Svetlana
+author: Svetlana Boym
 year: 2001
 isbn: 9780465007080
 added: 2023-05-02

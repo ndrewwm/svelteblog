@@ -1,6 +1,6 @@
 ---
 title: "The Sun Is a Compass: A 4,000-Mile Journey into the Alaskan Wilds"
-author: Van Hemert, Caroline
+author: Caroline Van Hemert
 year: 2019
 isbn: null
 added: 2023-07-26

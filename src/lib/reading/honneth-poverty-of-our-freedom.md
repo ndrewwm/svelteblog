@@ -1,6 +1,6 @@
 ---
 title: "The Poverty of Our Freedom: Essays 2012 - 2019"
-author: Honneth, Axel
+author: Axel Honneth
 year: null
 isbn: 9781509556342
 added: 2024-11-25

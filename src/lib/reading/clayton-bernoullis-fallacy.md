@@ -1,6 +1,6 @@
 ---
 title: "Bernoulli's Fallacy: Statistical Illogic and the Crisis of Modern Science"
-author: Clayton, Aubrey
+author: Aubrey Clayton
 year: null
 isbn: 9780231199940
 added: 2024-01-17

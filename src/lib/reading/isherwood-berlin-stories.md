@@ -1,6 +1,6 @@
 ---
 title: "The Berlin Stories"
-author: Isherwood, Christopher
+author: Christopher Isherwood
 year: 1945
 isbn: 9780811200707
 added: 2022-01-15

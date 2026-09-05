@@ -1,6 +1,6 @@
 ---
 title: "In the Dust of This Planet (Horror of Philosophy, #1)"
-author: Thacker, Eugene
+author: Eugene Thacker
 year: 2011
 isbn: 9781846946769
 added: 2022-10-27

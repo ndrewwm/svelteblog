@@ -1,6 +1,6 @@
 ---
 title: "Foucalt's Pendulum"
-author: Eco, Umberto; Weaver
+author: Umberto; Weaver Eco
 year: null
 isbn: null
 added: 2023-10-16

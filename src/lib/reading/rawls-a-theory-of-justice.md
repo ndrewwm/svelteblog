@@ -1,6 +1,6 @@
 ---
 title: "A Theory of Justice"
-author: Rawls, John
+author: John Rawls
 year: 1971
 isbn: 9780674017726
 added: 2022-01-15

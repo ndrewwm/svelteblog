@@ -1,6 +1,6 @@
 ---
 title: "Red Star Over China: The Classic Account of the Birth of Chinese Communism"
-author: Snow, Edgar
+author: Edgar Snow
 year: 1937
 isbn: 9780802150936
 added: 2022-04-26

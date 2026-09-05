@@ -1,6 +1,6 @@
 ---
 title: "Sex, Drugs, and Cocoa Puffs: A Low Culture Manifesto"
-author: Klosterman, Chuck
+author: Chuck Klosterman
 year: 2003
 isbn: 9780743236010
 added: 2024-12-14

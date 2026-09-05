@@ -1,6 +1,6 @@
 ---
 title: "The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy"
-author: Graeber, David
+author: David Graeber
 year: 2013
 isbn: 9781612193748
 added: 2024-05-15

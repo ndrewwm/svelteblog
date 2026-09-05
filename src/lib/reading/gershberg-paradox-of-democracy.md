@@ -1,6 +1,6 @@
 ---
 title: "The Paradox of Democracy: Free Speech, Open Media, and Perilous Persuasion"
-author: Gershberg, Zac
+author: Zac Gershberg
 year: null
 isbn: 9780226681702
 added: 2022-06-02

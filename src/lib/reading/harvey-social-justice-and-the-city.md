@@ -1,6 +1,6 @@
 ---
 title: "Social Justice and the City"
-author: Harvey, David
+author: David Harvey
 year: Jun 1973
 isbn: 9780631164760
 added: 2022-03-13

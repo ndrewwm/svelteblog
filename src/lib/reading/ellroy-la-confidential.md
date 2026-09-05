@@ -1,6 +1,6 @@
 ---
 title: "L.A. Confidential (L.A. Quartet, #3)"
-author: Ellroy, James
+author: James Ellroy
 year: Jun 1990
 isbn: null
 added: 2024-08-13

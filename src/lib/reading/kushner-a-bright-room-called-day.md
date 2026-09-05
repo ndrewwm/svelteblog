@@ -1,6 +1,6 @@
 ---
 title: "A Bright Room Called Day"
-author: Kushner, Tony
+author: Tony Kushner
 year: 1994
 isbn: 9781559360784
 added: 2022-03-13

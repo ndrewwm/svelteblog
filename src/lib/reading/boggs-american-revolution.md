@@ -1,6 +1,6 @@
 ---
 title: "The American Revolution: Pages from a Negro Worker's Notebook"
-author: Boggs, James
+author: James Boggs
 year: 1963
 isbn: 9780853450153
 added: 2023-08-20

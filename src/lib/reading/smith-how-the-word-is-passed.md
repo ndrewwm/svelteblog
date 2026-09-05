@@ -1,6 +1,6 @@
 ---
 title: "How the Word Is Passed: A Reckoning with the History of Slavery Across America"
-author: Smith, Clint
+author: Clint Smith
 year: 2021
 isbn: 9780316492935
 added: 2022-01-15

@@ -1,6 +1,6 @@
 ---
 title: "How Bad Are Bananas?: The Carbon Footprint of Everything"
-author: Berners-Lee, Mike
+author: Mike Berners-Lee
 year: 2010
 isbn: 9781846688911
 added: 2023-07-19

@@ -1,6 +1,6 @@
 ---
 title: "Preparation for the Next Life"
-author: Lish, Atticus
+author: Atticus Lish
 year: 2014
 isbn: 9780988518339
 added: 2022-10-27

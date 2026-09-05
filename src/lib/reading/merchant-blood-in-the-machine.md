@@ -1,6 +1,6 @@
 ---
 title: "Blood in the Machine: The Origins of the Rebellion Against Big Tech"
-author: Merchant, Brian
+author: Brian Merchant
 year: 2023
 isbn: 9780316487740
 added: 2025-01-16

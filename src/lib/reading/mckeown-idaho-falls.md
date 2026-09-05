@@ -1,6 +1,6 @@
 ---
 title: "Idaho Falls: The Untold Story of America's First Nuclear Accident"
-author: McKeown, William
+author: William McKeown
 year: 2003
 isbn: 9781550225624
 added: 2022-03-05

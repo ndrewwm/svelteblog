@@ -1,6 +1,6 @@
 ---
 title: "Several People Are Typing"
-author: Kasulke, Calvin
+author: Calvin Kasulke
 year: 2021
 isbn: null
 added: 2025-04-11

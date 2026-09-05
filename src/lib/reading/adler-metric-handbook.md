@@ -1,6 +1,6 @@
 ---
 title: "Metric Handbook: Planning and Design Data"
-author: Adler, David A.
+author: David A. Adler
 year: 1997
 isbn: 9780750608992
 added: 2023-11-26

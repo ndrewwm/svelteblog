@@ -1,6 +1,6 @@
 ---
 title: "Architecture: Form, Space, & Order"
-author: Ching, Francis D. K.
+author: Francis D. K. Ching
 year: 1979
 isbn: 9780471286165
 added: 2023-11-26

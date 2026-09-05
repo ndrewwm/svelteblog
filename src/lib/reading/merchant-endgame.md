@@ -1,6 +1,6 @@
 ---
 title: "Endgame: Economic Nationalism and Global Decline"
-author: Merchant, Jamie
+author: Jamie Merchant
 year: null
 isbn: 9781789149142
 added: 2024-11-06

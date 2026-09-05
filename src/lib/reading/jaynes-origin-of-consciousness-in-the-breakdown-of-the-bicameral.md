@@ -1,6 +1,6 @@
 ---
 title: "The Origin of Consciousness in the Breakdown of the Bicameral Mind"
-author: Jaynes, Julian
+author: Julian Jaynes
 year: 1976
 isbn: 9780618057078
 added: 2024-03-19

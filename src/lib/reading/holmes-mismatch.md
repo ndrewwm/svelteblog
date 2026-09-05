@@ -1,6 +1,6 @@
 ---
 title: "Mismatch: How Inclusion Shapes Design"
-author: Holmes, Kat
+author: Kat Holmes
 year: 2018
 isbn: 9780262038881
 added: 2022-01-15

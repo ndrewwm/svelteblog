@@ -1,6 +1,6 @@
 ---
 title: "The New Atlantis"
-author: Le Guin, Ursula K.
+author: Ursula K. Le Guin
 year: 1975
 isbn: 9781611383423
 added: 2022-03-13

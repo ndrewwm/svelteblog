@@ -1,6 +1,6 @@
 ---
 title: "Shaking Hands with Death"
-author: Pratchett, Terry
+author: Terry Pratchett
 year: 2015
 isbn: 9780552172776
 added: 2025-07-07

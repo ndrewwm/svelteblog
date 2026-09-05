@@ -1,6 +1,6 @@
 ---
 title: "Humble Pi: A Comedy of Maths Errors"
-author: Parker, Matt
+author: Matt Parker
 year: 2019
 isbn: 9780241360194
 added: 2025-05-12

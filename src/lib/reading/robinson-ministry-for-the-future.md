@@ -1,6 +1,6 @@
 ---
 title: "The Ministry for the Future"
-author: Robinson, Kim Stanley
+author: Kim Stanley Robinson
 year: 2020
 isbn: 9780316300131
 added: 2022-03-12

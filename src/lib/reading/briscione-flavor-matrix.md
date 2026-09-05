@@ -1,6 +1,6 @@
 ---
 title: "The Flavor Matrix: The Art and Science of Pairing Common Ingredients to Create Extraordinary Dishes"
-author: Briscione, James
+author: James Briscione
 year: null
 isbn: 9780544809963
 added: 2024-05-05

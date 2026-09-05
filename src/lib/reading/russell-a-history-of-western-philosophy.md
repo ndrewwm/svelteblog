@@ -1,6 +1,6 @@
 ---
 title: "A History of Western Philosophy"
-author: Russell, Bertrand
+author: Bertrand Russell
 year: 1945
 isbn: 9780671201586
 added: 2022-03-13

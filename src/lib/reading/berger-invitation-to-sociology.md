@@ -1,6 +1,6 @@
 ---
 title: "Invitation to Sociology: A Humanistic Perspective"
-author: Berger, Peter L.
+author: Peter L. Berger
 year: 1963
 isbn: 9780385065290
 added: 2024-02-13

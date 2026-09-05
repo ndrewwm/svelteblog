@@ -1,6 +1,6 @@
 ---
 title: "The House of the Spirits"
-author: Allende, Isabel
+author: Isabel Allende
 year: 1982
 isbn: 9780553383805
 added: 2024-12-07

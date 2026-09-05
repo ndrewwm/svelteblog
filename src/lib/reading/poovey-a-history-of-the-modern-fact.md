@@ -1,6 +1,6 @@
 ---
 title: "A History of the Modern Fact: Problems of Knowledge in the Sciences of Wealth and Society"
-author: Poovey, Mary
+author: Mary Poovey
 year: 1998
 isbn: 9780226675268
 added: 2022-09-11

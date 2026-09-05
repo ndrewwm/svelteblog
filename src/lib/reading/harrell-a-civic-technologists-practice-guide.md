@@ -1,6 +1,6 @@
 ---
 title: "A Civic Technologist's Practice Guide"
-author: Harrell, Cyd
+author: Cyd Harrell
 year: null
 isbn: 9781735286532
 added: 2025-01-01

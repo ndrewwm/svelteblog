@@ -1,6 +1,6 @@
 ---
 title: "The Scientific Method: An Evolution of Thinking from Darwin to Dewey"
-author: Cowles, Henry M.
+author: Henry M. Cowles
 year: null
 isbn: 9780674976191
 added: 2024-06-16

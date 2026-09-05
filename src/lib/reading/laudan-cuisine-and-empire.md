@@ -1,6 +1,6 @@
 ---
 title: "Cuisine and Empire: Cooking in World History"
-author: Laudan, Rachel
+author: Rachel Laudan
 year: 2013
 isbn: 9780520954915
 added: 2023-03-08

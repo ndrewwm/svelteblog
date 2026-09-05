@@ -1,6 +1,6 @@
 ---
 title: "The Man from the Future: The Visionary Life of John von Neumann"
-author: Bhattacharya, Ananyo
+author: Ananyo Bhattacharya
 year: 2021
 isbn: 9780241398852
 added: 2022-03-08

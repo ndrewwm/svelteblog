@@ -1,6 +1,6 @@
 ---
 title: "The Soundscape of Modernity: Architectural Acoustics and the Culture of Listening in America, 1900-1933"
-author: Thompson, Emily
+author: Emily Thompson
 year: 2002
 isbn: 9780262701068
 added: 2022-01-15

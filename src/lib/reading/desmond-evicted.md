@@ -1,6 +1,6 @@
 ---
 title: "Evicted: Poverty and Profit in the American City"
-author: Desmond, Matthew
+author: Matthew Desmond
 year: 2016
 isbn: 9780553447439
 added: 2022-01-15

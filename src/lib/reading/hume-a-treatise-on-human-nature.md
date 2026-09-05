@@ -1,6 +1,6 @@
 ---
 title: "A Treatise On Human Nature"
-author: Hume, David
+author: David Hume
 year: 1739
 isbn: null
 added: 2024-02-10

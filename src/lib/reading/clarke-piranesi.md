@@ -1,6 +1,6 @@
 ---
 title: "Piranesi"
-author: Clarke, Susanna
+author: Susanna Clarke
 year: 2020
 isbn: 9781635575637
 added: 2023-06-15

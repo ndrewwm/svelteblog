@@ -1,6 +1,6 @@
 ---
 title: "The End of the Myth: From the Frontier to the Border Wall in the Mind of America"
-author: Grandin, Greg
+author: Greg Grandin
 year: 2019
 isbn: 9781250179821
 added: 2023-11-26

@@ -1,6 +1,6 @@
 ---
 title: "Dead Astronauts (Borne, #2)"
-author: VanderMeer, Jeff
+author: Jeff VanderMeer
 year: 2019
 isbn: null
 added: 2022-03-12

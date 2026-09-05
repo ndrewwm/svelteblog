@@ -1,6 +1,6 @@
 ---
 title: "Torn Apart: How the Child Welfare System Destroys Black Families—and How Abolition Can Build a Safer World"
-author: Roberts, Dorothy
+author: Dorothy Roberts
 year: null
 isbn: 9781549193170
 added: 2022-05-31

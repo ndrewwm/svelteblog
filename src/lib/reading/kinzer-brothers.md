@@ -1,6 +1,6 @@
 ---
 title: "The Brothers: John Foster Dulles, Allen Dulles & Their Secret World War"
-author: Kinzer, Stephen
+author: Stephen Kinzer
 year: 2013
 isbn: 9780805094978
 added: 2025-09-28

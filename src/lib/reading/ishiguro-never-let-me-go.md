@@ -1,6 +1,6 @@
 ---
 title: "Never Let Me Go"
-author: Ishiguro, Kazuo
+author: Kazuo Ishiguro
 year: 2005
 isbn: 9781400078776
 added: 2024-01-10

@@ -1,6 +1,6 @@
 ---
 title: "Regarding the Pain of Others"
-author: Sontag, Susan
+author: Susan Sontag
 year: 2003
 isbn: 9780141012377
 added: 2025-07-07

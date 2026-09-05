@@ -1,6 +1,6 @@
 ---
 title: "What We Owe Each Other: A New Social Contract for a Better Society"
-author: Shafik, Minouche
+author: Minouche Shafik
 year: 2021
 isbn: 9780691204451
 added: 2022-03-13

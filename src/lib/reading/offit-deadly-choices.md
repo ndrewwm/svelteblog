@@ -1,6 +1,6 @@
 ---
 title: "Deadly Choices: How the Anti-Vaccine Movement Threatens Us All"
-author: Offit, Paul A.
+author: Paul A. Offit
 year: 2010
 isbn: 9780465021499
 added: 2023-07-04

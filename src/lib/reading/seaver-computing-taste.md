@@ -1,6 +1,6 @@
 ---
 title: "Computing Taste: Algorithms and the Makers of Music Recommendation"
-author: Seaver, Nick
+author: Nick Seaver
 year: null
 isbn: 9780226702261
 added: 2024-11-02

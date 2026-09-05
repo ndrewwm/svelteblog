@@ -1,6 +1,6 @@
 ---
 title: "Being Mortal: Medicine and What Matters in the End"
-author: Gawande, Atul
+author: Atul Gawande
 year: 2014
 isbn: 9780805095159
 added: 2024-05-17

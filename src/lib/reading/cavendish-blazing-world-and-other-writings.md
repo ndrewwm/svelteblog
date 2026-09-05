@@ -1,6 +1,6 @@
 ---
 title: "The Blazing World and Other Writings"
-author: Cavendish, Margaret
+author: Margaret Cavendish
 year: null
 isbn: 9780140433722
 added: 2022-03-13

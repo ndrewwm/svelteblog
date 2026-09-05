@@ -1,6 +1,6 @@
 ---
 title: "Parable of the Sower (Earthseed, #1)"
-author: Butler, Octavia E.
+author: Octavia E. Butler
 year: Oct 1993
 isbn: 9780446675505
 added: 2025-01-03

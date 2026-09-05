@@ -1,6 +1,6 @@
 ---
 title: "Video Games Have Always Been Queer (Postmillennial Pop, 16)"
-author: Ruberg, Bo
+author: Bo Ruberg
 year: null
 isbn: 9781479843749
 added: 2022-03-13

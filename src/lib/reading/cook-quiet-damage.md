@@ -1,6 +1,6 @@
 ---
 title: "The Quiet Damage: QAnon and the Destruction of the American Family"
-author: Cook, Jesselyn
+author: Jesselyn Cook
 year: 2024
 isbn: 9780593443255
 added: 2024-08-04

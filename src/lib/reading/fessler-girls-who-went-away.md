@@ -1,6 +1,6 @@
 ---
 title: "The Girls Who Went Away: The Hidden History of Women Who Surrendered Children for Adoption in the Decades Before Roe v. Wade"
-author: Fessler, Ann
+author: Ann Fessler
 year: 2006
 isbn: 9781594200946
 added: 2022-10-17

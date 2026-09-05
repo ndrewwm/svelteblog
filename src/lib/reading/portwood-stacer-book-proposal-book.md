@@ -1,6 +1,6 @@
 ---
 title: "The Book Proposal Book: A Guide for Scholarly Authors"
-author: Portwood-Stacer, Laura
+author: Laura Portwood-Stacer
 year: null
 isbn: 9780691216621
 added: 2022-11-22

@@ -1,6 +1,6 @@
 ---
 title: "On the Fringe: Where Science Meets Pseudoscience"
-author: Gordin, Michael D.
+author: Michael D. Gordin
 year: 2021
 isbn: 9780197555767
 added: 2023-12-03

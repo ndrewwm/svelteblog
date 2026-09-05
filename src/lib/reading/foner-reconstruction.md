@@ -1,6 +1,6 @@
 ---
 title: "Reconstruction: America's Unfinished Revolution 1863-1877"
-author: Foner, Eric
+author: Eric Foner
 year: 1988
 isbn: 9780060937164
 added: 2022-01-15

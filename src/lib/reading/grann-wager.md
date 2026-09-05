@@ -1,6 +1,6 @@
 ---
 title: "The Wager: A Tale of Shipwreck, Mutiny and Murder"
-author: Grann, David
+author: David Grann
 year: 2023
 isbn: 9780385534260
 added: 2023-05-27

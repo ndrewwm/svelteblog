@@ -1,6 +1,6 @@
 ---
 title: "How High We Go in the Dark"
-author: Nagamatsu, Sequoia
+author: Sequoia Nagamatsu
 year: 2022
 isbn: 9780063072640
 added: 2023-12-14

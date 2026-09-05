@@ -1,6 +1,6 @@
 ---
 title: "Babel"
-author: Kuang, R.F.
+author: R.F. Kuang
 year: 2022
 isbn: 9780063021426
 added: 2024-02-17

@@ -1,6 +1,6 @@
 ---
 title: "Why Nations Fail: The Origins of Power, Prosperity, and Poverty"
-author: Acemoğlu, Daron
+author: Daron Acemoğlu
 year: Mar 2012
 isbn: 9780307719218
 added: 2025-01-02

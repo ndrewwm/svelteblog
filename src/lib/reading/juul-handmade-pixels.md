@@ -1,6 +1,6 @@
 ---
 title: "Handmade Pixels: Independent Video Games and the Quest for Authenticity"
-author: Juul, Jesper
+author: Jesper Juul
 year: null
 isbn: 9780262042796
 added: 2022-03-13

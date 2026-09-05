@@ -1,6 +1,6 @@
 ---
 title: "Public Citizens: The Attack on Big Government and the Remaking of American Liberalism"
-author: Sabin, Paul
+author: Paul Sabin
 year: null
 isbn: 9780393634044
 added: 2022-11-28

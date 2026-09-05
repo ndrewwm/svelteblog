@@ -1,6 +1,6 @@
 ---
 title: "A Happy Death"
-author: Camus, Albert
+author: Albert Camus
 year: 1971
 isbn: null
 added: 2023-08-28

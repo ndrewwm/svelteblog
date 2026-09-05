@@ -1,6 +1,6 @@
 ---
 title: "The Devotion of Suspect X (Detective Galileo, #1)"
-author: Higashino, Keigo
+author: Keigo Higashino
 year: 2005
 isbn: 9780312375065
 added: 2025-06-02

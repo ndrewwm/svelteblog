@@ -1,6 +1,6 @@
 ---
 title: "The Science of Structures and Materials"
-author: Gordon, J.E.
+author: J.E. Gordon
 year: 1988
 isbn: 9780716750222
 added: 2024-10-22

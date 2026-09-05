@@ -1,6 +1,6 @@
 ---
 title: "Salt: A World History"
-author: Kurlansky, Mark
+author: Mark Kurlansky
 year: 2002
 isbn: 9780142001615
 added: 2023-12-25

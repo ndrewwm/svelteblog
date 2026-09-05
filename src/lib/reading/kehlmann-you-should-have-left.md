@@ -1,6 +1,6 @@
 ---
 title: "You Should Have Left"
-author: Kehlmann, Daniel
+author: Daniel Kehlmann
 year: 2016
 isbn: 9781101871980
 added: 2025-05-07

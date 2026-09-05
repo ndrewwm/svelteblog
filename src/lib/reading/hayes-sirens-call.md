@@ -1,6 +1,6 @@
 ---
 title: "The Sirens' Call: How Attention Became the World's Most Endangered Resource"
-author: Hayes, Christopher L.
+author: Christopher L. Hayes
 year: 2025
 isbn: 9780593653111
 added: 2025-09-28
