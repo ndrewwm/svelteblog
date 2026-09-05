@@ -8,7 +8,7 @@ started: 2026-09-04
 finished: null
 pages: 500
 pct: 9
-mode: null
+mode: audiobook
 stars: null
 owned: null
 slug: simmons-hyperion
