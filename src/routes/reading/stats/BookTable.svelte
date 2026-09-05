@@ -8,7 +8,7 @@
       book.slug = book.slug.replace("/src/lib/reading/", "").replace(".md", "");
       return book;
     })
-    .sort((a, b) => a.days - b.days);
+    .sort((a, b) => a.finished - b.finished);
 </script>
 
 <p class="mb-4">
@@ -33,7 +33,13 @@
       <tr>
         {#each fields as field}
           {#if field === "title"}
-            <td><a href={book.slug}>{book.title}</a></td>
+            <td>
+              <a href={book.slug}>
+                <div class="book-title">
+                  {book.title}
+                </div>
+              </a>
+            </td>
           {:else if ["year", "pages", "stars", "days"].includes(field)}
             <td style="text-align: right;">{book[field]}</td>
           {:else}
@@ -46,3 +52,12 @@
 </table>
 
 <div class="mb-4"></div>
+
+<style>
+  .book-title {
+    width: 15vw;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+</style>
