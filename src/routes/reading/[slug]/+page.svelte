@@ -21,7 +21,7 @@
 <header>
   <h1><a href="/">andrew w. moore</a> | <a href="/reading">reading</a></h1>
   <div class="columns mt-1">
-    {#if !mobile.current}
+    {#if data.meta.isbn !== null && !mobile.current}
       <div class="column is-one-fifth">
         <OpenLibraryCover isbn={data.meta.isbn} />
       </div>
