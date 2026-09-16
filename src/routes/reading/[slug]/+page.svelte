@@ -2,6 +2,7 @@
   import dayjs from 'dayjs';
   import OpenLibraryCover from '$lib/util/OpenLibraryCover.svelte';
   let { data } = $props();
+  let mobile = new MediaQuery("width < 800px");
 </script>
 
 <svelte:head>
@@ -19,9 +20,11 @@
 <header>
   <h1><a href="/">andrew w. moore</a> | <a href="/reading">reading</a></h1>
   <div class="columns mt-1">
-    <div class="column is-one-fifth">
-      <OpenLibraryCover isbn={data.meta.isbn} />
-    </div>
+    {#if mobile.current}
+      <div class="column is-one-fifth">
+        <OpenLibraryCover isbn={data.meta.isbn} />
+      </div>
+    {/if}
     <div class="column">
       <h2 id="title" class="title is-size-3">{data.meta.title}</h2>
       <h2 class="subtitle">
