@@ -6,8 +6,8 @@ isbn: 9780674982925
 pages: 817
 slug: piketty-capital
 started: 2025-11-07
-finished: null
-pct: 88
-stars: null
+finished: 2026-10-01
+pct: 100
+stars: 4
 mode: ebook
 ---
