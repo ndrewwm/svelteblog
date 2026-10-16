@@ -51,7 +51,7 @@
     padding: 0 4px;
   }
 
-  .ccolumn > img {
+  .ccolumn img {
     margin-top: 8px;
     vertical-align: middle;
   }

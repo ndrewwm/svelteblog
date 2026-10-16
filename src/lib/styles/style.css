@@ -94,7 +94,7 @@ ul {
   margin-left: 1.2vw;
 }
 
-ul > li {
+ul li {
   list-style-type: disc;
 }
 
@@ -124,7 +124,7 @@ a:hover {
   text-decoration: none;
 }
 
-.footnotes > li {
+.footnotes li {
   margin-bottom: 50%;
 }
 
