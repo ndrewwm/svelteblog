@@ -2,6 +2,7 @@
 title: "Debt: The First 5,000 Years"
 author: David Graeber
 year: 2011
+publication_date: 2011-07-12
 isbn: 9781933633862
 started: 2024-05-07
 finished: 2024-06-15

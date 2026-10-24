@@ -2,6 +2,7 @@
 title: "The Origins of Totalitarianism"
 author: Hannah Arendt
 year: 1973
+publication_date: 1951-01-01
 isbn: 9780547543154
 pages: 582
 slug: arendt-origins-of-totalitarianism

@@ -2,6 +2,7 @@
 title: "Blindsight (Firefall, #1)"
 author: Peter Watts
 year: 2006
+publication_date: 2006-10-03
 isbn: 9780765312181
 added: 2023-10-13
 started: 2026-02-12

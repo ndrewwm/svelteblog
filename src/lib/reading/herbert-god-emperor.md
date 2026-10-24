@@ -2,6 +2,7 @@
 title: "God Emperor of Dune"
 author: Frank Herbert
 year: 1981
+publication_date: 1981-05-01
 isbn: 9780593098257
 pages: 587
 slug: herbert-god-emperor

@@ -2,6 +2,7 @@
 title: "The Jakarta Method: Washington's Anticommunist Crusade and the Mass Murder Program that Shaped Our World"
 author: Vincent Bevins
 year: 2021
+publication_date: 2020-05-19
 isbn: 9781541730199
 pages: 340
 slug: bevins-jakarta-method

@@ -2,6 +2,7 @@
 title: The Illustrated Man
 author: Ray Bradbury
 year: 1951
+publication_date: 1951-02-01
 isbn: 9780062079978
 started: 2023-11-23
 finished: 2024-02-13

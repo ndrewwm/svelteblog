@@ -2,6 +2,7 @@
 title: "Milton Friedman: The Last Conservative"
 author: Jennifer Burns
 year: 2023
+publication_date: 2023-11-01
 isbn: 9780374601157
 started: 2024-07-06
 finished: 2024-08-08

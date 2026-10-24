@@ -2,6 +2,7 @@
 title: "Four Futures: Life After Capitalism"
 author: Peter Frase
 year: 2016
+publication_date: 2015-03-10
 isbn: 9781781688137
 pages: 160
 slug: frase-four-futures

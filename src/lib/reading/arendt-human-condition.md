@@ -2,6 +2,7 @@
 title: "The Human Condition"
 author: Hannah Arendt
 year: 1998
+publication_date: 1958-01-01
 isbn: 9780226025988
 pages: 370
 slug: arendt-human-condition

@@ -2,6 +2,7 @@
 title: "The Spanish Civil War: A Very Short Introduction"
 author: Helen Graham
 year: 2005
+publication_date: 2005-01-01
 isbn: 9780192803771
 pages: 192
 slug: graham-spanish-civil-war

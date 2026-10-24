@@ -2,6 +2,7 @@
 title: "Lovecraft Country"
 author: Matt Ruff
 year: 2016
+publication_date: 2016-02-16
 isbn: 9781509883356
 slug: ruff-lovecraft-country
 started: 2022-01-15

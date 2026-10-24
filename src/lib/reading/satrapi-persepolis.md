@@ -2,6 +2,7 @@
 title: "Persepolis"
 author: Marjane Satrapi
 year: 2004
+publication_date: 2003-12-01
 isbn: 9780375714573
 pages: 160
 slug: satrapi-persepolis

@@ -2,6 +2,7 @@
 title: "The Basque History of the World"
 author: Mark Kurlansky
 year: 1999
+publication_date: 1999-10-01
 isbn: 9780140298512
 added: 2023-10-21
 started: 2026-04-17

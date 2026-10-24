@@ -2,6 +2,7 @@
 title: "Bomb Power: The Modern Presidency and the National Security State"
 author: Garry Wills
 year: 2010
+publication_date: 2010-01-21
 isbn: 9781594202407
 started: 2024-01-01
 finished: 2024-02-14

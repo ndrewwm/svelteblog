@@ -2,6 +2,7 @@
 title: The Fire Next Time
 author: James Baldwin
 year: 1992
+publication_date: 1963-01-31
 isbn: 9780679744726
 started: 2025-11-01
 finished: 2025-11-07

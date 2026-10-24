@@ -2,6 +2,7 @@
 title: "Children of Dune"
 author: Frank Herbert
 year: 1976
+publication_date: 1976-04-01
 isbn: 9780425043837
 slug: herbert-children-of-dune
 started: 2022-11-13

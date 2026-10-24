@@ -2,6 +2,7 @@
 title: "Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor"
 author: Virginia Eubanks
 year: 2019
+publication_date: 2018-01-23
 isbn: 9781250215789
 started: 2023-08-19
 finished: 2023-08-28

@@ -2,6 +2,7 @@
 title: "Dune Messiah"
 author: Frank Herbert
 year: 1969
+publication_date: 1969-07-01
 isbn: 9780425035856
 slug: herbert-dune-messiah
 started: 2022-05-31

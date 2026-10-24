@@ -2,6 +2,7 @@
 title: "Exit West"
 author: Mohsin Hamid
 year: 2017
+publication_date: 2017-07-03
 isbn: 9780241290088
 slug: hamid-exit-west
 started: 2022-01-15

@@ -2,6 +2,7 @@
 title: "Naked Economics: Undressing the Dismal Science"
 author: Charles Wheelan
 year: 2002
+publication_date: 2002-01-01
 isbn: 9780393049824
 slug: wheelan-naked-economics
 started: 2022-01-15

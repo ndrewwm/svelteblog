@@ -2,6 +2,7 @@
 title: "The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography"
 author: Simon Singh
 year: 2000
+publication_date: 1999-01-01
 isbn: 9780385495325
 pages: 432
 slug: singh-code-book

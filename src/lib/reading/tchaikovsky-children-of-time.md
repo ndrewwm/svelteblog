@@ -2,6 +2,7 @@
 title: Children of Time
 author: Adrian Tchaikovsky
 year: 2015
+publication_date: 2015-06-04
 isbn: 9780316452502
 started: 2023-10-22
 finished: 2023-10-30

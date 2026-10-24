@@ -2,6 +2,7 @@
 title: "A Psalm for the Wild-Built"
 author: Becky Chambers
 year: 2021
+publication_date: 2021-07-13
 isbn: 9781250236210
 pages: 147
 slug: chambers-psalm-for-the-wild-built

@@ -2,6 +2,7 @@
 title: "A Prayer for the Crown-Shy"
 author: Becky Chambers
 year: 2022
+publication_date: 2022-07-12
 isbn: 9781250236234
 pages: 160
 slug: chambers-prayer-for-the-crown-shy

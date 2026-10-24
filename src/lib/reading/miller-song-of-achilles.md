@@ -2,6 +2,7 @@
 title: The Song of Achilles
 author: Madeline Miller
 year: 2011
+publication_date: 2011-09-20
 isbn: 9780062060617
 started: 2024-02-02
 finished: 2024-02-29

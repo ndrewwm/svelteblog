@@ -2,6 +2,7 @@
 title: "The Age of Revolution: Europe 1789-1848"
 author: Eric J. Hobsbawm
 year: 1962
+publication_date: 1962-01-01
 isbn: 9780349104843
 started: 2022-01-15
 finished: 2023-05-29

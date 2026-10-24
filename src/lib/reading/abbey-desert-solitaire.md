@@ -2,6 +2,7 @@
 title: Desert Solitaire
 author: Edward Abbey
 year: 1968
+publication_date: 1968-01-01
 isbn: 0345326490
 started: 2023-01-08
 finished: 2023-01-31

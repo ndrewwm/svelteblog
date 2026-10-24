@@ -2,6 +2,7 @@
 title: "Capital in the Twenty-First Century"
 author: Thomas Piketty
 year: 2017
+publication_date: 2013-08-30
 isbn: 9780674982925
 pages: 817
 slug: piketty-capital

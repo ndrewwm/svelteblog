@@ -2,6 +2,7 @@
 title: "Necropolitics"
 author: Achille Mbembe
 year: 2019
+publication_date: 2019-10-25
 isbn: 9781478005858
 slug: mbembe-necropolitics
 started: 2022-01-15

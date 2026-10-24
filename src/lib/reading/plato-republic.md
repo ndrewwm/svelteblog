@@ -2,6 +2,7 @@
 title: "The Republic"
 author: Plato
 year: 2020
+publication_date: 2020-01-01
 isbn: null
 pages: 399
 slug: plato-republic

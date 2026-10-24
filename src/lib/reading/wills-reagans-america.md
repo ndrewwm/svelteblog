@@ -2,6 +2,7 @@
 title: "Reagan's America: Innocents at Home"
 author: Garry Wills
 year: 2017
+publication_date: 1986-01-01
 isbn: 9781504045414
 pages: 590
 slug: wills-reagans-america

@@ -2,6 +2,7 @@
 title: "Infinite Powers: How Calculus Reveals the Secrets of the Universe"
 author: Steven Strogatz
 year: 2019
+publication_date: 2019-04-02
 isbn: 9781328879981
 slug: strogatz-infinite-powers
 started: 2024-12-03

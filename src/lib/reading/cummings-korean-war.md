@@ -2,6 +2,7 @@
 title: "The Korean War: A History"
 author: Bruce Cummings
 year: 2011
+publication_date: 2010-01-01
 isbn: 9780812978964
 slug: cummings-korean-war
 started: 2022-01-15

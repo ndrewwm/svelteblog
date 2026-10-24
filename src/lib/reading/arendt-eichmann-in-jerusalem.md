@@ -2,6 +2,7 @@
 title: "Eichmann in Jerusalem: A Report on the Banality of Evil"
 author: Hannah Arendt
 year: 1963
+publication_date: 1963-01-01
 isbn: null
 pages: 312
 slug: arendt-eichmann-in-jerusalem
