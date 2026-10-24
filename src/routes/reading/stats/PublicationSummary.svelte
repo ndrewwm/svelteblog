@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Plot, TickX } from "svelteplot";
+  import { Plot, AxisX, TickX } from "svelteplot";
   let { selectedYear, books, currentBooks, primaryColor } = $props();
 
   let currentLast5 = currentBooks.filter(book => (selectedYear - book.year) <= 5).length;
@@ -43,7 +43,8 @@
   </p>
 {/if}
 
-<Plot x={{ tickFormat: (t) => String(t) }}>
-  <TickX data={books} x="year" />
-  <TickX data={currentBooks} x="year" stroke={primaryColor} />
+<Plot>
+  <TickX data={books} x={(d) => d.pub_dt.toDate()} />
+  <TickX data={currentBooks} x={(d) => d.pub_dt.toDate()} stroke={primaryColor} />
+  <AxisX interval="10 year" tickFormat="YYYY" />
 </Plot>

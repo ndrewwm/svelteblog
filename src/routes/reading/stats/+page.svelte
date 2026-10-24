@@ -16,6 +16,8 @@
   let books = booksArray.map(book => {
     book.started = dayjs(book.started);
     book.finished = dayjs(book.finished);
+    book.pub_dt = book.publication_date !== undefined && book.publication_date !== null ? dayjs(book.publication_date) : dayjs(`${book.year}-01-01`);
+    book.year = book.pub_dt.year();
     book.days = book.finished.diff(book.started, "day");
     book.pages = book.pages !== null && book.pages !== undefined ? book.pages : -1;
     book.yr_finished = book.finished.year();
