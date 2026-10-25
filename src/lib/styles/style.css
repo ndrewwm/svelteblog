@@ -124,7 +124,7 @@ a:hover {
   text-decoration: none;
 }
 
-.footnotes li {
+.footnotes > li {
   margin-bottom: 50%;
 }
 
