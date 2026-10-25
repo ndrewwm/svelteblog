@@ -8,7 +8,7 @@ added: 2023-01-31
 started: 2026-10-09
 finished: null
 pages: 236
-pct: 47
+pct: 73
 mode: ebook
 stars: null
 owned: null
