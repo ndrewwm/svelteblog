@@ -1,7 +1,8 @@
 <script>
   let { currentBooks } = $props();
-  let headers = ["Title", "Author", "Mode", "Published", "Pages", "Stars", "Days"];
-  let fields = ["title", "author", "mode", "year", "pages", "stars", "days"];
+  let headers = ["Title", "Mode", "Published", "Pages", "Stars", "Days"];
+  let fields = ["title", "mode", "year", "pages", "stars", "days"];
+  let modeEmojis = new Map([["ebook", "🖥️"], ["audiobook", "🎧"], ["print", "📖"]]);
 
   currentBooks = currentBooks
     .map(book => {
@@ -40,8 +41,12 @@
                 </div>
               </a>
             </td>
+          {:else if field === "mode"}
+            <td title={book[field]} style:text-align="right">
+              {modeEmojis.get(book[field])}
+            </td>
           {:else if ["year", "pages", "stars", "days"].includes(field)}
-            <td style="text-align: right;">{book[field]}</td>
+            <td style:text-align="right">{book[field]}</td>
           {:else}
             <td>{book[field]}</td>
           {/if}
@@ -55,7 +60,7 @@
 
 <style>
   .book-title {
-    width: 15vw;
+    width: 30vw;
     overflow-x: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
