@@ -35,7 +35,7 @@
         {#each fields as field}
           {#if field === "title"}
             <td>
-              <a href={book.slug}>
+              <a href={book.slug} title={`${book.title} (${book.author})`}>
                 <div class="book-title">
                   {book.title}
                 </div>
