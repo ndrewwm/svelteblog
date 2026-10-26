@@ -6,11 +6,11 @@ publication_date: 1997-01-01
 isbn: 9780312425845
 added: 2023-01-31
 started: 2026-10-09
-finished: null
+finished: 2026-10-25
 pages: 236
-pct: 73
+pct: 100
 mode: ebook
-stars: null
-owned: null
+stars: 4
+owned: false
 slug: alexievich-voices-from-chernobyl
 ---
