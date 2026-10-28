@@ -21,7 +21,7 @@ Especially in the later chapters, there's a fair amount of reflection on feature
 
 The accounts from Chernobyl's liquidators and their family members were harrowing. If you watched the HBO miniseries, you're presented with some gruesome pictures of what radiation can do to the body. All I can say is that this is another area in which television understates the horror of what happened. At the time, there was a myth that alcohol could help prevent or reduce the impact of radiation exposure. Based on what the subjects describe, it makes sense why the crews cleaning up the region were constantly looking for alcohol; their experiences sound horrible.
 
-There's something tragicly poetic in many of the recountings. Here are some quotes that I highlighted.
+There's something tragically poetic in many of the recountings. Here are some quotes that I highlighted.
 
 > The future is destroying me, not the past. [p.27]
 
