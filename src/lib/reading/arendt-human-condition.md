@@ -9,7 +9,7 @@ slug: arendt-human-condition
 started: 2026-05-02
 finished: 2026-07-10
 pct: 100
-stars: 4
+stars: 3
 mode: ebook
 who: null
 ---

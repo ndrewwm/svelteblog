@@ -9,7 +9,7 @@ slug: carreyrou-bad-blood
 started: 2026-10-18
 finished: 2026-10-23
 pct: 100
-stars: 4
+stars: 3
 mode: audiobook
 who: [Nathan Fielder, Lance Oppenheim]
 ---
