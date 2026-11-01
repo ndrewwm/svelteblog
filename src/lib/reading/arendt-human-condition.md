@@ -16,7 +16,9 @@ who: null
 
 <!-- Remember, 400-2,000 words is the target range. Ideally <1,000. -->
 
-This is a challenging book, really throws you into the deep end. There's so much in here to discuss. 
+This is a challenging book, really throws you into the deep end. There's so much in here to discuss. Arendt's book purposefully avoids being prescriptive. She places her faith in human plurality; if she were to offer a solution, she would be negating what she thinks is necessary for the practice of politics. That is, the addressing of political problems requires people speaking (and acting) together, not via pronouncements from experts.
+
+> To these preoccupations and perplexities, this book does not offer an answer. Such answers are given every day, and they are matters of practical politics, subject to the agreement of many; *they can never lie in theoretical considerations or the opinion of one person, as though we dealt here with problems for which only one solution is possible.* What I propose in the following is a reconsideration of the human condition from the vantage point of our newest experiences and our most recent fears. This, obviously, is a matter of thought, and thoughtlessness—the heedless recklessness or hopeless confusion or complacent repetition of “truths” which have become trivial and empty—seems to me among the outstanding characteristics of our time. **What I propose, therefore, is very simple: it is nothing more than to think what we are doing.** [p.5]
 
 ## Discussion questions
 
@@ -88,6 +90,9 @@ From Section 1.
 
 ### 5. What are we running away from? Why are we trying to escape the earth?
 
+- From the prologue:
+  > This future man, whom the scientists tell us they will produce in no more than a hundred years, seems to be possessed by _a rebellion against human existence as it has been given, a free gift from nowhere (secularly speaking), which he wishes to exchange, as it were, for something he has made himself._ There is no reason to doubt our abilities to accomplish such an exchange, just as there is no reason to doubt our present ability to destroy all organic life on earth. The question is only whether we wish to use our new scientific and technical knowledge in this direction, and this question cannot be decided by scientific means; it is a political question of the first order and therefore can hardly be left to the decision of professional scientists or professional politicians.
+
 - _World Alienation_ appears to be Arendt's answer.
 - Where does it come from? The Earth had been fully mapped:
   > Men now live in an earth-wide continuous whole where even the notion of distance, still inherent in the most perfectly unbroken contiguity of parts, has yielded before the onslaught of speed. Speed has conquered space; and though this conquering process finds its limit at the unconquerable boundary of the simultaneous presence of one body at two different places, it has made distance meaningless, for no significant part of a human life—years, months, or even weeks—is any longer necessary to reach any point on the earth. [p.250]
@@ -110,6 +115,8 @@ From Section 1.
 
 ####  Marx's hell, consumer society
 
+> Even presidents, kings, and prime ministers think of their offices in terms of a job necessary for the life of society, and among the intellectuals, only solitary individuals are left who consider what they are doing in terms of work and not in terms of making a living. What we are confronted with is the prospect of a society of laborers without labor, that is, without the only activity left to them. Surely, nothing could be worse. [p.5]
+
 > The emancipation of labor and the concomitant emancipation of the laboring classes from oppression and exploitation certainly meant progress in the direction of non-violence. It is much less certain that it was also progress in the direction of freedom. [p.128]
 
 > A hundred years after Marx we know the fallacy of this reasoning; the spare time of the animal laborans is never spent in anything but consumption, and the more time left to him, the greedier and more craving his appetites. [p.133]
@@ -120,6 +127,15 @@ From Section 1.
 
 - Ideally, it seems that we ought to be doing more *work* as opposed to mere *labor*; we've "defeated" Homo Faber, and the Animal Laborans is ascendant.
 - "Life" is not the highest good (section 44, p.312)
+- We need to make our world concrete and permanent. Wanton consumption makes our world less durable; it increases the speed at which material is reshaped and returned to decaying substrate.
+- We need public spaces in which we can be perceived, recognized, encountered. These spaces need to make deliberation, debate, persuasion possible.
+- A better world requires freedom:
+  > The emancipation of labor and the concomitant emancipation of the laboring classes from oppression and exploitation certainly meant progress in the direction of non-violence. It is much less certain that it was also progress in the direction of freedom. [p.128] 
+- **What is freedom, for Arendt?**
+  - Not being consumed with reproducing oneself (i.e, you're not committed solely to labor)
+  - You can make meaningful choices (take action?)
+  - You can speak
+  - What else?
 
 ### 9. What would Arendt have thought about LLMs?
 
@@ -129,9 +145,23 @@ From Section 1.
 
 ### 10. _The Human Condition_ appears to be pessimistic about the prospect of scientific communication. Why?
 
+- Modern science uses an elaborate system of signs and symbols; these devices no longer strongly correspond to analogs or abbreviations of human speech.
+
+- This degrades our ability to have common understandings: "Men in the plural, that is, men in so far as they live and move and act in this world, can experience meaningfulness only because they can talk with and make sense to each other and to themselves. [p.3]"
+
+- From the prologue:
+  > The reason why it may be wise to distrust the political judgment of scientists qua scientists is not primarily their lack of “character”—that they did not refuse to develop atomic weapons—or their naïveté—that they did not understand that once these weapons were developed they would be the last to be consulted about their use—but precisely the fact that they move in a world where speech has lost its power.
+
 > *It certainly is not without irony that those whom public opinion has persistently held to be the least practical and the least political members of society should have turned out to be the only ones left who still know how to act and how to act in concert.* For their early organizations, which they founded in the seventeenth century for the conquest of nature and in which they developed their own moral standards and their own code of honor, have not only survived all vicissitudes of the modern age, but they have become one of the most potent power-generating groups in all history. *But the action of the scientists, since it acts into nature from the standpoint of the universe and not into the web of human relationships, lacks the revelatory character of action as well as the ability to produce stories and become historical,* which together form the very source from which meaningfulness springs into and illuminates human existence. [p.324]
 
 Some notes:
 - Arendt appears most concerned with the impact of physics in _The Human Condition_
 - _Silent Spring_ would be published 5 years after this book (in 1962)
 - Interesting that _Silent Spring_ does appear to have generated new consciousness (and action?) over something that's hard to observe discretely.
+
+## What I thought was interesting
+
+- Arendt is committed to a notion of politics that is defined through _acting_ and _speaking_ with other humans.
+- The sections on promises and forgiveness (sections 33 and 34) are exemplary of this, I think. Promises might be codified through laws, processes, policy, etc., but she recognizes that at their bottom these are commitments between people to remember and recognize shared responsibilities.
+- Unlike other theorists, I'm not sure she sees politics as being generated or sustained through structures? That is, a bureacracy itself might not be "political", even if it was established as a result of _political decision making_.
+- Her writing on natality and newness is interesting
