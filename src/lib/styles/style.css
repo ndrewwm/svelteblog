@@ -1,3 +1,13 @@
+@import "typlet/fonts/typlet.css";
+
+.typlet .g {
+  font-weight: 500;
+}
+
+.typlet {
+  font-size: 1.15em;
+}
+
 :root {
   --main-bg-color: #E1EFE6;
   --main-txt-color: #000411;

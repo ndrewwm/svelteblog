@@ -14,3 +14,10 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+## Math in posts
+
+Markdown posts use KaTeX for `$...$` and `$$...$$` math by default. To write
+math using Typst syntax, add `math: typst` to the post's YAML frontmatter.
+Typst math uses the same dollar delimiters; the Typlet font stylesheet is
+included in the site styles.
