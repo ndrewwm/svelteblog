@@ -34,6 +34,7 @@ function rehypeMath() {
 export default defineConfig({
 	plugins: [
 		sveltekit({
+			alias: { '$lib': 'src/lib' },
 			extensions: [".svelte", ".svx", ".md"],
 			preprocess: [
 				vitePreprocess(),
