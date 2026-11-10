@@ -7,7 +7,7 @@
 
   function numberToWord(num: number): string | undefined {
     const digits = new Map([
-      [0, "Zero"],
+      [0, "None"],
       [1, "One"],
       [2, "Two"],
       [3, "Three"],
