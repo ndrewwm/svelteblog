@@ -16,7 +16,7 @@ I didn't get through 18 books like I'd hoped, but here are the ones I read cover
 </div>
 
 <script>
-  import OpenLibraryCover from "$lib/util/OpenLibraryCover.svelte";
+  import OpenLibraryCover from "#lib/util/OpenLibraryCover.svelte";
 </script>
 
 <div class="columns" id="hirohito-and-the-making-of-modern-japan">
