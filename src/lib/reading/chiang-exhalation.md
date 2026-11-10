@@ -1,16 +1,16 @@
 ---
 title: "Exhalation"
 author: Ted Chiang
-year: 2019
+year: 2019-05-20
 isbn: null
 added: 2024-12-27
-started: null
+started: 2026-11-08
 finished: null
 pages: 368
-pct: null
-mode: null
+pct: 11
+mode: ebook
 stars: null
-owned: null
+owned: false
 fiction: true
 slug: chiang-exhalation
 ---
