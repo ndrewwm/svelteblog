@@ -6,20 +6,20 @@
   import PhotoGrid from "./PhotoGrid.svelte";
   import Plot from "./Plot.svelte";
 
-  import Cathedral from "$lib/assets/photos/trips/2025/spain/oviedo/PXL_20251110_112109215.jpg";
-  import StreetDog from "$lib/assets/photos/trips/2025/spain/oviedo/PXL_20251110_124846861.jpg";
-  import Mural from "$lib/assets/photos/trips/2025/spain/oviedo/PXL_20251110_160721361.jpg";
-  import Oviedo from "$lib/assets/photos/trips/2025/spain/oviedo/PXL_20251111_132104488.jpg";
+  import Cathedral from "#lib/assets/photos/trips/2025/spain/oviedo/PXL_20251110_112109215.jpg";
+  import StreetDog from "#lib/assets/photos/trips/2025/spain/oviedo/PXL_20251110_124846861.jpg";
+  import Mural from "#lib/assets/photos/trips/2025/spain/oviedo/PXL_20251110_160721361.jpg";
+  import Oviedo from "#lib/assets/photos/trips/2025/spain/oviedo/PXL_20251111_132104488.jpg";
 
-  import GijonPanorama from "$lib/assets/photos/trips/2025/spain/gijon/PXL_20251111_161012290.PANO.jpg";
-  import Pelayo from "$lib/assets/photos/trips/2025/spain/gijon/PXL_20251113_130556560.jpg";
-  import Xijon from "$lib/assets/photos/trips/2025/spain/gijon/PXL_20251111_170022335.jpg";
-  import RomanBaths from "$lib/assets/photos/trips/2025/spain/gijon/PXL_20251111_162657016.MP.jpg";
-  import Dindurra from "$lib/assets/photos/trips/2025/spain/gijon/PXL_20251113_110504798.jpg";
-  import Horreo from "$lib/assets/photos/trips/2025/spain/gijon/PXL_20251113_164631508.MP.jpg";
-  import CiderPress from "$lib/assets/photos/trips/2025/spain/gijon/PXL_20251113_164815183.MP.jpg";
-  import Sculpture from "$lib/assets/photos/trips/2025/spain/gijon/PXL_20251116_121210260.jpg";
-  import Trains from "$lib/assets/photos/trips/2025/spain/gijon/PXL_20251113_113416226.jpg";
+  import GijonPanorama from "#lib/assets/photos/trips/2025/spain/gijon/PXL_20251111_161012290.PANO.jpg";
+  import Pelayo from "#lib/assets/photos/trips/2025/spain/gijon/PXL_20251113_130556560.jpg";
+  import Xijon from "#lib/assets/photos/trips/2025/spain/gijon/PXL_20251111_170022335.jpg";
+  import RomanBaths from "#lib/assets/photos/trips/2025/spain/gijon/PXL_20251111_162657016.MP.jpg";
+  import Dindurra from "#lib/assets/photos/trips/2025/spain/gijon/PXL_20251113_110504798.jpg";
+  import Horreo from "#lib/assets/photos/trips/2025/spain/gijon/PXL_20251113_164631508.MP.jpg";
+  import CiderPress from "#lib/assets/photos/trips/2025/spain/gijon/PXL_20251113_164815183.MP.jpg";
+  import Sculpture from "#lib/assets/photos/trips/2025/spain/gijon/PXL_20251116_121210260.jpg";
+  import Trains from "#lib/assets/photos/trips/2025/spain/gijon/PXL_20251113_113416226.jpg";
 
   let oviedo = [
     { src: Mural, alt: "A mural", col: "left" },

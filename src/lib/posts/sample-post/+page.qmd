@@ -20,7 +20,7 @@ format:
 
 <script>
   import Summary from "./metadata_getter.svelte";
-  import Head from "$lib/components/Head.svelte";
+  import Head from "#lib/components/Head.svelte";
 </script>
 
 Hello. Today's date is {date}.

@@ -1,6 +1,6 @@
 <script>
-  import Now from "$lib/components/Now.svelte";
-  import Banner from "$lib/util/Banner.svelte";
+  import Now from "#lib/components/Now.svelte";
+  import Banner from "#lib/util/Banner.svelte";
 
   let { data } = $props();
 </script>

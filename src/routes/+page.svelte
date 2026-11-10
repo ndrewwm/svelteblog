@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Now from "$lib/components/Now.svelte";
-  import Tracks from "$lib/home/Tracks.svelte";
+  import Now from "#lib/components/Now.svelte";
+  import Tracks from "#lib/home/Tracks.svelte";
   let { data } = $props();
 </script>
 

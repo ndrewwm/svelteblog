@@ -340,7 +340,7 @@ toJSON(by_set, pretty = TRUE)
 ```
 
 <script>
-  import MullPlot from "$lib/posts/avoid-double-pips/MullPlot.svelte";
+  import MullPlot from "#lib/posts/avoid-double-pips/MullPlot.svelte";
 </script>
 
 <MullPlot />

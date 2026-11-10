@@ -1,5 +1,5 @@
-import { db } from "$lib/server/database/getClient";
-import { rptArtistCounts } from "$lib/server/database/schema";
+import { db } from "#lib/server/database/getClient";
+import { rptArtistCounts } from "#lib/server/database/schema";
 import { json } from "@sveltejs/kit";
 import { desc } from "drizzle-orm";
 

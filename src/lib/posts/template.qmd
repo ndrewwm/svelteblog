@@ -19,7 +19,7 @@ format:
 ---
 
 <script>
-  import BlogHead from "$lib/components/BlogHead.svelte";
+  import BlogHead from "#lib/components/BlogHead.svelte";
 </script>
 
 <style>

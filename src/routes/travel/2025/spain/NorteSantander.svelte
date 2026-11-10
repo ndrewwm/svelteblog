@@ -5,24 +5,24 @@
   import dayjs from "dayjs";
   import { mean } from "d3";
 
-  import Norte from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251105_144048722.jpg";
-  import Map1 from "$lib/assets/photos/trips/2025/spain/norte/IMG_20251105_195736.png";
-  import Caballos from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251105_113246892.MP.jpg";
-  import Shell from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251105_094729747.jpg";
-  import Flags from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251105_095804475.jpg";
-  import Coast from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251105_135425291.jpg";
+  import Norte from "#lib/assets/photos/trips/2025/spain/norte/PXL_20251105_144048722.jpg";
+  import Map1 from "#lib/assets/photos/trips/2025/spain/norte/IMG_20251105_195736.png";
+  import Caballos from "#lib/assets/photos/trips/2025/spain/norte/PXL_20251105_113246892.MP.jpg";
+  import Shell from "#lib/assets/photos/trips/2025/spain/norte/PXL_20251105_094729747.jpg";
+  import Flags from "#lib/assets/photos/trips/2025/spain/norte/PXL_20251105_095804475.jpg";
+  import Coast from "#lib/assets/photos/trips/2025/spain/norte/PXL_20251105_135425291.jpg";
 
-  import Church from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251106_111857721.jpg";
-  import Marker from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251106_114114965.jpg";
-  import Laredo from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251106_151350307.jpg";
-  import Fishermen from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251106_164113945.jpg";
+  import Church from "#lib/assets/photos/trips/2025/spain/norte/PXL_20251106_111857721.jpg";
+  import Marker from "#lib/assets/photos/trips/2025/spain/norte/PXL_20251106_114114965.jpg";
+  import Laredo from "#lib/assets/photos/trips/2025/spain/norte/PXL_20251106_151350307.jpg";
+  import Fishermen from "#lib/assets/photos/trips/2025/spain/norte/PXL_20251106_164113945.jpg";
 
-  import Mercado from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251107_121336289.MP.jpg";
-  import Fish from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251107_113346280.jpg";
-  import Snaps from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251107_130952656.MP.jpg";
-  import Sculpture from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251107_130805120.MP.jpg";
-  import FoodHall from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251107_184948175.MP.jpg";
-  import CentroBotin from "$lib/assets/photos/trips/2025/spain/norte/PXL_20251115_164707904.jpg";
+  import Mercado from "#lib/assets/photos/trips/2025/spain/norte/PXL_20251107_121336289.MP.jpg";
+  import Fish from "#lib/assets/photos/trips/2025/spain/norte/PXL_20251107_113346280.jpg";
+  import Snaps from "#lib/assets/photos/trips/2025/spain/norte/PXL_20251107_130952656.MP.jpg";
+  import Sculpture from "#lib/assets/photos/trips/2025/spain/norte/PXL_20251107_130805120.MP.jpg";
+  import FoodHall from "#lib/assets/photos/trips/2025/spain/norte/PXL_20251107_184948175.MP.jpg";
+  import CentroBotin from "#lib/assets/photos/trips/2025/spain/norte/PXL_20251115_164707904.jpg";
 
   let { metrics } = $props();
   let data = metrics.filter((d) => d.date <= dayjs("11/07/2025"));

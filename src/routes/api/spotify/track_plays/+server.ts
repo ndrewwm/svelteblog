@@ -1,5 +1,5 @@
-import { db } from "$lib/server/database/getClient";
-import { fctTrackPlays, dimTrack } from "$lib/server/database/schema";
+import { db } from "#lib/server/database/getClient";
+import { fctTrackPlays, dimTrack } from "#lib/server/database/schema";
 import { json } from "@sveltejs/kit";
 import { desc, eq } from "drizzle-orm";
 

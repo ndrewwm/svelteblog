@@ -1,5 +1,5 @@
 <script lang="ts">
-  import "$lib/styles/style.css";
+  import "#lib/styles/style.css";
   import { dev } from '$app/environment';
   import { injectAnalytics } from '@vercel/analytics/sveltekit';
 

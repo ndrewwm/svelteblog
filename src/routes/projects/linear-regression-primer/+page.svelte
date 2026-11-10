@@ -1,6 +1,6 @@
 <script>
-  import Banner from "$lib/util/Banner.svelte";
-  import Head from "$lib/components/Head.svelte";
+  import Banner from "#lib/util/Banner.svelte";
+  import Head from "#lib/components/Head.svelte";
 </script>
 
 <Head title="A primer for linear regression" />
