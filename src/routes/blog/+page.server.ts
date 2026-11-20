@@ -1,4 +1,4 @@
-const posts = import.meta.glob('#lib/posts/*.md', {
+const posts = import.meta.glob('#lib/posts/**/*.md', {
 	query: '?metadata',
 	import: 'metadata',
 	eager: true

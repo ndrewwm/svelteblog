@@ -3,6 +3,10 @@
   import { MediaQuery } from 'svelte/reactivity';
   let { data } = $props();
   let mobile = new MediaQuery("width < 800px");
+
+  data.posts
+    .sort((a, b) => dayjs(a.date) - dayjs(b.date))
+    .reverse();
 </script>
 
 <svelte:head>
