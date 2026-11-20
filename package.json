@@ -41,7 +41,6 @@
 		"hast-util-select": "^6.0.4",
 		"hast-util-to-html": "^9.0.6",
 		"katex": "^0.16.8",
-		"layercake": "^8.3.4",
 		"mathlifier": "^1.3.4",
 		"mdsvex-relative-images": "^1.0.3",
 		"rehype-typlet": "^0.2.0",
