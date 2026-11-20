@@ -50,7 +50,7 @@ const config = {
 
 export default defineConfig({
 	plugins: [
-		mdsvex({ extensions: [".md", ".svx"] }),
+		mdsvex({ extensions: [".md", ".svx"], math: { renderer: "katex" } }),
 		sveltekit()
 	]
 });
