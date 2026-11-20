@@ -9,7 +9,7 @@ slug: chiang-stories-of-your-life-and-others
 added: 2026-11-19
 started: 2026-11-19
 finished: null
-pct: null
+pct: 0
 stars: null
 mode: ebook
 who: null
