@@ -1,22 +1,30 @@
-import { fetchBookReviews } from '$lib/util/fetchBookReviews';
 import dayjs from 'dayjs';
-import { json } from '@sveltejs/kit';
+
+const bookImports = import.meta.glob('#lib/reading/**/*.md', {
+	query: '?metadata',
+	import: 'metadata',
+	eager: true
+});
 
 export async function GET({ url }) {
-  let books = await fetchBookReviews();
   let year = url.searchParams.get("year");
+  let books = Object.entries(bookImports)
+    .map(([path, metadata]) => ({
+			slug: path.split('/')[1],
+			...metadata
+		}));
 
   books = books
-    .filter((book) => book.meta.finished === null && book.meta.started !== null)
+    .filter((book) => book.finished === null && book.started !== null)
     .map((book) => {
-      book.meta.date = dayjs(book.meta.started);
+      book.date = dayjs(book.started);
       return book;
     })
-    .toSorted((a, b) => a.meta.pct - b.meta.pct);
+    .toSorted((a, b) => a.pct - b.pct);
 
   if (year !== null) {
-    books = books.filter((book) => book.meta.year() === Number(year));
+    books = books.filter((book) => book.year === Number(year));
   }
 
-  return json(books);
+  return Response.json(books);
 }

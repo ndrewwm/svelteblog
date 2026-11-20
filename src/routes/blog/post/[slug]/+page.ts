@@ -2,8 +2,7 @@ import { error, redirect } from '@sveltejs/kit';
 
 export async function load({ params }) {
 	try {
-		const post = await import(`$lib/posts/${params.slug}/+page.md`);
-
+		const post = await import(`#lib/posts/${params.slug}/+page.md`);
 		return {
 			content: post.default,
 			meta: post.metadata
@@ -20,7 +19,7 @@ export async function load({ params }) {
 			}
 		}
 		try {
-			const post = await import(`$lib/posts/${params.slug}.md`);
+			const post = await import(`#lib/posts/${params.slug}.md`);
 			return {
 				content: post.default,
 				meta: post.metadata

@@ -1,5 +1,5 @@
 <script>
-  import Cv from "$lib/components/Cv.svelte";
+  import Cv from "#lib/components/Cv.svelte";
 </script>
 
 <svelte:head>

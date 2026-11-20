@@ -10,36 +10,36 @@
   let data = metrics.filter(d => d.date <= dayjs("11/04/2025"));
 
   // Bilbao
-  import Bilbao from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_101136388.jpg";
-  import BilbaoMonument from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_160025770.MP.jpg";
-  import BilbaoSunset from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_155328922.jpg";
-  import BilbaoRiverfront from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_124739575.MP.jpg";
-  import BilbaoAdams from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251104_163708699.MP.jpg";
-  import BilbaoAlley from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_105455599.jpg";
-  import BilbaoSelfie from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_155206222.jpg";
+  import Bilbao from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_101136388.jpg";
+  import BilbaoMonument from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_160025770.MP.jpg";
+  import BilbaoSunset from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_155328922.jpg";
+  import BilbaoRiverfront from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_124739575.MP.jpg";
+  import BilbaoAdams from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251104_163708699.MP.jpg";
+  import BilbaoAlley from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_105455599.jpg";
+  import BilbaoSelfie from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_155206222.jpg";
 
   // Guggenheim
-  import GHMuseo1 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_142636836.jpg";
-  import GHMuseo2 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_135059106.jpg";
-  import GHMuseo3 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_142145041.jpg";
-  import GHMuseo4 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_141455846.MP.jpg";
-  import GHMuseo5 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_142054254.jpg";
-  import GHMuseo7 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_145206082.jpg";
-  import GHMuseo8 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_075705570.jpg";
-  import GHMuseoExt from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_145156921.jpg"
+  import GHMuseo1 from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_142636836.jpg";
+  import GHMuseo2 from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_135059106.jpg";
+  import GHMuseo3 from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_142145041.jpg";
+  import GHMuseo4 from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_141455846.MP.jpg";
+  import GHMuseo5 from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_142054254.jpg";
+  import GHMuseo7 from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_145206082.jpg";
+  import GHMuseo8 from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_075705570.jpg";
+  import GHMuseoExt from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_145156921.jpg"
 
   // San Juan de Gaztelugatxe, Mundaka, Gernika-Lumo
-  import Gaztelugatxe from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_090105126.jpg";
-  import Coast from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_092151772.jpg";
-  import Mundaka from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_114335418.PANO.jpg";
-  import Urdaibai from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_114020554.jpg";
-  import Gernika from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_125036151.jpg"
-  import GernikaCityHall from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_125328968.jpg";
+  import Gaztelugatxe from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_090105126.jpg";
+  import Coast from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_092151772.jpg";
+  import Mundaka from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_114335418.PANO.jpg";
+  import Urdaibai from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_114020554.jpg";
+  import Gernika from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_125036151.jpg"
+  import GernikaCityHall from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_125328968.jpg";
 
   // Pinxtos
-  import Pinxto1 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_114743169.jpg";
-  import Pinxto2 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_143647908.jpg";
-  import Pinxto4 from "$lib/assets/photos/trips/2025/spain/bilbao/PXL_20251104_191558220.MP.jpg";
+  import Pinxto1 from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251102_114743169.jpg";
+  import Pinxto2 from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251103_143647908.jpg";
+  import Pinxto4 from "#lib/assets/photos/trips/2025/spain/bilbao/PXL_20251104_191558220.MP.jpg";
 
   let bilbaoColor = [
     { src: Bilbao, alt: "Mural in front of Plaza Nueva." },

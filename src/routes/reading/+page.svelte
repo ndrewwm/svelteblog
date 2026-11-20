@@ -21,12 +21,12 @@
       {#each data.reading as book}        
         <tr>
           <td class="dt pt-2 pb-2">
-            {book.meta.mode == "audiobook" ? "🎧" : "📖"}
-            {book.meta.pct}%
+            {book.mode == "audiobook" ? "🎧" : "📖"}
+            {book.pct}%
           </td>
           <td class=" pt-2 pb-2">
-            <a class="title is-size-6" href="/reading/{book.meta.slug}">{book.meta.title}</a>
-            <p class="subtitle is-size-6">{book.meta.author}</p>
+            <a class="title is-size-6" href="/reading/{book.slug}">{book.title}</a>
+            <p class="subtitle is-size-6">{book.author}</p>
           </td>
         </tr>
       {/each}
@@ -36,15 +36,15 @@
         <td class="dt pt-2 pb-2">
           <!-- Use a smaller font when we think the user is on a mobile device -->
           <p class={"title is-size-" + (mobile.current ? "6" : "5")}>
-            {"★".repeat(book.meta.stars)}
+            {"★".repeat(book.stars)}
           </p>
           <p class="subtitle is-size-7">
-            {dayjs(book.meta.date).format("YY.MM.DD")}
+            {dayjs(book.date).format("YY.MM.DD")}
           </p>
         </td>
         <td class=" pt-2 pb-2">
-          <a class="title is-size-6" href="/reading/{book.meta.slug}">{book.meta.title}</a>
-          <p class="subtitle is-size-6">{book.meta.author}</p>
+          <a class="title is-size-6" href="/reading/{book.slug}">{book.title}</a>
+          <p class="subtitle is-size-6">{book.author}</p>
         </td>
       </tr>
     {/each}

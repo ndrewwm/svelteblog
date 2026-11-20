@@ -14,7 +14,7 @@ format:
 ---
 
 <script>
-  import nytWave from '$lib/posts/20261104/nytwave.png';
+  import nytWave from '#lib/posts/20261104/nytwave.png';
 </script>
 
 I've never seen an election like this one. It's bittersweet; I'm back in Idaho, and my home state is one of the most conservative in the country. Indicative of its priorities, our state legislature requested Idahoans vote on a "state gun" this year (only 28% of ballots opted to leave this section blank). Proposition 1, a ballot initiative meant to secure basic rights related to reproductive healthcare only received approval from 44% of voters.

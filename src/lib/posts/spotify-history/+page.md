@@ -95,7 +95,7 @@ We're basically at the last step. Like the flow that gathers the data, the proje
 
 ```js
 <script>
-  import ObservablePlot from "$lib/util/ObservablePlot.svelte";
+  import ObservablePlot from "#lib/util/ObservablePlot.svelte";
   import * as Plot from "@observablehq/plot";
   import { from, op } from "arquero";
 

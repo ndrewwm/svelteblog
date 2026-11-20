@@ -163,7 +163,7 @@ of viable hands. This matters quite a bit, given how costly a mulligan
 can be.
 
 <script>
-  import MullPlot from "$lib/posts/avoid-double-pips/MullPlot.svelte";
+  import MullPlot from "#lib/posts/avoid-double-pips/MullPlot.svelte";
 </script>
 
 <MullPlot />

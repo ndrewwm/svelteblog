@@ -1,7 +1,7 @@
 <script lang="ts">
   import { MediaQuery } from 'svelte/reactivity';
   import dayjs from 'dayjs';
-  import OpenLibraryCover from '$lib/util/OpenLibraryCover.svelte';
+  import OpenLibraryCover from '#lib/util/OpenLibraryCover.svelte';
   let { data } = $props();
   let mobile = new MediaQuery("width < 800px");
 </script>
