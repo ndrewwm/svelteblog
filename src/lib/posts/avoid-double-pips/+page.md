@@ -14,6 +14,7 @@ categories:
   - mtg
   - simulation
 preview: null
+math: typst
 knitr:
   opts_knit:
     base.url: /
@@ -61,21 +62,12 @@ double-pipped card (i.e., a card whose casting cost is something like
 
 Let’s start by naming some probabilities of interest:
 
-- $Pr(\text{Keep}) =$ “the probability of drawing a viable opening
-  hand”,
-- $Pr(\text{Bomb}) =$ “the probability of seeing the bomb in the first
-  18 cards of your deck”,
-- $Pr(\text{Splash}) = Pr(\text{2+ blue sources in first 18 cards}) =$
-  “the probability of seeing two or more blue sources in the first 18
-  cards of your deck”,
-- $Pr(\text{Lands}) = Pr(\text{7+ lands in first 18 cards}) =$ “the
-  probability of seeing at least 7 lands in the first 18 cards of your
-  deck”,
-- $Pr(\text{Cast}) = Pr(\text{Bomb} \cap \text{Splash} \cap \text{Lands}) =$
-  “the probability you can cast the bomb, after seeing 18 cards”, and
-- $Pr(\text{Cast} \ | \ \text{Keep}) =$ “the probability you can cast
-  the bomb after seeing 18 cards, given that the opening hand was
-  viable”.
+- $`Pr("Keep") =`$ "the probability of drawing a viable opening hand",
+- $`Pr("Bomb") =`$ "the probability of seeing the bomb in the first 18 cards of your deck",
+- $`Pr("Splash") = Pr("2+ blue sources in first 18 cards") =`$ "the probability of seeing two or more blue sources in the first 18 cards of your deck",
+- $`Pr("Lands) = Pr("7+ lands in first 18 cards") =`$ "the probability of seeing at least 7 lands in the first 18 cards of your deck",
+- $`Pr("Cast") = Pr("Bomb" inter "Splash" inter "Lands") =`$ "the probability you can cast the bomb, after seeing 18 cards", and
+- $`Pr("Cast"|"Keep") =`$ "the probability you can cast the bomb after seeing 18 cards, given that the opening hand was viable".
 
 The natural way to think about these events is that we’re flipping over
 the first 18 cards of a shuffled deck.[^1] Either we’re drawing them one
@@ -87,14 +79,7 @@ mill one or more cards you need, etc. We’ll revisit this later, but
 let’s be as generous as possible to what this hypothetical deck is
 trying to do on paper, for now.
 
-Deriving $Pr(\text{Cast})$ or $Pr(\text{Cast} \ | \ \text{Keep})$ is
-complicated, due to the fact that the events ($\text{Bomb}$,
-$\text{Splash}$, and $\text{Lands}$) are not independent. For example,
-drawing a island implies you’re also closer to having the lands needed
-on-time to cast your bomb. However, we can get around this by simulating
-the process, letting a computer shuffle the deck thousands of times, to
-get an estimate. Laying things out, this is what we’ll be giving to the
-computer to shuffle for each “game”:
+Deriving $`Pr("Cast")`$ or $`Pr("Cast"|"Keep")`$ is complicated, due to the fact that the events ($`"Bomb"`$, $`"Splash"`$, and $`"Lands"`$) are not independent. For example, drawing a island implies you're also closer to having the lands needed on-time to cast your bomb. However, we can get around this by simulating the process, letting a computer shuffle the deck thousands of times, to get an estimate. Laying things out, this is what we'll be giving to the computer to shuffle for each "game":
 
 | Category | Cards |
 |:---|:---|
@@ -132,7 +117,7 @@ Now, here are the results. Under this list and heuristic for mulligans,
 the simulation suggests you’ll only be able to find a viable hand in
 49/100 games. Notably, this means the chance that you have to mulligan
 twice in a row is
-$Pr(\text{Mull Twice}) = Pr(\text{Keep}^c) \cdot Pr(\text{Keep}^c) = (1 - 0.488)^2 = 0.262$!
+$`Pr("Mull Twice") = Pr("Keep"^c) dot Pr("Keep"^c) = (1 - 0.488)^2 = 0.262`$!
 In instances where we see a viable opening hand, we’ll only be able to
 cast the bomb in 20/100 games.
 
@@ -154,11 +139,11 @@ cards in your base colors, e.g., 2RR).
 <!-- Alternative: a "normal" deck -->
 
 Something else that’s crucial to remember is that our simulation’s
-estimate for $Pr(\text{Keep})$ is lower than what we’d expect if we
+estimate for $`Pr("Keep")`$ is lower than what we’d expect if we
 excluded the splash. Using the same simulation procedure with a purely
 2-color deck (swapping the three islands for three basics of our base
 colors, and the utility artifact for a 2-mana creature), we’d estimate
-that $Pr(\text{Keep}) \approx$ 0.597, a much more comfortable proportion
+that $`Pr("Keep") \approx`$ 0.597, a much more comfortable proportion
 of viable hands. This matters quite a bit, given how costly a mulligan
 can be.
 
