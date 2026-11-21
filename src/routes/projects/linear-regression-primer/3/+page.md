@@ -189,7 +189,7 @@ So, to answer “where” the Adelie are, their rows are identified when the
 
 Until now, I’ve held off on discussing in-depth on how to interpret the
 results from a regression. In the case of simple linear regression,
-we’ve been able to talk about $\hat{\beta_1}$ as the slope for the
+we’ve been able to talk about $`\hat{\beta_1}`$ as the slope for the
 best-fitting line between two variables. This interpretation remains
 valid for multiple regression, but obviously gets more complex as the
 number of variables increases. You can represent two variables on an
@@ -201,11 +201,11 @@ first we’re going to focus on the model’s representation as an equation.
 
 Here’s our simple model:
 
-$\widehat{\text{bill length}} = -7.26 + 0.255(\text{flipper length})$
+$`\widehat{\text{bill length}} = -7.26 + 0.255(\text{flipper length})`$
 
 And our updated model:
 
-$\widehat{\text{bill length}} = -2.06 + 0.215(\text{flipper length}) + 8.78(\text{speciesChinstrap}) + 2.86(\text{speciesGentoo})$
+$`\widehat{\text{bill length}} = -2.06 + 0.215(\text{flipper length}) + 8.78(\text{speciesChinstrap}) + 2.86(\text{speciesGentoo})`$
 
 Now, let’s imagine feeding these models some new data. Let’s start by
 thinking about what the intercept is doing in both equations. Is it
@@ -214,12 +214,12 @@ flippers of length 0, our models would predict a bill length of -7.26
 and -2.06, respectively. In any regression model, the intercept value
 will be the model’s prediction if *all* the predictors in the model were
 set to 0.[^1] For the non-intercept terms, if you’re interested in
-variable $x_k$, you can read its coefficient $\hat\beta_k$ as the
-*expected change in $\hat{y}$ when increasing (or decreasing) the value
+variable $x_k$, you can read its coefficient $`\hat\beta_k`$ as the
+*expected change in $`\hat{y}`$ when increasing (or decreasing) the value
 of $x_k$ by 1.* Note this is the expected change holding all the other
 variables in the model constant. That is, if I set all the other
 variables to something pre-specified (such as 0), and only change my
-input for $x_k$ by 1-unit, I’ll see $\hat{y}$ move in a single increment
+input for $`x_k`$ by 1-unit, I’ll see $`\hat{y}`$ move in a single increment
 of $\hat\beta_k$.
 
 The idea of holding other variables “constant” might become clearer as
@@ -332,7 +332,7 @@ scatter plots, you can see that the Adelie tend to have shorter bills on
 average, whereas the Chinstrap and Gentoo are more similar in this
 respect. It also seems like most of our predictions were within $\pm5$mm
 of the true values for bill length. We can get the specific estimate for
-residual standard deviation ($\hat\sigma$) and other information from
+residual standard deviation ($`\hat\sigma`$) and other information from
 `glance()`.
 
 ``` r
