@@ -65,7 +65,7 @@ Let’s start by naming some probabilities of interest:
 - $`Pr("Keep") =`$ "the probability of drawing a viable opening hand",
 - $`Pr("Bomb") =`$ "the probability of seeing the bomb in the first 18 cards of your deck",
 - $`Pr("Splash") = Pr("2+ blue sources in first 18 cards") =`$ "the probability of seeing two or more blue sources in the first 18 cards of your deck",
-- $`Pr("Lands) = Pr("7+ lands in first 18 cards") =`$ "the probability of seeing at least 7 lands in the first 18 cards of your deck",
+- $`Pr("Lands") = Pr("7+ lands in first 18 cards") =`$ "the probability of seeing at least 7 lands in the first 18 cards of your deck",
 - $`Pr("Cast") = Pr("Bomb" inter "Splash" inter "Lands") =`$ "the probability you can cast the bomb, after seeing 18 cards", and
 - $`Pr("Cast"|"Keep") =`$ "the probability you can cast the bomb after seeing 18 cards, given that the opening hand was viable".
 
