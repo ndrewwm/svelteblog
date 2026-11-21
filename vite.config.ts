@@ -1,15 +1,16 @@
 import { defineConfig } from 'vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 import adapter from '@sveltejs/adapter-vercel';
-import { mdsvex, compile } from "mdsvex";
+import { mdsvex } from "mdsvex";
 import { renderToString as renderTypst } from 'typlet';
 import { renderToString as renderKatex } from 'katex';
 import fs from 'fs';
+import matter from 'gray-matter';
 
 function renderMath(markup: string, display: boolean, filename: string) {
 	const article = fs.readFileSync(filename, 'utf-8');
-	const compiled = compile(article);
-	if (compiled.metadata?.math === "typst") {
+	const { data } = matter(article);
+	if (data?.math === "typst") {
 		return renderTypst(markup, { displayMode: display });
 	}
 	return renderKatex(markup, { displayMode: display });

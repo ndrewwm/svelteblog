@@ -34,6 +34,7 @@
 		"dayjs": "^1.11.23",
 		"dotenv": "^18.0.10",
 		"drizzle-orm": "^0.45.4",
+		"gray-matter": "^4.0.3",
 		"mathlifier": "^3.5.1",
 		"mdsvex-relative-images": "^2.0.0",
 		"svelteplot": "^0.14.2",
