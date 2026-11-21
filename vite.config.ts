@@ -21,6 +21,6 @@ export default defineConfig({
 			extensions: [".md", ".svx"],
 			math: (latex, { display, meta, filename }) => renderMath(latex, display, filename),
 		}),
-		sveltekit()
+		sveltekit({ adapter: adapter() })
 	]
 });
