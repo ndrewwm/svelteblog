@@ -25,21 +25,21 @@ format:
 
 <script>
   import Banner from "#lib/util/Banner.svelte";
-  import Head from "#lib/components/Head.svelte";
 </script>
 <style>
+  pre {
+    margin-top: 3px;
+  }
+
   img {
     object-fit: scale-down;
     max-width: 100%;
+    margin-top: 3px;
   }
 </style>
-<Head title="A primer for Linear Regression (part 2)" />
+<Banner title="A primer for Linear Regression (part 2)" />
 
-<Banner sub="A primer for Linear Regression" link="/projects/linear-regression-primer" />
-
-{date}
-
-# Part 2
+# Part 2: fitting a model using R
 
 In the [previous post](/projects/linear-regression-primer/1) of this
 series, we covered an overview of the *Ordinary Least Squares* method

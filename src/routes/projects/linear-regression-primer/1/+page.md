@@ -29,15 +29,13 @@ format:
   img {
     object-fit: scale-down;
     max-width: 100%;
+    margin-top: 3px;
   }
 </style>
-<Head title="A primer for Linear Regression (part 1)" />
 
-<Banner sub="A primer for Linear Regression" link="/projects/linear-regression-primer" />
+<Banner title="A primer for Linear Regression (part 1)" />
 
-{date}
-
-# Part 1
+# Part 1: ordinary least squares
 
 This year, my partner has been working to complete her Masters in
 Natural Resources/Land Management, and several of her assignments have

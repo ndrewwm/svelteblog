@@ -23,21 +23,23 @@ format:
 
 <script>
   import Banner from "#lib/util/Banner.svelte";
-  import Head from "#lib/components/Head.svelte";
 </script>
+
 <style>
+  pre {
+    margin-top: 3px;
+  }
+
   img {
     object-fit: scale-down;
     max-width: 100%;
+    margin-top: 3px;
   }
 </style>
-<Head title="A primer for Linear Regression (part 3)" />
 
-<Banner sub="A primer for Linear Regression" link="/projects/linear-regression-primer" />
+<Banner title="A primer for Linear Regression (part 3)" />
 
-{date}
-
-# Part 3
+# Part 3: multiple regression
 
 Now our focus will shift to multiple regression (i.e. linear regression
 with \>1 predictors), as opposed to *simple* linear regression (linear
