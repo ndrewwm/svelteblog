@@ -1,56 +1,26 @@
-import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
+import { sveltekit } from '@sveltejs/kit/vite';
 import adapter from '@sveltejs/adapter-vercel';
-import { mdsvex } from "mdsvex";
-import relativeImages from "mdsvex-relative-images";
-import remarkGfm from 'remark-gfm';
-import remarkMath from "remark-math";
-import rehypeKatex from "rehype-katex-svelte";
-import rehypeTyplet from 'rehype-typlet';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import { selectAll } from "hast-util-select";
-import { fromString as hastFromString } from "hast-util-from-string";
-import { toHtml as hastToHtml } from 'hast-util-to-html';
+import { mdsvex, compile } from "mdsvex";
+import { renderToString as renderTypst } from 'typlet';
+import { renderToString as renderKatex } from 'katex';
+import fs from 'fs';
 
-function rehypeMath() {
-	let katex = rehypeKatex();
-	let typst = rehypeTyplet();
-
-	// You can inspect `file.data` during the build
-	// console.dir() will display what's exposed under file.data
-	return (tree, file) => {
-		if (file.data.fm?.math === "typst") {
-			typst(tree, file);
-			// rehypeTyplet() does not appear to return any elements with a .typlet-inline class
-			for (let node of selectAll(".typlet-display,.typlet", tree)) {
-				// console.dir(node, { depth: null });
-				hastFromString(node, `{@html ${JSON.stringify(hastToHtml(node))}}`);
-			}
-		} else {
-			katex(tree, file);
-		}
-	};
+function renderMath(markup: string, display: boolean, filename: string) {
+	const article = fs.readFileSync(filename, 'utf-8');
+	const compiled = compile(article);
+	if (compiled.metadata?.math === "typst") {
+		return renderTypst(markup, { displayMode: display });
+	}
+	return renderKatex(markup, { displayMode: display });
 }
-
-const config = {
-	adapter: adapter(),
-	extensions: [".svelte"],
-
-	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
-	// for more information about preprocessors
-	preprocess: [
-		vitePreprocess(),
-		mdsvex({
-			extensions: [".md", ".svx"],
-			remarkPlugins: [relativeImages, [remarkGfm, {inlineNotes: true}], remarkMath],
-			rehypePlugins: [rehypeMath],
-		})
-	],
-};
 
 export default defineConfig({
 	plugins: [
-		mdsvex({ extensions: [".md", ".svx"], math: { renderer: "katex" } }),
+		mdsvex({ 
+			extensions: [".md", ".svx"],
+			math: (latex, { display, meta, filename }) => renderMath(latex, display, filename),
+		}),
 		sveltekit()
 	]
 });
