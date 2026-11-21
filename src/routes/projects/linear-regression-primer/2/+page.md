@@ -292,9 +292,9 @@ SEs. This ratio is called a *t-statistic*, and when using linear
 regression, is computed for each coefficient using the following
 formula:
 
-$$
+```math
 t_i = \frac{\hat{\beta_i}}{SE(\hat{\beta_i)}}
-$$
+```
 
 In our case, the t-statistic for flipper length would be 0.255 / 0.0159
 = 16.03 – which lines up with what’s reported in our output above.
