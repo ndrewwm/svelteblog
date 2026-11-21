@@ -143,7 +143,7 @@ estimate for $`Pr("Keep")`$ is lower than what we’d expect if we
 excluded the splash. Using the same simulation procedure with a purely
 2-color deck (swapping the three islands for three basics of our base
 colors, and the utility artifact for a 2-mana creature), we’d estimate
-that $`Pr("Keep") \approx`$ 0.597, a much more comfortable proportion
+that $`Pr("Keep") approx`$ 0.597, a much more comfortable proportion
 of viable hands. This matters quite a bit, given how costly a mulligan
 can be.
 
