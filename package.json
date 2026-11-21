@@ -17,8 +17,6 @@
 		"drizzle-kit": "^0.31.11",
 		"katex": "^0.19.1",
 		"mdsvex": "^1.0.1",
-		"rehype-katex-svelte": "^1.2.0",
-		"remark-math": "^6.0.0",
 		"sass": "^1.108.2",
 		"svelte": "^5.58.0",
 		"svelte-check": "^4.7.8",
@@ -36,14 +34,10 @@
 		"dayjs": "^1.11.23",
 		"dotenv": "^18.0.10",
 		"drizzle-orm": "^0.45.4",
-		"hast-util-from-string": "^3.0.1",
-		"hast-util-select": "^6.0.4",
-		"hast-util-to-html": "^9.0.7",
 		"mathlifier": "^3.5.1",
 		"mdsvex-relative-images": "^2.0.0",
-		"rehype-typlet": "^0.2.0",
-		"remark-gfm": "^4.0.1",
-		"svelteplot": "^0.14.2"
+		"svelteplot": "^0.14.2",
+		"typlet": "^0.2.0"
 	},
 	"imports": {
 		"#lib": "./src/lib/index.js",
