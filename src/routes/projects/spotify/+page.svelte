@@ -1,6 +1,6 @@
 <script>
   import { MediaQuery } from 'svelte/reactivity';
-  import Banner from '$lib/util/Banner.svelte';
+  import Banner from '#lib/util/Banner.svelte';
   import BarTopArtists from './BarTopArtists.svelte';
   import BoxPlots from './BoxPlots.svelte';
   import LineTrackDiscovery from './LineTrackDiscovery.svelte';

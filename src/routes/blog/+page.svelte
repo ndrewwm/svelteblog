@@ -3,6 +3,10 @@
   import { MediaQuery } from 'svelte/reactivity';
   let { data } = $props();
   let mobile = new MediaQuery("width < 800px");
+
+  data.posts
+    .sort((a, b) => dayjs(a.date) - dayjs(b.date))
+    .reverse();
 </script>
 
 <svelte:head>
@@ -17,7 +21,7 @@
 </header>
 
 {#snippet title(title: string, path: string)}
-  <p class="post-title"><a href={path}>{title}</a></p>
+  <p class="post-title"><a href={"/blog/post/" + path}>{title}</a></p>
 {/snippet}
 
 {#snippet date(date: string)}
@@ -40,23 +44,23 @@
 
 <div id="posts">
   {#each data.posts as post}
-    {#if !post.meta.draft}
+    {#if !post.draft}
       {#if mobile.current}
         <div class="block">
-          {@render title(post.meta.title, post.path)}
-          {@render date(post.meta.date)}
-          {@render description(post.meta.description)}
-          {@render categories(post.meta.categories)}
+          {@render title(post.title, post.slug)}
+          {@render date(post.date)}
+          {@render description(post.description)}
+          {@render categories(post.categories)}
         </div>
       {:else}
         <div class="columns">
           <div class="column is-narrow">
-            {@render date(post.meta.date)}
+            {@render date(post.date)}
           </div>
           <div class="column">
-            {@render title(post.meta.title, post.path)}
-            {@render description(post.meta.description)}
-            {@render categories(post.meta.categories)}
+            {@render title(post.title, post.slug)}
+            {@render description(post.description)}
+            {@render categories(post.categories)}
           </div>
         </div>
       {/if}

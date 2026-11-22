@@ -1,8 +1,14 @@
-import dayjs from 'dayjs';
+const posts = import.meta.glob('#lib/posts/**/*.md', {
+	query: '?metadata',
+	import: 'metadata',
+	eager: true
+});
 
-export async function load({ fetch }) {
-  const response = await fetch(`/api/post`);
-  const posts: Object[] = await response.json();
-  posts.sort((a, b) => dayjs(b.meta.date) - dayjs(a.meta.date));
-  return { posts };
+export function load() {
+	return {
+		posts: Object.entries(posts).map(([path, metadata]) => ({
+			slug: path.split('/')[1],
+			...metadata
+		}))
+	};
 }

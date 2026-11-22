@@ -12,7 +12,7 @@ format:
 ---
 
 <script>
-  import OpenLibraryCover from "$lib/util/OpenLibraryCover.svelte";
+  import OpenLibraryCover from "#lib/util/OpenLibraryCover.svelte";
 </script>
 
 <div class="columns" id="necropolitics">

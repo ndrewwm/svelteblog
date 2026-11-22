@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Now from "$lib/components/Now.svelte";
-  import Tracks from "$lib/home/Tracks.svelte";
+  import Now from "#lib/components/Now.svelte";
+  import Tracks from "#lib/home/Tracks.svelte";
   let { data } = $props();
 </script>
 
@@ -26,9 +26,9 @@
 
     {#each data.posts as post}
       <p class="title is-6 mb-1">
-        <a href="/blog/post/{post.meta.slug}">{post.meta.title}</a>
+        <a href="/blog/post/{post.slug}">{post.title}</a>
       </p>
-      <p class="subtitle is-6 mb-3 dt">{post.meta.date}</p>
+      <p class="subtitle is-6 mb-3 dt">{post.date}</p>
     {/each}
   </section>
 
@@ -51,13 +51,13 @@
 
     {#each data.reviews as review}
       <p class="title is-6 mb-1">
-        <a href="reading/{review.meta.slug}">{review.meta.title}</a>
+        <a href="reading/{review.slug}">{review.title}</a>
       </p>
       <p class="subtitle is-6 mb-3 dt">
-        {#if review.meta.stars !== null}
-          {"★".repeat(review.meta.stars)}
+        {#if review.stars !== null}
+          {"★".repeat(review.stars)}
         {:else}
-          📖 {review.meta.pct}%
+          📖 {review.pct}%
         {/if}
       </p>
     {/each}

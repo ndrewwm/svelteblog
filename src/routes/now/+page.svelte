@@ -1,6 +1,6 @@
 <script>
-  import Now from "$lib/components/Now.svelte";
-  import Banner from "$lib/util/Banner.svelte";
+  import Now from "#lib/components/Now.svelte";
+  import Banner from "#lib/util/Banner.svelte";
 
   let { data } = $props();
 </script>
@@ -9,10 +9,10 @@
   {#each books as book}
     <li style:margin-bottom="1px">
       {#if pct}
-        {book.meta.pct}%:
+        {book.pct}%:
       {/if}
-      <em>{book.meta.title}</em>, by
-      {book.meta.author} ({book.meta.year})
+      <em>{book.title}</em>, by
+      {book.author} ({book.year})
     </li>
   {/each}
 {/snippet}
@@ -37,9 +37,9 @@
 <p class="block">
   My most recent blog post is:
   <em>
-    <a href={"/blog/post/" + data.post.meta.slug}>{data.post.meta.title}</a>
+    <a href={"/blog/post/" + data.post.slug}>{data.post.title}</a>
   </em>
-  ({data.post.meta.date}).
+  ({data.post.date}).
 </p>
 
 {#if data.reading.length >= 1}

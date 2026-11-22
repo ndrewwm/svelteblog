@@ -1,5 +1,5 @@
 <script lang="ts">
-  import CountUp from "$lib/util/CountUp.svelte";
+  import CountUp from "#lib/util/CountUp.svelte";
   import { from, op } from "arquero";
 
   let { data } = $props();

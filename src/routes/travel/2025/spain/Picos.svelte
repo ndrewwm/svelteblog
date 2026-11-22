@@ -9,19 +9,19 @@
   let { metrics } = $props();
   let data = metrics.filter(d => d.date <= dayjs("11/09/2025"));
 
-  import Potes from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251108_150518339.jpg";
-  import Potes2 from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251108_150252345.jpg";
-  import Potes3 from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251108_164119262.jpg";
-  import Potes4 from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251108_155349156.jpg";
-  import Abondigas from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251108_153615927.MP.jpg";
+  import Potes from "#lib/assets/photos/trips/2025/spain/picos/PXL_20251108_150518339.jpg";
+  import Potes2 from "#lib/assets/photos/trips/2025/spain/picos/PXL_20251108_150252345.jpg";
+  import Potes3 from "#lib/assets/photos/trips/2025/spain/picos/PXL_20251108_164119262.jpg";
+  import Potes4 from "#lib/assets/photos/trips/2025/spain/picos/PXL_20251108_155349156.jpg";
+  import Abondigas from "#lib/assets/photos/trips/2025/spain/picos/PXL_20251108_153615927.MP.jpg";
 
-  import Picos1 from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251109_093123053.PANO.jpg";
-  import Station from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251109_092723266.MP.jpg";
-  import Selfie from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251109_092841017.jpg";
-  import ElCable from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251109_141305052.jpg";
-  import Cairns from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251109_095537868.jpg";
-  import Valley from "$lib/assets/photos/trips/2025/spain/picos/PXL_20251109_101821606.jpg";
-  import Trail from "$lib/assets/photos/trips/2025/spain/picos/Screenshot_20251129-111239.png";
+  import Picos1 from "#lib/assets/photos/trips/2025/spain/picos/PXL_20251109_093123053.PANO.jpg";
+  import Station from "#lib/assets/photos/trips/2025/spain/picos/PXL_20251109_092723266.MP.jpg";
+  import Selfie from "#lib/assets/photos/trips/2025/spain/picos/PXL_20251109_092841017.jpg";
+  import ElCable from "#lib/assets/photos/trips/2025/spain/picos/PXL_20251109_141305052.jpg";
+  import Cairns from "#lib/assets/photos/trips/2025/spain/picos/PXL_20251109_095537868.jpg";
+  import Valley from "#lib/assets/photos/trips/2025/spain/picos/PXL_20251109_101821606.jpg";
+  import Trail from "#lib/assets/photos/trips/2025/spain/picos/Screenshot_20251129-111239.png";
 
   let potes = [
     { src: Potes2, alt: "Bridge in Potes.", col: "left"},

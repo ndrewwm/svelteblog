@@ -1,11 +1,16 @@
-import { fetchMarkdownPosts } from '$lib/util/fetchMarkdownPosts';
-import { json } from '@sveltejs/kit';
+const posts = import.meta.glob('#lib/posts/**/*.md', {
+	query: '?metadata',
+	import: 'metadata',
+	eager: true
+});
 
 export async function GET() {
-  let allPosts = await fetchMarkdownPosts();
-  allPosts.sort((a, b) => {
-    return Date.parse(a.meta.date) - Date.parse(b.meta.date);
-  });
+  let results = Object.entries(posts)
+    .map(([path, metadata]) => ({
+			slug: path.split('/')[1],
+			...metadata
+		}))
+    .sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
 
-  return json(allPosts);
+  return Response.json(results);
 }
