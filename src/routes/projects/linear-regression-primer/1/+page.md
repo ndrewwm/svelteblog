@@ -23,9 +23,23 @@ format:
 
 <script>
   import Banner from "#lib/util/Banner.svelte";
-  import Head from "#lib/components/Head.svelte";
 </script>
+
 <style>
+  h1 {
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  h2, h3 {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
   img {
     object-fit: scale-down;
     max-width: 100%;

@@ -26,6 +26,20 @@ format:
 </script>
 
 <style>
+  h1 {
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  h2, h3 {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
   pre {
     margin-top: 3px;
   }
