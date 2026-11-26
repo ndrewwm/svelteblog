@@ -20,7 +20,7 @@ Despite personal interests, I haven't had an opportunity to take coursework that
 
 With the intention of working my way up to BDA's material, I've looked around for other options to get started. This led me to [_Bayes Rules! An Introduction to Applied Bayesian Modeling_](https://www.bayesrulesbook.com/), by Alicia Johnson, Miles Ott, and Mine Dogucu. Unlike BDA, which is aimed at graduate students, _Bayes Rules!_ is meant to be approachable for undergraduate students.
 
-I've been gradually working through _Bayes Rules!_ via its online website that the authors graciously provide to readers. For each chapter, I've been keeping notes and completing a smattering of the exercises that interest me. At the time of writing, I've gone through chapters 1 through 7. This post is meant to summarize what I've learned up to this point, an attempt to write down what I think I can explain to others (in a condensed form).
+I've been gradually working through _Bayes Rules!_ via its online website that the authors graciously provide to readers. For each chapter, I've been keeping notes and completing a smattering of the exercises that interest me. At the time of writing, I've gone through chapters 1 through 8. This post is meant to summarize what I've learned up to this point, an attempt to write down what I think I can explain to others (in a condensed form).
 
 # Foundations: what is the task of "statistics"?
 
@@ -178,7 +178,7 @@ Using the sliders below, you can adjust $`alpha`$ and $`beta`$ to change the sha
 
 <GammaPrior a={5} b={5} max={7} />
 
-Based on the needs or information provided by our colleagues, various choices could be chosen for $`alpha`$ and $`beta`$ to reflect a point of view before we observe data. For example, if our colleague believed that the literature was too optimistic and wanted to give it less weight, we could pick Gamma(8.72, 5.7) as a choice that keeps the same mean, but allows for more variability.
+Based on the needs or information provided by our colleague, various choices could be chosen for $`alpha`$ and $`beta`$ to reflect a point of view before we observe data. For example, if our colleague believed that the literature was too optimistic and wanted to give it less weight, we could pick Gamma(7.5, 5) as a choice that keeps the same mean, but allows for more variability.
 
 # Summarizing the posterior distribution and hypothesis testing
 
@@ -198,12 +198,14 @@ Plotting our (scaled) likelihood, prior, and posterior together as curves, we ca
 
 <GammaModel />
 
-In evaluating the pedagogy based on our (small) sample, we can compute a few additional summaries. First, our colleague is interested in knowing whether students learning under this approach are finishing more books than the district's average. Based on prior surveys, the district's best guess is that students at the same grade level in this school's district are completing around 1 book per month. Based on our posterior distribution, we have 
+In evaluating the pedagogy based on our (small) sample, we can compute a few additional summaries. First, our colleague is interested in knowing whether students learning under this approach are finishing more books than the district's average. Drawing from survey data, the district's best guess is that students at the same grade level in this school's district are completing around 1 book per month. Based on our posterior distribution, we have 
 ```math
 P(lambda > 1|arrow(x)) = 1 - integral_0^1 f(lambda|arrow(x)) dif lambda approx 0.97.
 ```
 
-...
+Being able to answer our colleague's question in a straightforward fashion is an appealing aspect of Bayesian inference. We don't even need to evaluate the integral by hand, `1 - pgamma(1, 51.25, 39)` in R is enough to answer our question. In light of the data we currently have, our teacher has directional evidence that the pedagogy is associated with their students finishing more books. The results would be more compelling if we had data from another class that _wasn't_ using the pedagogy or data from the class before the new approach. Without a comparison, we can't rule out other factors that might explain the improved reading rates. For example, our colleague might simply be effective at motivating their students and the pedagogy's benefits are negligible. However, they could be encouraging if other teachers were interested in exploring its use.
+
+  Another way we could summarize this result is by using the _prior_ and _posterior odds_.
 
 ```math
 H_0: & lambda <= 1 \
@@ -212,6 +214,9 @@ H_1: & lambda > 1 \
 "posterior odds" &= P(H_1|arrow(x))/P(H_0|arrow(x)) = (1 - integral_0^1 f(lambda|arrow(x)) dif lambda)/(integral_0^1 f(lambda|arrow(x)) dif lambda) approx 27.6 \
 "Bayes factor" &= "posterior odds"/"prior odds" approx 0.97
 ```
+
+# Yesterday's posterior, today's prior
+
 ---
 
 <!-- In the above, I've attempted to concisely describe what we're doing when we use statistical methods, and what characterizes Bayesian methods in particular. I want to linger briefly on what appeals to me about the Bayesian approach. First, I appreciate how the approach emphasizes the work of writing down precisely what we're estimating and assuming. Even if certain approaches are very established (like using the Poisson distribution to model counts of events in period), we can be explicit on what exactly we're up to. Second, the approach requires us to think about our estimates and assumptions as _distributions._ It's not always possible to define and observe the entirety of a population of interest. We're often working with the data that we have, rather than the data we'd like. For brief moments, there might be "true" parameter values at the population level for an outcome of interest, but the world is constantly moving. In light of this, it _feels_ better to me to focus on what's _plausible_ (or not) for a parameter's value, given the data that we have in the moment. Lastly, I think it's extremely useful that the approach explicitly acknowledges that we (humans) possess prior beliefs before approaching a dataset. These beliefs ought to be transparent and encoded into the model we're constructing. Sometimes these beliefs are "strong", reflecting particular hypotheses that stem from theoretical knowledge or previous empirical studies. Alternatively, sometimes we merely want to _constrain_ the range of parameters to reflect our awareness of what's possible to occur within a physical system. Further, if we have data arriving periodically, we should be able to rationally update our understanding in light of what we already know. -->
