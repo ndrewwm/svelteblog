@@ -180,6 +180,8 @@ Using the sliders below, you can adjust $`alpha`$ and $`beta`$ to change the sha
 
 Based on the needs or information provided by our colleagues, various choices could be chosen for $`alpha`$ and $`beta`$ to reflect a point of view before we observe data. For example, if our colleague believed that the literature was too optimistic and wanted to give it less weight, we could pick Gamma(8.72, 5.7) as a choice that keeps the same mean, but allows for more variability.
 
+# Summarizing the posterior distribution and hypothesis testing
+
 Now that we have a (conjugate) prior in hand, we can combine it with our observed data to analyze our study's posterior distribution:
 ```math
 #let prior_alpha = 22.25
